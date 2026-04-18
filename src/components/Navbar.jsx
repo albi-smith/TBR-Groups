@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Phone, MapPin, MessageCircle, ArrowLeft, ChevronRight } from 'lucide-react';
 
 const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
