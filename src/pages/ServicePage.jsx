@@ -271,7 +271,7 @@ const ServicePage = () => {
 
                               {details.price && (
                                 <div className="p-3 rounded border" style={{
-                                  background: 'linear-gradient(135deg, rgba(0, 102, 255, 0.08), rgba(0, 102, 255, 0.02))',
+                                  background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.08), rgba(255, 193, 7, 0.02))',
                                   borderColor: 'var(--border-gold)',
                                 }}>
                                   <div className="d-flex align-items-center gap-2 mb-2">
@@ -441,7 +441,7 @@ const ServicePage = () => {
             <div className="d-flex align-items-center gap-2">
               <div style={{
                 width: '28px', height: '28px', borderRadius: 'var(--radius-sm)',
-                background: 'linear-gradient(135deg, var(--accent-gold), #004cd9)',
+                background: 'linear-gradient(135deg, var(--primary), var(--accent))',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.8rem',
                 color: '#ffffff',
@@ -451,7 +451,7 @@ const ServicePage = () => {
                 fontSize: '1.1rem',
                 color: 'var(--text-primary)',
               }}>
-                TBR<span style={{ color: 'var(--accent-gold)' }}> Technologies</span>
+                TBR<span style={{ color: 'var(--accent)' }}> Technologies</span>
               </span>
             </div>
           </div>

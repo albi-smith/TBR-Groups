@@ -85,12 +85,12 @@ const TBRTechnologies = () => {
         {/* Decorative Orbs */}
         <div className="hero-glow-orb" style={{
           width: '500px', height: '500px',
-          background: 'radial-gradient(circle, rgba(0,102,255,0.12), transparent 70%)',
+          background: 'radial-gradient(circle, rgba(27,94,32,0.12), transparent 70%)',
           top: '-10%', right: '-5%',
         }} />
         <div className="hero-glow-orb" style={{
           width: '400px', height: '400px',
-          background: 'radial-gradient(circle, rgba(30,58,95,0.1), transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255,193,7,0.1), transparent 70%)',
           bottom: '0%', left: '-5%',
         }} />
 
@@ -117,7 +117,7 @@ const TBRTechnologies = () => {
                 Your One-Stop
                 <br />
                 <span style={{
-                  background: 'linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-light) 100%)',
+                  background: 'linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
@@ -315,19 +315,19 @@ const TBRTechnologies = () => {
                 transition: 'all var(--transition-base)',
                 height: '100%'
               }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(0,102,255,0.3)'; }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = 'var(--primary)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
               >
                 <div style={{
                   position: 'absolute', top: '-30px', right: '-30px',
                   width: '120px', height: '120px', borderRadius: '50%',
-                  background: 'radial-gradient(circle, rgba(0,102,255,0.12), transparent 70%)',
+                  background: 'radial-gradient(circle, rgba(27,94,32,0.15), transparent 70%)',
                   pointerEvents: 'none',
                 }} />
                 <div style={{
                   display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
                   padding: '0.3rem 0.8rem', borderRadius: 'var(--radius-full)',
-                  background: 'rgba(0,102,255,0.15)', color: 'var(--accent-blue-light)',
+                  background: 'rgba(27,94,32,0.15)', color: 'var(--primary)',
                   fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase',
                   letterSpacing: '1px', marginBottom: '1.25rem',
                 }}>
@@ -552,7 +552,7 @@ const TBRTechnologies = () => {
             {/* Email */}
             <div className="col-lg-3 col-md-6">
               <div className="info-card h-100">
-                <div className="info-icon" style={{ background: 'rgba(0,102,255,0.15)', color: 'var(--accent-blue)' }}>
+                <div className="info-icon" style={{ background: 'rgba(27,94,32,0.15)', color: 'var(--primary)' }}>
                   <Mail size={22} />
                 </div>
                 <h4 style={{
@@ -644,7 +644,7 @@ const TBRTechnologies = () => {
               <div className="d-flex align-items-center gap-2 mb-4">
                 <div style={{
                   width: '36px', height: '36px', borderRadius: 'var(--radius-sm)',
-                  background: 'linear-gradient(135deg, var(--accent-gold), #004cd9)',
+                  background: 'linear-gradient(135deg, var(--primary), var(--accent))',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                   fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1rem',
                   color: '#ffffff',
@@ -652,7 +652,7 @@ const TBRTechnologies = () => {
                 <span style={{
                   fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.1rem',
                 }}>
-                  TBR Groups<span style={{ color: 'var(--accent-gold)' }}>.</span>
+                  TBR Groups<span style={{ color: 'var(--accent)' }}>.</span>
                 </span>
               </div>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.7, maxWidth: '300px' }}>

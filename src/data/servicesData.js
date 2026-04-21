@@ -144,8 +144,8 @@ export const servicesA = [
     path: '/banking',
     title: 'Banking Services',
     desc: 'Loans, AEPS, money transfer and complete banking solutions.',
-    image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1600&q=80',
+    image: 'https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg',
+    heroImage: 'https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg',
     category: 'services',
     color: '#6366f1',
     subServices: [
