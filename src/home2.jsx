@@ -136,7 +136,7 @@ const TBRTechnologies = () => {
                 <a href="tel:8300426612" className="btn-secondary text-decoration-none">
                   <Phone size={18} /> Call Now
                 </a>
-                <button className="btn-secondary d-flex align-items-center gap-2" onClick={() => window.open("https://www.google.com/maps?q=8.306525,77.222292")}>
+                <button className="btn-secondary d-flex align-items-center gap-2" onClick={() => window.open("https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9")}>
                   Visit Us<MapPin size={18} />
                 </button>
               </div>

@@ -91,7 +91,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
             </a>
 
             <a
-              href="https://www.google.com/maps?q=8.306525,77.222292"
+              href="https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary d-none d-sm-flex align-items-center gap-2"
