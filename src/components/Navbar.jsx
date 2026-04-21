@@ -10,7 +10,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
       background: 'rgba(3, 30, 1, 0.75) ',
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
-      borderBottom: '1px solid var(--border-subtle)',
+      borderBottom: '0px solid var(--border-subtle)',
       padding: '0.85rem 0',
       zIndex: 1000,
       maxWidth: '100%',
@@ -42,8 +42,8 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
                   src="/logo.png"
                   alt="TBR Technologies Logo"
                   style={{
-                    width: '50px',
-                    height: '50px',
+                    width: '5rem',
+                    height: '5rem',
                     borderRadius: '50%',
                     objectFit: 'contain',
                     boxShadow: '0 2px 12px #ffc107',
@@ -51,7 +51,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
                 />
                 <div>
                   <h1 style={{
-                    fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 800,
+                    fontFamily: 'Outfit, sans-serif', fontSize: '2rem', fontWeight: 800,
                     margin: 0, letterSpacing: '-0.3px', lineHeight: 1.2, color: 'white',
                   }}>
                     TBR <span style={{
@@ -61,7 +61,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
                       backgroundClip: 'text',
                     }}>Groups</span>
                   </h1>
-                  <p className="d-none d-sm-block" style={{ fontSize: '0.55rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+                  <p className="d-none d-sm-block" style={{ fontSize: '0.60rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
                     Complete Service Solution
                   </p>
                 </div>
