@@ -131,7 +131,7 @@ const ServicePage = () => {
             <div className="section-label d-inline-flex justify-content-center">Available Services</div>
             <h2 className="section-title">What We Offer</h2>
             <p className="section-subtitle mx-auto">
-              Explore our comprehensive range of {service.title.toLowerCase()} — professional, reliable, and affordable. Click "Learn more" on any service for full details.
+              Explore our comprehensive range of {service.title.toLowerCase()} — professional, reliable, and affordable.
             </p>
           </div>
 
