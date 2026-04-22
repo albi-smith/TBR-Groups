@@ -13,6 +13,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
       borderBottom: '0px solid var(--border-subtle)',
       padding: '0.3rem 0',
       zIndex: 1000,
+      
       maxWidth: '100%',
     }}>
       <div className="container-fluid px-4 px-lg-5">

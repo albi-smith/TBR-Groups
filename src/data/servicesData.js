@@ -28,7 +28,7 @@ export const servicesA = [
     id: 2,
     slug: 'csc',
     path: '/csc',
-    title: 'CSC & E-Seva',
+    title: 'CSC & E-Seva Online Services',
     desc: 'Common Service Centre and E-Seva digital government portal services.',
     image: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg',
     heroImage: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg',
@@ -36,24 +36,20 @@ export const servicesA = [
     color: '#8b5cf6',
     subServices: [
       { name: 'CSC Registration', desc: 'New CSC center registration and VLE services', icon: '🖥️', image: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg' },
-      { name: 'E-Seva Bill Payments', desc: 'Utility bills and government fee payments', icon: '💰', image: 'https://images.unsplash.com/photo-1556742212-5b321f3c261d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Aadhaar Card Services', desc: 'New enrollment, updates, corrections & reprints', icon: '🪪', image: 'https://via.placeholder.com/500x300?text=Aadhaar+Card',},
-      { name: 'PAN Card', desc: 'New PAN card application, correction & reprint', icon: '💳', image: 'https://via.placeholder.com/500x300?text=PAN+Card', },
+      { name: 'Bills, Recharge & SIM Services', desc: 'Utility bills , Sim activation and all fee payments', icon: '💳', image: 'https://images.unsplash.com/photo-1556742212-5b321f3c261d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'TN Police Services', desc: 'Police Verification report, Lost document report & E-Chellan payments', icon: '🚔', image: 'https://via.placeholder.com/500x300?text=Aadhaar+Card',},
+      { name: 'PAN Card', desc: 'New PAN card application, correction & reprint', icon: '🪪', image: 'https://via.placeholder.com/500x300?text=PAN+Card', },
       { name: 'Passport Application', desc: 'Fresh passport & renewal applications', icon: '📘', image: 'https://via.placeholder.com/500x300?text=Passport',},
       { name: 'Voter ID Card', desc: 'New registration, transfer & correction', icon: '🗳️', image: 'https://via.placeholder.com/500x300?text=Voter+ID',},
       { name: 'Ration Card Services', desc: 'New card, addition & deletion of members', icon: '📋', image: 'https://via.placeholder.com/500x300?text=Ration+Card',},
-      { name: 'Income Certificate', desc: 'Income certificate for state & central schemes', icon: '📄', image: 'https://via.placeholder.com/500x300?text=Income+Certificate' },
-      { name: 'Community Certificate', desc: 'OBC, SC/ST community certificates', icon: '🏛️', image: 'https://via.placeholder.com/500x300?text=Community+Certificate' },
-      { name: 'Birth & Death Certificate', desc: 'Registration and duplicate certificates', icon: '📜', image: 'https://via.placeholder.com/500x300?text=Birth+%26+Death+Certificate' },
+      { name: 'E-Seva & E-District Services', desc: 'Income, Community, OBC, Nativity certificates, Patta transfer & related services', icon: '📄', image: 'https://via.placeholder.com/500x300?text=Income+Certificate' },
+      { name: 'Ex-Serviceman Online Services', desc: 'Children allowance, marriage allowance, PM Scholarship, EHS', icon: '🎖️', image: 'https://via.placeholder.com/500x300?text=Community+Certificate' },
+      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://via.placeholder.com/500x300?text=Birth+%26+Death+Certificate' },
       { name: 'Digital Signature Certificate', desc: 'Class 2 & Class 3 DSC for businesses', icon: '🔐', image: 'https://images.unsplash.com/photo-1526374965328-7f5ae4e8b12d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Pension Services', desc: 'EPF, PPF and government pension processing', icon: '👴', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80' },
       { name: 'Scholarship Applications', desc: 'State & central scholarship applications', icon: '🎓', image: 'https://images.unsplash.com/photo-1427504494785-cdba58dadff6?auto=format&fit=crop&w=500&q=80' },
       { name: 'PMJAY Ayushman Bharat', desc: 'Health card enrollment & hospital services', icon: '🏥', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      { name: 'DigiLocker Services', desc: 'Digital document storage and verification', icon: '📱', image: 'https://images.unsplash.com/photo-1522869635100-ce306e08b56d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'e-District Services', desc: 'Online district administration services', icon: '🏢', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80' },
-     { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://via.placeholder.com/500x300?text=Driving+License' },
-      { name: 'Nativity Certificate', desc: 'Proof of native place documentation', icon: '🏠', image: 'https://via.placeholder.com/500x300?text=Nativity+Certificate' },
-    ]
+      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://via.placeholder.com/500x300?text=Driving+License' },
+   ]
   },
   {
     id: 3,
@@ -76,27 +72,27 @@ export const servicesA = [
       { name: 'Sale Deed Preparation', desc: 'Sale deed drafting and registration', icon: '✍️', image: 'https://images.unsplash.com/photo-1586925503949-e3fb1d61ccd4?auto=format&fit=crop&w=500&q=80' },
     ]
   },
-  {
-    id: 4,
-    slug: 'recharge',
-    path: '/recharge',
-    title: 'Recharge & Activation',
-    desc: 'Mobile recharge, DTH, new SIM activation and bill payment services.',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80',
-    category: 'services',
-    color: '#10b981',
-    subServices: [
-      { name: 'Mobile Recharge', desc: 'All network prepaid & postpaid recharges', icon: '📱', image: 'https://images.unsplash.com/photo-1511707267537-b85faf00021e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'DTH Recharge', desc: 'Tata Play, Airtel, Dish TV & more', icon: '📡', image: 'https://images.unsplash.com/photo-1605976236488-8a1b76606b42?auto=format&fit=crop&w=500&q=80' },
-      { name: 'New SIM Activation', desc: 'Jio, Airtel, Vi & BSNL new connections', icon: '🔲', image: 'https://images.unsplash.com/photo-1556514712-9ceceb8a3fe4?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Broadband & WiFi', desc: 'Internet connection plans & activation', icon: '🌐', image: 'https://images.unsplash.com/photo-1553531088-189a29e18e4d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Data Plan Top-up', desc: 'Additional data pack recharges', icon: '📶', image: 'https://images.unsplash.com/photo-1461749280684-ddefd3445e38?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Postpaid Bill Payment', desc: 'Monthly postpaid bill settlement', icon: '🧾', image: 'https://images.unsplash.com/photo-1554180298-0ffacdc50caf?auto=format&fit=crop&w=500&q=80' },
-      { name: 'FASTag Recharge', desc: 'Highway toll FASTag balance top-up', icon: '🛣️', image: 'https://images.unsplash.com/photo-1553938070-9a86993e964a?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Electricity Bill Payment', desc: 'TNEB and other EB bill payments', icon: '⚡', image: 'https://images.unsplash.com/photo-1507919886019-37d82ec62cb0?auto=format&fit=crop&w=500&q=80' },
-    ]
-  },
+  // {
+  //   id: 4,
+  //   slug: 'recharge',
+  //   path: '/recharge',
+  //   title: 'Recharge & Activation',
+  //   desc: 'Mobile recharge, DTH, new SIM activation and bill payment services.',
+  //   image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80',
+  //   heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80',
+  //   category: 'services',
+  //   color: '#10b981',
+  //   subServices: [
+  //     { name: 'Mobile Recharge', desc: 'All network prepaid & postpaid recharges', icon: '📱', image: 'https://images.unsplash.com/photo-1511707267537-b85faf00021e?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'DTH Recharge', desc: 'Tata Play, Airtel, Dish TV & more', icon: '📡', image: 'https://images.unsplash.com/photo-1605976236488-8a1b76606b42?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'New SIM Activation', desc: 'Jio, Airtel, Vi & BSNL new connections', icon: '🔲', image: 'https://images.unsplash.com/photo-1556514712-9ceceb8a3fe4?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'Broadband & WiFi', desc: 'Internet connection plans & activation', icon: '🌐', image: 'https://images.unsplash.com/photo-1553531088-189a29e18e4d?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'Data Plan Top-up', desc: 'Additional data pack recharges', icon: '📶', image: 'https://images.unsplash.com/photo-1461749280684-ddefd3445e38?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'Postpaid Bill Payment', desc: 'Monthly postpaid bill settlement', icon: '🧾', image: 'https://images.unsplash.com/photo-1554180298-0ffacdc50caf?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'FASTag Recharge', desc: 'Highway toll FASTag balance top-up', icon: '🛣️', image: 'https://images.unsplash.com/photo-1553938070-9a86993e964a?auto=format&fit=crop&w=500&q=80' },
+  //     { name: 'Electricity Bill Payment', desc: 'TNEB and other EB bill payments', icon: '⚡', image: 'https://images.unsplash.com/photo-1507919886019-37d82ec62cb0?auto=format&fit=crop&w=500&q=80' },
+  //   ]
+  // },
   {
     id: 5,
     slug: 'ticket-booking',
@@ -170,15 +166,11 @@ export const servicesA = [
     category: 'services',
     color: '#d946ef',
     subServices: [
-      { name: 'IPPB Recurring Deposit', desc: 'India Post Payments Bank RD plans', icon: '🏣', image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Postal Savings Account', desc: 'Post office savings & withdrawal', icon: '💰', image: 'https://images.unsplash.com/photo-1556742212-5b321f3c261d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'IPPB Postal Account Opening', desc: 'India Post Payments Bank RD plans', icon: '🏣', image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=500&q=80' },
       { name: 'Speed Post & Registered Post', desc: 'Express and tracked mail services', icon: '📮', image: 'https://images.unsplash.com/photo-1605076351148-f5c96f8bb2fd?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '📨', image: 'https://images.unsplash.com/photo-1573496169361-183186bb327b?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '📬', image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Sukanya Samriddhi Yojana', desc: 'Girl child savings scheme account', icon: '👧', image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Senior Citizen Savings', desc: 'SCSS account for senior citizens', icon: '👨‍🦳', image: 'https://images.unsplash.com/photo-1602088113235-229c19758e9f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'National Savings Certificate', desc: 'NSC investment & maturity services', icon: '🏅', image: 'https://images.unsplash.com/photo-1578260051193-a675e5c5af1d?auto=format&fit=crop&w=500&q=80' },
-    ]
+      { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '💸', image: 'https://images.unsplash.com/photo-1573496169361-183186bb327b?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '🛡️', image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=500&q=80' },
+      ]
   },
   {
     id: 9,
@@ -299,15 +291,10 @@ export const servicesB = [
     category: 'retail',
     color: '#14b8a6',
     subServices: [
-      { name: 'Educational Textbooks', desc: 'School & college textbooks for all grades', icon: '📚', image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=500&q=80' },
       { name: 'Competitive Exam Books', desc: 'UPSC, TNPSC, SSC & bank exam guides', icon: '🎯', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80' },
       { name: "Children's Books", desc: 'Story books, activity & coloring books', icon: '🧒', image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Reference Books', desc: 'Encyclopedias, dictionaries & guides', icon: '📖', image: 'https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=500&q=80' },
       { name: 'Journals & Magazines', desc: 'Academic journals & monthly magazines', icon: '📰', image: 'https://images.unsplash.com/photo-1568193827052-8f14a0b9b0e1?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Devotional Books', desc: 'Religious texts & spiritual literature', icon: '🙏', image: 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Dictionaries', desc: 'English, Tamil & bilingual dictionaries', icon: '📕', image: 'https://images.unsplash.com/photo-1547470881-7145c3e4b850?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Activity & Workbooks', desc: 'Practice workbooks for all subjects', icon: '✍️', image: 'https://images.unsplash.com/photo-1555949519-2f4b104d541f?auto=format&fit=crop&w=500&q=80' },
-    ]
+         ]
   },
   {
     id: 15,
@@ -321,14 +308,10 @@ export const servicesB = [
     color: '#22c55e',
     subServices: [
       { name: 'Pure Honey', desc: 'Natural raw & processed honey varieties', icon: '🍯', image: 'https://images.unsplash.com/photo-1623626038915-b3400ca199e7?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Organic Spices', desc: 'Turmeric, pepper, cardamom & more', icon: '🌶️', image: 'https://images.unsplash.com/photo-1596552065344-9ac3e3ce3f9b?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Cold-Pressed Oils', desc: 'Coconut, sesame, groundnut & olive oils', icon: '🫒', image: 'https://images.unsplash.com/photo-1539411298249-d73c40f0c60f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Millets & Grains', desc: 'Ragi, foxtail, barnyard & pearl millet', icon: '🌾', image: 'https://images.unsplash.com/photo-1574260495880-4df57f045ba4?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Organic Spices', desc: 'Pepper, cardamom & more', icon: '🌶️', image: 'https://images.unsplash.com/photo-1596552065344-9ac3e3ce3f9b?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Cold-Pressed Oils', desc: 'Coconut & groundnut oils', icon: '🫒', image: 'https://images.unsplash.com/photo-1539411298249-d73c40f0c60f?auto=format&fit=crop&w=500&q=80' },
       { name: 'Dry Fruits & Nuts', desc: 'Cashew, almond, raisins & mixed nuts', icon: '🥜', image: 'https://images.unsplash.com/photo-1585421845397-55c72c5fdea0?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Herbal Tea & Coffee', desc: 'Green tea, herbal infusions & filter coffee', icon: '☕', image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b3f7?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Jaggery & Sweeteners', desc: 'Palm jaggery, stevia & natural sweeteners', icon: '🍬', image: 'https://images.unsplash.com/photo-1568276160306-e1f23e1bf7d5?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Organic Snacks', desc: 'Healthy chips, cookies & nibbles', icon: '🍪', image: 'https://images.unsplash.com/photo-1599599810694-b5ac4dd33fbc?auto=format&fit=crop&w=500&q=80' },
-    ]
+        ]
   },
 ];
 
