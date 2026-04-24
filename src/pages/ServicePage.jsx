@@ -176,7 +176,7 @@ const ServicePage = () => {
 
                     {/* Top section — always visible */}
                     <div className="d-flex align-items-start gap-3">
-                      <div className="sub-service-icon flex-shrink-0" style={{
+                      {/* <div className="sub-service-icon flex-shrink-0" style={{
                         width: '42px',
                         height: '42px',
                         fontSize: '1.2rem',
@@ -185,7 +185,7 @@ const ServicePage = () => {
                         marginBottom: 0
                       }}>
                         {sub.icon}
-                      </div>
+                      </div> */}
                       <div className="flex-grow-1">
                         <h3 style={{
                           fontFamily: 'Outfit, sans-serif',

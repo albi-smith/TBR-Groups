@@ -44,11 +44,11 @@ export const servicesA = [
       { name: 'Ration Card Services', desc: 'New card, addition & deletion of members', icon: '📋', image: 'https://imgs.search.brave.com/O5zHIukqQWK9L7TaS1c0lQV9U93nEf_wI8n6sAAEen8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vbXlwdmNj/YXJkLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC90/YW1pbC1uYWR1LXJh/dGlvbi1jYXJkLXRv/cC12aWV3LWltYWdl/LndlYnA_Zml0PTEw/MjQsMTAyNCZzc2w9/MQ' },
       { name: 'E-Seva & E-District Services', desc: 'Income, Community, OBC, Nativity certificates, Patta transfer & related services', icon: '📄', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
       { name: 'Ex-Serviceman Online Services', desc: 'Children allowance, marriage allowance, PM Scholarship, EHS', icon: '🎖️', image: 'https://images.unsplash.com/photo-1641790016911-0353099329f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGV4JTIwc2VydmljZW1hbiUyMG9ubGluZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
-      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://images.unsplash.com/photo-1516321318423-f06f70a504f9?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Digital Signature Certificate', desc: 'Class 2 & Class 3 DSC for businesses', icon: '🔐', image: 'https://images.unsplash.com/photo-1526374965328-7f5ae4e8b12d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Scholarship Applications', desc: 'State & central scholarship applications', icon: '🎓', image: 'https://images.unsplash.com/photo-1427504494785-cdba58dadff6?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://media.istockphoto.com/id/157616654/photo/travel-the-globe-series-india.jpg?s=612x612&w=0&k=20&c=WHj4F9wIiYZzzvxsrs46RRLX0UdSSweD2zGgdxS8m3E=' },
+      { name: 'Digital Signature Certificate', desc: 'Class 2 & Class 3 DSC for businesses', icon: '🔐', image: 'https://images.unsplash.com/photo-1742415888265-d5044039d8e6?q=80&w=1092&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { name: 'Scholarship Applications', desc: 'State & central scholarship applications', icon: '🎓', image: 'https://media.istockphoto.com/id/522370294/photo/scholarship-application.jpg?s=612x612&w=0&k=20&c=k9avVirQTFNGQEYPubG3d1HClj8LOf5JsUg9o0nvjhw=' },
       { name: 'PMJAY Ayushman Bharat', desc: 'Health card enrollment & hospital services', icon: '🏥', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://media.istockphoto.com/id/172477073/photo/uk-driving-licence-application.jpg?s=612x612&w=0&k=20&c=KQ4ya3t-FPwlTLHlYNrvnNHZftSGs1FCGsWxYaZuH0U=' },
     ]
   },
   {
@@ -62,14 +62,14 @@ export const servicesA = [
     category: 'services',
     color: '#f59e0b',
     subServices: [
-      { name: 'EC (Encumbrance Certificate)', desc: 'Property transaction history verification', icon: '📑', image: 'https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=500&q=80' },
+      { name: 'EC (Encumbrance Certificate)', desc: 'Property transaction history verification', icon: '📑', image: 'https://images.unsplash.com/photo-1627129926167-b32522980112?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEVuY3VtYnJhbmNlJTIwQ2VydGlmaWNhdGV8ZW58MHx8MHx8fDA%3D' },
       { name: 'Patta Transfer', desc: 'Land ownership transfer & subdivision', icon: '🏗️', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Chitta & A-Register', desc: 'Land classification and revenue records', icon: '📊', image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Land Registration', desc: 'Property deed registration assistance', icon: '🏘️', image: 'https://images.unsplash.com/photo-1517489377991-e184c2dac1b8?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Property Verification', desc: 'Document verification and legal opinion', icon: '🔍', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Will Registration', desc: 'Legal will creation and registration', icon: '⚖️', image: 'https://images.unsplash.com/photo-1505664647891-6634c1b36e3d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Rental Agreement', desc: 'Residential & commercial rental agreements', icon: '🏬', image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6f4?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Sale Deed Preparation', desc: 'Sale deed drafting and registration', icon: '✍️', image: 'https://images.unsplash.com/photo-1586925503949-e3fb1d61ccd4?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Chitta & A-Register', desc: 'Land classification and revenue records', icon: '📊', image: 'https://images.unsplash.com/photo-1585826062988-1898c3e1f0a2?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { name: 'Land Registration', desc: 'Property deed registration assistance', icon: '🏘️', image: 'https://plus.unsplash.com/premium_photo-1661402104150-95938d0c48c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZCUyMHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Property Verification', desc: 'Document verification and legal opinion', icon: '🔍', image: 'https://images.unsplash.com/photo-1768611873487-67930d5db1b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9jdW1lbnQlMjB2ZXJpZmljYXRpb258ZW58MHx8MHx8fDA%3D' },
+      { name: 'Will Registration', desc: 'Legal will creation and registration', icon: '⚖️', image: 'https://plus.unsplash.com/premium_photo-1661371499971-d01cf0a7cf97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2lsbCUyMHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Rental Agreement', desc: 'Residential & commercial rental agreements', icon: '🏬', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Sale Deed Preparation', desc: 'Sale deed drafting and registration', icon: '✍️', image: 'https://media.istockphoto.com/id/516103962/photo/house-deed.webp?a=1&b=1&s=612x612&w=0&k=20&c=gAeXXITMjkivbZ5YoKBG779DkvWkf3jo75ey-oJ7Es4=' },
     ]
   },
   // {
@@ -104,13 +104,13 @@ export const servicesA = [
     category: 'services',
     color: '#06b6d4',
     subServices: [
-      { name: 'Bus Ticket Booking', desc: 'Government & private bus reservations', icon: '🚌', image: 'https://images.unsplash.com/photo-1552996881-daf9e9e7e3d9?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Train Ticket (IRCTC)', desc: 'Railway ticket booking & tatkal service', icon: '🚂', image: 'https://images.unsplash.com/photo-1556725781-b94acc891857?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Flight Booking', desc: 'Domestic & international flight tickets', icon: '✈️', image: 'https://images.unsplash.com/photo-1475924156734-496f6cac6ad1?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Movie Tickets', desc: 'Local cinema & multiplex bookings', icon: '🎬', image: 'https://images.unsplash.com/photo-1517604931442-7e0c58319283?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Event Tickets', desc: 'Concerts, exhibitions & event bookings', icon: '🎪', image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Hotel Booking', desc: 'Budget to premium hotel reservations', icon: '🏨', image: 'https://images.unsplash.com/photo-1564078516577-e57569bdf7d8?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Cab Booking', desc: 'Rental cars & outstation cab booking', icon: '🚕', image: 'https://images.unsplash.com/photo-1533473359331-35ef9a3af923?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Bus Ticket Booking', desc: 'Government & private bus reservations', icon: '🚌', image: 'https://images.unsplash.com/photo-1570118054363-ff4d296962f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzJTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Train Ticket (IRCTC)', desc: 'Railway ticket booking & tatkal service', icon: '🚂', image: 'https://images.unsplash.com/photo-1582126819996-67f0e6a47103?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRyYWluJTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Flight Booking', desc: 'Domestic & international flight tickets', icon: '✈️', image: 'https://images.unsplash.com/photo-1725600942514-b983f52633cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmxpZ2h0JTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Movie Tickets', desc: 'Local cinema & multiplex bookings', icon: '🎬', image: 'https://plus.unsplash.com/premium_photo-1709842822358-006f08261139?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW92aWUlMjB0aWNrZXQlMjBib29raW5nfGVufDB8fDB8fHww' },
+      // { name: 'Event Tickets', desc: 'Concerts, exhibitions & event bookings', icon: '🎪', image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Hotel Booking', desc: 'Budget to premium hotel reservations', icon: '🏨', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjBib29raW5nfGVufDB8fDB8fHww' },
+      // { name: 'Cab Booking', desc: 'Rental cars & outstation cab booking', icon: '🚕', image: 'https://images.unsplash.com/photo-1533473359331-35ef9a3af923?auto=format&fit=crop&w=500&q=80' },
     ]
   },
   {
@@ -124,14 +124,14 @@ export const servicesA = [
     category: 'services',
     color: '#ef4444',
     subServices: [
-      { name: 'LIC Life Insurance', desc: 'Endowment, money-back & term plans', icon: '🛡️', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Star Health Insurance', desc: 'Individual & family health cover plans', icon: '⭐', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'LIC Life Insurance', desc: 'Endowment, money-back & term plans', icon: '🛡️', image: 'https://imgs.search.brave.com/YIAWZL-iqWM4n3ytqSTCyAgurXvvZ9T-BpGnCAfYAbE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21w/YW5pZXNtYXJrZXRj/YXAuY29tL3RodW1i/bmFpbHMvNTEyLzcy/MzY2LmFyLmVuLjIw/MjItMjAyMy5wZGYu/anBn' },
+      // { name: 'Star Health Insurance', desc: 'Individual & family health cover plans', icon: '⭐', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Health Insurance Plans', desc: 'Comprehensive health coverage options', icon: '🏥', image: 'https://media.istockphoto.com/id/958332984/photo/doctor-protecting-family-cut-out-with-heart-shape.webp?a=1&b=1&s=612x612&w=0&k=20&c=PPA2uBOVNrEup6rf4mjU74Pd0Lc7deCTe9ZqAPI9gYE=' },
       { name: 'Vehicle Insurance', desc: 'Two-wheeler & four-wheeler policies', icon: '🚗', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=500&q=80' },
       { name: 'Term Life Insurance', desc: 'Pure protection term insurance plans', icon: '💪', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Health Insurance Plans', desc: 'Comprehensive health coverage options', icon: '🏥', image: 'https://images.unsplash.com/photo-1505751172152-f38141bb6566?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Travel Insurance', desc: 'Domestic & international travel cover', icon: '🌍', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=500&q=80' },
+      // { name: 'Travel Insurance', desc: 'Domestic & international travel cover', icon: '🌍', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=500&q=80' },
       { name: 'Crop Insurance (PMFBY)', desc: 'Agricultural crop protection scheme', icon: '🌾', image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Personal Accident Cover', desc: 'Accident & disability insurance', icon: '🩹', image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=500&q=80' },
+      // { name: 'Personal Accident Cover', desc: 'Accident & disability insurance', icon: '🩹', image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=500&q=80' },
     ]
   },
   {
@@ -166,10 +166,10 @@ export const servicesA = [
     category: 'services',
     color: '#d946ef',
     subServices: [
-      { name: 'IPPB Postal Account Opening', desc: 'India Post Payments Bank RD plans', icon: '🏣', image: 'https://images.unsplash.com/photo-1526367790999-0150786686a2?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Speed Post & Registered Post', desc: 'Express and tracked mail services', icon: '📮', image: 'https://images.unsplash.com/photo-1605076351148-f5c96f8bb2fd?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '💸', image: 'https://images.unsplash.com/photo-1573496169361-183186bb327b?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '🛡️', image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=500&q=80' },
+      { name: 'IPPB Postal Account Opening', desc: 'India Post Payments Bank RD plans', icon: '🏣', image: 'https://imgs.search.brave.com/4XI9GlmyND2feReWRhtHK7dZBlmSR_FVTAoYpHVxX2U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/NS81Yy9JbmRpYV9Q/b3N0X1BheW1lbnRz/X0JhbmtfbG9nby5w/bmcvMjUwcHgtSW5k/aWFfUG9zdF9QYXlt/ZW50c19CYW5rX2xv/Z28ucG5n' },
+      { name: 'Speed Post & Registered Post', desc: 'Express and tracked mail services', icon: '📮', image: 'https://imgs.search.brave.com/Xp4qVztN6ncNFwVvsaoxwOlT5KNPzWD7W81edQwn0cw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vYW5pbWFmbG9y/YXBpY3NzdG9jay9h/bmltYWZsb3JhcGlj/c3N0b2NrMjAwMi9h/bmltYWZsb3JhcGlj/c3N0b2NrMjAwMjAw/MzA1L2FuaW1hZmxv/cmFwaWNzc3RvY2sy/MDAyMDAzMDUuanBn/P3Zlcj02' },
+      { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '💸', image: 'https://thumbs.dreamstime.com/b/rome-italy-circa-august-postal-money-order-italian-electronic-passport-postal-money-order-italian-passport-rome-254740087.jpg?w=768' },
+      { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '🛡️', image: 'https://imgs.search.brave.com/ixm89XFAk_9Cn-TWJpv1jJKGG-C40btOTEtiTXX0yXw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taW50/eWNlbnRzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/My9Qb3N0YWwtTGlm/ZS1JbnN1cmFuY2Uu/d2VicA' },
     ]
   },
   {
@@ -204,14 +204,14 @@ export const servicesA = [
     category: 'services',
     color: '#84cc16',
     subServices: [
-      { name: 'Spiral Binding', desc: 'Professional spiral wire binding for projects', icon: '🔗', image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Hard Case Binding', desc: 'Premium thesis & dissertation binding', icon: '📕', image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Thermal Binding', desc: 'Clean thermal glue binding finish', icon: '📗', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Lamination Services', desc: 'Document & photo lamination (all sizes)', icon: '🛡️', image: 'https://images.unsplash.com/photo-1556740722-d8ef90cd3924?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Color & B/W Printing', desc: 'High quality laser & inkjet printing', icon: '🖨️', image: 'https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Photocopying', desc: 'Bulk & single page photocopying', icon: '📋', image: 'https://images.unsplash.com/photo-1552821206-6d33c4e58c23?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Project Report Preparation', desc: 'Formatting, indexing & cover design', icon: '📐', image: 'https://images.unsplash.com/photo-1555949519-2f4b104d541f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'ID Card & Certificate Printing', desc: 'Custom ID cards and certificates', icon: '🎴', image: 'https://images.unsplash.com/photo-1573496169361-183186bb327b?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Spiral Binding', desc: 'Professional spiral wire binding for projects', icon: '🔗', image: 'https://images.pexels.com/photos/374016/pexels-photo-374016.jpeg' },
+      { name: 'Hard Case Binding', desc: 'Premium thesis & dissertation binding', icon: '📕', image: 'https://images.pexels.com/photos/159866/pexels-photo-159866.jpeg' },
+      { name: 'Thermal Binding', desc: 'Clean thermal glue binding finish', icon: '📗', image: 'https://images.pexels.com/photos/3747139/pexels-photo-3747139.jpeg' },
+      { name: 'Lamination Services', desc: 'Document & photo lamination (all sizes)', icon: '🛡️', image: 'https://images.pexels.com/photos/544111/pexels-photo-544111.jpeg' },
+      { name: 'Color & B/W Printing', desc: 'High quality laser & inkjet printing', icon: '🖨️', image: 'https://images.pexels.com/photos/585093/pexels-photo-585093.jpeg' },
+      { name: 'Photocopying', desc: 'Bulk & single page photocopying', icon: '📋', image: 'https://images.pexels.com/photos/585093/pexels-photo-585093.jpeg' },
+      { name: 'Project Report Preparation', desc: 'Formatting, indexing & cover design', icon: '📐', image: 'https://images.pexels.com/photos/3183181/pexels-photo-3183181.jpeg' },
+      { name: 'ID Card & Certificate Printing', desc: 'Custom ID cards and certificates', icon: '🎴', image: 'https://images.pexels.com/photos/8106680/pexels-photo-8106680.jpeg' },
     ]
   },
 ];
@@ -251,11 +251,11 @@ export const servicesB = [
     subServices: [
       { name: 'Mobile Chargers & Cables', desc: 'Fast chargers, Lightning & USB-C cables', icon: '🔋', image: 'https://images.unsplash.com/photo-1625948515291-69613efd103f?auto=format&fit=crop&w=500&q=80' },
       { name: 'Phone Cases & Covers', desc: 'Stylish protective cases for all brands', icon: '📱', image: 'https://images.unsplash.com/photo-1530092151286-41a34e0d9b6e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Screen Protectors', desc: 'Tempered glass & film protectors', icon: '🛡️', image: 'https://images.unsplash.com/photo-1592286927505-1def25115f21?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Screen Protectors', desc: 'Tempered glass & film protectors', icon: '🛡️', image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80' },
       { name: 'Earphones & Earbuds', desc: 'Wired & wireless audio accessories', icon: '🎵', image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Power Banks', desc: 'Portable charging solutions', icon: '🔌', image: 'https://images.unsplash.com/photo-1609042231433-d8e4f43fc0a2?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Mobile Stands & Holders', desc: 'Car mounts, desk stands & ring holders', icon: '📲', image: 'https://images.unsplash.com/photo-1588688322975-a08261ee3ee1?auto=format&fit=crop&w=500&q=80' },
-      { name: 'OTG & Adapters', desc: 'OTG cables & connectivity adapters', icon: '🔗', image: 'https://images.unsplash.com/photo-1597872328555-c3548719d559?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Power Banks', desc: 'Portable charging solutions', icon: '🔌', image: 'https://images.unsplash.com/photo-1585333127302-729997a241e1?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Mobile Stands & Holders', desc: 'Car mounts, desk stands & ring holders', icon: '📲', image: 'https://images.unsplash.com/photo-1586941028593-5942f746187f?auto=format&fit=crop&w=600&q=80' },
+      { name: 'OTG & Adapters', desc: 'OTG cables & connectivity adapters', icon: '🔗', image: 'https://images.unsplash.com/photo-1610492496677-74291888439d?auto=format&fit=crop&w=600&q=80' },
       { name: 'Bluetooth Devices', desc: 'Speakers, headsets & smart gadgets', icon: '📡', image: 'https://images.unsplash.com/photo-1487215078519-e21cc028cb29?auto=format&fit=crop&w=500&q=80' },
     ]
   },
@@ -270,13 +270,13 @@ export const servicesB = [
     category: 'retail',
     color: '#a855f7',
     subServices: [
-      { name: 'Pens & Pencils', desc: 'Ball pens, gel pens & mechanical pencils', icon: '✏️', image: 'https://images.unsplash.com/photo-1578810487450-fa2d1da0e65b?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Notebooks & Registers', desc: 'Ruled, unruled & graph notebooks', icon: '📓', image: 'https://images.unsplash.com/photo-1519167575221-cd4628902c4e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Files & Folders', desc: 'Box files, L-folders & report covers', icon: '📁', image: 'https://images.unsplash.com/photo-1543002588-d83cea6bfb4f?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Pens & Pencils', desc: 'Ball pens, gel pens & mechanical pencils', icon: '✏️', image: 'https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Notebooks & Registers', desc: 'Ruled, unruled & graph notebooks', icon: '📓', image: 'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=600&q=80' },
+      { name: 'Files & Folders', desc: 'Box files, L-folders & report covers', icon: '📁', image: 'https://images.unsplash.com/photo-1586762522674-599d3ef6f4da?auto=format&fit=crop&w=600&q=80' },
       { name: 'Markers & Highlighters', desc: 'Permanent markers & neon highlighters', icon: '🖍️', image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=500&q=80' },
       { name: 'Office Supplies', desc: 'Staplers, scissors, tape & more', icon: '📎', image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=500&q=80' },
       { name: 'Art & Craft Materials', desc: 'Colors, brushes & craft supplies', icon: '🎨', image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Adhesives & Tapes', desc: 'Glue sticks, fevicol & packaging tape', icon: '🧴', image: 'https://images.unsplash.com/photo-1570129477492-45a003537e1d?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Adhesives & Tapes', desc: 'Glue sticks, fevicol & packaging tape', icon: '🧴', image: 'https://images.unsplash.com/photo-1570778003102-2036f7335e63?auto=format&fit=crop&w=600&q=80' },
       { name: 'Paper & Envelopes', desc: 'A4 sheets, brown & white envelopes', icon: '✉️', image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80' },
     ]
   },
@@ -291,9 +291,9 @@ export const servicesB = [
     category: 'retail',
     color: '#14b8a6',
     subServices: [
-      { name: 'Competitive Exam Books', desc: 'UPSC, TNPSC, SSC & bank exam guides', icon: '🎯', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80' },
-      { name: "Children's Books", desc: 'Story books, activity & coloring books', icon: '🧒', image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Journals & Magazines', desc: 'Academic journals & monthly magazines', icon: '📰', image: 'https://images.unsplash.com/photo-1568193827052-8f14a0b9b0e1?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Competitive Exam Books', desc: 'UPSC, TNPSC, SSC & bank exam guides', icon: '🎯', image: 'https://images.unsplash.com/photo-1606343647114-3cf38d47ded4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { name: "Children's Books", desc: 'Story books, activity & coloring books', icon: '🧒', image: 'https://images.unsplash.com/photo-1742414304022-b38977ce1533?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+      { name: 'Journals & Magazines', desc: 'Academic journals & monthly magazines', icon: '📰', image: 'https://images.unsplash.com/photo-1488953763695-c4a79ecf4727?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
     ]
   },
   {
@@ -307,10 +307,10 @@ export const servicesB = [
     category: 'retail',
     color: '#22c55e',
     subServices: [
-      { name: 'Pure Honey', desc: 'Natural raw & processed honey varieties', icon: '🍯', image: 'https://images.unsplash.com/photo-1623626038915-b3400ca199e7?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Organic Spices', desc: 'Pepper, cardamom & more', icon: '🌶️', image: 'https://images.unsplash.com/photo-1596552065344-9ac3e3ce3f9b?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Cold-Pressed Oils', desc: 'Coconut & groundnut oils', icon: '🫒', image: 'https://images.unsplash.com/photo-1539411298249-d73c40f0c60f?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Dry Fruits & Nuts', desc: 'Cashew, almond, raisins & mixed nuts', icon: '🥜', image: 'https://images.unsplash.com/photo-1585421845397-55c72c5fdea0?auto=format&fit=crop&w=500&q=80' },
+      { name: 'Pure Honey', desc: 'Natural raw & processed honey varieties', icon: '🍯', image: 'https://images.pexels.com/photos/5634213/pexels-photo-5634213.jpeg' },
+      { name: 'Organic Spices', desc: 'Pepper, cardamom & more', icon: '🌶️', image: 'https://images.pexels.com/photos/674483/pexels-photo-674483.jpeg' },
+      { name: 'Cold-Pressed Oils', desc: 'Coconut & groundnut oils', icon: '🫒', image: 'https://images.pexels.com/photos/10046938/pexels-photo-10046938.jpeg' },
+      { name: 'Dry Fruits & Nuts', desc: 'Cashew, almond, raisins & mixed nuts', icon: '🥜', image: 'https://images.pexels.com/photos/32281733/pexels-photo-32281733.jpeg' },
     ]
   },
 ];
