@@ -8,7 +8,7 @@ const ServicePage = () => {
   const { serviceSlug } = useParams();
   const navigate = useNavigate();
   const [loaded, setLoaded] = useState(false);
-  const [expandedCard, setExpandedCard] = useState(null);
+  const [expandedCard, setExpandedCard] = useState(null)
 
   const service = allServices.find(s => s.slug === serviceSlug);
 
@@ -442,17 +442,20 @@ const ServicePage = () => {
               </p>
 
               <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                <button className="btn-primary">
+                <a href="tel:8300426612" className="btn-primary"  style={{textDecoration:"none"}}>
                   <Phone size={18} /> Contact Us
-                </button>
-                <button className="btn-secondary" onClick={() => navigate('/')}>
+                </a>
+                <button className="btn-secondary" onClick={() => navigate('/', { state: { scrollToServices: true } })}>
                   <ArrowLeft size={18} /> Explore All Services
                 </button>
               </div>
 
               <div className="d-flex flex-wrap justify-content-center gap-4">
                 <div className="d-flex align-items-center gap-2" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-                  <MapPin size={16} style={{ color: 'var(--accent-gold)' }} /> Tamil Nadu, India
+                  <MapPin size={16} style={{ color: 'var(--accent-gold)' }} /> 
+                  <a href="https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                    Marthandam, Kanyakumari District
+                  </a>
                 </div>
                 <div className="d-flex align-items-center gap-2" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
                   <Clock size={16} style={{ color: 'var(--accent-gold)' }} /> Mon–Sat, 9AM–6PM

@@ -21,7 +21,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
           <div className="d-flex align-items-center gap-3">
             {showBack && (
               <button
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/', { state: { scrollToServices: true } })}
                 className="btn d-flex align-items-center gap-2"
                 style={{
                   background: 'var(--bg-card)',
