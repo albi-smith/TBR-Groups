@@ -3,27 +3,27 @@
 // ============================================
 
 export const servicesA = [
- {
-  id: 1,
-  slug: 'digital-solutions',
-  path: '/digital-solutions',
-  title: 'Software Development & Digital Solutions',
-  desc: 'Custom software, website design, domain registration, and e-commerce platform development services.',
-  image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
-  heroImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
-  category: 'services',
-  color: '#06b6d4',
-  subServices: [
-    { name: 'Website Development', desc: 'Custom responsive websites and web applications', icon: '🌐', image: 'https://images.unsplash.com/photo-1633356122544-f134324ef6db?auto=format&fit=crop&w=500&q=80' },
-    { name: 'E-Commerce Platforms', desc: 'Online stores with payment integration and inventory management', icon: '🛒', image: 'https://images.unsplash.com/photo-1460925895917-aaf4d4cb4b1f?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Domain & Hosting', desc: 'Domain registration, SSL certificates, and web hosting', icon: '🌍', image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=80' },
-    { name: 'Mobile App Development', desc: 'iOS and Android native and cross-platform applications', icon: '📱', image: 'https://images.unsplash.com/photo-1517694712442-7d4d0a6dce28?auto=format&fit=crop&w=500&q=80' },
-    { name: 'UI/UX Design', desc: 'User interface and experience design for digital products', icon: '🎨', image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=500&q=80' },
-    { name: 'CMS Development', desc: 'WordPress, Shopify, and custom content management systems', icon: '⚙️', image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80' },
-    { name: 'API Integration', desc: 'Third-party API integration and custom backend solutions', icon: '🔌', image: 'https://images.unsplash.com/photo-1516321318423-f06f70a504f9?auto=format&fit=crop&w=500&q=80' },
-    { name: 'SEO & Digital Marketing', desc: 'Search engine optimization and online marketing services', icon: '📈', image: 'https://images.unsplash.com/photo-1460925895917-aaf4d4cb4b1f?auto=format&fit=crop&w=500&q=80' },
-  ]
-},
+  {
+    id: 1,
+    slug: 'digital-solutions',
+    path: '/digital-solutions',
+    title: 'Software Development & Digital Solutions',
+    desc: 'Custom software, website design, domain registration, and e-commerce platform development services.',
+    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
+    heroImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
+    category: 'services',
+    color: '#06b6d4',
+    subServices: [
+      { name: 'Website Development', desc: 'Custom responsive websites and web applications', icon: '🌐', image: 'https://images.pexels.com/photos/16675632/pexels-photo-16675632.jpeg' },
+      { name: 'E-Commerce Platforms', desc: 'Online stores with payment integration and inventory management', icon: '🛒', image: 'https://images.pexels.com/photos/35560482/pexels-photo-35560482.jpeg' },
+      { name: 'Domain & Hosting', desc: 'Domain registration, SSL certificates, and web hosting', icon: '🌍', image: 'https://plus.unsplash.com/premium_photo-1683758342945-e0e47a14a66d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwaG9zdGluZ3xlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'Mobile App Development', desc: 'iOS and Android native and cross-platform applications', icon: '📱', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwYXBwJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D' },
+      { name: 'UI/UX Design', desc: 'User interface and experience design for digital products', icon: '🎨', image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dWklMkZ1eCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D' },
+      { name: 'CMS Development', desc: 'WordPress, Shopify, and custom content management systems', icon: '⚙️', image: 'https://images.unsplash.com/photo-1724754609250-fa57e82a93a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29udGVudCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D' },
+      { name: 'API Integration', desc: 'Third-party API integration and custom backend solutions', icon: '🔌', image: 'https://media.istockphoto.com/id/1317706831/photo/api-application-programming-interface-software-development-tool-business-modern-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=UrY1EZ1tQ4SZjGLv4q04GnKakhyogknPUb_N7UQn9AA=' },
+      { name: 'SEO & Digital Marketing', desc: 'Search engine optimization and online marketing services', icon: '📈', image: 'https://media.istockphoto.com/id/2204337769/photo/digital-marketing-development-and-goals-strategy-attract-organic-traffic-for-big-sales.webp?a=1&b=1&s=612x612&w=0&k=20&c=CDFsitcQFmrPWNB47jJUfUqY6adPpMH2ziQIVDFJMck=' },
+    ]
+  },
   {
     id: 2,
     slug: 'csc',
@@ -36,20 +36,20 @@ export const servicesA = [
     color: '#8b5cf6',
     subServices: [
       { name: 'CSC Registration', desc: 'New CSC center registration and VLE services', icon: '🖥️', image: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg' },
-      { name: 'Bills, Recharge & SIM Services', desc: 'Utility bills , Sim activation and all fee payments', icon: '💳', image: 'https://images.unsplash.com/photo-1556742212-5b321f3c261d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'TN Police Services', desc: 'Police Verification report, Lost document report & E-Chellan payments', icon: '🚔', image: 'https://via.placeholder.com/500x300?text=Aadhaar+Card',},
-      { name: 'PAN Card', desc: 'New PAN card application, correction & reprint', icon: '🪪', image: 'https://via.placeholder.com/500x300?text=PAN+Card', },
-      { name: 'Passport Application', desc: 'Fresh passport & renewal applications', icon: '📘', image: 'https://via.placeholder.com/500x300?text=Passport',},
-      { name: 'Voter ID Card', desc: 'New registration, transfer & correction', icon: '🗳️', image: 'https://via.placeholder.com/500x300?text=Voter+ID',},
-      { name: 'Ration Card Services', desc: 'New card, addition & deletion of members', icon: '📋', image: 'https://via.placeholder.com/500x300?text=Ration+Card',},
-      { name: 'E-Seva & E-District Services', desc: 'Income, Community, OBC, Nativity certificates, Patta transfer & related services', icon: '📄', image: 'https://via.placeholder.com/500x300?text=Income+Certificate' },
-      { name: 'Ex-Serviceman Online Services', desc: 'Children allowance, marriage allowance, PM Scholarship, EHS', icon: '🎖️', image: 'https://via.placeholder.com/500x300?text=Community+Certificate' },
-      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://via.placeholder.com/500x300?text=Birth+%26+Death+Certificate' },
+      { name: 'Bills, Recharge & SIM Services', desc: 'Utility bills , Sim activation and all fee payments', icon: '💳', image: 'https://plus.unsplash.com/premium_photo-1679920911499-830b98b8b17e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGJpbGxzJTIwYW5kJTIwcmVjaGFyZ2V8ZW58MHx8MHx8fDA%3D' },
+      { name: 'TN Police Services', desc: 'Police Verification report, Lost document report & E-Chellan payments', icon: '🚔', image: 'https://plus.unsplash.com/premium_photo-1763556883500-73444cc6f288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9saWNlJTIwdmVyaWZpY2F0aW9uJTIwcmVwb3J0fGVufDB8fDB8fHww' },
+      { name: 'PAN Card', desc: 'New PAN card application, correction & reprint', icon: '🪪', image: 'https://as1.ftcdn.net/v2/jpg/02/51/01/16/1000_F_251011681_BQMz2MiXiurfvjJmRLEauYAgS8qPyQK0.jpg' },
+      { name: 'Passport Application', desc: 'Fresh passport & renewal applications', icon: '📘', image: 'https://t4.ftcdn.net/jpg/04/38/23/51/240_F_438235106_GvpytxvELMPTtnV54SO6mIUlS0EOH7eN.jpg' },
+      { name: 'Voter ID Card', desc: 'New registration, transfer & correction', icon: '🗳️', image: 'https://t3.ftcdn.net/jpg/04/53/16/36/240_F_453163697_sJjXgUgwFxpCsxscQcpaEjbNVXpEaiZk.jpg' },
+      { name: 'Ration Card Services', desc: 'New card, addition & deletion of members', icon: '📋', image: 'https://imgs.search.brave.com/O5zHIukqQWK9L7TaS1c0lQV9U93nEf_wI8n6sAAEen8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vbXlwdmNj/YXJkLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC90/YW1pbC1uYWR1LXJh/dGlvbi1jYXJkLXRv/cC12aWV3LWltYWdl/LndlYnA_Zml0PTEw/MjQsMTAyNCZzc2w9/MQ' },
+      { name: 'E-Seva & E-District Services', desc: 'Income, Community, OBC, Nativity certificates, Patta transfer & related services', icon: '📄', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
+      { name: 'Ex-Serviceman Online Services', desc: 'Children allowance, marriage allowance, PM Scholarship, EHS', icon: '🎖️', image: 'https://images.unsplash.com/photo-1641790016911-0353099329f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGV4JTIwc2VydmljZW1hbiUyMG9ubGluZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
+      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://images.unsplash.com/photo-1516321318423-f06f70a504f9?auto=format&fit=crop&w=500&q=80' },
       { name: 'Digital Signature Certificate', desc: 'Class 2 & Class 3 DSC for businesses', icon: '🔐', image: 'https://images.unsplash.com/photo-1526374965328-7f5ae4e8b12d?auto=format&fit=crop&w=500&q=80' },
       { name: 'Scholarship Applications', desc: 'State & central scholarship applications', icon: '🎓', image: 'https://images.unsplash.com/photo-1427504494785-cdba58dadff6?auto=format&fit=crop&w=500&q=80' },
       { name: 'PMJAY Ayushman Bharat', desc: 'Health card enrollment & hospital services', icon: '🏥', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://via.placeholder.com/500x300?text=Driving+License' },
-   ]
+      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80' },
+    ]
   },
   {
     id: 3,
@@ -170,7 +170,7 @@ export const servicesA = [
       { name: 'Speed Post & Registered Post', desc: 'Express and tracked mail services', icon: '📮', image: 'https://images.unsplash.com/photo-1605076351148-f5c96f8bb2fd?auto=format&fit=crop&w=500&q=80' },
       { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '💸', image: 'https://images.unsplash.com/photo-1573496169361-183186bb327b?auto=format&fit=crop&w=500&q=80' },
       { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '🛡️', image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=500&q=80' },
-      ]
+    ]
   },
   {
     id: 9,
@@ -294,7 +294,7 @@ export const servicesB = [
       { name: 'Competitive Exam Books', desc: 'UPSC, TNPSC, SSC & bank exam guides', icon: '🎯', image: 'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80' },
       { name: "Children's Books", desc: 'Story books, activity & coloring books', icon: '🧒', image: 'https://images.unsplash.com/photo-1507842217343-583f20270319?auto=format&fit=crop&w=500&q=80' },
       { name: 'Journals & Magazines', desc: 'Academic journals & monthly magazines', icon: '📰', image: 'https://images.unsplash.com/photo-1568193827052-8f14a0b9b0e1?auto=format&fit=crop&w=500&q=80' },
-         ]
+    ]
   },
   {
     id: 15,
@@ -311,7 +311,7 @@ export const servicesB = [
       { name: 'Organic Spices', desc: 'Pepper, cardamom & more', icon: '🌶️', image: 'https://images.unsplash.com/photo-1596552065344-9ac3e3ce3f9b?auto=format&fit=crop&w=500&q=80' },
       { name: 'Cold-Pressed Oils', desc: 'Coconut & groundnut oils', icon: '🫒', image: 'https://images.unsplash.com/photo-1539411298249-d73c40f0c60f?auto=format&fit=crop&w=500&q=80' },
       { name: 'Dry Fruits & Nuts', desc: 'Cashew, almond, raisins & mixed nuts', icon: '🥜', image: 'https://images.unsplash.com/photo-1585421845397-55c72c5fdea0?auto=format&fit=crop&w=500&q=80' },
-        ]
+    ]
   },
 ];
 

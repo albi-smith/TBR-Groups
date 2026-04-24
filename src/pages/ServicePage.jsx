@@ -41,7 +41,7 @@ const ServicePage = () => {
 
   const categoryLabel = service.category === 'services' ? 'Services' : 'Sales & Retail';
 
- 
+
 
   return (
     <div style={{ backgroundColor: 'var(--bg-deep)', minHeight: '100vh' }}>
@@ -150,23 +150,55 @@ const ServicePage = () => {
                   }}
                 >
                   <div className="sub-service-card h-100">
+                    {/* Sub-service Image Header */}
+                    <div className="sub-card-image-wrapper" style={{
+                      height: '160px',
+                      overflow: 'hidden',
+                      margin: '-1.75rem -1.75rem 1.75rem -1.75rem',
+                      position: 'relative',
+                    }}>
+                      <img
+                        src={sub.image || `https://via.placeholder.com/500x300?text=${encodeURIComponent(sub.name)}`}
+                        alt={sub.name}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+                        }}
+                        className="sub-card-img"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.parentElement.style.background = `linear-gradient(135deg, ${service.color}22, ${service.color}05)`;
+                        }}
+                      />
+                    </div>
+
                     {/* Top section — always visible */}
                     <div className="d-flex align-items-start gap-3">
-                      <div className="sub-service-icon flex-shrink-0">
+                      <div className="sub-service-icon flex-shrink-0" style={{
+                        width: '42px',
+                        height: '42px',
+                        fontSize: '1.2rem',
+                        background: `${service.color}15`,
+                        color: service.color,
+                        marginBottom: 0
+                      }}>
                         {sub.icon}
                       </div>
                       <div className="flex-grow-1">
                         <h3 style={{
                           fontFamily: 'Outfit, sans-serif',
-                          fontSize: '1.05rem',
+                          fontSize: '1.1rem',
                           fontWeight: 600,
                           color: 'var(--text-primary)',
                           marginBottom: '0.4rem',
+                          lineHeight: 1.3
                         }}>
                           {sub.name}
                         </h3>
                         <p style={{
-                          fontSize: '0.85rem',
+                          fontSize: '0.88rem',
                           color: 'var(--text-secondary)',
                           lineHeight: 1.6,
                           marginBottom: 0,

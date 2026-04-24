@@ -565,6 +565,7 @@ button {
   transform: scaleX(0);
   transform-origin: left;
   transition: transform var(--transition-base);
+  z-index: 5;
 }
 
 .sub-service-card:hover {
@@ -575,6 +576,17 @@ button {
 
 .sub-service-card:hover::before {
   transform: scaleX(1);
+}
+
+.sub-card-image-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(to top, var(--bg-card) 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .sub-service-icon {
