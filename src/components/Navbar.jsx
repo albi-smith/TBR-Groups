@@ -43,8 +43,8 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
                   src="/logo.png"
                   alt="TBR Technologies Logo"
                   style={{
-                    width: '4rem',
-                    height: '4rem',
+                    width: '3rem',
+                    height: '3rem',
                     borderRadius: '50%',
                     objectFit: 'contain',
                     boxShadow: '0 2px 12px #ffc107',
