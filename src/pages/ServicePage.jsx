@@ -70,29 +70,27 @@ const marqueeItems = [
         {/* Back Button inside Hero - Top Left End of Image */}
         <button
           onClick={() => navigate('/', { state: { scrollToServices: true } })}
-          className="btn d-none d-md-flex align-items-center justify-content-center navbar-back-btn"
+          className="btn d-none d-md-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass navbar-back-btn"
           style={{ 
             position: 'absolute',
             top: '1.5rem',
             left: '1.5rem',
-            background: 'transparent',
-            backdropFilter: 'none',
-            border: 'none',
-            color: 'white',
-            transition: 'all 0.3s ease',
+            fontSize: '0.85rem', 
+            color: 'var(--text-secondary)',
             zIndex: 15,
-            padding: '0.65rem',
+            transition: 'all 0.3s ease',
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.color = 'var(--accent-gold)';
-            e.currentTarget.style.transform = 'scale(1.1)';
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.color = 'var(--text-primary)';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.color = 'white';
-            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.color = 'var(--text-secondary)';
           }}
         >
-          <ArrowLeft size={22} />
+          <ArrowLeft size={16} style={{ color: 'var(--accent-gold)' }} /> 
+          <span style={{ fontWeight: 600 }}>Home</span>
         </button>
 
         {/* Decorative Gradient Orb */}

@@ -220,11 +220,14 @@ button {
 }
 
 /* ---- Glass Card ---- */
+.glass-card, .bg-glass {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
 .glass-card {
-  background: var(--bg-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
 }
 
@@ -603,13 +606,12 @@ button {
 
 /* ---- Navbar Back Button ---- */
 .navbar-back-btn {
-  background: var(--bg-card) !important;
   border: 1px solid var(--border-default) !important;
   border-radius: var(--radius-full) !important;
   padding: 0.5rem 1rem !important;
-  color: var(--text-primary) !important;
-  font-size: 0.85rem !important;
-  transition: all var(--transition-base) !important;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  transition: all var(--transition-base);
 }
 
 .navbar-back-btn:hover {
