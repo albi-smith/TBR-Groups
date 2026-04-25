@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Home, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
+import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
 import { allServices } from '../data/servicesData';
 import Navbar from '../components/Navbar';
 
