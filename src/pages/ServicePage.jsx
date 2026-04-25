@@ -42,6 +42,12 @@ const ServicePage = () => {
   const categoryLabel = service.category === 'services' ? 'Services' : 'Sales & Retail';
 
 
+const marqueeItems = [
+    'Government Services', 'Banking Solutions', 'Insurance Products',
+    'Ticket Booking', 'Document Registration', 'Business Registration',
+    'Computer Accessories', 'Mobile Accessories', 'Organic Foods',
+    'Project Binding', 'CSC & E-Seva', 'Postal Services',
+  ];
 
   return (
     <div style={{ backgroundColor: 'var(--bg-deep)', minHeight: '100vh' }}>
@@ -116,6 +122,7 @@ const ServicePage = () => {
                 <div className="d-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass" style={{
                   fontSize: '0.85rem', color: 'var(--text-secondary)',
                 }}>
+               
                   <span style={{ color: '#22c55e' }}>●</span> Open Now
                 </div>
               </div>
@@ -123,6 +130,17 @@ const ServicePage = () => {
           </div>
         </div>
       </section>
+
+   <div className="marquee-container">
+        <div className="marquee-content">
+          {[...marqueeItems, ...marqueeItems].map((item, i) => (
+            <span key={i} className="marquee-item">
+              <span className="marquee-dot" />
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* ── Sub-Services Grid ── */}
       <section style={{ padding: '4rem 0' }}>
