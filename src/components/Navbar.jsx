@@ -19,48 +19,20 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
       <div className="container-fluid px-4 px-lg-5">
         <div className="d-flex align-items-center justify-content-between w-100">
           <div className="d-flex align-items-center gap-3">
-            {showBack && (
-              <button
-                onClick={() => navigate('/', { state: { scrollToServices: true } })}
-                className="btn d-flex align-items-center gap-2"
-                style={{
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-default)',
-                  borderRadius: 'var(--radius-full)',
-                  padding: '0.5rem 1rem',
-                  color: 'var(--text-primary)',
-                  fontSize: '0.85rem',
-                  transition: 'all var(--transition-base)',
-                }}
-              >
-                <ArrowLeft size={16} /> <span className="d-none d-sm-inline">Home</span>
-              </button>
-            )}
-
             <div className="d-flex align-items-center gap-2">
-              <div className="d-flex align-items-center" style={{ gap: '0.75rem' }}>
+              <div 
+                className="d-flex align-items-center" 
+                style={{ gap: '0.75rem', cursor: 'pointer' }}
+                onClick={() => navigate('/')}
+              >
                 <img
                   src="/logo.png"
                   alt="TBR Technologies Logo"
-                  style={{
-                    width: '3rem',
-                    height: '3rem',
-                    borderRadius: '50%',
-                    objectFit: 'contain',
-                    boxShadow: '0 2px 12px #ffc107',
-                  }}
+                  className="navbar-logo"
                 />
                 <div>
-                  <h1 style={{
-                    fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 800,
-                    margin: 0, letterSpacing: '-0.3px', lineHeight: 1.2, color: 'white',
-                  }}>
-                    TBR <span style={{
-                      background: 'linear-gradient(135deg, var(--accent), var(--accent-dark))',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                      backgroundClip: 'text',
-                    }}>Groups</span>
+                  <h1 className="navbar-title">
+                    TBR <span className="navbar-title-groups">Groups</span>
                   </h1>
                   <p className="d-none d-sm-block" style={{ fontSize: '0.55rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
                     Complete Service Solution

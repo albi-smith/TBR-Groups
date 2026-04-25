@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
+import { ArrowLeft, Home, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
 import { allServices } from '../data/servicesData';
 import Navbar from '../components/Navbar';
 
@@ -32,8 +32,8 @@ const ServicePage = () => {
           Service Not Found
         </h1>
         <p className="text-secondary">The service you're looking for doesn't exist.</p>
-        <button className="btn-primary" onClick={() => navigate('/')}>
-          <ArrowLeft size={18} /> Back to Home
+        <button className="btn-primary navbar-back-btn" onClick={() => navigate('/')}>
+          <ArrowLeft className="navbar-back-icon" /> Back to Home
         </button>
       </div>
     );
@@ -51,7 +51,7 @@ const marqueeItems = [
 
   return (
     <div style={{ backgroundColor: 'var(--bg-deep)', minHeight: '100vh' }}>
-      <Navbar showBack title={service.title} breadcrumbs={[service.title]} />
+      <Navbar title={service.title} breadcrumbs={[service.title]} />
 
       {/* ── Hero Section with Background Image ── */}
       <section className="service-hero" style={{
@@ -66,6 +66,34 @@ const marqueeItems = [
           onError={(e) => { e.target.style.display = 'none'; }}
         />
         <div className="service-hero-overlay" />
+
+        {/* Back Button inside Hero - Top Left End of Image */}
+        <button
+          onClick={() => navigate('/', { state: { scrollToServices: true } })}
+          className="btn d-none d-md-flex align-items-center justify-content-center navbar-back-btn"
+          style={{ 
+            position: 'absolute',
+            top: '1.5rem',
+            left: '1.5rem',
+            background: 'transparent',
+            backdropFilter: 'none',
+            border: 'none',
+            color: 'white',
+            transition: 'all 0.3s ease',
+            zIndex: 15,
+            padding: '0.65rem',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = 'var(--accent-gold)';
+            e.currentTarget.style.transform = 'scale(1.1)';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = 'white';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <ArrowLeft size={22} />
+        </button>
 
         {/* Decorative Gradient Orb */}
         <div style={{
@@ -82,6 +110,7 @@ const marqueeItems = [
         }} />
 
         <div className="container position-relative" style={{ zIndex: 2 }}>
+
           <div className="row">
             <div className="col-12" style={{
               animation: loaded ? 'fadeInUp 0.8s ease' : 'none',

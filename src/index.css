@@ -601,6 +601,68 @@ button {
   margin-bottom: 1rem;
 }
 
+/* ---- Navbar Back Button ---- */
+.navbar-back-btn {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: var(--radius-full) !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--text-primary) !important;
+  font-size: 0.85rem !important;
+  transition: all var(--transition-base) !important;
+}
+
+.navbar-back-btn:hover {
+  background: var(--bg-surface) !important;
+  border-color: var(--border-strong) !important;
+}
+
+.navbar-back-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* ---- Navbar Logo & Title ---- */
+.navbar-logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 2px 12px #ffc107;
+  transition: all var(--transition-base);
+}
+
+.navbar-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.3px;
+  line-height: 1.2;
+  color: white;
+  transition: all var(--transition-base);
+}
+
+.navbar-title-groups {
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (max-width: 576px) {
+  .navbar-back-btn {
+    display: none !important;
+  }
+  .navbar-logo {
+    width: 3rem;
+    height: 3rem;
+  }
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+}
+
 /* ---- Footer ---- */
 .footer {
   background: var(--bg-surface);
