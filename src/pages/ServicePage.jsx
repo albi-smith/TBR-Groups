@@ -110,9 +110,7 @@ const marqueeItems = [
         <div className="container position-relative" style={{ zIndex: 2 }}>
 
           <div className="row">
-            <div className="col-12" style={{
-              animation: loaded ? 'fadeInUp 0.8s ease' : 'none',
-            }}>
+            <div className="col-12" data-aos="fade-up">
               <div className="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-4" style={{
                 background: `${service.color}20`,
                 border: `1px solid ${service.color}40`,
@@ -173,9 +171,9 @@ const marqueeItems = [
       <section style={{ padding: '4rem 0' }}>
         <div className="container">
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Available Services</div>
-            <h2 className="section-title">What We Offer</h2>
-            <p className="section-subtitle mx-auto">
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Available Services</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">What We Offer</h2>
+            <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
               Explore our comprehensive range of {service.title.toLowerCase()} — professional, reliable, and affordable.
             </p>
           </div>
@@ -189,8 +187,9 @@ const marqueeItems = [
                 <div
                   key={index}
                   className={isExpanded ? "col-12" : "col-lg-4 col-md-6"}
+                  data-aos="fade-up"
+                  data-aos-delay={index * 50}
                   style={{
-                    animation: loaded ? `fadeInUp 0.5s ease ${index * 0.06}s both` : 'none',
                     transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
                   }}
                 >
@@ -413,8 +412,8 @@ const marqueeItems = [
       }}>
         <div className="container">
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Why Choose Us</div>
-            <h2 className="section-title">Trusted by Thousands</h2>
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Why Choose Us</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Trusted by Thousands</h2>
           </div>
 
           <div className="row g-4 justify-content-center">
@@ -425,9 +424,7 @@ const marqueeItems = [
               { icon: '💬', title: '24/7 Support', desc: 'Dedicated customer support to assist you at every step' },
             ].map((item, i) => (
               <div key={i} className="col-lg-3 col-md-6">
-                <div className="info-card h-100" style={{
-                  animation: loaded ? `fadeInUp 0.5s ease ${i * 0.1}s both` : 'none',
-                }}>
+                <div className="info-card h-100" data-aos="zoom-in" data-aos-delay={i * 100}>
                   <div className="info-icon">
                     <span style={{ fontSize: '1.3rem' }}>{item.icon}</span>
                   </div>
@@ -473,8 +470,8 @@ const marqueeItems = [
         <div className="container position-relative" style={{ zIndex: 2 }}>
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
-              <div className="section-label d-inline-flex justify-content-center">Get Started</div>
-              <h2 className="section-title">
+              <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Get Started</div>
+              <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">
                 Need help with {service.title}?
               </h2>
               <p style={{

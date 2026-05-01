@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
@@ -111,7 +111,7 @@ const TBRTechnologies = () => {
 
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="row align-items-center gy-5">
-            <div className="col-lg-6" style={{ animation: loaded ? 'fadeInUp 0.8s ease' : 'none' }}>
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div className="section-label">Trusted Service Partner Since Establishment</div>
               <h2 style={{
                 fontFamily: 'Outfit, sans-serif',
@@ -150,9 +150,7 @@ const TBRTechnologies = () => {
             </div>
 
             {/* Hero Right — Stats Grid */}
-            <div className="col-lg-6" style={{
-              animation: loaded ? 'fadeInUp 0.8s ease 0.2s both' : 'none',
-            }}>
+            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
               <div className="row g-3">
                 {stats.map((stat, i) => (
                   <div key={i} className="col-6">
@@ -212,15 +210,15 @@ const TBRTechnologies = () => {
         <div className="container">
           {/* Section Header */}
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Our Services</div>
-            <h2 className="section-title">Browse by Category</h2>
-            <p className="section-subtitle mx-auto">
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Our Services</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Browse by Category</h2>
+            <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
               Click any service to explore available sub-services and get started.
             </p>
           </div>
 
           {/* Filter Pills */}
-          <div className="d-flex flex-wrap justify-content-center gap-2 mb-5">
+          <div className="d-flex flex-wrap justify-content-center gap-2 mb-5" data-aos="fade-up" data-aos-delay="300">
             {[
               { value: 'all', label: 'All Services' },
               { value: 'services', label: 'Services & Government' },
@@ -242,9 +240,8 @@ const TBRTechnologies = () => {
               <div
                 key={service.id}
                 className="col-12 col-md-6 col-lg-4"
-                style={{
-                  animation: loaded ? `fadeInUp 0.5s ease ${index * 0.05}s both` : 'none',
-                }}
+                data-aos="fade-up"
+                data-aos-delay={index * 50}
               >
                 <div
                   className="service-card h-100"
@@ -305,13 +302,13 @@ const TBRTechnologies = () => {
       }}>
         <div className="container">
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Service Categories</div>
-            <h2 className="section-title">Two Pillars of Service</h2>
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Service Categories</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Two Pillars of Service</h2>
           </div>
 
           <div className="row g-4 justify-content-center">
             {/* Category A */}
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-right">
               <div style={{
                 background: 'var(--bg-card)',
                 borderRadius: 'var(--radius-xl)',
@@ -365,7 +362,7 @@ const TBRTechnologies = () => {
             </div>
 
             {/* Category B */}
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-left">
               <div style={{
                 background: 'var(--bg-card)',
                 borderRadius: 'var(--radius-xl)',
@@ -425,16 +422,16 @@ const TBRTechnologies = () => {
       <section style={{ padding: '5rem 0' }}>
         <div className="container">
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Our Locations</div>
-            <h2 className="section-title">Visit Our Branches</h2>
-            <p className="section-subtitle mx-auto">
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Our Locations</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Visit Our Branches</h2>
+            <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
               Four conveniently located branches across Tamil Nadu to serve you better.
             </p>
           </div>
 
           <div className="row g-4 justify-content-center">
             {branches.map((branch, i) => (
-              <div key={i} className="col-lg-3 col-md-6">
+              <div key={i} className="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay={i * 100}>
                 <div className="info-card h-100" style={{
                   border: branch.highlight ? '1px solid var(--border-gold)' : '1px solid var(--border-subtle)',
                   position: 'relative',
@@ -494,16 +491,16 @@ const TBRTechnologies = () => {
       }}>
         <div className="container">
           <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center">Get In Touch</div>
-            <h2 className="section-title">Contact Us</h2>
-            <p className="section-subtitle mx-auto">
+            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Get In Touch</div>
+            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Contact Us</h2>
+            <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
               Reach out to us via phone, WhatsApp, or email. We're here to help!
             </p>
           </div>
 
           <div className="row g-4">
             {/* Phone */}
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div className="info-card h-100">
                 <div className="info-icon">
                   <Phone size={22} />
@@ -529,7 +526,7 @@ const TBRTechnologies = () => {
             </div>
 
             {/* WhatsApp */}
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div className="info-card h-100">
                 <div className="info-icon" style={{ background: 'rgba(37,211,102,0.15)', color: '#25d366' }}>
                   <span style={{ fontSize: '1.2rem' }}>💬</span>
@@ -557,7 +554,7 @@ const TBRTechnologies = () => {
             </div>
 
             {/* Email */}
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div className="info-card h-100">
                 <div className="info-icon" style={{ background: 'rgba(27,94,32,0.15)', color: 'var(--primary)' }}>
                   <Mail size={22} />
@@ -582,7 +579,7 @@ const TBRTechnologies = () => {
             </div>
 
             {/* Hours */}
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div className="info-card h-100">
                 <div className="info-icon" style={{ background: 'rgba(167,139,250,0.15)', color: 'var(--accent-purple)' }}>
                   <Clock size={22} />
