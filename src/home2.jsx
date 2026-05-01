@@ -6,14 +6,13 @@ import Navbar from './components/Navbar';
 
 
 const TBRTechnologies = () => {
+  // State
   const [activeCategory, setActiveCategory] = useState('all');
-  const [loaded, setLoaded] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
   const servicesRef = useRef(null);
 
   useEffect(() => {
-    setLoaded(true);
     if (location.state?.scrollToServices) {
       // Delay slightly to ensure content is rendered before scrolling
       setTimeout(() => {
