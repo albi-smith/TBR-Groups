@@ -376,7 +376,7 @@ const TBRTechnologies = () => {
                     position: 'relative',
                     zIndex: 1,
                     filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
-                    transform: 'rotate(-5deg)',
+                    transform: 'none',
                     transition: 'transform 0.5s ease',
                   }}
                   // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
