@@ -379,8 +379,8 @@ const TBRTechnologies = () => {
                     transform: 'rotate(-5deg)',
                     transition: 'transform 0.5s ease',
                   }}
-                  onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
-                  onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
+                  // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
+                  // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
                 />
                 {/* 
                 Floating Badge (Above) */}
