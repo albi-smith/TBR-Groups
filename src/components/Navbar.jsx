@@ -1,42 +1,84 @@
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Phone, MapPin, MessageCircle, ChevronRight } from 'lucide-react';
+import { MapPin, ChevronRight, Menu, X } from 'lucide-react';
 
 const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
   const navigate = useNavigate();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navLinks = [
+    { label: 'Home', action: () => {
+      if (window.location.pathname === '/') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        navigate('/');
+      }
+    }},
+    { label: 'About', targetId: 'about-section' },
+    { label: 'Services', targetId: 'services-section' },
+    { label: 'Locations', targetId: 'branches-section' },
+    { label: 'Contact', targetId: 'contact-section' },
+  ];
+
+  const handleNavClick = (link) => {
+    setIsMenuOpen(false);
+    if (link.targetId) {
+      if (window.location.pathname !== '/') {
+        navigate('/');
+        setTimeout(() => {
+          const element = document.getElementById(link.targetId);
+          if (element) {
+            const offset = 80; // height of navbar
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - offset;
+            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+          }
+        }, 150);
+      } else {
+        const element = document.getElementById(link.targetId);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+        }
+      }
+    } else if (link.action) {
+      link.action();
+    }
+  };
 
   return (
-    <header className="navbar navbar-expand-lg sticky-top" style={{
-      background: 'rgba(3, 30, 1, 0.75) ',
+    <header className="navbar navbar-expand-lg fixed-top" style={{
+      background: 'rgba(3, 30, 1, 0.85) ',
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
-      borderBottom: '0px solid var(--border-subtle)',
-      padding: '0.3rem 0',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
+      padding: '0.5rem 0',
       zIndex: 1000,
-
-      maxWidth: '100%',
+      width: '100%',
     }}>
       <div className="container-fluid px-4 px-lg-5">
         <div className="d-flex align-items-center justify-content-between w-100">
-          <div className="d-flex align-items-center gap-3">
-            <div className="d-flex align-items-center gap-2">
-              <div
-                className="d-flex align-items-center"
-                style={{ gap: '0.75rem', cursor: 'pointer' }}
-                onClick={() => navigate('/')}
-              >
-                <img
-                  src="/logo.png"
-                  alt="TBR Technologies Logo"
-                  className="navbar-logo"
-                />
-                <div>
-                  <h1 className="navbar-title">
-                    TBR <span className="navbar-title-groups">Groups</span>
-                  </h1>
-                  <p className="d-none d-sm-block" style={{ fontSize: '0.55rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
-                    Complete Service Solution
-                  </p>
-                </div>
+          {/* Brand/Logo */}
+          <div className="d-flex align-items-center">
+            <div
+              className="d-flex align-items-center"
+              style={{ gap: '0.75rem', cursor: 'pointer' }}
+              onClick={() => navigate('/')}
+            >
+              <img
+                src="/logo.png"
+                alt="TBR Technologies Logo"
+                className="navbar-logo"
+              />
+              <div>
+                <h1 className="navbar-title">
+                  TBR <span className="navbar-title-groups">Groups</span>
+                </h1>
+                <p className="d-none d-sm-block" style={{ fontSize: '0.55rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+                  Complete Service Solution
+                </p>
               </div>
             </div>
 
@@ -48,36 +90,97 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
             )}
           </div>
 
-          <div className="d-flex align-items-center gap-2 gap-md-3">
-            <a href="tel:8300426612" className="d-flex align-items-center text-decoration-none" style={{
-              gap: '0.4rem', color: '#ffc107', fontSize: '0.85rem',
-            }}>
-              <Phone size={15} style={{ color: '#ffc107' }} />
-              <span className="d-none d-lg-inline"></span>
-            </a>
-
-            <a href="https://wa.me/919952773759" className="d-flex align-items-center text-decoration-none" style={{
-              gap: '0.4rem', color: '#ffc107', fontSize: '0.85rem',
-            }}>
-              <MessageCircle size={16} style={{ color: '#ffc107' }} />
-            </a>
-
-            <a
-              href="https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary d-none d-sm-flex align-items-center gap-2"
-              style={{
-                padding: '0.55rem 1.25rem',
-                fontSize: '0.8rem',
-                borderRadius: 'var(--radius-full)',
-                background: 'linear-gradient(135deg, var(--accent-gold) 0%, #b8943f 100%)',
-                border: 'none'
-              }}
-            >
-              Visit Us <MapPin size={18} />
-            </a>
+          {/* Desktop Navigation - Fill Fully */}
+          <div className="d-none d-lg-flex align-items-center justify-content-evenly" style={{ flex: 1, padding: '0 4rem' }}>
+            {navLinks.map((link) => (
+              <button
+                key={link.label}
+                onClick={() => handleNavClick(link)}
+                className="nav-link-custom"
+                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1rem', fontWeight: 500, transition: 'color 0.2s', padding: '0.5rem 1rem' }}
+              >
+                {link.label}
+              </button>
+            ))}
           </div>
+
+          {/* Right Section - Minimal weight to allow links to fill */}
+          <div className="d-flex align-items-center justify-content-end">
+            {/* Mobile Menu Toggle */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="d-lg-none p-2"
+              style={{ background: 'none', border: 'none', color: 'white' }}
+              aria-label="Toggle Navigation"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu Dropdown */}
+      <div style={{
+        position: 'absolute',
+        top: 'calc(100% + 10px)',
+        left: '1rem',
+        right: '1rem',
+        maxHeight: '80vh',
+        background: 'rgba(3, 30, 1, 0.95)',
+        backdropFilter: 'blur(30px)',
+        zIndex: 999,
+        display: isMenuOpen ? 'flex' : 'none',
+        flexDirection: 'column',
+        padding: '1.5rem',
+        gap: '1rem',
+        borderRadius: 'var(--radius-xl)',
+        border: '1px solid rgba(255, 255, 255, 0.1)',
+        boxShadow: '0 20px 40px rgba(0,0,0,0.6)',
+        overflowY: 'auto',
+        transition: 'all 0.3s ease-in-out'
+      }}>
+        {navLinks.map((link) => (
+          <button
+            key={link.label}
+            onClick={() => handleNavClick(link)}
+            style={{
+              background: 'none',
+              border: 'none',
+              color: 'white',
+              fontSize: '1.1rem',
+              fontWeight: 500,
+              textAlign: 'left',
+              padding: '0.75rem 0.5rem',
+              borderRadius: 'var(--radius-md)',
+              transition: 'background 0.2s',
+              borderBottom: '1px solid rgba(255,255,255,0.03)'
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+            onMouseLeave={e => e.currentTarget.style.background = 'none'}
+          >
+            {link.label}
+          </button>
+        ))}
+        
+        <div className="mt-auto pb-4">
+          <a
+            href="https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary d-flex align-items-center justify-content-center gap-2"
+            style={{
+              padding: '1rem',
+              fontSize: '1rem',
+              borderRadius: 'var(--radius-lg)',
+              background: 'linear-gradient(135deg, var(--accent-gold) 0%, #b8943f 100%)',
+              border: 'none',
+              width: '100%'
+            }}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Visit Us <MapPin size={20} />
+          </a>
+          
         </div>
       </div>
     </header>

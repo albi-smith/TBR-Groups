@@ -205,8 +205,8 @@ const TBRTechnologies = () => {
         </div>
       </div>
 
-{/* ═══════════════ CERTIFICATIONS SECTION ═══════════════ */}
-      <section style={{ padding: '5rem 0', background: 'var(--bg-surface)', borderTop: '1px solid var(--border-subtle)' }}>
+{/* ═══════════════ CERTIFICATIONS SECTION (ABOUT) ═══════════════ */}
+      <section id="about-section" style={{ padding: '5rem 0', background: 'var(--bg-surface)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="container">
           <div className="row align-items-center g-5">
             {/* Left Content - Header & Certificate Image */}
@@ -616,7 +616,7 @@ const TBRTechnologies = () => {
       </section>
 
       {/* ═══════════════ SERVICES SECTION ═══════════════ */}
-      <section ref={servicesRef} style={{ padding: '5rem 0' }}>
+      <section id="services-section" ref={servicesRef} style={{ padding: '5rem 0' }}>
         <div className="container">
           {/* Section Header */}
           <div className="text-center mb-5">
@@ -829,7 +829,7 @@ const TBRTechnologies = () => {
       </section>
 
       {/* ═══════════════ BRANCHES SECTION ═══════════════ */}
-      <section style={{ padding: '5rem 0' }}>
+      <section id="branches-section" style={{ padding: '5rem 0' }}>
         <div className="container">
           <div className="text-center mb-5">
             <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Our Locations</div>
@@ -902,7 +902,7 @@ const TBRTechnologies = () => {
       </section>
 
       {/* ═══════════════ CONTACT SECTION ═══════════════ */}
-      <section style={{
+      <section id="contact-section" style={{
         padding: '5rem 0',
         background: 'var(--bg-surface)',
         borderTop: '1px solid var(--border-subtle)',
