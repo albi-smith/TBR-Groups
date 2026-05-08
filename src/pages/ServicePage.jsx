@@ -46,7 +46,7 @@ const marqueeItems = [
     'Government Services', 'Banking Solutions', 'Insurance Products',
     'Ticket Booking', 'Document Registration', 'Business Registration',
     'Computer Accessories', 'Mobile Accessories', 'Organic Foods',
-    'Project Binding', 'CSC & E-Seva', 'Postal Services',
+    'Project Binding', 'CSC & E-Seva', 'Postal Services', 'POS Device Supply',
   ];
 
   return (
@@ -484,17 +484,48 @@ const marqueeItems = [
               </p>
 
               <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
-                <a href="tel:8300426612" className="btn-primary"  style={{textDecoration:"none"}}>
-                  <Phone size={18} /> Contact Us
+                <a
+                  href={`tel:${service.contactPhone || '8300426612'}`}
+                  className="btn-primary"
+                  style={{ textDecoration: 'none' }}
+                >
+                  <Phone size={18} />
+                  {service.contactPerson
+                    ? `Call ${service.contactPerson}`
+                    : 'Contact Us'}
                 </a>
                 <button className="btn-secondary" onClick={() => navigate('/', { state: { scrollToServices: true } })}>
                   <ArrowLeft size={18} /> Explore All Services
                 </button>
               </div>
 
+              {service.contactPerson && (
+                <div className="info-card mb-4 mx-auto" style={{
+                  maxWidth: '420px',
+                  background: 'linear-gradient(135deg, rgba(0,152,69,0.08), rgba(0,152,69,0.02))',
+                  border: '1px solid rgba(0,152,69,0.25)',
+                }}>
+                  <div className="d-flex align-items-center gap-3">
+                    <div style={{
+                      width: '48px', height: '48px', borderRadius: '50%',
+                      background: 'rgba(0,152,69,0.15)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: '1.4rem', flexShrink: 0,
+                    }}>🧑‍💼</div>
+                    <div className="text-start">
+                      <p style={{ fontSize: '0.72rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '1px', margin: 0 }}>Dedicated Contact</p>
+                      <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)', margin: '0.15rem 0 0' }}>{service.contactPerson}</p>
+                      <a href={`tel:${service.contactPhone}`} style={{ fontSize: '0.9rem', color: '#009845', fontWeight: 600, textDecoration: 'none' }}>
+                        📞 {service.contactPhone}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               <div className="d-flex flex-wrap justify-content-center gap-4">
                 <div className="d-flex align-items-center gap-2" style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
-                  <MapPin size={16} style={{ color: 'var(--accent-gold)' }} /> 
+                  <MapPin size={16} style={{ color: 'var(--accent-gold)' }} />
                   <a href="https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
                     Marthandam, Kanyakumari District
                   </a>

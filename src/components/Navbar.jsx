@@ -12,15 +12,15 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
       borderBottom: '0px solid var(--border-subtle)',
       padding: '0.3rem 0',
       zIndex: 1000,
-      
+
       maxWidth: '100%',
     }}>
       <div className="container-fluid px-4 px-lg-5">
         <div className="d-flex align-items-center justify-content-between w-100">
           <div className="d-flex align-items-center gap-3">
             <div className="d-flex align-items-center gap-2">
-              <div 
-                className="d-flex align-items-center" 
+              <div
+                className="d-flex align-items-center"
                 style={{ gap: '0.75rem', cursor: 'pointer' }}
                 onClick={() => navigate('/')}
               >

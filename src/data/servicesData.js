@@ -211,6 +211,57 @@ export const servicesA = [
       { name: 'ID Card & Certificate Printing', desc: 'Custom ID cards and certificates', icon: '🎴', image: 'https://images.pexels.com/photos/37012315/pexels-photo-37012315.jpeg' },
     ]
   },
+  {
+    id: 16,
+    slug: 'pos-device-supply',
+    path: '/pos-device-supply',
+    title: 'POS Device Supply (Pine Labs)',
+    desc: 'Authorised Pine Labs POS machine supply — Smart Payments, Faster Growth. All-in-One POS for modern businesses with UPI, Cards, EMI & more.',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80',
+    heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80',
+    category: 'services',
+    color: '#009845',
+    contactPerson: 'Mr. Berlin Rajan',
+    contactPhone: '9952773759',
+    subServices: [
+      {
+        name: 'Freedom & Flexibility',
+        desc: 'No AMB conditions, No hidden charges, Use any bank of your choice.',
+        icon: '🔓',
+        image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=600&q=80'
+      },
+      {
+        name: 'All Payments Accepted',
+        desc: 'UPI & Cards, EMI & Wallets, International (DCC) & more — one device handles everything.',
+        icon: '💳',
+        image: 'https://images.pexels.com/photos/3970330/pexels-photo-3970330.jpeg'
+      },
+      {
+        name: 'Multi-Bank Advantage',
+        desc: 'Lower MDR rates, Multiple bank TIDs, Smart TID routing, Single POS device for all banks.',
+        icon: '🏦',
+        image: 'https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg'
+      },
+      {
+        name: 'Smart Business Tools',
+        desc: 'Live tracking, Sales reports, Instant alerts, and Auto reconciliation to manage your business smarter.',
+        icon: '📊',
+        image: 'https://images.pexels.com/photos/7947544/pexels-photo-7947544.jpeg'
+      },
+      {
+        name: '23+ EMI Options',
+        desc: 'Boost your sales with Credit Card EMIs, Debit Card EMIs, and Pay Later plans — 23+ options available.',
+        icon: '📅',
+        image: 'https://images.pexels.com/photos/4386370/pexels-photo-4386370.jpeg'
+      },
+      {
+        name: '100% Secure Payments',
+        desc: 'Fast & Easy Checkout, Seamless billing integration, and dedicated support — trusted by millions of businesses across India.',
+        icon: '🛡️',
+        image: 'https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg'
+      },
+    ]
+  },
 ];
 
 export const servicesB = [

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
@@ -14,7 +14,7 @@ const TBRTechnologies = () => {
 
   useEffect(() => {
     if (location.state?.scrollToServices) {
-      // Delay slightly to ensure content is rendered before scrolling
+
       setTimeout(() => {
         servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
       }, 100);
@@ -28,7 +28,7 @@ const TBRTechnologies = () => {
         ? servicesA
         : servicesB;
 
-  const scrollToServices  = () => {
+  const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -36,16 +36,17 @@ const TBRTechnologies = () => {
   const branches = [
     {
       name: 'TBR Groups — Marthandam',
-      location: 'Marthandam, Tamil Nadu',
+      location: 'Marthandam,',
       phone: ['8300426612', '7418105297'],
       desc: 'Head Office — All Services',
       highlight: true,
     },
     {
       name: 'TBR Innovative Education',
-      location: 'Thengapattanam',
+      location: 'Vettuvenni',
       phone: ['7092773915'],
-      desc: 'Insurance, Loan & Online Services',
+      desc: 'Computer Education & Training',
+      website: 'https://tbr-education.vercel.app/'
     },
     {
       name: 'TBR Innovative Trades',
@@ -72,7 +73,7 @@ const TBRTechnologies = () => {
     'Government Services', 'Banking Solutions', 'Insurance Products',
     'Ticket Booking', 'Document Registration', 'Business Registration',
     'Computer Accessories', 'Mobile Accessories', 'Organic Foods',
-    'Project Binding', 'CSC & E-Seva', 'Postal Services',
+    'Project Binding', 'CSC & E-Seva', 'Postal Services', 'POS Device Supply',
   ];
 
   return (
@@ -203,6 +204,416 @@ const TBRTechnologies = () => {
           ))}
         </div>
       </div>
+
+{/* ═══════════════ CERTIFICATIONS SECTION ═══════════════ */}
+      <section style={{ padding: '5rem 0', background: 'var(--bg-surface)', borderTop: '1px solid var(--border-subtle)' }}>
+        <div className="container">
+          <div className="row align-items-center g-5">
+            {/* Left Content - Header & Certificate Image */}
+            <div className="col-lg-6" data-aos="fade-right">
+              <div className="section-label">Verified Partnerships</div>
+              <h2 className="section-title" style={{ fontSize: '2.2rem', marginBottom: '1.5rem' }}>
+                Net Protector <br />
+                <span style={{ color: 'var(--accent-gold)' }}>Authorised Channel Partner</span>
+              </h2>
+
+              <div style={{
+                position: 'relative',
+                background: 'var(--bg-card)',
+                padding: '1.5rem',
+                borderRadius: 'var(--radius-lg)',
+                boxShadow: 'var(--shadow-xl)',
+                border: '1px solid var(--border-subtle)',
+                marginBottom: '1rem'
+              }}>
+                <img
+                  src="/Authorised certificate.jpeg"
+                  alt="Net Protector Authorised Partner Certificate"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    borderRadius: '4px',
+                    display: 'block'
+                  }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  border: '1px solid rgba(255,215,0,0.2)',
+                  borderRadius: 'var(--radius-lg)',
+                  pointerEvents: 'none'
+                }} />
+              </div>
+              <div className="text-center">
+                <span style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', fontWeight: 500 }}>
+                  Official Authorization
+                </span>
+              </div>
+            </div>
+
+            {/* Right Content - Details */}
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.05rem' }}>
+                TBR Innovative Trades is proud to be an authorized partner for <strong>Net Protector (NPAV)</strong>, delivering state-of-the-art cyber security solutions and enterprise software services across India.
+              </p>
+
+              <div className="row g-3">
+                {[
+                  'Cyber Security & Antivirus',
+                  'Endpoint Security (EPS)',
+                  'Mobile Device Management',
+                  'Cloud Backup Solutions',
+                  'Data Leak Prevention (DLP)',
+                  'Employee Monitoring Tools'
+                ].map((item, i) => (
+                  <div key={i} className="col-sm-6">
+                    <div className="d-flex align-items-center gap-2" style={{
+                      padding: '0.75rem 1rem',
+                      background: 'var(--bg-card)',
+                      border: '1px solid var(--border-subtle)',
+                      borderRadius: 'var(--radius-md)',
+                      fontSize: '0.9rem',
+                      color: 'var(--text-primary)'
+                    }}>
+                      <ShieldCheck size={16} style={{ color: 'var(--accent-teal)' }} />
+                      {item}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 pt-2">
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '1rem',
+                  padding: '1rem',
+                  background: 'rgba(27,94,32,0.05)',
+                  borderRadius: 'var(--radius-md)',
+                  border: '1px dashed var(--primary)'
+                }}>
+                  <div style={{ fontSize: '1.5rem' }}>🏆</div>
+                  <div>
+                    <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.95rem' }}>Bronze Rated Partner</div>
+                    <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Dealer Code: T-903 | Kanniyakumari, Tamil Nadu</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════ PINE LABS POS SECTION ═══════════════ */}
+      <section style={{ padding: '5rem 0 2rem', background: 'var(--bg-deep)', position: 'relative', overflow: 'hidden' }}>
+        {/* Glow Effects */}
+        <div style={{
+          position: 'absolute', top: '-10%', left: '-5%', width: '400px', height: '400px',
+          background: 'radial-gradient(circle, var(--accent-gold-dim), transparent 70%)',
+          filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0
+        }} />
+        <div style={{
+          position: 'absolute', bottom: '-10%', right: '-5%', width: '400px', height: '400px',
+          background: 'radial-gradient(circle, var(--accent-blue-dim), transparent 70%)',
+          filter: 'blur(80px)', pointerEvents: 'none', zIndex: 0
+        }} />
+
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <div className="row align-items-center g-5">
+            {/* Left Content - Header & Image */}
+            <div className="col-lg-6" data-aos="fade-right">
+              <div className="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3" style={{
+                background: 'rgba(255, 215, 0, 0.1)',
+                border: '1px solid var(--border-gold)',
+                borderRadius: 'var(--radius-full)',
+                color: 'var(--accent-gold)',
+                fontSize: '0.85rem',
+                fontWeight: 600
+              }}>
+                <Zap size={14} /> Pine Labs Authorized
+              </div>
+              <h2 style={{
+                fontFamily: 'Outfit, sans-serif', fontSize: 'clamp(2rem, 4vw, 3rem)',
+                fontWeight: 800, color: 'var(--text-primary)', lineHeight: 1.1,
+                marginBottom: '2rem',
+              }}>
+                All-in-One POS <br />
+                <span style={{
+                  background: 'linear-gradient(90deg, var(--accent-gold), #FFF8D6)',
+                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent',
+                }}>For Modern Businesses</span>
+              </h2>
+
+              {/* POS Visual (Now below H2) */}
+              <div style={{
+                position: 'relative',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '2rem 0',
+                marginBottom: '1rem'
+              }}>
+                {/* Decorative background circle */}
+                <div style={{
+                  position: 'absolute',
+                  width: '80%',
+                  aspectRatio: '1/1',
+                  background: 'linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,0,0,0))',
+                  borderRadius: '50%',
+                  zIndex: 0,
+                  filter: 'blur(40px)',
+                }} />
+
+                {/* POS Image */}
+                <img
+                  src="/Pinelabs.png"
+                  alt="Pine Labs POS Device"
+                  style={{
+                    maxWidth: '100%',
+                    borderRadius: '20px',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    position: 'relative',
+                    zIndex: 1,
+                    filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
+                    transform: 'rotate(-5deg)',
+                    transition: 'transform 0.5s ease',
+                  }}
+                  onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
+                  onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
+                />
+                {/* 
+                Floating Badge (Above) */}
+                {/* <div style={{
+                  position: 'absolute', top: '0', right: '5%',
+                  background: 'rgba(255,215,0,0.15)', color: 'var(--accent-gold)',
+                  padding: '0.75rem 1.25rem', borderRadius: 'var(--radius-full)',
+                  fontSize: '0.85rem', fontWeight: 600,
+                  display: 'flex', alignItems: 'center', gap: '0.5rem',
+                  zIndex: 2,
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255,215,0,0.3)',
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.1)',
+                  animation: 'float 3s ease-in-out infinite'
+                }}>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'var(--accent-gold)', boxShadow: '0 0 10px var(--accent-gold)' }} />
+                  Fast & Easy Checkout
+                </div> */}
+
+                {/* Floating Badge 2 (Below) */}
+                {/* <div style={{
+                  position: 'absolute', bottom: '0', left: '5%',
+                  background: 'rgba(255,255,255,0.1)', color: 'var(--text-primary)',
+                  padding: '0.75rem 1.25rem', borderRadius: 'var(--radius-full)',
+                  fontSize: '0.85rem', fontWeight: 600,
+                  display: 'flex', alignItems: 'center', gap: '0.5rem',
+                  zIndex: 2,
+                  backdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.1)',
+                  animation: 'float 4s ease-in-out infinite reverse'
+                }}>
+                  <ShieldCheck size={16} style={{ color: 'var(--accent-teal)' }} />
+                  Smart Business Tools
+                </div> */}
+              </div>
+            </div>
+
+            {/* Right Content - Info & Features */}
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <p style={{
+                fontSize: '1.1rem', color: 'var(--text-secondary)',
+                lineHeight: 1.6, marginBottom: '2rem',
+              }}>
+                Smart Payments. Faster Growth. Trusted by millions of businesses across India. Experience freedom and flexibility with zero AMB conditions and no hidden charges.
+              </p>
+
+              <div className="row g-4 mb-5">
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-start gap-3">
+                    <div style={{ color: 'var(--accent-gold)', padding: '0.5rem', background: 'rgba(255,215,0,0.1)', borderRadius: 'var(--radius-sm)' }}>
+                      <CreditCard size={20} />
+                    </div>
+                    <div>
+                      <h5 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>All Payments</h5>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', margin: 0 }}>UPI, Cards, EMI, Wallets & DCC.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-start gap-3">
+                    <div style={{ color: 'var(--accent-gold)', padding: '0.5rem', background: 'rgba(255,215,0,0.1)', borderRadius: 'var(--radius-sm)' }}>
+                      <ShieldCheck size={20} />
+                    </div>
+                    <div>
+                      <h5 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>100% Secure</h5>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', margin: 0 }}>Safe, reliable & auto reconciliation.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-start gap-3">
+                    <div style={{ color: 'var(--accent-gold)', padding: '0.5rem', background: 'rgba(255,215,0,0.1)', borderRadius: 'var(--radius-sm)' }}>
+                      <Briefcase size={20} />
+                    </div>
+                    <div>
+                      <h5 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Multi-Bank Advantage</h5>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', margin: 0 }}>Lower MDR, Multiple TIDs, Smart Routing.</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-start gap-3">
+                    <div style={{ color: 'var(--accent-gold)', padding: '0.5rem', background: 'rgba(255,215,0,0.1)', borderRadius: 'var(--radius-sm)' }}>
+                      <Smartphone size={20} />
+                    </div>
+                    <div>
+                      <h5 style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.25rem' }}>Boost Sales</h5>
+                      <p style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', margin: 0 }}>23+ EMI options & Pay Later plans.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="d-flex flex-wrap gap-3 align-items-center">
+                <a href="tel:9952773759" className="btn-primary text-decoration-none">
+                  Get Your POS Today
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* ═══════════════ GO POINT DIGITAL SERVICES SECTION ═══════════════ */}
+      <section style={{ padding: '5rem 0', background: 'var(--bg-deep)', position: 'relative', overflow: 'hidden' }}>
+        {/* Decorative Background Elements */}
+        <div style={{
+          position: 'absolute', top: '10%', right: '-5%', width: '300px', height: '300px',
+          background: 'radial-gradient(circle, rgba(66, 133, 244, 0.1), transparent 70%)',
+          filter: 'blur(60px)', pointerEvents: 'none'
+        }} />
+
+        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+          <div className="row align-items-center g-5">
+            {/* Left Content - Header & Image */}
+            <div className="col-lg-6" data-aos="fade-right">
+              <div className="section-label">Digital India Initiative</div>
+              <h2 className="section-title" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>
+                GO POINT <br />
+                <span style={{
+                  background: 'linear-gradient(90deg, #4285F4, #34A853)',
+                  WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
+                }}>One App, All Services</span>
+              </h2>
+
+              <div style={{
+                position: 'relative',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '1rem',
+                marginBottom: '1.5rem'
+              }}>
+                <div style={{
+                  position: 'absolute',
+                  width: '90%',
+                  aspectRatio: '1/1',
+                  background: 'linear-gradient(135deg, rgba(66, 133, 244, 0.1), rgba(52, 168, 83, 0.1))',
+                  borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
+                  zIndex: 0,
+                  filter: 'blur(30px)',
+                  animation: 'float 10s ease-in-out infinite'
+                }} />
+
+                <img
+                  src="/go point new .png"
+                  alt="GO POINT App Interface"
+                  style={{
+                    maxWidth: '100%',
+                    borderRadius: 'var(--radius-lg)',
+                    height: 'auto',
+                    position: 'relative',
+                    zIndex: 1,
+                    filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.15))',
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Right Content - Info & Features */}
+            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.1rem', lineHeight: 1.7 }}>
+                Simplify your life with <strong>GO POINT</strong> — the multi-service digital platform designed for every Indian. From instant recharges to secure banking and bill payments, manage everything from a single app.
+              </p>
+
+              <div className="row g-4 mb-4">
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-center gap-3">
+                    <div style={{ color: '#4285F4', background: 'rgba(66,133,244,0.1)', padding: '0.6rem', borderRadius: 'var(--radius-md)' }}>
+                      <Smartphone size={20} />
+                    </div>
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>All Recharges</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)' }}>Mobile, DTH & Postpaid</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-center gap-3">
+                    <div style={{ color: '#34A853', background: 'rgba(52,168,83,0.1)', padding: '0.6rem', borderRadius: 'var(--radius-md)' }}>
+                      <Zap size={20} />
+                    </div>
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>Utility Bills</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)' }}>TNEB, Water, Gas & LIC</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-center gap-3">
+                    <div style={{ color: '#FBBC05', background: 'rgba(251,188,5,0.1)', padding: '0.6rem', borderRadius: 'var(--radius-md)' }}>
+                      <CreditCard size={20} />
+                    </div>
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>Banking & AEPS</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)' }}>Aadhar Cash & MATM</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="d-flex align-items-center gap-3">
+                    <div style={{ color: '#EA4335', background: 'rgba(234,67,53,0.1)', padding: '0.6rem', borderRadius: 'var(--radius-md)' }}>
+                      <Globe size={20} />
+                    </div>
+                    <div>
+                      <div style={{ fontWeight: 600, color: 'var(--text-primary)', fontSize: '0.95rem' }}>Travel & Tickets</div>
+                      <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)' }}>IRCTC Train OTP Booking</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="d-flex flex-wrap gap-3 align-items-center pt-2">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.solution.gopointttt&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary"
+                  style={{ background: '#000', color: '#fff', border: 'none' }}
+                >
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style={{ height: '24px' }} />
+                </a>
+                <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                  <span style={{ color: 'var(--accent-gold)', fontWeight: 600 }}>Get FREE ID:</span> Provide Name, Email, Address & Shop Name
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ═══════════════ SERVICES SECTION ═══════════════ */}
       <section ref={servicesRef} style={{ padding: '5rem 0' }}>
@@ -473,6 +884,15 @@ const TBRTechnologies = () => {
                         <Phone size={13} /> {ph}
                       </a>
                     ))}
+                    {branch.website && (
+                      <a href={branch.website} target="_blank" rel="noopener noreferrer" className="d-flex align-items-center gap-2 text-decoration-none mt-1" style={{
+                        fontSize: '0.85rem', color: 'var(--accent-blue-light)',
+                        transition: 'opacity 0.2s',
+                        fontWeight: 500
+                      }}>
+                        <Globe size={13} /> Visit Website <ArrowRight size={12} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -722,6 +1142,9 @@ const TBRTechnologies = () => {
                 </a>
                 <a href="https://wa.me/919952773759" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
                   💬 WhatsApp
+                </a>
+                <a href="https://tbr-edu.netlify.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
+                  <Globe size={13} /> TBR Education Website
                 </a>
               </div>
             </div>
