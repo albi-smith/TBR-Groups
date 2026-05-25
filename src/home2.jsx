@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap, Send, MessageSquare, Shield } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
@@ -11,6 +11,64 @@ const TBRTechnologies = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const servicesRef = useRef(null);
+
+  // Enquiry Form State
+  const [formData, setFormData] = useState({
+    name: '',
+    subject: '',
+    department: '919952773759', // Default to General Queries
+    message: ''
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value
+    }));
+    // Clear errors when typing
+    if (errors[name]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: ''
+      }));
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.name.trim()) newErrors.name = 'Name is required';
+    if (!formData.subject.trim()) newErrors.subject = 'Subject is required';
+    if (!formData.message.trim()) newErrors.message = 'Message is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  const handleSubmitEnquiry = (e) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+
+    // Get department label
+    const deptLabel = formData.department === '919952773759' ? 'General Queries' : 'Service Details';
+
+    // Construct beautiful WhatsApp message
+    const waMessage = `*New Enquiry from TBR Groups Website*
+ --------------------------------
+ *Name:* ${formData.name.trim()}
+ *Subject:* ${formData.subject.trim()}
+ *Department:* ${deptLabel}
+
+ *Message:*
+ ${formData.message.trim()}`;
+
+    const encodedMessage = encodeURIComponent(waMessage);
+    const waUrl = `https://wa.me/${formData.department}?text=${encodedMessage}`;
+
+    // Redirect to WhatsApp
+    window.open(waUrl, '_blank', 'noopener,noreferrer');
+  };
 
   useEffect(() => {
     if (location.state?.scrollToServices) {
@@ -30,6 +88,16 @@ const TBRTechnologies = () => {
 
   const scrollToServices = () => {
     servicesRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const scrollToEnquiry = () => {
+    const element = document.getElementById('enquiry-section');
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    }
   };
 
   // Branch data
@@ -901,117 +969,234 @@ const TBRTechnologies = () => {
         </div>
       </section>
 
-      {/* ═══════════════ CONTACT SECTION ═══════════════ */}
-      <section id="contact-section" style={{
+      {/* ═══════════════ ENQUIRY & CONTACT SECTION ═══════════════ */}
+      <section id="enquiry-section" style={{
         padding: '5rem 0',
         background: 'var(--bg-surface)',
         borderTop: '1px solid var(--border-subtle)',
         borderBottom: '1px solid var(--border-subtle)',
       }}>
         <div className="container">
-          <div className="text-center mb-5">
-            <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Get In Touch</div>
-            <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Contact Us</h2>
-            <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
-              Reach out to us via phone, WhatsApp, or email. We're here to help!
-            </p>
-          </div>
+          <div className="row g-5">
+            {/* Left Side: Premium Info Card */}
+            <div className="col-lg-5" data-aos="fade-right">
+              <div className="section-label">Get in Touch</div>
+              <h2 className="section-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', marginBottom: '1.5rem', lineHeight: '1.1' }}>
+                Have Questions? <br />
+                <span style={{ background: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                  Send an Enquiry
+                </span>
+              </h2>
+              <p style={{ color: 'var(--text-secondary)', marginBottom: '2.5rem', fontSize: '1.05rem', lineHeight: '1.7' }}>
+                Fill out the form and submit to chat directly with our department manager on WhatsApp. We are here to answer your service requests, product enquiries, and partnership proposals.
+              </p>
 
-          <div className="row g-4">
-            {/* Phone */}
-            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div className="info-card h-100">
-                <div className="info-icon">
-                  <Phone size={22} />
+              {/* Info checklist */}
+              <div className="d-flex flex-column gap-4">
+                <div className="d-flex align-items-start gap-3">
+                  <div className="info-icon" style={{ flexShrink: 0, width: '40px', height: '40px', background: 'rgba(27,94,32,0.1)', color: 'var(--primary)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 0 }}>
+                    <Phone size={18} />
+                  </div>
+                  <div>
+                    <h5 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>Direct Line</h5>
+                    <a href="tel:8300426612" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
+                      +91 8300426612
+                    </a>
+                  </div>
                 </div>
-                <h4 style={{
-                  fontFamily: 'Outfit, sans-serif', fontSize: '1.05rem', fontWeight: 600,
-                  color: 'var(--text-primary)', marginBottom: '0.75rem',
-                }}>
-                  Call Us
-                </h4>
-                <div className="d-flex flex-column gap-2">
-                  <a href="tel:8300426612" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem' }}>
-                    📞 8300426612
-                  </a>
-                  <a href="tel:7418105297" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem' }}>
-                    📞 7418105297
-                  </a>
+
+                <div className="d-flex align-items-start gap-3">
+                  <div className="info-icon" style={{ flexShrink: 0, width: '40px', height: '40px', background: 'rgba(27,94,32,0.1)', color: 'var(--primary)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 0 }}>
+                    <Mail size={18} />
+                  </div>
+                  <div>
+                    <h5 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>Support Email</h5>
+                    <a href="mailto:tbrinnovativetrades@gmail.com" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
+                      tbrinnovativetrades@gmail.com
+                    </a>
+                  </div>
                 </div>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', marginTop: '0.75rem' }}>
-                  Available 9 AM to 6 PM
+
+                <div className="d-flex align-items-start gap-3">
+                  <div className="info-icon" style={{ flexShrink: 0, width: '40px', height: '40px', background: 'rgba(27,94,32,0.1)', color: 'var(--primary)', borderRadius: 'var(--radius-md)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 0 }}>
+                    <Clock size={18} />
+                  </div>
+                  <div>
+                    <h5 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>Operating Hours</h5>
+                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', margin: 0 }}>
+                      Monday - Saturday: 9:00 AM - 6:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Safety notice */}
+              <div className="mt-5 p-3 d-flex align-items-center gap-3" style={{ background: 'rgba(27,94,32,0.03)', border: '1px dashed var(--border-default)', borderRadius: 'var(--radius-lg)' }}>
+                <Shield size={24} style={{ color: 'var(--primary)', flexShrink: 0 }} />
+                <p style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', margin: 0, lineHeight: 1.4 }}>
+                  Your submission routes directly to our secure WhatsApp line. No intermediary storage is used, guaranteeing your privacy.
                 </p>
               </div>
             </div>
 
-            {/* WhatsApp */}
-            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div className="info-card h-100">
-                <div className="info-icon" style={{ background: 'rgba(37,211,102,0.15)', color: '#25d366' }}>
-                  <span style={{ fontSize: '1.2rem' }}>💬</span>
-                </div>
-                <h4 style={{
-                  fontFamily: 'Outfit, sans-serif', fontSize: '1.05rem', fontWeight: 600,
-                  color: 'var(--text-primary)', marginBottom: '0.75rem',
-                }}>
-                  WhatsApp
-                </h4>
-                <div className="d-flex flex-column gap-2">
-                  <a href="https://wa.me/919952773759" target="_blank" rel="noopener noreferrer"
-                    className="text-decoration-none" style={{ color: '#25d366', fontSize: '0.9rem' }}>
-                    💬 9952773759 (Queries)
-                  </a>
-                  <a href="https://wa.me/918300426612" target="_blank" rel="noopener noreferrer"
-                    className="text-decoration-none" style={{ color: '#25d366', fontSize: '0.9rem' }}>
-                    💬 8300426612 (Details)
-                  </a>
-                </div>
-                <p style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', marginTop: '0.75rem' }}>
-                  WhatsApp Groups: TBR Careers govt.Scheme.net
-                </p>
-              </div>
-            </div>
+            {/* Right Side: Form Card */}
+            <div className="col-lg-7" data-aos="fade-left">
+              <div style={{
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: 'var(--radius-xl)',
+                padding: '2.5rem',
+                boxShadow: 'var(--shadow-lg)',
+                position: 'relative'
+              }}>
+                <div style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: '4px',
+                  background: 'linear-gradient(90deg, var(--primary), var(--accent))',
+                  borderRadius: 'var(--radius-xl) var(--radius-xl) 0 0'
+                }} />
 
-            {/* Email */}
-            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-              <div className="info-card h-100">
-                <div className="info-icon" style={{ background: 'rgba(27,94,32,0.15)', color: 'var(--primary)' }}>
-                  <Mail size={22} />
+                <div className="d-flex align-items-center gap-2 mb-4">
+                  <MessageSquare size={20} style={{ color: 'var(--primary)' }} />
+                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>
+                    Enquiry Details
+                  </h3>
                 </div>
-                <h4 style={{
-                  fontFamily: 'Outfit, sans-serif', fontSize: '1.05rem', fontWeight: 600,
-                  color: 'var(--text-primary)', marginBottom: '0.75rem',
-                }}>
-                  Email Us
-                </h4>
-                <div className="d-flex flex-column gap-2">
-                  <a href="mailto:tbrinnovativetrades@gmail.com"
-                    className="text-decoration-none" style={{ color: 'var(--accent-blue-light)', fontSize: '0.85rem', wordBreak: 'break-all' }}>
-                    📧 tbrinnovativetrades@gmail.com
-                  </a>
-                  <a href="mailto:Tortec16@gmail.com"
-                    className="text-decoration-none" style={{ color: 'var(--accent-blue-light)', fontSize: '0.85rem' }}>
-                    📧 Tortec16@gmail.com
-                  </a>
-                </div>
-              </div>
-            </div>
 
-            {/* Hours */}
-            <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div className="info-card h-100">
-                <div className="info-icon" style={{ background: 'rgba(167,139,250,0.15)', color: 'var(--accent-purple)' }}>
-                  <Clock size={22} />
-                </div>
-                <h4 style={{
-                  fontFamily: 'Outfit, sans-serif', fontSize: '1.05rem', fontWeight: 600,
-                  color: 'var(--text-primary)', marginBottom: '0.75rem',
-                }}>
-                  Working Hours
-                </h4>
-                <div style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-                  9:00 AM - 6:00 PM
-                </div>
+                <form onSubmit={handleSubmitEnquiry} noValidate>
+                  <div className="row g-4">
+                    {/* Name */}
+                    <div className="col-12">
+                      <label htmlFor="enquiry-name-home" style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                        Your Name *
+                      </label>
+                      <input
+                        type="text"
+                        id="enquiry-name-home"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                        placeholder="John Doe"
+                        style={{
+                          width: '100%',
+                          padding: '0.75rem 1rem',
+                          borderRadius: 'var(--radius-md)',
+                          border: errors.name ? '1.5px solid #dc3545' : '1px solid var(--border-strong)',
+                          backgroundColor: 'var(--bg-surface)',
+                          color: 'var(--text-primary)',
+                          outline: 'none',
+                          fontSize: '0.9rem',
+                          transition: 'border-color 0.2s'
+                        }}
+                      />
+                      {errors.name && (
+                        <span style={{ color: '#dc3545', fontSize: '0.75rem', marginTop: '0.25rem', display: 'block' }}>
+                          {errors.name}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Department Selection */}
+                    <div className="col-12">
+                      <label htmlFor="enquiry-department-home" style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                        Department / Query Category
+                      </label>
+                      <select
+                        id="enquiry-department-home"
+                        name="department"
+                        value={formData.department}
+                        onChange={handleChange}
+                        style={{
+                          width: '100%',
+                          padding: '0.75rem 1.25rem',
+                          borderRadius: 'var(--radius-md)',
+                          border: '1px solid var(--border-strong)',
+                          backgroundColor: 'var(--bg-surface)',
+                          color: 'var(--text-primary)',
+                          outline: 'none',
+                          fontSize: '0.9rem',
+                          cursor: 'pointer'
+                        }}
+                      >
+                        <option value="919952773759">General Queries & Support (+91 9952773759)</option>
+                        <option value="918300426612">Service details & CSC/E-Seva (+91 8300426612)</option>
+                      </select>
+                    </div>
+
+                    {/* Subject */}
+                    <div className="col-12">
+                      <label htmlFor="enquiry-subject-home" style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                        Subject *
+                      </label>
+                      <input
+                        type="text"
+                        id="enquiry-subject-home"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="e.g. Inquiring about CSC Government Services"
+                        style={{
+                          width: '100%',
+                          padding: '0.75rem 1rem',
+                          borderRadius: 'var(--radius-md)',
+                          border: errors.subject ? '1.5px solid #dc3545' : '1px solid var(--border-strong)',
+                          backgroundColor: 'var(--bg-surface)',
+                          color: 'var(--text-primary)',
+                          outline: 'none',
+                          fontSize: '0.9rem',
+                          transition: 'border-color 0.2s'
+                        }}
+                      />
+                      {errors.subject && (
+                        <span style={{ color: '#dc3545', fontSize: '0.75rem', marginTop: '0.25rem', display: 'block' }}>
+                          {errors.subject}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Message */}
+                    <div className="col-12">
+                      <label htmlFor="enquiry-message-home" style={{ display: 'block', fontSize: '0.85rem', fontWeight: 600, marginBottom: '0.5rem', color: 'var(--text-secondary)' }}>
+                        Message *
+                      </label>
+                      <textarea
+                        id="enquiry-message-home"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Type your enquiry message here..."
+                        rows="5"
+                        style={{
+                          width: '100%',
+                          padding: '0.75rem 1rem',
+                          borderRadius: 'var(--radius-md)',
+                          border: errors.message ? '1.5px solid #dc3545' : '1px solid var(--border-strong)',
+                          backgroundColor: 'var(--bg-surface)',
+                          color: 'var(--text-primary)',
+                          outline: 'none',
+                          fontSize: '0.9rem',
+                          resize: 'vertical',
+                          transition: 'border-color 0.2s'
+                        }}
+                      />
+                      {errors.message && (
+                        <span style={{ color: '#dc3545', fontSize: '0.75rem', marginTop: '0.25rem', display: 'block' }}>
+                          {errors.message}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Submit Button */}
+                    <div className="col-12 mt-4">
+                      <button
+                        type="submit"
+                        className="btn-primary w-100 justify-content-center"
+                        style={{ padding: '1rem' }}
+                      >
+                        Send via WhatsApp <Send size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -1048,10 +1233,9 @@ const TBRTechnologies = () => {
                 <a href="tel:8300426612" className="btn-primary text-decoration-none">
                   <Phone size={18} /> Call 8300426612
                 </a>
-                <a href="https://wa.me/919952773759" target="_blank" rel="noopener noreferrer"
-                  className="btn-secondary text-decoration-none">
-                  💬 WhatsApp Us
-                </a>
+                <button onClick={() => scrollToEnquiry()} className="btn-secondary">
+                  💬 Send Enquiry
+                </button>
               </div>
             </div>
           </div>
@@ -1140,8 +1324,11 @@ const TBRTechnologies = () => {
                 <a href="mailto:tbrinnovativetrades@gmail.com" className="footer-link d-flex align-items-center gap-2">
                   <Mail size={13} /> Email Us
                 </a>
+                <span onClick={() => navigate('/enquiry')} className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer' }}>
+                  💬 Submit Enquiry Form
+                </span>
                 <a href="https://wa.me/919952773759" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
-                  💬 WhatsApp
+                  💬 Direct WhatsApp
                 </a>
                 <a href="https://tbr-edu.netlify.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
                   <Globe size={13} /> TBR Education Website

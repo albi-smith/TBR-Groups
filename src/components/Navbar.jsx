@@ -17,7 +17,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
     { label: 'About', targetId: 'about-section' },
     { label: 'Services', targetId: 'services-section' },
     { label: 'Locations', targetId: 'branches-section' },
-    { label: 'Contact', targetId: 'contact-section' },
+    { label: 'Enquiry', targetId: 'enquiry-section' },
   ];
 
   const handleNavClick = (link) => {
