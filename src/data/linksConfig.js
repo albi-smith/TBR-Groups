@@ -1,0 +1,88 @@
+import tbrEducationLogo from '../link/tbr education logo.png';
+import tbrTradersLogo from '../link/tbr groups logo.png';
+
+export const linksConfig = {
+  hero: {
+    logo: "/tbrlogo.jpeg",
+    title: "TBR Groups",
+    subtitle: "Technology • Education • Services",
+  },
+  businesses: {
+    tbreducation: {
+      id: "tbreducation",
+      title: "TBR Education",
+      description: "Computer courses, software training, AI, programming and career skills.",
+      logo: tbrEducationLogo, // We can use tbrlogo.jpeg as the default or fallback logo
+      buttons: [
+        {
+          label: "Website",
+          url: "https://tbr-education.vercel.app/", // Placeholder
+          icon: "Globe",
+          color: "#2563eb",
+        },
+        {
+          label: "Instagram",
+          url: "https://www.instagram.com/tbr.education/", // Placeholder
+          icon: "Instagram",
+          color: "#db2777",
+        },
+        {
+          label: "YouTube",
+          url: "https://youtube.com/@tbreducation?si=WUcXLZy7dMUOZtjd", // Placeholder
+          icon: "Youtube",
+          color: "#dc2626",
+        },
+        {
+          label: "Telegram",
+          url: "https://t.me/tbreducation", // Placeholder
+          icon: "Telegram",
+          color: "#2563eb",
+        },
+        {
+          label: "WhatsApp",
+          url: "https://wa.me/919952773759",
+          icon: "WhatsApp",
+          color: "#16a34a",
+        },
+      ],
+    },
+    tbrtraders: {
+      id: "tbrtraders",
+      title: "TBR Traders",
+      description: "Computer sales, service, e-services, registrations and business support.",
+      logo: tbrTradersLogo,
+      buttons: [
+        {
+          label: "Website",
+          url: "/", // Main site
+          icon: "Globe",
+          color: "#2563eb",
+        },
+        {
+          label: "Instagram",
+          url: "https://instagram.com/tbrtraders", // Placeholder
+          icon: "Instagram",
+          color: "#db2777",
+        },
+        {
+          label: "YouTube",
+          url: "https://youtube.com/@tbr-groups?si=O8TzbQ9URrNxtu7R", // Placeholder
+          icon: "Youtube",
+          color: "#dc2626",
+        },
+        {
+          label: "Telegram",
+          url: "https://t.me/tbrtraders", // Placeholder
+          icon: "Telegram",
+          color: "#2563eb",
+        },
+        {
+          label: "WhatsApp",
+          url: "https://wa.me/919952773759",
+          icon: "WhatsApp",
+          color: "#16a34a",
+        },
+      ],
+    },
+  },
+};

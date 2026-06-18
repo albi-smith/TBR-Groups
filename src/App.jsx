@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TBRTechnologies from './home2';
 import ServicePage from './pages/ServicePage';
+import LinkHubPage from './pages/LinkHubPage';
 
 function App() {
   useEffect(() => {
@@ -48,6 +49,8 @@ function App() {
         <Routes>
           <Route path="/" element={<TBRTechnologies />} />
           <Route path="/service/:serviceSlug" element={<ServicePage />} />
+          <Route path="/links/:subPage" element={<LinkHubPage />} />
+          <Route path="/links" element={<LinkHubPage />} />
         </Routes>
       </BrowserRouter>
     </div>
