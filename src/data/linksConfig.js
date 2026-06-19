@@ -26,6 +26,7 @@ export const linksConfig = {
           icon: "Instagram",
           color: "#db2777",
         },
+        
         {
           label: "YouTube",
           url: "https://youtube.com/@tbreducation?si=WUcXLZy7dMUOZtjd", // Placeholder
@@ -33,17 +34,24 @@ export const linksConfig = {
           color: "#dc2626",
         },
         {
-          label: "Telegram",
-          url: "https://t.me/tbreducation", // Placeholder
-          icon: "Telegram",
-          color: "#2563eb",
-        },
-        {
           label: "WhatsApp",
           url: "https://wa.me/919952773759",
           icon: "WhatsApp",
           color: "#16a34a",
         },
+        {
+          label: "Facebook",
+          url: "https://www.facebook.com/profile.php?id=61590702643278", // Placeholder
+          icon: "Facebook",
+          color: "#1877f2",
+        },
+        {
+          label: "Telegram",
+          url: "https://t.me/tbr_education", // Placeholder
+          icon: "Telegram",
+          color: "#2563eb",
+        },
+        
       ],
     },
     tbrtraders: {
@@ -71,17 +79,24 @@ export const linksConfig = {
           color: "#dc2626",
         },
         {
-          label: "Telegram",
-          url: "https://t.me/tbrtraders", // Placeholder
-          icon: "Telegram",
-          color: "#2563eb",
-        },
-        {
           label: "WhatsApp",
           url: "https://wa.me/919952773759",
           icon: "WhatsApp",
           color: "#16a34a",
         },
+        {
+          label: "Facebook",
+          url: "https://www.facebook.com/profile.php?id=61590662414541", // Placeholder
+          icon: "Facebook",
+          color: "#1877f2",
+        },
+        {
+          label: "Telegram",
+          url: "https://t.me/tbr_traders", // Placeholder
+          icon: "Telegram",
+          color: "#2563eb",
+        },
+        
       ],
     },
   },

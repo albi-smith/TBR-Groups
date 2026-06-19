@@ -48,15 +48,57 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
     }
   };
 
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Only hide navbar on mobile screens (width < 992px)
+      if (window.innerWidth >= 992) {
+        setIsVisible(true);
+        return;
+      }
+
+      const currentScrollY = window.scrollY;
+      
+      // If we scroll down, hide navbar. If we scroll up, show navbar.
+      // Always show at the top of the page.
+      if (currentScrollY < 10) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    const handleResize = () => {
+      if (window.innerWidth >= 992) {
+        setIsVisible(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [lastScrollY]);
+
   return (
     <header className="navbar navbar-expand-lg fixed-top" style={{
-      background: 'rgba(3, 30, 1, 0.85) ',
+      background: 'var(--primary-dark) ',
       backdropFilter: 'blur(20px)',
       WebkitBackdropFilter: 'blur(20px)',
       borderBottom: '1px solid rgba(255, 255, 255, 0.05)',
       padding: '0.5rem 0',
       zIndex: 1000,
       width: '100%',
+      transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+      transition: 'transform 0.3s ease-in-out',
     }}>
       <div className="container-fluid px-4 px-lg-5">
         <div className="d-flex align-items-center justify-content-between w-100">
