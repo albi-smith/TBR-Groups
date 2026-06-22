@@ -485,7 +485,7 @@ const marqueeItems = [
 
               <div className="d-flex flex-wrap justify-content-center gap-3 mb-5">
                 <a
-                  href={`tel:${service.contactPhone || '8300426612'}`}
+                  href={`tel:${service.contactPhone || '+919487635294'}`}
                   className="btn-primary"
                   style={{ textDecoration: 'none' }}
                 >

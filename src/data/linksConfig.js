@@ -35,7 +35,7 @@ export const linksConfig = {
         },
         {
           label: "WhatsApp",
-          url: "https://wa.me/919952773759",
+          url: "https://wa.me/9487635294",
           icon: "WhatsApp",
           color: "#16a34a",
         },

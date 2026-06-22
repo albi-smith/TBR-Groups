@@ -208,7 +208,7 @@ const TBRTechnologies = () => {
                 <button className="btn-primary" onClick={scrollToServices}>
                   Explore Services <ArrowRight size={18} />
                 </button>
-                <a href="tel:8300426612" className="btn-secondary text-decoration-none">
+                <a href="tel:+919487635294" className="btn-secondary text-decoration-none">
                   <Phone size={18} /> Call Now
                 </a>
                 <button className="btn-secondary d-flex align-items-center gap-2" onClick={() => window.open("https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9")}>
@@ -273,7 +273,7 @@ const TBRTechnologies = () => {
         </div>
       </div>
 
-{/* ═══════════════ CERTIFICATIONS SECTION (ABOUT) ═══════════════ */}
+      {/* ═══════════════ CERTIFICATIONS SECTION (ABOUT) ═══════════════ */}
       <section id="about-section" style={{ padding: '5rem 0', background: 'var(--bg-surface)', borderTop: '1px solid var(--border-subtle)' }}>
         <div className="container">
           <div className="row align-items-center g-5">
@@ -447,8 +447,8 @@ const TBRTechnologies = () => {
                     transform: 'none',
                     transition: 'transform 0.5s ease',
                   }}
-                  // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
-                  // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
+                // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
+                // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
                 />
                 {/* 
                 Floating Badge (Above) */}
@@ -544,7 +544,7 @@ const TBRTechnologies = () => {
               </div>
 
               <div className="d-flex flex-wrap gap-3 align-items-center">
-                <a href="tel:9952773759" className="btn-primary text-decoration-none">
+                <a href="tel:+919487635294" className="btn-primary text-decoration-none">
                   Get Your POS Today
                 </a>
               </div>
@@ -553,7 +553,7 @@ const TBRTechnologies = () => {
         </div>
       </section>
 
-      
+
 
       {/* ═══════════════ GO POINT DIGITAL SERVICES SECTION ═══════════════ */}
       <section style={{ padding: '5rem 0', background: 'var(--bg-deep)', position: 'relative', overflow: 'hidden' }}>
@@ -999,8 +999,8 @@ const TBRTechnologies = () => {
                   </div>
                   <div>
                     <h5 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>Direct Line</h5>
-                    <a href="tel:8300426612" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
-                      +91 8300426612
+                    <a href="tel:9487635294" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
+                     +91 94876 35294
                     </a>
                   </div>
                 </div>
@@ -1011,8 +1011,8 @@ const TBRTechnologies = () => {
                   </div>
                   <div>
                     <h5 style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: '0.2rem' }}>Support Email</h5>
-                    <a href="mailto:tbrinnovativetrades@gmail.com" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
-                      tbrinnovativetrades@gmail.com
+                    <a href="mailto:tbriwt@gmail.com" className="text-decoration-none" style={{ color: 'var(--accent-gold)', fontSize: '0.9rem', fontWeight: 500 }}>
+                      tbriwt@gmail.com
                     </a>
                   </div>
                 </div>
@@ -1117,8 +1117,8 @@ const TBRTechnologies = () => {
                           cursor: 'pointer'
                         }}
                       >
-                        <option value="919952773759">General Queries & Support (+91 9952773759)</option>
-                        <option value="918300426612">Service details & CSC/E-Seva (+91 8300426612)</option>
+                        <option value="9487635294">General Queries & Support</option>
+                        <option value="9487635294">Service details & CSC/E-Seva</option>
                       </select>
                     </div>
 
@@ -1230,8 +1230,8 @@ const TBRTechnologies = () => {
                 Visit any of our 4 branches or contact us directly. Our dedicated team is ready to assist you with professional service.
               </p>
               <div className="d-flex flex-wrap justify-content-center gap-3">
-                <a href="tel:8300426612" className="btn-primary text-decoration-none">
-                  <Phone size={18} /> Call 8300426612
+                <a href="tel:9487635294" className="btn-primary text-decoration-none">
+                  <Phone size={18} /> Call
                 </a>
                 <button onClick={() => scrollToEnquiry()} className="btn-secondary">
                   💬 Send Enquiry
@@ -1315,11 +1315,8 @@ const TBRTechnologies = () => {
                 Contact
               </h4>
               <div className="d-flex flex-column gap-3">
-                <a href="tel:8300426612" className="footer-link d-flex align-items-center gap-2">
-                  <Phone size={13} /> 8300426612
-                </a>
-                <a href="tel:7418105297" className="footer-link d-flex align-items-center gap-2">
-                  <Phone size={13} /> 7418105297
+                <a href="tel:9487635294" className="footer-link d-flex align-items-center gap-2">
+                  <Phone size={13} /> +91 94876 35294
                 </a>
                 <a href="mailto:tbrinnovativetrades@gmail.com" className="footer-link d-flex align-items-center gap-2">
                   <Mail size={13} /> Email Us
@@ -1327,10 +1324,10 @@ const TBRTechnologies = () => {
                 <span onClick={() => navigate('/enquiry')} className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer' }}>
                   💬 Submit Enquiry Form
                 </span>
-                <a href="https://wa.me/919952773759" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
+                <a href="https://wa.me/919487635294" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
                   💬 Direct WhatsApp
                 </a>
-                <a href="https://tbr-edu.netlify.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
+                <a href="https://tbr-education.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
                   <Globe size={13} /> TBR Education Website
                 </a>
               </div>
