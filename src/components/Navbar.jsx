@@ -109,11 +109,15 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
               style={{ gap: '0.75rem', cursor: 'pointer' }}
               onClick={() => navigate('/')}
             >
-              <img
-                src="/logo.png"
-                alt="TBR Technologies Logo"
-                className="navbar-logo"
-              />
+              <picture>
+                <source srcSet="/logo.webp" type="image/webp" />
+                <img
+                  src="/logo.png"
+                  alt="TBR Technologies Logo"
+                  className="navbar-logo"
+                  fetchpriority="high"
+                />
+              </picture>
               <div>
                 <h1 className="navbar-title">
                   TBR <span className="navbar-title-groups">Groups</span>

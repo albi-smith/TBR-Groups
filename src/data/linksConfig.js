@@ -1,9 +1,12 @@
 import tbrEducationLogo from '../link/tbr education logo.png';
 import tbrTradersLogo from '../link/tbr groups logo.png';
+import tbrEducationLogoWebp from '../link/tbr education logo.webp';
+import tbrTradersLogoWebp from '../link/tbr groups logo.webp';
 
 export const linksConfig = {
   hero: {
     logo: "/tbrlogo.jpeg",
+    logoWebp: "/tbrlogo.webp",
     title: "TBR Groups",
     subtitle: "Technology • Education • Services",
   },
@@ -12,7 +15,8 @@ export const linksConfig = {
       id: "tbreducation",
       title: "TBR Education",
       description: "Computer courses, software training, AI, programming and career skills.",
-      logo: tbrEducationLogo, // We can use tbrlogo.jpeg as the default or fallback logo
+      logo: tbrEducationLogo,
+      logoWebp: tbrEducationLogoWebp,
       buttons: [
         {
           label: "Website",
@@ -59,6 +63,7 @@ export const linksConfig = {
       title: "TBR Traders",
       description: "Computer sales, service, e-services, registrations and business support.",
       logo: tbrTradersLogo,
+      logoWebp: tbrTradersLogoWebp,
       buttons: [
         {
           label: "Website",

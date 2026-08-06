@@ -294,16 +294,20 @@ const TBRTechnologies = () => {
                 border: '1px solid var(--border-subtle)',
                 marginBottom: '1rem'
               }}>
-                <img
-                  src="/Authorised certificate.jpeg"
-                  alt="Net Protector Authorised Partner Certificate"
-                  style={{
-                    width: '100%',
-                    height: 'auto',
-                    borderRadius: '4px',
-                    display: 'block'
-                  }}
-                />
+                <picture>
+                  <source srcSet="/Authorised certificate.webp" type="image/webp" />
+                  <img
+                    src="/Authorised certificate.jpeg"
+                    alt="Net Protector Authorised Partner Certificate"
+                    loading="lazy"
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      borderRadius: '4px',
+                      display: 'block'
+                    }}
+                  />
+                </picture>
                 <div style={{
                   position: 'absolute',
                   inset: 0,
@@ -433,23 +437,27 @@ const TBRTechnologies = () => {
                 }} />
 
                 {/* POS Image */}
-                <img
-                  src="/Pinelabs.png"
-                  alt="Pine Labs POS Device"
-                  style={{
-                    maxWidth: '100%',
-                    borderRadius: '20px',
-                    height: 'auto',
-                    objectFit: 'contain',
-                    position: 'relative',
-                    zIndex: 1,
-                    filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
-                    transform: 'none',
-                    transition: 'transform 0.5s ease',
-                  }}
-                // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
-                // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
-                />
+                <picture>
+                  <source srcSet="/Pinelabs.webp" type="image/webp" />
+                  <img
+                    src="/Pinelabs.png"
+                    alt="Pine Labs POS Device"
+                    loading="lazy"
+                    style={{
+                      maxWidth: '100%',
+                      borderRadius: '20px',
+                      height: 'auto',
+                      objectFit: 'contain',
+                      position: 'relative',
+                      zIndex: 1,
+                      filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
+                      transform: 'none',
+                      transition: 'transform 0.5s ease',
+                    }}
+                  // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
+                  // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
+                  />
+                </picture>
                 {/* 
                 Floating Badge (Above) */}
                 {/* <div style={{
@@ -596,18 +604,22 @@ const TBRTechnologies = () => {
                   animation: 'float 10s ease-in-out infinite'
                 }} />
 
-                <img
-                  src="/go point new .png"
-                  alt="GO POINT App Interface"
-                  style={{
-                    maxWidth: '100%',
-                    borderRadius: 'var(--radius-lg)',
-                    height: 'auto',
-                    position: 'relative',
-                    zIndex: 1,
-                    filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.15))',
-                  }}
-                />
+                <picture>
+                  <source srcSet="/go point new .webp" type="image/webp" />
+                  <img
+                    src="/go point new .png"
+                    alt="GO POINT App Interface"
+                    loading="lazy"
+                    style={{
+                      maxWidth: '100%',
+                      borderRadius: 'var(--radius-lg)',
+                      height: 'auto',
+                      position: 'relative',
+                      zIndex: 1,
+                      filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.15))',
+                    }}
+                  />
+                </picture>
               </div>
             </div>
 
@@ -732,16 +744,19 @@ const TBRTechnologies = () => {
 
                   {/* Image */}
                   <div className="card-image-wrapper">
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="card-image"
-                      loading="lazy"
-                      onError={(e) => {
-                        e.target.style.background = `linear-gradient(135deg, ${service.color}33, var(--bg-card))`;
-                        e.target.style.display = 'flex';
-                      }}
-                    />
+                    <picture>
+                      {service.imageWebp && <source srcSet={service.imageWebp} type="image/webp" />}
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="card-image"
+                        loading="lazy"
+                        onError={(e) => {
+                          e.target.style.background = `linear-gradient(135deg, ${service.color}33, var(--bg-card))`;
+                          e.target.style.display = 'flex';
+                        }}
+                      />
+                    </picture>
                   </div>
 
                   {/* Body */}

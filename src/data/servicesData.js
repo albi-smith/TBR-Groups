@@ -1,320 +1,871 @@
 // ============================================
-// TBR Technologies — Centralized Service Data
+// TBR Technologies — Centralized Service Data (Optimized Local)
 // ============================================
 
 export const servicesA = [
   {
-    id: 1,
-    slug: 'digital-solutions',
-    path: '/digital-solutions',
-    title: 'Software Development & Digital Solutions',
-    desc: 'Custom software, website design, domain registration, and e-commerce platform development services.',
-    image: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
-    heroImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNvZnR3YXJlJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D',
-    category: 'services',
-    color: '#06b6d4',
-    subServices: [
-      { name: 'Website Development', desc: 'Custom responsive websites and web applications', icon: '🌐', image: 'https://images.pexels.com/photos/16675632/pexels-photo-16675632.jpeg' },
-      { name: 'E-Commerce Platforms', desc: 'Online stores with payment integration and inventory management', icon: '🛒', image: 'https://images.pexels.com/photos/35560482/pexels-photo-35560482.jpeg' },
-      { name: 'Domain & Hosting', desc: 'Domain registration, SSL certificates, and web hosting', icon: '🌍', image: 'https://plus.unsplash.com/premium_photo-1683758342945-e0e47a14a66d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2ViJTIwaG9zdGluZ3xlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Mobile App Development', desc: 'iOS and Android native and cross-platform applications', icon: '📱', image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlJTIwYXBwJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D' },
-      { name: 'UI/UX Design', desc: 'User interface and experience design for digital products', icon: '🎨', image: 'https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dWklMkZ1eCUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'CMS Development', desc: 'WordPress, Shopify, and custom content management systems', icon: '⚙️', image: 'https://images.unsplash.com/photo-1724754609250-fa57e82a93a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29udGVudCUyMG1hbmFnZW1lbnR8ZW58MHx8MHx8fDA%3D' },
-      { name: 'API Integration', desc: 'Third-party API integration and custom backend solutions', icon: '🔌', image: 'https://media.istockphoto.com/id/1317706831/photo/api-application-programming-interface-software-development-tool-business-modern-technology.webp?a=1&b=1&s=612x612&w=0&k=20&c=UrY1EZ1tQ4SZjGLv4q04GnKakhyogknPUb_N7UQn9AA=' },
-      { name: 'SEO & Digital Marketing', desc: 'Search engine optimization and online marketing services', icon: '📈', image: 'https://media.istockphoto.com/id/2204337769/photo/digital-marketing-development-and-goals-strategy-attract-organic-traffic-for-big-sales.webp?a=1&b=1&s=612x612&w=0&k=20&c=CDFsitcQFmrPWNB47jJUfUqY6adPpMH2ziQIVDFJMck=' },
-    ]
+    "id": 1,
+    "slug": "digital-solutions",
+    "path": "/digital-solutions",
+    "title": "Software Development & Digital Solutions",
+    "desc": "Custom software, website design, domain registration, and e-commerce platform development services.",
+    "image": "/assets/images/software-development-digital-solutions.jpeg",
+    "heroImage": "/assets/images/software-development-digital-solutions-hero.jpeg",
+    "category": "services",
+    "color": "#06b6d4",
+    "subServices": [
+      {
+        "name": "Website Development",
+        "desc": "Custom responsive websites and web applications",
+        "icon": "🌐",
+        "image": "/assets/images/software-development-digital-solutions-website-development.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-website-development.webp"
+      },
+      {
+        "name": "E-Commerce Platforms",
+        "desc": "Online stores with payment integration and inventory management",
+        "icon": "🛒",
+        "image": "/assets/images/software-development-digital-solutions-e-commerce-platforms.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-e-commerce-platforms.webp"
+      },
+      {
+        "name": "Domain & Hosting",
+        "desc": "Domain registration, SSL certificates, and web hosting",
+        "icon": "🌍",
+        "image": "/assets/images/software-development-digital-solutions-domain-hosting.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-domain-hosting.webp"
+      },
+      {
+        "name": "Mobile App Development",
+        "desc": "iOS and Android native and cross-platform applications",
+        "icon": "📱",
+        "image": "/assets/images/software-development-digital-solutions-mobile-app-development.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-mobile-app-development.webp"
+      },
+      {
+        "name": "UI/UX Design",
+        "desc": "User interface and experience design for digital products",
+        "icon": "🎨",
+        "image": "/assets/images/software-development-digital-solutions-ui-ux-design.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-ui-ux-design.webp"
+      },
+      {
+        "name": "CMS Development",
+        "desc": "WordPress, Shopify, and custom content management systems",
+        "icon": "⚙️",
+        "image": "/assets/images/software-development-digital-solutions-cms-development.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-cms-development.webp"
+      },
+      {
+        "name": "API Integration",
+        "desc": "Third-party API integration and custom backend solutions",
+        "icon": "🔌",
+        "image": "/assets/images/software-development-digital-solutions-api-integration.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-api-integration.webp"
+      },
+      {
+        "name": "SEO & Digital Marketing",
+        "desc": "Search engine optimization and online marketing services",
+        "icon": "📈",
+        "image": "/assets/images/software-development-digital-solutions-seo-digital-marketing.jpeg",
+        "imageWebp": "/assets/images/software-development-digital-solutions-seo-digital-marketing.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/software-development-digital-solutions.webp",
+    "heroImageWebp": "/assets/images/software-development-digital-solutions-hero.webp"
   },
   {
-    id: 2,
-    slug: 'csc',
-    path: '/csc',
-    title: 'CSC & E-Seva Online Services',
-    desc: 'Common Service Centre and E-Seva digital government portal services.',
-    image: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg',
-    heroImage: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg',
-    category: 'services',
-    color: '#8b5cf6',
-    subServices: [
-      { name: 'CSC Registration', desc: 'New CSC center registration and VLE services', icon: '🖥️', image: 'https://images.pexels.com/photos/7620565/pexels-photo-7620565.jpeg' },
-      { name: 'Bills, Recharge & SIM Services', desc: 'Utility bills , Sim activation and all fee payments', icon: '💳', image: 'https://plus.unsplash.com/premium_photo-1679920911499-830b98b8b17e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGJpbGxzJTIwYW5kJTIwcmVjaGFyZ2V8ZW58MHx8MHx8fDA%3D' },
-      { name: 'TN Police Services', desc: 'Police Verification report, Lost document report & E-Chellan payments', icon: '🚔', image: 'https://plus.unsplash.com/premium_photo-1763556883500-73444cc6f288?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cG9saWNlJTIwdmVyaWZpY2F0aW9uJTIwcmVwb3J0fGVufDB8fDB8fHww' },
-      { name: 'PAN Card', desc: 'New PAN card application, correction & reprint', icon: '🪪', image: 'https://as1.ftcdn.net/v2/jpg/02/51/01/16/1000_F_251011681_BQMz2MiXiurfvjJmRLEauYAgS8qPyQK0.jpg' },
-      { name: 'Passport Application', desc: 'Fresh passport & renewal applications', icon: '📘', image: 'https://t4.ftcdn.net/jpg/04/38/23/51/240_F_438235106_GvpytxvELMPTtnV54SO6mIUlS0EOH7eN.jpg' },
-      { name: 'Voter ID Card', desc: 'New registration, transfer & correction', icon: '🗳️', image: 'https://t3.ftcdn.net/jpg/04/53/16/36/240_F_453163697_sJjXgUgwFxpCsxscQcpaEjbNVXpEaiZk.jpg' },
-      { name: 'Ration Card Services', desc: 'New card, addition & deletion of members', icon: '📋', image: 'https://imgs.search.brave.com/O5zHIukqQWK9L7TaS1c0lQV9U93nEf_wI8n6sAAEen8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vbXlwdmNj/YXJkLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8wNC90/YW1pbC1uYWR1LXJh/dGlvbi1jYXJkLXRv/cC12aWV3LWltYWdl/LndlYnA_Zml0PTEw/MjQsMTAyNCZzc2w9/MQ' },
-      { name: 'E-Seva & E-District Services', desc: 'Income, Community, OBC, Nativity certificates, Patta transfer & related services', icon: '📄', image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
-      { name: 'Ex-Serviceman Online Services', desc: 'Children allowance, marriage allowance, PM Scholarship, EHS', icon: '🎖️', image: 'https://images.unsplash.com/photo-1641790016911-0353099329f6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGV4JTIwc2VydmljZW1hbiUyMG9ubGluZSUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D' },
-      { name: 'Online Exam & Job Applications', desc: 'TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ', icon: '📝', image: 'https://media.istockphoto.com/id/157616654/photo/travel-the-globe-series-india.jpg?s=612x612&w=0&k=20&c=WHj4F9wIiYZzzvxsrs46RRLX0UdSSweD2zGgdxS8m3E=' },
-      { name: 'Digital Signature Certificate', desc: 'Class 2 & Class 3 DSC for businesses', icon: '🔐', image: 'https://images.unsplash.com/photo-1742415888265-d5044039d8e6?q=80&w=1092&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'Scholarship Applications', desc: 'State & central scholarship applications', icon: '🎓', image: 'https://media.istockphoto.com/id/522370294/photo/scholarship-application.jpg?s=612x612&w=0&k=20&c=k9avVirQTFNGQEYPubG3d1HClj8LOf5JsUg9o0nvjhw=' },
-      { name: 'PMJAY Ayushman Bharat', desc: 'Health card enrollment & hospital services', icon: '🏥', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Driving License & RC', desc: 'DL application, renewal & RC transfer', icon: '🚗', image: 'https://media.istockphoto.com/id/172477073/photo/uk-driving-licence-application.jpg?s=612x612&w=0&k=20&c=KQ4ya3t-FPwlTLHlYNrvnNHZftSGs1FCGsWxYaZuH0U=' },
-    ]
+    "id": 2,
+    "slug": "csc",
+    "path": "/csc",
+    "title": "CSC & E-Seva Online Services",
+    "desc": "Common Service Centre and E-Seva digital government portal services.",
+    "image": "/assets/images/csc-e-seva-online-services.jpeg",
+    "heroImage": "/assets/images/csc-e-seva-online-services-hero.jpeg",
+    "category": "services",
+    "color": "#8b5cf6",
+    "subServices": [
+      {
+        "name": "CSC Registration",
+        "desc": "New CSC center registration and VLE services",
+        "icon": "🖥️",
+        "image": "/assets/images/csc-e-seva-online-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services.webp"
+      },
+      {
+        "name": "Bills, Recharge & SIM Services",
+        "desc": "Utility bills , Sim activation and all fee payments",
+        "icon": "💳",
+        "image": "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.webp"
+      },
+      {
+        "name": "TN Police Services",
+        "desc": "Police Verification report, Lost document report & E-Chellan payments",
+        "icon": "🚔",
+        "image": "/assets/images/csc-e-seva-online-services-tn-police-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-tn-police-services.webp"
+      },
+      {
+        "name": "PAN Card",
+        "desc": "New PAN card application, correction & reprint",
+        "icon": "🪪",
+        "image": "/assets/images/csc-e-seva-online-services-pan-card.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-pan-card.webp"
+      },
+      {
+        "name": "Passport Application",
+        "desc": "Fresh passport & renewal applications",
+        "icon": "📘",
+        "image": "/assets/images/csc-e-seva-online-services-passport-application.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-passport-application.webp"
+      },
+      {
+        "name": "Voter ID Card",
+        "desc": "New registration, transfer & correction",
+        "icon": "🗳️",
+        "image": "/assets/images/csc-e-seva-online-services-voter-id-card.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-voter-id-card.webp"
+      },
+      {
+        "name": "Ration Card Services",
+        "desc": "New card, addition & deletion of members",
+        "icon": "📋",
+        "image": "/assets/images/csc-e-seva-online-services-ration-card-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-ration-card-services.webp"
+      },
+      {
+        "name": "E-Seva & E-District Services",
+        "desc": "Income, Community, OBC, Nativity certificates, Patta transfer & related services",
+        "icon": "📄",
+        "image": "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.webp"
+      },
+      {
+        "name": "Ex-Serviceman Online Services",
+        "desc": "Children allowance, marriage allowance, PM Scholarship, EHS",
+        "icon": "🎖️",
+        "image": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.webp"
+      },
+      {
+        "name": "Online Exam & Job Applications",
+        "desc": "TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ",
+        "icon": "📝",
+        "image": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.webp"
+      },
+      {
+        "name": "Digital Signature Certificate",
+        "desc": "Class 2 & Class 3 DSC for businesses",
+        "icon": "🔐",
+        "image": "/assets/images/csc-e-seva-online-services-digital-signature-certificate.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-digital-signature-certificate.webp"
+      },
+      {
+        "name": "Scholarship Applications",
+        "desc": "State & central scholarship applications",
+        "icon": "🎓",
+        "image": "/assets/images/csc-e-seva-online-services-scholarship-applications.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-scholarship-applications.webp"
+      },
+      {
+        "name": "PMJAY Ayushman Bharat",
+        "desc": "Health card enrollment & hospital services",
+        "icon": "🏥",
+        "image": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp"
+      },
+      {
+        "name": "Driving License & RC",
+        "desc": "DL application, renewal & RC transfer",
+        "icon": "🚗",
+        "image": "/assets/images/csc-e-seva-online-services-driving-license-rc.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-driving-license-rc.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/csc-e-seva-online-services.webp",
+    "heroImageWebp": "/assets/images/csc-e-seva-online-services-hero.webp"
   },
   {
-    id: 3,
-    slug: 'document-registration',
-    path: '/document-registration',
-    title: 'Document Registration',
-    desc: 'EC, Patta, Chitta and all property & legal document registration services.',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80',
-    category: 'services',
-    color: '#f59e0b',
-    subServices: [
-      { name: 'EC (Encumbrance Certificate)', desc: 'Property transaction history verification', icon: '📑', image: 'https://images.unsplash.com/photo-1627129926167-b32522980112?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEVuY3VtYnJhbmNlJTIwQ2VydGlmaWNhdGV8ZW58MHx8MHx8fDA%3D' },
-      { name: 'Patta Transfer', desc: 'Land ownership transfer & subdivision', icon: '🏗️', image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Chitta & A-Register', desc: 'Land classification and revenue records', icon: '📊', image: 'https://images.unsplash.com/photo-1585826062988-1898c3e1f0a2?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'Land Registration', desc: 'Property deed registration assistance', icon: '🏘️', image: 'https://plus.unsplash.com/premium_photo-1661402104150-95938d0c48c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZCUyMHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Property Verification', desc: 'Document verification and legal opinion', icon: '🔍', image: 'https://images.unsplash.com/photo-1768611873487-67930d5db1b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9jdW1lbnQlMjB2ZXJpZmljYXRpb258ZW58MHx8MHx8fDA%3D' },
-      { name: 'Will Registration', desc: 'Legal will creation and registration', icon: '⚖️', image: 'https://plus.unsplash.com/premium_photo-1661371499971-d01cf0a7cf97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2lsbCUyMHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Rental Agreement', desc: 'Residential & commercial rental agreements', icon: '🏬', image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80' },
-      { name: 'Sale Deed Preparation', desc: 'Sale deed drafting and registration', icon: '✍️', image: 'https://media.istockphoto.com/id/516103962/photo/house-deed.webp?a=1&b=1&s=612x612&w=0&k=20&c=gAeXXITMjkivbZ5YoKBG779DkvWkf3jo75ey-oJ7Es4=' },
-    ]
-  },
-  // {
-  //   id: 4,
-  //   slug: 'recharge',
-  //   path: '/recharge',
-  //   title: 'Recharge & Activation',
-  //   desc: 'Mobile recharge, DTH, new SIM activation and bill payment services.',
-  //   image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80',
-  //   heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80',
-  //   category: 'services',
-  //   color: '#10b981',
-  //   subServices: [
-  //     { name: 'Mobile Recharge', desc: 'All network prepaid & postpaid recharges', icon: '📱', image: 'https://images.unsplash.com/photo-1511707267537-b85faf00021e?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'DTH Recharge', desc: 'Tata Play, Airtel, Dish TV & more', icon: '📡', image: 'https://images.unsplash.com/photo-1605976236488-8a1b76606b42?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'New SIM Activation', desc: 'Jio, Airtel, Vi & BSNL new connections', icon: '🔲', image: 'https://images.unsplash.com/photo-1556514712-9ceceb8a3fe4?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'Broadband & WiFi', desc: 'Internet connection plans & activation', icon: '🌐', image: 'https://images.unsplash.com/photo-1553531088-189a29e18e4d?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'Data Plan Top-up', desc: 'Additional data pack recharges', icon: '📶', image: 'https://images.unsplash.com/photo-1461749280684-ddefd3445e38?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'Postpaid Bill Payment', desc: 'Monthly postpaid bill settlement', icon: '🧾', image: 'https://images.unsplash.com/photo-1554180298-0ffacdc50caf?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'FASTag Recharge', desc: 'Highway toll FASTag balance top-up', icon: '🛣️', image: 'https://images.unsplash.com/photo-1553938070-9a86993e964a?auto=format&fit=crop&w=500&q=80' },
-  //     { name: 'Electricity Bill Payment', desc: 'TNEB and other EB bill payments', icon: '⚡', image: 'https://images.unsplash.com/photo-1507919886019-37d82ec62cb0?auto=format&fit=crop&w=500&q=80' },
-  //   ]
-  // },
-  {
-    id: 5,
-    slug: 'ticket-booking',
-    path: '/ticket-booking',
-    title: 'Ticket Booking',
-    desc: 'Bus, train, flight tickets and travel booking services.',
-    image: 'https://images.pexels.com/photos/7412001/pexels-photo-7412001.jpeg',
-    heroImage: 'https://images.pexels.com/photos/7412001/pexels-photo-7412001.jpeg',
-    category: 'services',
-    color: '#06b6d4',
-    subServices: [
-      { name: 'Bus Ticket Booking', desc: 'Government & private bus reservations', icon: '🚌', image: 'https://images.unsplash.com/photo-1570118054363-ff4d296962f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzJTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Train Ticket (IRCTC)', desc: 'Railway ticket booking & tatkal service', icon: '🚂', image: 'https://images.unsplash.com/photo-1582126819996-67f0e6a47103?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fHRyYWluJTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Flight Booking', desc: 'Domestic & international flight tickets', icon: '✈️', image: 'https://images.unsplash.com/photo-1725600942514-b983f52633cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZmxpZ2h0JTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D' },
-      { name: 'Movie Tickets', desc: 'Local cinema & multiplex bookings', icon: '🎬', image: 'https://plus.unsplash.com/premium_photo-1709842822358-006f08261139?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW92aWUlMjB0aWNrZXQlMjBib29raW5nfGVufDB8fDB8fHww' },
-      // { name: 'Event Tickets', desc: 'Concerts, exhibitions & event bookings', icon: '🎪', image: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Hotel Booking', desc: 'Budget to premium hotel reservations', icon: '🏨', image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWwlMjBib29raW5nfGVufDB8fDB8fHww' },
-      // { name: 'Cab Booking', desc: 'Rental cars & outstation cab booking', icon: '🚕', image: 'https://images.unsplash.com/photo-1533473359331-35ef9a3af923?auto=format&fit=crop&w=500&q=80' },
-    ]
-  },
-  {
-    id: 6,
-    slug: 'insurance',
-    path: '/insurance',
-    title: 'Insurance Services',
-    desc: 'LIC, Star Health, vehicle insurance and comprehensive protection plans.',
-    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80',
-    category: 'services',
-    color: '#ef4444',
-    subServices: [
-      { name: 'LIC Life Insurance', desc: 'Endowment, money-back & term plans', icon: '🛡️', image: 'https://imgs.search.brave.com/YIAWZL-iqWM4n3ytqSTCyAgurXvvZ9T-BpGnCAfYAbE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb21w/YW5pZXNtYXJrZXRj/YXAuY29tL3RodW1i/bmFpbHMvNTEyLzcy/MzY2LmFyLmVuLjIw/MjItMjAyMy5wZGYu/anBn' },
-      // { name: 'Star Health Insurance', desc: 'Individual & family health cover plans', icon: '⭐', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Health Insurance Plans', desc: 'Comprehensive health coverage options', icon: '🏥', image: 'https://media.istockphoto.com/id/958332984/photo/doctor-protecting-family-cut-out-with-heart-shape.webp?a=1&b=1&s=612x612&w=0&k=20&c=PPA2uBOVNrEup6rf4mjU74Pd0Lc7deCTe9ZqAPI9gYE=' },
-      { name: 'Vehicle Insurance', desc: 'Two-wheeler & four-wheeler policies', icon: '🚗', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Term Life Insurance', desc: 'Pure protection term insurance plans', icon: '💪', image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=500&q=80' },
-      // { name: 'Travel Insurance', desc: 'Domestic & international travel cover', icon: '🌍', image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=500&q=80' },
-      { name: 'Crop Insurance (PMFBY)', desc: 'Agricultural crop protection scheme', icon: '🌾', image: 'https://images.unsplash.com/photo-1574943320219-553eb213f72d?auto=format&fit=crop&w=500&q=80' },
-      // { name: 'Personal Accident Cover', desc: 'Accident & disability insurance', icon: '🩹', image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=500&q=80' },
-    ]
+    "id": 3,
+    "slug": "document-registration",
+    "path": "/document-registration",
+    "title": "Document Registration",
+    "desc": "EC, Patta, Chitta and all property & legal document registration services.",
+    "image": "/assets/images/document-registration.jpeg",
+    "heroImage": "/assets/images/document-registration-hero.jpeg",
+    "category": "services",
+    "color": "#f59e0b",
+    "subServices": [
+      {
+        "name": "EC (Encumbrance Certificate)",
+        "desc": "Property transaction history verification",
+        "icon": "📑",
+        "image": "/assets/images/document-registration-ec-encumbrance-certificate.jpeg",
+        "imageWebp": "/assets/images/document-registration-ec-encumbrance-certificate.webp"
+      },
+      {
+        "name": "Patta Transfer",
+        "desc": "Land ownership transfer & subdivision",
+        "icon": "🏗️",
+        "image": "/assets/images/document-registration-patta-transfer.jpeg",
+        "imageWebp": "/assets/images/document-registration-patta-transfer.webp"
+      },
+      {
+        "name": "Chitta & A-Register",
+        "desc": "Land classification and revenue records",
+        "icon": "📊",
+        "image": "/assets/images/document-registration-chitta-a-register.jpeg",
+        "imageWebp": "/assets/images/document-registration-chitta-a-register.webp"
+      },
+      {
+        "name": "Land Registration",
+        "desc": "Property deed registration assistance",
+        "icon": "🏘️",
+        "image": "/assets/images/document-registration-land-registration.jpeg",
+        "imageWebp": "/assets/images/document-registration-land-registration.webp"
+      },
+      {
+        "name": "Property Verification",
+        "desc": "Document verification and legal opinion",
+        "icon": "🔍",
+        "image": "/assets/images/document-registration-property-verification.jpeg",
+        "imageWebp": "/assets/images/document-registration-property-verification.webp"
+      },
+      {
+        "name": "Will Registration",
+        "desc": "Legal will creation and registration",
+        "icon": "⚖️",
+        "image": "/assets/images/document-registration-will-registration.jpeg",
+        "imageWebp": "/assets/images/document-registration-will-registration.webp"
+      },
+      {
+        "name": "Rental Agreement",
+        "desc": "Residential & commercial rental agreements",
+        "icon": "🏬",
+        "image": "/assets/images/document-registration-rental-agreement.jpeg",
+        "imageWebp": "/assets/images/document-registration-rental-agreement.webp"
+      },
+      {
+        "name": "Sale Deed Preparation",
+        "desc": "Sale deed drafting and registration",
+        "icon": "✍️",
+        "image": "/assets/images/document-registration-sale-deed-preparation.jpeg",
+        "imageWebp": "/assets/images/document-registration-sale-deed-preparation.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/document-registration.webp",
+    "heroImageWebp": "/assets/images/document-registration-hero.webp"
   },
   {
-    id: 7,
-    slug: 'banking',
-    path: '/banking',
-    title: 'Banking Services',
-    desc: 'Loans, AEPS, money transfer and complete banking solutions.',
-    image: 'https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg',
-    heroImage: 'https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg',
-    category: 'services',
-    color: '#6366f1',
-    subServices: [
-      { name: 'Personal Loan', desc: 'Quick personal loan processing & approval', icon: '💵', image: 'https://images.pexels.com/photos/14907339/pexels-photo-14907339.jpeg' },
-      { name: 'Business Loan', desc: 'MSME & business loan assistance', icon: '🏦', image: 'https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'AEPS Services', desc: 'Aadhaar-enabled payment & withdrawal', icon: '🔑', image: 'https://imgs.search.brave.com/oPfkWZwgMW45s2ySdnv9IR1IMpzZYF7u1e5b58VpLuA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93cGJs/b2dhc3NldHMucGF5/dG0uY29tL3BheXRt/YmxvZy91cGxvYWRz/LzIwMjYvMDEvaW1h/Z2UtMjAyNi0wMS0x/NFQxMTUzMDguOTg1/LmpwZw' },
-      { name: 'Money Transfer', desc: 'NEFT, RTGS, IMPS & UPI transfers', icon: '💸', image: 'https://images.pexels.com/photos/31035096/pexels-photo-31035096.jpeg' },
-      { name: 'Account Opening', desc: 'Savings, current & NRI account opening', icon: '📒', image: 'https://images.unsplash.com/photo-1656049471651-f7b001c576d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHNhdmluZ3MlMjBhY2NvdW50JTIwb3BlbmluZ3xlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Credit Card Application', desc: 'Apply for credit cards from top banks', icon: '💳', image: 'https://images.pexels.com/photos/32641818/pexels-photo-32641818.jpeg' },
-      { name: 'Fixed & Recurring Deposits', desc: 'FD/RD with best interest rates', icon: '📈', image: 'https://images.pexels.com/photos/20843727/pexels-photo-20843727.jpeg' },
-      { name: 'Micro ATM Services', desc: 'Cash withdrawal & balance inquiry', icon: '🏧', image: 'https://images.pexels.com/photos/3570237/pexels-photo-3570237.jpeg' },
-    ]
+    "id": 5,
+    "slug": "ticket-booking",
+    "path": "/ticket-booking",
+    "title": "Ticket Booking",
+    "desc": "Bus, train, flight tickets and travel booking services.",
+    "image": "/assets/images/ticket-booking.jpeg",
+    "heroImage": "/assets/images/ticket-booking-hero.jpeg",
+    "category": "services",
+    "color": "#06b6d4",
+    "subServices": [
+      {
+        "name": "Bus Ticket Booking",
+        "desc": "Government & private bus reservations",
+        "icon": "🚌",
+        "image": "/assets/images/ticket-booking-bus-ticket-booking.jpeg",
+        "imageWebp": "/assets/images/ticket-booking-bus-ticket-booking.webp"
+      },
+      {
+        "name": "Train Ticket (IRCTC)",
+        "desc": "Railway ticket booking & tatkal service",
+        "icon": "🚂",
+        "image": "/assets/images/ticket-booking-train-ticket-irctc.jpeg",
+        "imageWebp": "/assets/images/ticket-booking-train-ticket-irctc.webp"
+      },
+      {
+        "name": "Flight Booking",
+        "desc": "Domestic & international flight tickets",
+        "icon": "✈️",
+        "image": "/assets/images/ticket-booking-flight-booking.jpeg",
+        "imageWebp": "/assets/images/ticket-booking-flight-booking.webp"
+      },
+      {
+        "name": "Movie Tickets",
+        "desc": "Local cinema & multiplex bookings",
+        "icon": "🎬",
+        "image": "/assets/images/ticket-booking-movie-tickets.jpeg",
+        "imageWebp": "/assets/images/ticket-booking-movie-tickets.webp"
+      },
+      {
+        "name": "Hotel Booking",
+        "desc": "Budget to premium hotel reservations",
+        "icon": "🏨",
+        "image": "/assets/images/ticket-booking-hotel-booking.jpeg",
+        "imageWebp": "/assets/images/ticket-booking-hotel-booking.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/ticket-booking.webp",
+    "heroImageWebp": "/assets/images/ticket-booking-hero.webp"
   },
   {
-    id: 8,
-    slug: 'postal',
-    path: '/postal',
-    title: 'Postal Services',
-    desc: 'IPPB - postal savings account, speed post and Indian Post services.',
-    image: 'https://indiadesignsystem.bombaydc.com/assets/india-designs/display/India-Post/color.svg',
-    heroImage: 'https://indiadesignsystem.bombaydc.com/assets/india-designs/display/India-Post/color.svg',
-    category: 'services',
-    color: '#d946ef',
-    subServices: [
-      { name: 'IPPB Postal Account Opening', desc: 'India Post Payments Bank RD plans', icon: '🏣', image: 'https://imgs.search.brave.com/4XI9GlmyND2feReWRhtHK7dZBlmSR_FVTAoYpHVxX2U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvZW4vdGh1bWIv/NS81Yy9JbmRpYV9Q/b3N0X1BheW1lbnRz/X0JhbmtfbG9nby5w/bmcvMjUwcHgtSW5k/aWFfUG9zdF9QYXlt/ZW50c19CYW5rX2xv/Z28ucG5n' },
-      { name: 'Speed Post & Registered Post', desc: 'Express and tracked mail services', icon: '📮', image: 'https://imgs.search.brave.com/Xp4qVztN6ncNFwVvsaoxwOlT5KNPzWD7W81edQwn0cw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cy4x/MjNyZi5jb20vNDUw/d20vYW5pbWFmbG9y/YXBpY3NzdG9jay9h/bmltYWZsb3JhcGlj/c3N0b2NrMjAwMi9h/bmltYWZsb3JhcGlj/c3N0b2NrMjAwMjAw/MzA1L2FuaW1hZmxv/cmFwaWNzc3RvY2sy/MDAyMDAzMDUuanBn/P3Zlcj02' },
-      { name: 'Money Order Services', desc: 'Domestic money order transfers', icon: '💸', image: 'https://thumbs.dreamstime.com/b/rome-italy-circa-august-postal-money-order-italian-electronic-passport-postal-money-order-italian-passport-rome-254740087.jpg?w=768' },
-      { name: 'Postal Life Insurance', desc: 'PLI & RPLI premium payment', icon: '🛡️', image: 'https://imgs.search.brave.com/ixm89XFAk_9Cn-TWJpv1jJKGG-C40btOTEtiTXX0yXw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taW50/eWNlbnRzLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyNS8w/My9Qb3N0YWwtTGlm/ZS1JbnN1cmFuY2Uu/d2VicA' },
-    ]
+    "id": 6,
+    "slug": "insurance",
+    "path": "/insurance",
+    "title": "Insurance Services",
+    "desc": "LIC, Star Health, vehicle insurance and comprehensive protection plans.",
+    "image": "/assets/images/insurance-services.jpeg",
+    "heroImage": "/assets/images/insurance-services-hero.jpeg",
+    "category": "services",
+    "color": "#ef4444",
+    "subServices": [
+      {
+        "name": "LIC Life Insurance",
+        "desc": "Endowment, money-back & term plans",
+        "icon": "🛡️",
+        "image": "/assets/images/insurance-services-lic-life-insurance.jpeg",
+        "imageWebp": "/assets/images/insurance-services-lic-life-insurance.webp"
+      },
+      {
+        "name": "Health Insurance Plans",
+        "desc": "Comprehensive health coverage options",
+        "icon": "🏥",
+        "image": "/assets/images/insurance-services-health-insurance-plans.jpeg",
+        "imageWebp": "/assets/images/insurance-services-health-insurance-plans.webp"
+      },
+      {
+        "name": "Vehicle Insurance",
+        "desc": "Two-wheeler & four-wheeler policies",
+        "icon": "🚗",
+        "image": "/assets/images/insurance-services-vehicle-insurance.jpeg",
+        "imageWebp": "/assets/images/insurance-services-vehicle-insurance.webp"
+      },
+      {
+        "name": "Term Life Insurance",
+        "desc": "Pure protection term insurance plans",
+        "icon": "💪",
+        "image": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg",
+        "imageWebp": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp"
+      },
+      {
+        "name": "Crop Insurance (PMFBY)",
+        "desc": "Agricultural crop protection scheme",
+        "icon": "🌾",
+        "image": "/assets/images/insurance-services-crop-insurance-pmfby.jpeg",
+        "imageWebp": "/assets/images/insurance-services-crop-insurance-pmfby.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/insurance-services.webp",
+    "heroImageWebp": "/assets/images/insurance-services-hero.webp"
   },
   {
-    id: 9,
-    slug: 'business-registration',
-    path: '/business-registration',
-    title: 'Business Registration',
-    desc: 'GST, company registration, FSSAI and all business compliance services.',
-    image: 'https://images.pexels.com/photos/5912588/pexels-photo-5912588.jpeg',
-    heroImage: 'https://images.pexels.com/photos/5912588/pexels-photo-5912588.jpeg',
-    category: 'services',
-    color: '#f97316',
-    subServices: [
-      { name: 'GST Registration & Filing', desc: 'GSTIN registration and monthly returns', icon: '📊', image: 'https://images.pexels.com/photos/8962449/pexels-photo-8962449.jpeg' },
-      { name: 'Company Registration', desc: 'Private limited & LLP incorporation', icon: '🏢', image: 'https://images.pexels.com/photos/7651555/pexels-photo-7651555.jpeg' },
-      { name: 'FSSAI License', desc: 'Food safety license and registration', icon: '🍽️', image: 'https://imgs.search.brave.com/c-gRmVQhYoP213j-iUboxdkRlU9QnWvhxqlMBfxKiI0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bm9icm9rZXIuaW4v/YmxvZy93cC1jb250/ZW50L3VwbG9hZHMv/MjAyNS8xMS9ob3ct/dG8tYXBwbHktZm9y/LWFuLWZzc2FpLWxp/Y2Vuc2UtaW4tbXVt/YmFpLndlYnA' },
-      { name: 'MSME/Udyam Registration', desc: 'Micro, small & medium enterprise registration', icon: '🏭', image: 'https://images.pexels.com/photos/9858904/pexels-photo-9858904.jpeg' },
-      { name: 'Trade License', desc: 'Municipal trade license application', icon: '🪪', image: 'https://images.pexels.com/photos/7887840/pexels-photo-7887840.jpeg' },
-      { name: 'Shop & Establishment', desc: 'Shop act license and compliance', icon: '🏪', image: 'https://images.pexels.com/photos/19868771/pexels-photo-19868771.jpeg' },
-      { name: 'Import Export Code', desc: 'IEC registration for international trade', icon: '🌐', image: 'https://imgs.search.brave.com/i5ad-hfStso6fqQKqqiiAuQCdf6EMIF_FdHeGet6HrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbnZl/bnRpb250YXguY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA5L0lFQy1Db2Rl/LVJlZ2lzdHJhdGlv/bi1pbi1LdWthdHBh/bGx5LUh5ZGVyYWJh/ZC5qcGc' },
-      { name: 'Professional Tax', desc: 'PT registration and compliance', icon: '💼', image: 'https://images.pexels.com/photos/259204/pexels-photo-259204.jpeg' },
-    ]
+    "id": 7,
+    "slug": "banking",
+    "path": "/banking",
+    "title": "Banking Services",
+    "desc": "Loans, AEPS, money transfer and complete banking solutions.",
+    "image": "/assets/images/banking-services.jpeg",
+    "heroImage": "/assets/images/banking-services-hero.jpeg",
+    "category": "services",
+    "color": "#6366f1",
+    "subServices": [
+      {
+        "name": "Personal Loan",
+        "desc": "Quick personal loan processing & approval",
+        "icon": "💵",
+        "image": "/assets/images/banking-services-personal-loan.jpeg",
+        "imageWebp": "/assets/images/banking-services-personal-loan.webp"
+      },
+      {
+        "name": "Business Loan",
+        "desc": "MSME & business loan assistance",
+        "icon": "🏦",
+        "image": "/assets/images/banking-services-business-loan.jpeg",
+        "imageWebp": "/assets/images/banking-services-business-loan.webp"
+      },
+      {
+        "name": "AEPS Services",
+        "desc": "Aadhaar-enabled payment & withdrawal",
+        "icon": "🔑",
+        "image": "/assets/images/banking-services-aeps-services.jpeg",
+        "imageWebp": "/assets/images/banking-services-aeps-services.webp"
+      },
+      {
+        "name": "Money Transfer",
+        "desc": "NEFT, RTGS, IMPS & UPI transfers",
+        "icon": "💸",
+        "image": "/assets/images/banking-services-money-transfer.jpeg",
+        "imageWebp": "/assets/images/banking-services-money-transfer.webp"
+      },
+      {
+        "name": "Account Opening",
+        "desc": "Savings, current & NRI account opening",
+        "icon": "📒",
+        "image": "/assets/images/banking-services-account-opening.jpeg",
+        "imageWebp": "/assets/images/banking-services-account-opening.webp"
+      },
+      {
+        "name": "Credit Card Application",
+        "desc": "Apply for credit cards from top banks",
+        "icon": "💳",
+        "image": "/assets/images/banking-services-credit-card-application.jpeg",
+        "imageWebp": "/assets/images/banking-services-credit-card-application.webp"
+      },
+      {
+        "name": "Fixed & Recurring Deposits",
+        "desc": "FD/RD with best interest rates",
+        "icon": "📈",
+        "image": "/assets/images/banking-services-fixed-recurring-deposits.jpeg",
+        "imageWebp": "/assets/images/banking-services-fixed-recurring-deposits.webp"
+      },
+      {
+        "name": "Micro ATM Services",
+        "desc": "Cash withdrawal & balance inquiry",
+        "icon": "🏧",
+        "image": "/assets/images/banking-services-micro-atm-services.jpeg",
+        "imageWebp": "/assets/images/banking-services-micro-atm-services.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/banking-services.webp",
+    "heroImageWebp": "/assets/images/banking-services-hero.webp"
   },
   {
-    id: 10,
-    slug: 'project-binding',
-    path: '/project-binding',
-    title: 'Project & Designing Work',
-    desc: 'Professional binding, lamination, printing and project report services.',
-    image: 'https://images.pexels.com/photos/8250927/pexels-photo-8250927.jpeg',
-    heroImage: 'https://images.pexels.com/photos/8250927/pexels-photo-8250927.jpeg',
-    category: 'services',
-    color: '#84cc16',
-    subServices: [
-    
-      { name: 'Document Binding Services', desc: 'Projects, documents, & reports binding.', icon: '📕', image: 'https://images.pexels.com/photos/20064056/pexels-photo-20064056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' },
-      { name: 'Color & B/W Printing', desc: 'High quality laser & inkjet printing', icon: '🖨️', image: 'https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg' },
-     { name: 'Project Report Preparation', desc: 'Formatting, indexing & cover design', icon: '📐', image: 'https://images.pexels.com/photos/3847694/pexels-photo-3847694.jpeg' },
-      { name: 'ID Card & Certificate Printing', desc: 'Custom ID cards and certificates', icon: '🎴', image: 'https://images.pexels.com/photos/37012315/pexels-photo-37012315.jpeg' },
-    ]
+    "id": 8,
+    "slug": "postal",
+    "path": "/postal",
+    "title": "Postal Services",
+    "desc": "IPPB - postal savings account, speed post and Indian Post services.",
+    "image": "/assets/images/postal-services.jpeg",
+    "heroImage": "/assets/images/postal-services-hero.jpeg",
+    "category": "services",
+    "color": "#d946ef",
+    "subServices": [
+      {
+        "name": "IPPB Postal Account Opening",
+        "desc": "India Post Payments Bank RD plans",
+        "icon": "🏣",
+        "image": "/assets/images/postal-services-ippb-postal-account-opening.jpeg",
+        "imageWebp": "/assets/images/postal-services-ippb-postal-account-opening.webp"
+      },
+      {
+        "name": "Speed Post & Registered Post",
+        "desc": "Express and tracked mail services",
+        "icon": "📮",
+        "image": "/assets/images/postal-services-speed-post-registered-post.jpeg",
+        "imageWebp": "/assets/images/postal-services-speed-post-registered-post.webp"
+      },
+      {
+        "name": "Money Order Services",
+        "desc": "Domestic money order transfers",
+        "icon": "💸",
+        "image": "/assets/images/postal-services-money-order-services.jpeg",
+        "imageWebp": "/assets/images/postal-services-money-order-services.webp"
+      },
+      {
+        "name": "Postal Life Insurance",
+        "desc": "PLI & RPLI premium payment",
+        "icon": "🛡️",
+        "image": "/assets/images/postal-services-postal-life-insurance.jpeg",
+        "imageWebp": "/assets/images/postal-services-postal-life-insurance.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/postal-services.webp",
+    "heroImageWebp": "/assets/images/postal-services-hero.webp"
+  },
+  {
+    "id": 9,
+    "slug": "business-registration",
+    "path": "/business-registration",
+    "title": "Business Registration",
+    "desc": "GST, company registration, FSSAI and all business compliance services.",
+    "image": "/assets/images/business-registration.jpeg",
+    "heroImage": "/assets/images/business-registration-hero.jpeg",
+    "category": "services",
+    "color": "#f97316",
+    "subServices": [
+      {
+        "name": "GST Registration & Filing",
+        "desc": "GSTIN registration and monthly returns",
+        "icon": "📊",
+        "image": "/assets/images/business-registration-gst-registration-filing.jpeg",
+        "imageWebp": "/assets/images/business-registration-gst-registration-filing.webp"
+      },
+      {
+        "name": "Company Registration",
+        "desc": "Private limited & LLP incorporation",
+        "icon": "🏢",
+        "image": "/assets/images/business-registration-company-registration.jpeg",
+        "imageWebp": "/assets/images/business-registration-company-registration.webp"
+      },
+      {
+        "name": "FSSAI License",
+        "desc": "Food safety license and registration",
+        "icon": "🍽️",
+        "image": "/assets/images/business-registration-fssai-license.jpeg",
+        "imageWebp": "/assets/images/business-registration-fssai-license.webp"
+      },
+      {
+        "name": "MSME/Udyam Registration",
+        "desc": "Micro, small & medium enterprise registration",
+        "icon": "🏭",
+        "image": "/assets/images/business-registration-msme-udyam-registration.jpeg",
+        "imageWebp": "/assets/images/business-registration-msme-udyam-registration.webp"
+      },
+      {
+        "name": "Trade License",
+        "desc": "Municipal trade license application",
+        "icon": "🪪",
+        "image": "/assets/images/business-registration-trade-license.jpeg",
+        "imageWebp": "/assets/images/business-registration-trade-license.webp"
+      },
+      {
+        "name": "Shop & Establishment",
+        "desc": "Shop act license and compliance",
+        "icon": "🏪",
+        "image": "/assets/images/business-registration-shop-establishment.jpeg",
+        "imageWebp": "/assets/images/business-registration-shop-establishment.webp"
+      },
+      {
+        "name": "Import Export Code",
+        "desc": "IEC registration for international trade",
+        "icon": "🌐",
+        "image": "https://imgs.search.brave.com/i5ad-hfStso6fqQKqqiiAuQCdf6EMIF_FdHeGet6HrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbnZl/bnRpb250YXguY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA5L0lFQy1Db2Rl/LVJlZ2lzdHJhdGlv/bi1pbi1LdWthdHBh/bGx5LUh5ZGVyYWJh/ZC5qcGc"
+      },
+      {
+        "name": "Professional Tax",
+        "desc": "PT registration and compliance",
+        "icon": "💼",
+        "image": "/assets/images/business-registration-professional-tax.jpeg",
+        "imageWebp": "/assets/images/business-registration-professional-tax.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/business-registration.webp",
+    "heroImageWebp": "/assets/images/business-registration-hero.webp"
+  },
+  {
+    "id": 10,
+    "slug": "project-binding",
+    "path": "/project-binding",
+    "title": "Project & Designing Work",
+    "desc": "Professional binding, lamination, printing and project report services.",
+    "image": "/assets/images/project-designing-work.jpeg",
+    "heroImage": "/assets/images/project-designing-work-hero.jpeg",
+    "category": "services",
+    "color": "#84cc16",
+    "subServices": [
+      {
+        "name": "Document Binding Services",
+        "desc": "Projects, documents, & reports binding.",
+        "icon": "📕",
+        "image": "/assets/images/project-designing-work-document-binding-services.jpeg",
+        "imageWebp": "/assets/images/project-designing-work-document-binding-services.webp"
+      },
+      {
+        "name": "Color & B/W Printing",
+        "desc": "High quality laser & inkjet printing",
+        "icon": "🖨️",
+        "image": "/assets/images/project-designing-work-color-b-w-printing.jpeg",
+        "imageWebp": "/assets/images/project-designing-work-color-b-w-printing.webp"
+      },
+      {
+        "name": "Project Report Preparation",
+        "desc": "Formatting, indexing & cover design",
+        "icon": "📐",
+        "image": "/assets/images/project-designing-work-project-report-preparation.jpeg",
+        "imageWebp": "/assets/images/project-designing-work-project-report-preparation.webp"
+      },
+      {
+        "name": "ID Card & Certificate Printing",
+        "desc": "Custom ID cards and certificates",
+        "icon": "🎴",
+        "image": "/assets/images/project-designing-work-id-card-certificate-printing.jpeg",
+        "imageWebp": "/assets/images/project-designing-work-id-card-certificate-printing.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/project-designing-work.webp",
+    "heroImageWebp": "/assets/images/project-designing-work-hero.webp"
   }
 ];
 
 export const servicesB = [
   {
-    id: 11,
-    slug: 'computer-accessories',
-    path: '/computer-accessories',
-    title: 'Computer Accessories',
-    desc: 'Quality computer peripherals, cables, and tech accessories.',
-    image: 'https://images.pexels.com/photos/36374384/pexels-photo-36374384.jpeg',
-    heroImage: 'https://images.pexels.com/photos/36374384/pexels-photo-36374384.jpeg',
-    category: 'retail',
-    color: '#0ea5e9',
-    subServices: [
-      { name: 'Monitor', desc: 'High-definition LED and IPS monitors for all your display needs.', icon: '🖥️', image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9uaXRvcnxlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Hardisk', desc: 'Internal and external hard drives (HDD) and high-speed SSDs.', icon: '💾', image: 'https://images.pexels.com/photos/117729/pexels-photo-117729.jpeg' },
-      { name: 'Processor', desc: 'Powerful processors from Intel and AMD for peak performance.', icon: '⚙️', image: 'https://images.pexels.com/photos/3665442/pexels-photo-3665442.jpeg' },
-      { name: 'Mother board', desc: 'Durable motherboards supporting latest generation components.', icon: '📟', image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg?auto=compress&cs=tinysrgb&w=800' },
-      { name: 'Keyboard', desc: 'Ergonomic wired and wireless keyboards for smooth typing.', icon: '⌨️', image: 'https://images.pexels.com/photos/17764927/pexels-photo-17764927.jpeg' },
-      { name: 'Mouse', desc: 'Precision optical and gaming mice for better control.', icon: '🖱️', image: 'https://images.pexels.com/photos/20509997/pexels-photo-20509997.jpeg?auto=compress&cs=tinysrgb&w=800' },
-      // { name: 'Printer accessories', desc: 'Quality ink cartridges, toners, and printing papers.', icon: '🖨️', image: 'https://images.pexels.com/photos/9869063/pexels-photo-9869063.jpeg' },
-      { name: 'USB Drives & Memory Cards', desc: 'Pen drives, SD cards & high-capacity storage.', icon: '📂', image: 'https://images.unsplash.com/photo-1629265339808-9b5849d71bbb?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'Cables & Adapters', desc: 'HDMI, USB-C, VGA & all essential connectors.', icon: '🔌', image: 'https://images.unsplash.com/photo-1678272141992-88c7a0a34585?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'Toner', desc: 'High-quality laser printer toners for sharp & clear prints.', icon: '🖨️', image: 'https://images.unsplash.com/photo-1715059448930-9dff21725605?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8VG9uZXJ8ZW58MHwwfDB8fHww' },
-      { name: 'Cartridge', desc: 'Ink cartridges for all major printer brands & models.', icon: '🧴', image: 'https://images.unsplash.com/photo-1681769241858-eda79ca5d3ac?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fEluayUyMGNhcnRyaWRnZXN8ZW58MHwwfDB8fHww' },
-      { name: 'CCTV Camera', desc: 'Surveillance cameras for home & office security solutions.', icon: '📹', image: 'https://images.unsplash.com/photo-1566060475410-1159300f046f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Q0NUViUyMENhbWVyYXxlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Antivirus', desc: 'Reliable antivirus software for total digital protection.', icon: '🛡️', image: 'https://plus.unsplash.com/premium_photo-1700502264441-cf38978031fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGFudGl2aXJ1c3xlbnwwfDB8MHx8fDA%3D' },
-    ]
+    "id": 11,
+    "slug": "computer-accessories",
+    "path": "/computer-accessories",
+    "title": "Computer Accessories",
+    "desc": "Quality computer peripherals, cables, and tech accessories.",
+    "image": "/assets/images/computer-accessories.jpeg",
+    "heroImage": "/assets/images/computer-accessories-hero.jpeg",
+    "category": "retail",
+    "color": "#0ea5e9",
+    "subServices": [
+      {
+        "name": "Monitor",
+        "desc": "High-definition LED and IPS monitors for all your display needs.",
+        "icon": "🖥️",
+        "image": "/assets/images/computer-accessories-monitor.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-monitor.webp"
+      },
+      {
+        "name": "Hardisk",
+        "desc": "Internal and external hard drives (HDD) and high-speed SSDs.",
+        "icon": "💾",
+        "image": "/assets/images/computer-accessories-hardisk.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-hardisk.webp"
+      },
+      {
+        "name": "Processor",
+        "desc": "Powerful processors from Intel and AMD for peak performance.",
+        "icon": "⚙️",
+        "image": "/assets/images/computer-accessories-processor.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-processor.webp"
+      },
+      {
+        "name": "Mother board",
+        "desc": "Durable motherboards supporting latest generation components.",
+        "icon": "📟",
+        "image": "/assets/images/computer-accessories-mother-board.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-mother-board.webp"
+      },
+      {
+        "name": "Keyboard",
+        "desc": "Ergonomic wired and wireless keyboards for smooth typing.",
+        "icon": "⌨️",
+        "image": "/assets/images/computer-accessories-keyboard.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-keyboard.webp"
+      },
+      {
+        "name": "Mouse",
+        "desc": "Precision optical and gaming mice for better control.",
+        "icon": "🖱️",
+        "image": "/assets/images/computer-accessories-mouse.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-mouse.webp"
+      },
+      {
+        "name": "USB Drives & Memory Cards",
+        "desc": "Pen drives, SD cards & high-capacity storage.",
+        "icon": "📂",
+        "image": "/assets/images/computer-accessories-usb-drives-memory-cards.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-usb-drives-memory-cards.webp"
+      },
+      {
+        "name": "Cables & Adapters",
+        "desc": "HDMI, USB-C, VGA & all essential connectors.",
+        "icon": "🔌",
+        "image": "/assets/images/computer-accessories-cables-adapters.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-cables-adapters.webp"
+      },
+      {
+        "name": "Toner",
+        "desc": "High-quality laser printer toners for sharp & clear prints.",
+        "icon": "🖨️",
+        "image": "/assets/images/computer-accessories-toner.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-toner.webp"
+      },
+      {
+        "name": "Cartridge",
+        "desc": "Ink cartridges for all major printer brands & models.",
+        "icon": "🧴",
+        "image": "/assets/images/computer-accessories-cartridge.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-cartridge.webp"
+      },
+      {
+        "name": "CCTV Camera",
+        "desc": "Surveillance cameras for home & office security solutions.",
+        "icon": "📹",
+        "image": "/assets/images/computer-accessories-cctv-camera.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-cctv-camera.webp"
+      },
+      {
+        "name": "Antivirus",
+        "desc": "Reliable antivirus software for total digital protection.",
+        "icon": "🛡️",
+        "image": "/assets/images/computer-accessories-antivirus.jpeg",
+        "imageWebp": "/assets/images/computer-accessories-antivirus.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/computer-accessories.webp",
+    "heroImageWebp": "/assets/images/computer-accessories-hero.webp"
   },
   {
-    id: 12,
-    slug: 'mobile-accessories',
-    path: '/mobile-accessories',
-    title: 'Mobile Accessories',
-    desc: 'Premium chargers, cases, screen protectors and mobile gadgets.',
-    image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1600&q=80',
-    category: 'retail',
-    color: '#ec4899',
-    subServices: [
-      { name: 'Mobile Chargers & Cables', desc: 'Fast chargers, Lightning & USB-C cables', icon: '🔋', image: 'https://images.unsplash.com/photo-1731616103600-3fe7ccdc5a59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fE1vYmlsZSUyMENoYXJnZXJzJTIwJTI2JTIwQ2FibGVzfGVufDB8MHwwfHx8MA%3D%3D' },
-      { name: 'Phone Cases & Covers', desc: 'Stylish protective cases for all brands', icon: '📱', image: 'https://media.istockphoto.com/id/1288663488/photo/pile-of-multicolored-plastic-back-covers-for-mobile-phone-choice-of-smart-phone-protector.webp?a=1&b=1&s=612x612&w=0&k=20&c=bQxIK0rdyREopH3QjCBA4ge6s_Cg9VxmrEA4IlenC0w=' },
-      { name: 'Screen Protectors', desc: 'Tempered glass & film protectors', icon: '🛡️', image: 'https://images.unsplash.com/photo-1544228865-7d73678c0f28?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8U2NyZWVuJTIwUHJvdGVjdG9yc3xlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Earphones & Earbuds', desc: 'Wired & wireless audio accessories', icon: '🎵', image: 'https://images.unsplash.com/photo-1731616331098-739bf45618f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fEVhcnBob25lcyUyMCUyNiUyMEVhcmJ1ZHN8ZW58MHwwfDB8fHww' },
-      { name: 'Power Banks', desc: 'Portable charging solutions', icon: '🔌', image: 'https://images.pexels.com/photos/3921697/pexels-photo-3921697.jpeg' },
-      // { name: 'Mobile Stands & Holders', desc: 'Car mounts, desk stands & ring holders', icon: '📲', image: 'https://images.unsplash.com/photo-1586941028593-5942f746187f?auto=format&fit=crop&w=600&q=80' },
-      { name: 'OTG & Adapters', desc: 'OTG cables & connectivity adapters', icon: '🔗', image: 'https://plus.unsplash.com/premium_photo-1759589921302-9149acb14258?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fE9URyUyMCUyNiUyMEFkYXB0ZXJzfGVufDB8MHwwfHx8MA%3D%3D' },
-      // { name: 'Bluetooth Devices', desc: 'Speakers, headsets & smart gadgets', icon: '📡', image: 'https://media.istockphoto.com/id/1715439238/photo/modern-wireless-headphones-lie-on-a-wooden-table-with-a-smartphone-next-to-it.webp?a=1&b=1&s=612x612&w=0&k=20&c=zB7sI2gW01G1B29N591x7L1FwT6M2o9Y-4_vU5B72j8=' },
-    ]
+    "id": 12,
+    "slug": "mobile-accessories",
+    "path": "/mobile-accessories",
+    "title": "Mobile Accessories",
+    "desc": "Premium chargers, cases, screen protectors and mobile gadgets.",
+    "image": "/assets/images/mobile-accessories.jpeg",
+    "heroImage": "/assets/images/mobile-accessories-hero.jpeg",
+    "category": "retail",
+    "color": "#ec4899",
+    "subServices": [
+      {
+        "name": "Mobile Chargers & Cables",
+        "desc": "Fast chargers, Lightning & USB-C cables",
+        "icon": "🔋",
+        "image": "/assets/images/mobile-accessories-mobile-chargers-cables.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-mobile-chargers-cables.webp"
+      },
+      {
+        "name": "Phone Cases & Covers",
+        "desc": "Stylish protective cases for all brands",
+        "icon": "📱",
+        "image": "/assets/images/mobile-accessories-phone-cases-covers.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-phone-cases-covers.webp"
+      },
+      {
+        "name": "Screen Protectors",
+        "desc": "Tempered glass & film protectors",
+        "icon": "🛡️",
+        "image": "/assets/images/mobile-accessories-screen-protectors.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-screen-protectors.webp"
+      },
+      {
+        "name": "Earphones & Earbuds",
+        "desc": "Wired & wireless audio accessories",
+        "icon": "🎵",
+        "image": "/assets/images/mobile-accessories-earphones-earbuds.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-earphones-earbuds.webp"
+      },
+      {
+        "name": "Power Banks",
+        "desc": "Portable charging solutions",
+        "icon": "🔌",
+        "image": "/assets/images/mobile-accessories-power-banks.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-power-banks.webp"
+      },
+      {
+        "name": "OTG & Adapters",
+        "desc": "OTG cables & connectivity adapters",
+        "icon": "🔗",
+        "image": "/assets/images/mobile-accessories-otg-adapters.jpeg",
+        "imageWebp": "/assets/images/mobile-accessories-otg-adapters.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/mobile-accessories.webp",
+    "heroImageWebp": "/assets/images/mobile-accessories-hero.webp"
   },
   {
-    id: 13,
-    slug: 'stationary',
-    path: '/stationary',
-    title: 'Stationary',
-    desc: 'Complete range of office and school stationery supplies.',
-    image: 'https://plus.unsplash.com/premium_photo-1722729629224-4397a1ce8267?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fFN0YXRpb25hcnl8ZW58MHwwfDB8fHww',
-    heroImage: 'https://plus.unsplash.com/premium_photo-1722729629224-4397a1ce8267?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fFN0YXRpb25hcnl8ZW58MHwwfDB8fHww',
-    category: 'retail',
-    color: '#a855f7',
-    subServices: [
-      { name: 'Office Supplies', desc: 'Notebook,pen,pencil,staplers, scissors, & more', icon: '📎', image: 'https://images.unsplash.com/photo-1654931800100-2ecf6eee7c64?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RhdGlvbmVyeXxlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Files & Folders', desc: 'Box files, L-folders & report covers', icon: '📁', image: 'https://images.unsplash.com/photo-1708536430165-63f79c08509a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fEZpbGVzJTIwJTI2JTIwRm9sZGVyc3xlbnwwfDB8MHx8fDA%3D' },
-      { name: 'Paper & Envelopes', desc: 'A4 sheets, brown & white envelopes', icon: '✉️', image: 'https://images.unsplash.com/photo-1762427354358-b3e63aa7b308?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fFBhcGVyJTIwJTI2JTIwRW52ZWxvcGVzfGVufDB8MHwwfHx8MA%3D%3D' },
-      { name: 'Photo Paper', desc: 'Glossy and matte high-quality photo printing paper.', icon: '🖼️', image: 'https://plus.unsplash.com/premium_photo-1751102950826-e0a60033e0fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fHBob3RvJTIwcHJpbnRpbmclMjBwYXBlcnxlbnwwfDB8MHx8fDA%3D' },
-    ]
+    "id": 13,
+    "slug": "stationary",
+    "path": "/stationary",
+    "title": "Stationary",
+    "desc": "Complete range of office and school stationery supplies.",
+    "image": "/assets/images/stationary.jpeg",
+    "heroImage": "/assets/images/stationary-hero.jpeg",
+    "category": "retail",
+    "color": "#a855f7",
+    "subServices": [
+      {
+        "name": "Office Supplies",
+        "desc": "Notebook,pen,pencil,staplers, scissors, & more",
+        "icon": "📎",
+        "image": "/assets/images/stationary-office-supplies.jpeg",
+        "imageWebp": "/assets/images/stationary-office-supplies.webp"
+      },
+      {
+        "name": "Files & Folders",
+        "desc": "Box files, L-folders & report covers",
+        "icon": "📁",
+        "image": "/assets/images/stationary-files-folders.jpeg",
+        "imageWebp": "/assets/images/stationary-files-folders.webp"
+      },
+      {
+        "name": "Paper & Envelopes",
+        "desc": "A4 sheets, brown & white envelopes",
+        "icon": "✉️",
+        "image": "/assets/images/stationary-paper-envelopes.jpeg",
+        "imageWebp": "/assets/images/stationary-paper-envelopes.webp"
+      },
+      {
+        "name": "Photo Paper",
+        "desc": "Glossy and matte high-quality photo printing paper.",
+        "icon": "🖼️",
+        "image": "/assets/images/stationary-photo-paper.jpeg",
+        "imageWebp": "/assets/images/stationary-photo-paper.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/stationary.webp",
+    "heroImageWebp": "/assets/images/stationary-hero.webp"
   },
   {
-    id: 14,
-    slug: 'journals-books',
-    path: '/journals-books',
-    title: 'Journals & Books',
-    desc: 'Educational textbooks, journals, reference materials and more.',
-    image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=800&q=80',
-    heroImage: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1600&q=80',
-    category: 'retail',
-    color: '#14b8a6',
-    subServices: [
-      { name: 'Competitive Exam Books', desc: 'UPSC, TNPSC, SSC & bank exam guides', icon: '🎯', image: 'https://images.unsplash.com/photo-1606343647114-3cf38d47ded4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: "Children's Books", desc: 'Story books, activity & coloring books', icon: '🧒', image: 'https://images.unsplash.com/photo-1742414304022-b38977ce1533?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-      { name: 'Journals & Magazines', desc: 'Academic journals & monthly magazines', icon: '📰', image: 'https://images.unsplash.com/photo-1488953763695-c4a79ecf4727?q=80&w=1080&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-    ]
+    "id": 14,
+    "slug": "journals-books",
+    "path": "/journals-books",
+    "title": "Journals & Books",
+    "desc": "Educational textbooks, journals, reference materials and more.",
+    "image": "/assets/images/journals-books.jpeg",
+    "heroImage": "/assets/images/journals-books-hero.jpeg",
+    "category": "retail",
+    "color": "#14b8a6",
+    "subServices": [
+      {
+        "name": "Competitive Exam Books",
+        "desc": "UPSC, TNPSC, SSC & bank exam guides",
+        "icon": "🎯",
+        "image": "/assets/images/journals-books-competitive-exam-books.jpeg",
+        "imageWebp": "/assets/images/journals-books-competitive-exam-books.webp"
+      },
+      {
+        "name": "Children's Books",
+        "desc": "Story books, activity & coloring books",
+        "icon": "🧒",
+        "image": "/assets/images/journals-books-children-s-books.jpeg",
+        "imageWebp": "/assets/images/journals-books-children-s-books.webp"
+      },
+      {
+        "name": "Journals & Magazines",
+        "desc": "Academic journals & monthly magazines",
+        "icon": "📰",
+        "image": "/assets/images/journals-books-journals-magazines.jpeg",
+        "imageWebp": "/assets/images/journals-books-journals-magazines.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/journals-books.webp",
+    "heroImageWebp": "/assets/images/journals-books-hero.webp"
   },
   {
-    id: 15,
-    slug: 'organic-foods',
-    path: '/organic-foods',
-    title: 'Organic Foods',
-    desc: 'Premium organic food products, spices, oils and healthy snacks.',
-    image: 'https://images.pexels.com/photos/2386158/pexels-photo-2386158.jpeg',
-    heroImage: 'https://images.pexels.com/photos/2386158/pexels-photo-2386158.jpeg',
-    category: 'retail',
-    color: '#22c55e',
-    subServices: [
-      { name: 'Pure Honey', desc: 'Natural raw & processed honey varieties', icon: '🍯', image: 'https://images.pexels.com/photos/5634213/pexels-photo-5634213.jpeg' },
-      { name: 'Organic Spices', desc: 'Pepper, cardamom & more', icon: '🌶️', image: 'https://images.pexels.com/photos/674483/pexels-photo-674483.jpeg' },
-      { name: 'Cold-Pressed Oils', desc: 'Coconut & groundnut oils', icon: '🫒', image: 'https://images.pexels.com/photos/10046938/pexels-photo-10046938.jpeg' },
-      { name: 'Dry Fruits & Nuts', desc: 'Cashew, almond, raisins & mixed nuts', icon: '🥜', image: 'https://images.pexels.com/photos/32281733/pexels-photo-32281733.jpeg' },
-    ]
-  },
+    "id": 15,
+    "slug": "organic-foods",
+    "path": "/organic-foods",
+    "title": "Organic Foods",
+    "desc": "Premium organic food products, spices, oils and healthy snacks.",
+    "image": "/assets/images/organic-foods.jpeg",
+    "heroImage": "/assets/images/organic-foods-hero.jpeg",
+    "category": "retail",
+    "color": "#22c55e",
+    "subServices": [
+      {
+        "name": "Pure Honey",
+        "desc": "Natural raw & processed honey varieties",
+        "icon": "🍯",
+        "image": "/assets/images/organic-foods-pure-honey.jpeg",
+        "imageWebp": "/assets/images/organic-foods-pure-honey.webp"
+      },
+      {
+        "name": "Organic Spices",
+        "desc": "Pepper, cardamom & more",
+        "icon": "🌶️",
+        "image": "/assets/images/organic-foods-organic-spices.jpeg",
+        "imageWebp": "/assets/images/organic-foods-organic-spices.webp"
+      },
+      {
+        "name": "Cold-Pressed Oils",
+        "desc": "Coconut & groundnut oils",
+        "icon": "🫒",
+        "image": "/assets/images/organic-foods-cold-pressed-oils.jpeg",
+        "imageWebp": "/assets/images/organic-foods-cold-pressed-oils.webp"
+      },
+      {
+        "name": "Dry Fruits & Nuts",
+        "desc": "Cashew, almond, raisins & mixed nuts",
+        "icon": "🥜",
+        "image": "/assets/images/organic-foods-dry-fruits-nuts.jpeg",
+        "imageWebp": "/assets/images/organic-foods-dry-fruits-nuts.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/organic-foods.webp",
+    "heroImageWebp": "/assets/images/organic-foods-hero.webp"
+  }
 ];
 
 export const allServices = [...servicesA, ...servicesB];
-
-export const getServiceBySlug = (slug) => {
-  return allServices.find(service => service.slug === slug);
-};

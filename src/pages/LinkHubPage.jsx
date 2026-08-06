@@ -51,7 +51,10 @@ const iconMap = {
 function HeroSection({ hero }) {
   return (
     <header className="lh-hero">
-      <img src={hero.logo} alt={`${hero.title} logo`} className="lh-hero-logo" />
+      <picture>
+        <source srcSet={hero.logoWebp} type="image/webp" />
+        <img src={hero.logo} alt={`${hero.title} logo`} className="lh-hero-logo" fetchpriority="high" />
+      </picture>
       <div className="lh-hero-text">
         <h1 className="lh-hero-title">{hero.title}</h1>
         <p className="lh-hero-subtitle">{hero.subtitle}</p>
@@ -64,7 +67,10 @@ function BusinessCard({ business }) {
   return (
     <article className="lh-card">
       <div className="lh-card-header">
-        <img src={business.logo} alt={`${business.title} logo`} className="lh-card-logo" />
+        <picture>
+          <source srcSet={business.logoWebp} type="image/webp" />
+          <img src={business.logo} alt={`${business.title} logo`} className="lh-card-logo" fetchpriority="high" />
+        </picture>
         <h2 className="lh-card-title">{business.title}</h2>
       </div>
       <p className="lh-card-desc">{business.description}</p>
