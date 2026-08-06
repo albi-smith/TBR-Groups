@@ -2,11 +2,14 @@ import tbrEducationLogo from '../link/tbr education logo.png';
 import tbrTradersLogo from '../link/tbr groups logo.png';
 import tbrEducationLogoWebp from '../link/tbr education logo.webp';
 import tbrTradersLogoWebp from '../link/tbr groups logo.webp';
+import tbrEducationLogoAvif from '../link/tbr education logo.avif';
+import tbrTradersLogoAvif from '../link/tbr groups logo.avif';
 
 export const linksConfig = {
   hero: {
     logo: "/tbrlogo.jpeg",
     logoWebp: "/tbrlogo.webp",
+    logoAvif: "/tbrlogo.avif",
     title: "TBR Groups",
     subtitle: "Technology • Education • Services",
   },
@@ -17,6 +20,7 @@ export const linksConfig = {
       description: "Computer courses, software training, AI, programming and career skills.",
       logo: tbrEducationLogo,
       logoWebp: tbrEducationLogoWebp,
+      logoAvif: tbrEducationLogoAvif,
       buttons: [
         {
           label: "Website",
@@ -64,6 +68,7 @@ export const linksConfig = {
       description: "Computer sales, service, e-services, registrations and business support.",
       logo: tbrTradersLogo,
       logoWebp: tbrTradersLogoWebp,
+      logoAvif: tbrTradersLogoAvif,
       buttons: [
         {
           label: "Website",

@@ -3,6 +3,7 @@ import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Awar
 import { useNavigate, useLocation } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
+import Picture from './components/Picture';
 
 
 const TBRTechnologies = () => {
@@ -294,20 +295,16 @@ const TBRTechnologies = () => {
                 border: '1px solid var(--border-subtle)',
                 marginBottom: '1rem'
               }}>
-                <picture>
-                  <source srcSet="/Authorised certificate.webp" type="image/webp" />
-                  <img
-                    src="/Authorised certificate.jpeg"
-                    alt="Net Protector Authorised Partner Certificate"
-                    loading="lazy"
-                    style={{
-                      width: '100%',
-                      height: 'auto',
-                      borderRadius: '4px',
-                      display: 'block'
-                    }}
-                  />
-                </picture>
+                <Picture
+                  src="/Authorised certificate.jpeg"
+                  alt="Net Protector Authorised Partner Certificate"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    borderRadius: '4px',
+                    display: 'block'
+                  }}
+                />
                 <div style={{
                   position: 'absolute',
                   inset: 0,
@@ -437,27 +434,21 @@ const TBRTechnologies = () => {
                 }} />
 
                 {/* POS Image */}
-                <picture>
-                  <source srcSet="/Pinelabs.webp" type="image/webp" />
-                  <img
-                    src="/Pinelabs.png"
-                    alt="Pine Labs POS Device"
-                    loading="lazy"
-                    style={{
-                      maxWidth: '100%',
-                      borderRadius: '20px',
-                      height: 'auto',
-                      objectFit: 'contain',
-                      position: 'relative',
-                      zIndex: 1,
-                      filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
-                      transform: 'none',
-                      transition: 'transform 0.5s ease',
-                    }}
-                  // onMouseEnter={e => e.currentTarget.style.transform = 'rotate(0deg) scale(1.05)'}
-                  // onMouseLeave={e => e.currentTarget.style.transform = 'rotate(-5deg) scale(1)'}
-                  />
-                </picture>
+                <Picture
+                  src="/Pinelabs.png"
+                  alt="Pine Labs POS Device"
+                  style={{
+                    maxWidth: '100%',
+                    borderRadius: '20px',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    position: 'relative',
+                    zIndex: 1,
+                    filter: 'drop-shadow(0 20px 30px rgba(0,0,0,0.3))',
+                    transform: 'none',
+                    transition: 'transform 0.5s ease',
+                  }}
+                />
                 {/* 
                 Floating Badge (Above) */}
                 {/* <div style={{
@@ -604,22 +595,18 @@ const TBRTechnologies = () => {
                   animation: 'float 10s ease-in-out infinite'
                 }} />
 
-                <picture>
-                  <source srcSet="/go point new .webp" type="image/webp" />
-                  <img
-                    src="/go point new .png"
-                    alt="GO POINT App Interface"
-                    loading="lazy"
-                    style={{
-                      maxWidth: '100%',
-                      borderRadius: 'var(--radius-lg)',
-                      height: 'auto',
-                      position: 'relative',
-                      zIndex: 1,
-                      filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.15))',
-                    }}
-                  />
-                </picture>
+                <Picture
+                  src="/go point new .png"
+                  alt="GO POINT App Interface"
+                  style={{
+                    maxWidth: '100%',
+                    borderRadius: 'var(--radius-lg)',
+                    height: 'auto',
+                    position: 'relative',
+                    zIndex: 1,
+                    filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.15))',
+                  }}
+                />
               </div>
             </div>
 
@@ -684,7 +671,7 @@ const TBRTechnologies = () => {
                   className="btn-primary"
                   style={{ background: '#000', color: '#fff', border: 'none' }}
                 >
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style={{ height: '24px' }} />
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" loading="lazy" style={{ height: '24px' }} />
                 </a>
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
                   <span style={{ color: 'var(--accent-gold)', fontWeight: 600 }}>Get FREE ID:</span> Provide Name, Email, Address & Shop Name
@@ -744,19 +731,16 @@ const TBRTechnologies = () => {
 
                   {/* Image */}
                   <div className="card-image-wrapper">
-                    <picture>
-                      {service.imageWebp && <source srcSet={service.imageWebp} type="image/webp" />}
-                      <img
-                        src={service.image}
-                        alt={service.title}
-                        className="card-image"
-                        loading="lazy"
-                        onError={(e) => {
-                          e.target.style.background = `linear-gradient(135deg, ${service.color}33, var(--bg-card))`;
-                          e.target.style.display = 'flex';
-                        }}
-                      />
-                    </picture>
+                    <Picture
+                      src={service.image}
+                      webp={service.imageWebp}
+                      alt={service.title}
+                      className="card-image"
+                      onError={(e) => {
+                        e.target.style.background = `linear-gradient(135deg, ${service.color}33, var(--bg-card))`;
+                        e.target.style.display = 'flex';
+                      }}
+                    />
                   </div>
 
                   {/* Body */}

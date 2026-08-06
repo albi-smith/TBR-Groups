@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
 import { allServices } from '../data/servicesData';
 import Navbar from '../components/Navbar';
+import Picture from '../components/Picture';
 
 const ServicePage = () => {
   const { serviceSlug } = useParams();
@@ -59,16 +60,14 @@ const marqueeItems = [
         transition: 'opacity 0.8s ease',
         padding: '6rem 0 3.5rem'
       }}>
-        <picture>
-          {service.heroImageWebp && <source srcSet={service.heroImageWebp} type="image/webp" />}
-          <img
-            src={service.heroImage}
-            alt={service.title}
-            className="service-hero-bg"
-            fetchpriority="high"
-            onError={(e) => { e.target.style.display = 'none'; }}
-          />
-        </picture>
+        <Picture
+          src={service.heroImage}
+          webp={service.heroImageWebp}
+          alt={service.title}
+          className="service-hero-bg"
+          fetchPriority="high"
+          onError={(e) => { e.target.style.display = 'none'; }}
+        />
         <div className="service-hero-overlay" />
 
         {/* Back Button inside Hero - Top Left End of Image */}
@@ -205,25 +204,22 @@ const marqueeItems = [
                       margin: '-1.75rem -1.75rem 1.75rem -1.75rem',
                       position: 'relative',
                     }}>
-                      <picture>
-                        {sub.imageWebp && <source srcSet={sub.imageWebp} type="image/webp" />}
-                        <img
-                          src={sub.image || `https://via.placeholder.com/500x300?text=${encodeURIComponent(sub.name)}`}
-                          alt={sub.name}
-                          style={{
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'cover',
-                            transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-                          }}
-                          className="sub-card-img"
-                          loading="lazy"
-                          onError={(e) => {
-                            e.target.style.display = 'none';
-                            e.target.parentElement.style.background = `linear-gradient(135deg, ${service.color}22, ${service.color}05)`;
-                          }}
-                        />
-                      </picture>
+                      <Picture
+                        src={sub.image || `https://via.placeholder.com/500x300?text=${encodeURIComponent(sub.name)}`}
+                        webp={sub.imageWebp}
+                        alt={sub.name}
+                        style={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          transition: 'transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
+                        }}
+                        className="sub-card-img"
+                        onError={(e) => {
+                          e.target.style.display = 'none';
+                          e.target.parentElement.style.background = `linear-gradient(135deg, ${service.color}22, ${service.color}05)`;
+                        }}
+                      />
                     </div>
 
                     {/* Top section — always visible */}

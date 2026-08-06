@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Globe } from 'lucide-react';
 import { linksConfig } from '../data/linksConfig';
+import Picture from '../components/Picture';
 import '../styles/LinkHub.css';
 
 // Custom lightweight SVG Icons for social platforms to avoid missing brand icons in lucide-react
@@ -51,10 +52,14 @@ const iconMap = {
 function HeroSection({ hero }) {
   return (
     <header className="lh-hero">
-      <picture>
-        <source srcSet={hero.logoWebp} type="image/webp" />
-        <img src={hero.logo} alt={`${hero.title} logo`} className="lh-hero-logo" fetchpriority="high" />
-      </picture>
+      <Picture
+        src={hero.logo}
+        webp={hero.logoWebp}
+        avif={hero.logoAvif}
+        alt={`${hero.title} logo`}
+        className="lh-hero-logo"
+        fetchPriority="high"
+      />
       <div className="lh-hero-text">
         <h1 className="lh-hero-title">{hero.title}</h1>
         <p className="lh-hero-subtitle">{hero.subtitle}</p>
@@ -67,10 +72,14 @@ function BusinessCard({ business }) {
   return (
     <article className="lh-card">
       <div className="lh-card-header">
-        <picture>
-          <source srcSet={business.logoWebp} type="image/webp" />
-          <img src={business.logo} alt={`${business.title} logo`} className="lh-card-logo" fetchpriority="high" />
-        </picture>
+        <Picture
+          src={business.logo}
+          webp={business.logoWebp}
+          avif={business.logoAvif}
+          alt={`${business.title} logo`}
+          className="lh-card-logo"
+          fetchPriority="high"
+        />
         <h2 className="lh-card-title">{business.title}</h2>
       </div>
       <p className="lh-card-desc">{business.description}</p>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, ChevronRight, Menu, X } from 'lucide-react';
+import Picture from './Picture';
 
 const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
   const navigate = useNavigate();
@@ -109,15 +110,12 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
               style={{ gap: '0.75rem', cursor: 'pointer' }}
               onClick={() => navigate('/')}
             >
-              <picture>
-                <source srcSet="/logo.webp" type="image/webp" />
-                <img
-                  src="/logo.png"
-                  alt="TBR Technologies Logo"
-                  className="navbar-logo"
-                  fetchpriority="high"
-                />
-              </picture>
+              <Picture
+                src="/logo.png"
+                alt="TBR Technologies Logo"
+                className="navbar-logo"
+                fetchPriority="high"
+              />
               <div>
                 <h1 className="navbar-title">
                   TBR <span className="navbar-title-groups">Groups</span>
