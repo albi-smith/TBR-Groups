@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap, Send, MessageSquare, Shield } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap, Send, MessageSquare, Shield, Trophy, CircleCheck } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
@@ -361,7 +361,7 @@ const TBRTechnologies = () => {
                   borderRadius: 'var(--radius-md)',
                   border: '1px dashed var(--primary)'
                 }}>
-                  <div style={{ fontSize: '1.5rem' }}>🏆</div>
+                  <div style={{ fontSize: '1.5rem', color: 'var(--primary)', display: 'flex' }}><Trophy size={28} /></div>
                   <div>
                     <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '0.95rem' }}>Bronze Rated Partner</div>
                     <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>Dealer Code: T-903 | Kanniyakumari, Tamil Nadu</div>
@@ -831,7 +831,7 @@ const TBRTechnologies = () => {
                     <div key={i} className="d-flex align-items-center gap-2" style={{
                       fontSize: '0.85rem', color: 'var(--text-primary)',
                     }}>
-                      <span style={{ color: 'var(--accent-blue-light)' }}>✦</span> {item}
+                      <span style={{ color: 'var(--accent-blue-light)', display: 'flex' }}><CircleCheck size={16} /></span> {item}
                     </div>
                   ))}
                 </div>
@@ -885,7 +885,7 @@ const TBRTechnologies = () => {
                     <div key={i} className="d-flex align-items-center gap-2" style={{
                       fontSize: '0.85rem', color: 'var(--text-primary)',
                     }}>
-                      <span style={{ color: 'var(--accent-teal)' }}>✦</span> {item}
+                      <span style={{ color: 'var(--accent-teal)', display: 'flex' }}><CircleCheck size={16} /></span> {item}
                     </div>
                   ))}
                 </div>
@@ -1233,7 +1233,7 @@ const TBRTechnologies = () => {
                   <Phone size={18} /> Call
                 </a>
                 <button onClick={() => scrollToEnquiry()} className="btn-secondary">
-                  💬 Send Enquiry
+                  <MessageSquare size={18} /> Send Enquiry
                 </button>
               </div>
             </div>
@@ -1248,13 +1248,14 @@ const TBRTechnologies = () => {
             {/* Brand */}
             <div className="col-lg-4 col-md-6">
               <div className="d-flex align-items-center gap-2 mb-4">
-                <div style={{
-                  width: '36px', height: '36px', borderRadius: 'var(--radius-sm)',
-                  background: 'linear-gradient(135deg, var(--primary), var(--accent))',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '1rem',
-                  color: '#ffffff',
-                }}>T</div>
+                <Picture
+                  src="/logo.png"
+                  alt="TBR Groups Logo"
+                  style={{
+                    width: '36px', height: '36px', borderRadius: 'var(--radius-sm)',
+                    objectFit: 'contain', flexShrink: 0,
+                  }}
+                />
                 <span style={{
                   fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1.1rem',
                 }}>
@@ -1321,10 +1322,10 @@ const TBRTechnologies = () => {
                   <Mail size={13} /> Email Us
                 </a>
                 <span onClick={() => navigate('/enquiry')} className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer' }}>
-                  💬 Submit Enquiry Form
+                  <MessageSquare size={13} /> Submit Enquiry Form
                 </span>
                 <a href="https://wa.me/919487635294" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
-                  💬 Direct WhatsApp
+                  <MessageSquare size={13} /> Direct WhatsApp
                 </a>
                 <a href="https://tbr-education.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
                   <Globe size={13} /> TBR Education Website

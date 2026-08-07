@@ -1,3 +1,4 @@
+import { Globe, ShoppingCart, Server, Smartphone, Palette, Cog, Plug, TrendingUp, Monitor, CreditCard, ShieldCheck, IdCard, Book, Vote, ClipboardList, FileText, Award, FilePen, Lock, GraduationCap, Hospital, Car, FileCheck, Building2, BarChart3, Home, Search, Scale, Store, PenLine, Bus, TrainFront, Plane, Clapperboard, Hotel, Shield, HeartPulse, Dumbbell, Wheat, Banknote, Landmark, KeyRound, Send, Notebook, PiggyBank, CircleDollarSign, Mailbox, MailCheck, Receipt, Utensils, Factory, Stamp, ShoppingBag, Package, Briefcase, BookOpen, Printer, DraftingCompass, BadgeCheck, HardDrive, Cpu, CircuitBoard, Keyboard, Mouse, Usb, Cable, Droplet, SprayCan, Cctv, BatteryCharging, Headphones, PlugZap, Link, Paperclip, Folder, Mail, Image, Target, Baby, Newspaper, Milk, Flame, Leaf, Sprout } from 'lucide-react';
 // ============================================
 // TBR Technologies — Centralized Service Data (Optimized Local)
 // ============================================
@@ -17,56 +18,56 @@ export const servicesA = [
       {
         "name": "Website Development",
         "desc": "Custom responsive websites and web applications",
-        "icon": "🌐",
+        "icon": Globe,
         "image": "/assets/images/software-development-digital-solutions-website-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-website-development.webp"
       },
       {
         "name": "E-Commerce Platforms",
         "desc": "Online stores with payment integration and inventory management",
-        "icon": "🛒",
+        "icon": ShoppingCart,
         "image": "/assets/images/software-development-digital-solutions-e-commerce-platforms.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-e-commerce-platforms.webp"
       },
       {
         "name": "Domain & Hosting",
         "desc": "Domain registration, SSL certificates, and web hosting",
-        "icon": "🌍",
+        "icon": Server,
         "image": "/assets/images/software-development-digital-solutions-domain-hosting.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-domain-hosting.webp"
       },
       {
         "name": "Mobile App Development",
         "desc": "iOS and Android native and cross-platform applications",
-        "icon": "📱",
+        "icon": Smartphone,
         "image": "/assets/images/software-development-digital-solutions-mobile-app-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-mobile-app-development.webp"
       },
       {
         "name": "UI/UX Design",
         "desc": "User interface and experience design for digital products",
-        "icon": "🎨",
+        "icon": Palette,
         "image": "/assets/images/software-development-digital-solutions-ui-ux-design.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-ui-ux-design.webp"
       },
       {
         "name": "CMS Development",
         "desc": "WordPress, Shopify, and custom content management systems",
-        "icon": "⚙️",
+        "icon": Cog,
         "image": "/assets/images/software-development-digital-solutions-cms-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-cms-development.webp"
       },
       {
         "name": "API Integration",
         "desc": "Third-party API integration and custom backend solutions",
-        "icon": "🔌",
+        "icon": Plug,
         "image": "/assets/images/software-development-digital-solutions-api-integration.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-api-integration.webp"
       },
       {
         "name": "SEO & Digital Marketing",
         "desc": "Search engine optimization and online marketing services",
-        "icon": "📈",
+        "icon": TrendingUp,
         "image": "/assets/images/software-development-digital-solutions-seo-digital-marketing.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-seo-digital-marketing.webp"
       }
@@ -88,98 +89,98 @@ export const servicesA = [
       {
         "name": "CSC Registration",
         "desc": "New CSC center registration and VLE services",
-        "icon": "🖥️",
+        "icon": Monitor,
         "image": "/assets/images/csc-e-seva-online-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services.webp"
       },
       {
         "name": "Bills, Recharge & SIM Services",
         "desc": "Utility bills , Sim activation and all fee payments",
-        "icon": "💳",
+        "icon": CreditCard,
         "image": "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.webp"
       },
       {
         "name": "TN Police Services",
         "desc": "Police Verification report, Lost document report & E-Chellan payments",
-        "icon": "🚔",
+        "icon": ShieldCheck,
         "image": "/assets/images/csc-e-seva-online-services-tn-police-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-tn-police-services.webp"
       },
       {
         "name": "PAN Card",
         "desc": "New PAN card application, correction & reprint",
-        "icon": "🪪",
+        "icon": IdCard,
         "image": "/assets/images/csc-e-seva-online-services-pan-card.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-pan-card.webp"
       },
       {
         "name": "Passport Application",
         "desc": "Fresh passport & renewal applications",
-        "icon": "📘",
+        "icon": Book,
         "image": "/assets/images/csc-e-seva-online-services-passport-application.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-passport-application.webp"
       },
       {
         "name": "Voter ID Card",
         "desc": "New registration, transfer & correction",
-        "icon": "🗳️",
+        "icon": Vote,
         "image": "/assets/images/csc-e-seva-online-services-voter-id-card.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-voter-id-card.webp"
       },
       {
         "name": "Ration Card Services",
         "desc": "New card, addition & deletion of members",
-        "icon": "📋",
+        "icon": ClipboardList,
         "image": "/assets/images/csc-e-seva-online-services-ration-card-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-ration-card-services.webp"
       },
       {
         "name": "E-Seva & E-District Services",
         "desc": "Income, Community, OBC, Nativity certificates, Patta transfer & related services",
-        "icon": "📄",
+        "icon": FileText,
         "image": "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.webp"
       },
       {
         "name": "Ex-Serviceman Online Services",
         "desc": "Children allowance, marriage allowance, PM Scholarship, EHS",
-        "icon": "🎖️",
+        "icon": Award,
         "image": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.webp"
       },
       {
         "name": "Online Exam & Job Applications",
         "desc": "TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ",
-        "icon": "📝",
+        "icon": FilePen,
         "image": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.webp"
       },
       {
         "name": "Digital Signature Certificate",
         "desc": "Class 2 & Class 3 DSC for businesses",
-        "icon": "🔐",
+        "icon": Lock,
         "image": "/assets/images/csc-e-seva-online-services-digital-signature-certificate.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-digital-signature-certificate.webp"
       },
       {
         "name": "Scholarship Applications",
         "desc": "State & central scholarship applications",
-        "icon": "🎓",
+        "icon": GraduationCap,
         "image": "/assets/images/csc-e-seva-online-services-scholarship-applications.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-scholarship-applications.webp"
       },
       {
         "name": "PMJAY Ayushman Bharat",
         "desc": "Health card enrollment & hospital services",
-        "icon": "🏥",
+        "icon": Hospital,
         "image": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp"
       },
       {
         "name": "Driving License & RC",
         "desc": "DL application, renewal & RC transfer",
-        "icon": "🚗",
+        "icon": Car,
         "image": "/assets/images/csc-e-seva-online-services-driving-license-rc.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-driving-license-rc.webp"
       }
@@ -201,56 +202,56 @@ export const servicesA = [
       {
         "name": "EC (Encumbrance Certificate)",
         "desc": "Property transaction history verification",
-        "icon": "📑",
+        "icon": FileCheck,
         "image": "/assets/images/document-registration-ec-encumbrance-certificate.jpeg",
         "imageWebp": "/assets/images/document-registration-ec-encumbrance-certificate.webp"
       },
       {
         "name": "Patta Transfer",
         "desc": "Land ownership transfer & subdivision",
-        "icon": "🏗️",
+        "icon": Building2,
         "image": "/assets/images/document-registration-patta-transfer.jpeg",
         "imageWebp": "/assets/images/document-registration-patta-transfer.webp"
       },
       {
         "name": "Chitta & A-Register",
         "desc": "Land classification and revenue records",
-        "icon": "📊",
+        "icon": BarChart3,
         "image": "/assets/images/document-registration-chitta-a-register.jpeg",
         "imageWebp": "/assets/images/document-registration-chitta-a-register.webp"
       },
       {
         "name": "Land Registration",
         "desc": "Property deed registration assistance",
-        "icon": "🏘️",
+        "icon": Home,
         "image": "/assets/images/document-registration-land-registration.jpeg",
         "imageWebp": "/assets/images/document-registration-land-registration.webp"
       },
       {
         "name": "Property Verification",
         "desc": "Document verification and legal opinion",
-        "icon": "🔍",
+        "icon": Search,
         "image": "/assets/images/document-registration-property-verification.jpeg",
         "imageWebp": "/assets/images/document-registration-property-verification.webp"
       },
       {
         "name": "Will Registration",
         "desc": "Legal will creation and registration",
-        "icon": "⚖️",
+        "icon": Scale,
         "image": "/assets/images/document-registration-will-registration.jpeg",
         "imageWebp": "/assets/images/document-registration-will-registration.webp"
       },
       {
         "name": "Rental Agreement",
         "desc": "Residential & commercial rental agreements",
-        "icon": "🏬",
+        "icon": Store,
         "image": "/assets/images/document-registration-rental-agreement.jpeg",
         "imageWebp": "/assets/images/document-registration-rental-agreement.webp"
       },
       {
         "name": "Sale Deed Preparation",
         "desc": "Sale deed drafting and registration",
-        "icon": "✍️",
+        "icon": PenLine,
         "image": "/assets/images/document-registration-sale-deed-preparation.jpeg",
         "imageWebp": "/assets/images/document-registration-sale-deed-preparation.webp"
       }
@@ -272,35 +273,35 @@ export const servicesA = [
       {
         "name": "Bus Ticket Booking",
         "desc": "Government & private bus reservations",
-        "icon": "🚌",
+        "icon": Bus,
         "image": "/assets/images/ticket-booking-bus-ticket-booking.jpeg",
         "imageWebp": "/assets/images/ticket-booking-bus-ticket-booking.webp"
       },
       {
         "name": "Train Ticket (IRCTC)",
         "desc": "Railway ticket booking & tatkal service",
-        "icon": "🚂",
+        "icon": TrainFront,
         "image": "/assets/images/ticket-booking-train-ticket-irctc.jpeg",
         "imageWebp": "/assets/images/ticket-booking-train-ticket-irctc.webp"
       },
       {
         "name": "Flight Booking",
         "desc": "Domestic & international flight tickets",
-        "icon": "✈️",
+        "icon": Plane,
         "image": "/assets/images/ticket-booking-flight-booking.jpeg",
         "imageWebp": "/assets/images/ticket-booking-flight-booking.webp"
       },
       {
         "name": "Movie Tickets",
         "desc": "Local cinema & multiplex bookings",
-        "icon": "🎬",
+        "icon": Clapperboard,
         "image": "/assets/images/ticket-booking-movie-tickets.jpeg",
         "imageWebp": "/assets/images/ticket-booking-movie-tickets.webp"
       },
       {
         "name": "Hotel Booking",
         "desc": "Budget to premium hotel reservations",
-        "icon": "🏨",
+        "icon": Hotel,
         "image": "/assets/images/ticket-booking-hotel-booking.jpeg",
         "imageWebp": "/assets/images/ticket-booking-hotel-booking.webp"
       }
@@ -322,35 +323,35 @@ export const servicesA = [
       {
         "name": "LIC Life Insurance",
         "desc": "Endowment, money-back & term plans",
-        "icon": "🛡️",
+        "icon": Shield,
         "image": "/assets/images/insurance-services-lic-life-insurance.jpeg",
         "imageWebp": "/assets/images/insurance-services-lic-life-insurance.webp"
       },
       {
         "name": "Health Insurance Plans",
         "desc": "Comprehensive health coverage options",
-        "icon": "🏥",
+        "icon": HeartPulse,
         "image": "/assets/images/insurance-services-health-insurance-plans.jpeg",
         "imageWebp": "/assets/images/insurance-services-health-insurance-plans.webp"
       },
       {
         "name": "Vehicle Insurance",
         "desc": "Two-wheeler & four-wheeler policies",
-        "icon": "🚗",
+        "icon": Car,
         "image": "/assets/images/insurance-services-vehicle-insurance.jpeg",
         "imageWebp": "/assets/images/insurance-services-vehicle-insurance.webp"
       },
       {
         "name": "Term Life Insurance",
         "desc": "Pure protection term insurance plans",
-        "icon": "💪",
+        "icon": Dumbbell,
         "image": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp"
       },
       {
         "name": "Crop Insurance (PMFBY)",
         "desc": "Agricultural crop protection scheme",
-        "icon": "🌾",
+        "icon": Wheat,
         "image": "/assets/images/insurance-services-crop-insurance-pmfby.jpeg",
         "imageWebp": "/assets/images/insurance-services-crop-insurance-pmfby.webp"
       }
@@ -372,56 +373,56 @@ export const servicesA = [
       {
         "name": "Personal Loan",
         "desc": "Quick personal loan processing & approval",
-        "icon": "💵",
+        "icon": Banknote,
         "image": "/assets/images/banking-services-personal-loan.jpeg",
         "imageWebp": "/assets/images/banking-services-personal-loan.webp"
       },
       {
         "name": "Business Loan",
         "desc": "MSME & business loan assistance",
-        "icon": "🏦",
+        "icon": Landmark,
         "image": "/assets/images/banking-services-business-loan.jpeg",
         "imageWebp": "/assets/images/banking-services-business-loan.webp"
       },
       {
         "name": "AEPS Services",
         "desc": "Aadhaar-enabled payment & withdrawal",
-        "icon": "🔑",
+        "icon": KeyRound,
         "image": "/assets/images/banking-services-aeps-services.jpeg",
         "imageWebp": "/assets/images/banking-services-aeps-services.webp"
       },
       {
         "name": "Money Transfer",
         "desc": "NEFT, RTGS, IMPS & UPI transfers",
-        "icon": "💸",
+        "icon": Send,
         "image": "/assets/images/banking-services-money-transfer.jpeg",
         "imageWebp": "/assets/images/banking-services-money-transfer.webp"
       },
       {
         "name": "Account Opening",
         "desc": "Savings, current & NRI account opening",
-        "icon": "📒",
+        "icon": Notebook,
         "image": "/assets/images/banking-services-account-opening.jpeg",
         "imageWebp": "/assets/images/banking-services-account-opening.webp"
       },
       {
         "name": "Credit Card Application",
         "desc": "Apply for credit cards from top banks",
-        "icon": "💳",
+        "icon": CreditCard,
         "image": "/assets/images/banking-services-credit-card-application.jpeg",
         "imageWebp": "/assets/images/banking-services-credit-card-application.webp"
       },
       {
         "name": "Fixed & Recurring Deposits",
         "desc": "FD/RD with best interest rates",
-        "icon": "📈",
+        "icon": PiggyBank,
         "image": "/assets/images/banking-services-fixed-recurring-deposits.jpeg",
         "imageWebp": "/assets/images/banking-services-fixed-recurring-deposits.webp"
       },
       {
         "name": "Micro ATM Services",
         "desc": "Cash withdrawal & balance inquiry",
-        "icon": "🏧",
+        "icon": CircleDollarSign,
         "image": "/assets/images/banking-services-micro-atm-services.jpeg",
         "imageWebp": "/assets/images/banking-services-micro-atm-services.webp"
       }
@@ -443,28 +444,28 @@ export const servicesA = [
       {
         "name": "IPPB Postal Account Opening",
         "desc": "India Post Payments Bank RD plans",
-        "icon": "🏣",
+        "icon": Landmark,
         "image": "/assets/images/postal-services-ippb-postal-account-opening.jpeg",
         "imageWebp": "/assets/images/postal-services-ippb-postal-account-opening.webp"
       },
       {
         "name": "Speed Post & Registered Post",
         "desc": "Express and tracked mail services",
-        "icon": "📮",
+        "icon": Mailbox,
         "image": "/assets/images/postal-services-speed-post-registered-post.jpeg",
         "imageWebp": "/assets/images/postal-services-speed-post-registered-post.webp"
       },
       {
         "name": "Money Order Services",
         "desc": "Domestic money order transfers",
-        "icon": "💸",
+        "icon": MailCheck,
         "image": "/assets/images/postal-services-money-order-services.jpeg",
         "imageWebp": "/assets/images/postal-services-money-order-services.webp"
       },
       {
         "name": "Postal Life Insurance",
         "desc": "PLI & RPLI premium payment",
-        "icon": "🛡️",
+        "icon": ShieldCheck,
         "image": "/assets/images/postal-services-postal-life-insurance.jpeg",
         "imageWebp": "/assets/images/postal-services-postal-life-insurance.webp"
       }
@@ -486,55 +487,55 @@ export const servicesA = [
       {
         "name": "GST Registration & Filing",
         "desc": "GSTIN registration and monthly returns",
-        "icon": "📊",
+        "icon": Receipt,
         "image": "/assets/images/business-registration-gst-registration-filing.jpeg",
         "imageWebp": "/assets/images/business-registration-gst-registration-filing.webp"
       },
       {
         "name": "Company Registration",
         "desc": "Private limited & LLP incorporation",
-        "icon": "🏢",
+        "icon": Building2,
         "image": "/assets/images/business-registration-company-registration.jpeg",
         "imageWebp": "/assets/images/business-registration-company-registration.webp"
       },
       {
         "name": "FSSAI License",
         "desc": "Food safety license and registration",
-        "icon": "🍽️",
+        "icon": Utensils,
         "image": "/assets/images/business-registration-fssai-license.jpeg",
         "imageWebp": "/assets/images/business-registration-fssai-license.webp"
       },
       {
         "name": "MSME/Udyam Registration",
         "desc": "Micro, small & medium enterprise registration",
-        "icon": "🏭",
+        "icon": Factory,
         "image": "/assets/images/business-registration-msme-udyam-registration.jpeg",
         "imageWebp": "/assets/images/business-registration-msme-udyam-registration.webp"
       },
       {
         "name": "Trade License",
         "desc": "Municipal trade license application",
-        "icon": "🪪",
+        "icon": Stamp,
         "image": "/assets/images/business-registration-trade-license.jpeg",
         "imageWebp": "/assets/images/business-registration-trade-license.webp"
       },
       {
         "name": "Shop & Establishment",
         "desc": "Shop act license and compliance",
-        "icon": "🏪",
+        "icon": ShoppingBag,
         "image": "/assets/images/business-registration-shop-establishment.jpeg",
         "imageWebp": "/assets/images/business-registration-shop-establishment.webp"
       },
       {
         "name": "Import Export Code",
         "desc": "IEC registration for international trade",
-        "icon": "🌐",
+        "icon": Package,
         "image": "https://imgs.search.brave.com/i5ad-hfStso6fqQKqqiiAuQCdf6EMIF_FdHeGet6HrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbnZl/bnRpb250YXguY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA5L0lFQy1Db2Rl/LVJlZ2lzdHJhdGlv/bi1pbi1LdWthdHBh/bGx5LUh5ZGVyYWJh/ZC5qcGc"
       },
       {
         "name": "Professional Tax",
         "desc": "PT registration and compliance",
-        "icon": "💼",
+        "icon": Briefcase,
         "image": "/assets/images/business-registration-professional-tax.jpeg",
         "imageWebp": "/assets/images/business-registration-professional-tax.webp"
       }
@@ -556,28 +557,28 @@ export const servicesA = [
       {
         "name": "Document Binding Services",
         "desc": "Projects, documents, & reports binding.",
-        "icon": "📕",
+        "icon": BookOpen,
         "image": "/assets/images/project-designing-work-document-binding-services.jpeg",
         "imageWebp": "/assets/images/project-designing-work-document-binding-services.webp"
       },
       {
         "name": "Color & B/W Printing",
         "desc": "High quality laser & inkjet printing",
-        "icon": "🖨️",
+        "icon": Printer,
         "image": "/assets/images/project-designing-work-color-b-w-printing.jpeg",
         "imageWebp": "/assets/images/project-designing-work-color-b-w-printing.webp"
       },
       {
         "name": "Project Report Preparation",
         "desc": "Formatting, indexing & cover design",
-        "icon": "📐",
+        "icon": DraftingCompass,
         "image": "/assets/images/project-designing-work-project-report-preparation.jpeg",
         "imageWebp": "/assets/images/project-designing-work-project-report-preparation.webp"
       },
       {
         "name": "ID Card & Certificate Printing",
         "desc": "Custom ID cards and certificates",
-        "icon": "🎴",
+        "icon": BadgeCheck,
         "image": "/assets/images/project-designing-work-id-card-certificate-printing.jpeg",
         "imageWebp": "/assets/images/project-designing-work-id-card-certificate-printing.webp"
       }
@@ -602,84 +603,84 @@ export const servicesB = [
       {
         "name": "Monitor",
         "desc": "High-definition LED and IPS monitors for all your display needs.",
-        "icon": "🖥️",
+        "icon": Monitor,
         "image": "/assets/images/computer-accessories-monitor.jpeg",
         "imageWebp": "/assets/images/computer-accessories-monitor.webp"
       },
       {
         "name": "Hardisk",
         "desc": "Internal and external hard drives (HDD) and high-speed SSDs.",
-        "icon": "💾",
+        "icon": HardDrive,
         "image": "/assets/images/computer-accessories-hardisk.jpeg",
         "imageWebp": "/assets/images/computer-accessories-hardisk.webp"
       },
       {
         "name": "Processor",
         "desc": "Powerful processors from Intel and AMD for peak performance.",
-        "icon": "⚙️",
+        "icon": Cpu,
         "image": "/assets/images/computer-accessories-processor.jpeg",
         "imageWebp": "/assets/images/computer-accessories-processor.webp"
       },
       {
         "name": "Mother board",
         "desc": "Durable motherboards supporting latest generation components.",
-        "icon": "📟",
+        "icon": CircuitBoard,
         "image": "/assets/images/computer-accessories-mother-board.jpeg",
         "imageWebp": "/assets/images/computer-accessories-mother-board.webp"
       },
       {
         "name": "Keyboard",
         "desc": "Ergonomic wired and wireless keyboards for smooth typing.",
-        "icon": "⌨️",
+        "icon": Keyboard,
         "image": "/assets/images/computer-accessories-keyboard.jpeg",
         "imageWebp": "/assets/images/computer-accessories-keyboard.webp"
       },
       {
         "name": "Mouse",
         "desc": "Precision optical and gaming mice for better control.",
-        "icon": "🖱️",
+        "icon": Mouse,
         "image": "/assets/images/computer-accessories-mouse.jpeg",
         "imageWebp": "/assets/images/computer-accessories-mouse.webp"
       },
       {
         "name": "USB Drives & Memory Cards",
         "desc": "Pen drives, SD cards & high-capacity storage.",
-        "icon": "📂",
+        "icon": Usb,
         "image": "/assets/images/computer-accessories-usb-drives-memory-cards.jpeg",
         "imageWebp": "/assets/images/computer-accessories-usb-drives-memory-cards.webp"
       },
       {
         "name": "Cables & Adapters",
         "desc": "HDMI, USB-C, VGA & all essential connectors.",
-        "icon": "🔌",
+        "icon": Cable,
         "image": "/assets/images/computer-accessories-cables-adapters.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cables-adapters.webp"
       },
       {
         "name": "Toner",
         "desc": "High-quality laser printer toners for sharp & clear prints.",
-        "icon": "🖨️",
+        "icon": Droplet,
         "image": "/assets/images/computer-accessories-toner.jpeg",
         "imageWebp": "/assets/images/computer-accessories-toner.webp"
       },
       {
         "name": "Cartridge",
         "desc": "Ink cartridges for all major printer brands & models.",
-        "icon": "🧴",
+        "icon": SprayCan,
         "image": "/assets/images/computer-accessories-cartridge.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cartridge.webp"
       },
       {
         "name": "CCTV Camera",
         "desc": "Surveillance cameras for home & office security solutions.",
-        "icon": "📹",
+        "icon": Cctv,
         "image": "/assets/images/computer-accessories-cctv-camera.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cctv-camera.webp"
       },
       {
         "name": "Antivirus",
         "desc": "Reliable antivirus software for total digital protection.",
-        "icon": "🛡️",
+        "icon": ShieldCheck,
         "image": "/assets/images/computer-accessories-antivirus.jpeg",
         "imageWebp": "/assets/images/computer-accessories-antivirus.webp"
       }
@@ -701,42 +702,42 @@ export const servicesB = [
       {
         "name": "Mobile Chargers & Cables",
         "desc": "Fast chargers, Lightning & USB-C cables",
-        "icon": "🔋",
+        "icon": BatteryCharging,
         "image": "/assets/images/mobile-accessories-mobile-chargers-cables.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-mobile-chargers-cables.webp"
       },
       {
         "name": "Phone Cases & Covers",
         "desc": "Stylish protective cases for all brands",
-        "icon": "📱",
+        "icon": Smartphone,
         "image": "/assets/images/mobile-accessories-phone-cases-covers.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-phone-cases-covers.webp"
       },
       {
         "name": "Screen Protectors",
         "desc": "Tempered glass & film protectors",
-        "icon": "🛡️",
+        "icon": ShieldCheck,
         "image": "/assets/images/mobile-accessories-screen-protectors.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-screen-protectors.webp"
       },
       {
         "name": "Earphones & Earbuds",
         "desc": "Wired & wireless audio accessories",
-        "icon": "🎵",
+        "icon": Headphones,
         "image": "/assets/images/mobile-accessories-earphones-earbuds.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-earphones-earbuds.webp"
       },
       {
         "name": "Power Banks",
         "desc": "Portable charging solutions",
-        "icon": "🔌",
+        "icon": PlugZap,
         "image": "/assets/images/mobile-accessories-power-banks.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-power-banks.webp"
       },
       {
         "name": "OTG & Adapters",
         "desc": "OTG cables & connectivity adapters",
-        "icon": "🔗",
+        "icon": Link,
         "image": "/assets/images/mobile-accessories-otg-adapters.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-otg-adapters.webp"
       }
@@ -758,28 +759,28 @@ export const servicesB = [
       {
         "name": "Office Supplies",
         "desc": "Notebook,pen,pencil,staplers, scissors, & more",
-        "icon": "📎",
+        "icon": Paperclip,
         "image": "/assets/images/stationary-office-supplies.jpeg",
         "imageWebp": "/assets/images/stationary-office-supplies.webp"
       },
       {
         "name": "Files & Folders",
         "desc": "Box files, L-folders & report covers",
-        "icon": "📁",
+        "icon": Folder,
         "image": "/assets/images/stationary-files-folders.jpeg",
         "imageWebp": "/assets/images/stationary-files-folders.webp"
       },
       {
         "name": "Paper & Envelopes",
         "desc": "A4 sheets, brown & white envelopes",
-        "icon": "✉️",
+        "icon": Mail,
         "image": "/assets/images/stationary-paper-envelopes.jpeg",
         "imageWebp": "/assets/images/stationary-paper-envelopes.webp"
       },
       {
         "name": "Photo Paper",
         "desc": "Glossy and matte high-quality photo printing paper.",
-        "icon": "🖼️",
+        "icon": Image,
         "image": "/assets/images/stationary-photo-paper.jpeg",
         "imageWebp": "/assets/images/stationary-photo-paper.webp"
       }
@@ -801,21 +802,21 @@ export const servicesB = [
       {
         "name": "Competitive Exam Books",
         "desc": "UPSC, TNPSC, SSC & bank exam guides",
-        "icon": "🎯",
+        "icon": Target,
         "image": "/assets/images/journals-books-competitive-exam-books.jpeg",
         "imageWebp": "/assets/images/journals-books-competitive-exam-books.webp"
       },
       {
         "name": "Children's Books",
         "desc": "Story books, activity & coloring books",
-        "icon": "🧒",
+        "icon": Baby,
         "image": "/assets/images/journals-books-children-s-books.jpeg",
         "imageWebp": "/assets/images/journals-books-children-s-books.webp"
       },
       {
         "name": "Journals & Magazines",
         "desc": "Academic journals & monthly magazines",
-        "icon": "📰",
+        "icon": Newspaper,
         "image": "/assets/images/journals-books-journals-magazines.jpeg",
         "imageWebp": "/assets/images/journals-books-journals-magazines.webp"
       }
@@ -837,28 +838,28 @@ export const servicesB = [
       {
         "name": "Pure Honey",
         "desc": "Natural raw & processed honey varieties",
-        "icon": "🍯",
+        "icon": Milk,
         "image": "/assets/images/organic-foods-pure-honey.jpeg",
         "imageWebp": "/assets/images/organic-foods-pure-honey.webp"
       },
       {
         "name": "Organic Spices",
         "desc": "Pepper, cardamom & more",
-        "icon": "🌶️",
+        "icon": Flame,
         "image": "/assets/images/organic-foods-organic-spices.jpeg",
         "imageWebp": "/assets/images/organic-foods-organic-spices.webp"
       },
       {
         "name": "Cold-Pressed Oils",
         "desc": "Coconut & groundnut oils",
-        "icon": "🫒",
+        "icon": Leaf,
         "image": "/assets/images/organic-foods-cold-pressed-oils.jpeg",
         "imageWebp": "/assets/images/organic-foods-cold-pressed-oils.webp"
       },
       {
         "name": "Dry Fruits & Nuts",
         "desc": "Cashew, almond, raisins & mixed nuts",
-        "icon": "🥜",
+        "icon": Sprout,
         "image": "/assets/images/organic-foods-dry-fruits-nuts.jpeg",
         "imageWebp": "/assets/images/organic-foods-dry-fruits-nuts.webp"
       }

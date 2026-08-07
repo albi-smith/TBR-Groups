@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList } from 'lucide-react';
+import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList, Search, Trophy, Zap, Lock, MessageSquare, User, Layers } from 'lucide-react';
 import { allServices } from '../data/servicesData';
 import Navbar from '../components/Navbar';
 import Picture from '../components/Picture';
@@ -28,7 +28,7 @@ const ServicePage = () => {
         background: 'var(--bg-deep)',
         gap: '1.5rem',
       }}>
-        <div style={{ fontSize: '4rem' }}>🔍</div>
+        <div style={{ fontSize: '4rem', color: 'var(--accent-gold)' }}><Search size={56} /></div>
         <h1 className="h2" style={{ fontFamily: 'Outfit, sans-serif', color: 'var(--text-primary)' }}>
           Service Not Found
         </h1>
@@ -145,13 +145,13 @@ const marqueeItems = [
                 <div className="d-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass" style={{
                   fontSize: '0.85rem', color: 'var(--text-secondary)',
                 }}>
-                  <span style={{ color: 'var(--accent-gold)' }}>✦</span> {service.subServices.length} Services Available
+                  <span style={{ color: 'var(--accent-gold)', display: 'flex' }}><Layers size={16} /></span> {service.subServices.length} Services Available
                 </div>
                 <div className="d-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass" style={{
                   fontSize: '0.85rem', color: 'var(--text-secondary)',
                 }}>
                
-                  <span style={{ color: '#22c55e' }}>●</span> Open Now
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e', display: 'inline-block', flexShrink: 0 }} /> Open Now
                 </div>
               </div>
             </div>
@@ -232,7 +232,7 @@ const marqueeItems = [
                         color: service.color,
                         marginBottom: 0
                       }}>
-                        {sub.icon}
+                        <sub.icon size={18} />
                       </div> */}
                       <div className="flex-grow-1">
                         <h3 style={{
@@ -422,15 +422,15 @@ const marqueeItems = [
 
           <div className="row g-4 justify-content-center">
             {[
-              { icon: '🏆', title: 'Certified & Authorized', desc: 'Official authorized center for all government and financial services' },
-              { icon: '⚡', title: 'Fast Processing', desc: 'Quick turnaround time with efficient processing systems' },
-              { icon: '🔒', title: 'Secure & Confidential', desc: 'Your documents and data are handled with utmost security' },
-              { icon: '💬', title: '24/7 Support', desc: 'Dedicated customer support to assist you at every step' },
+              { icon: <Trophy size={24} />, title: 'Certified & Authorized', desc: 'Official authorized center for all government and financial services' },
+              { icon: <Zap size={24} />, title: 'Fast Processing', desc: 'Quick turnaround time with efficient processing systems' },
+              { icon: <Lock size={24} />, title: 'Secure & Confidential', desc: 'Your documents and data are handled with utmost security' },
+              { icon: <MessageSquare size={24} />, title: '24/7 Support', desc: 'Dedicated customer support to assist you at every step' },
             ].map((item, i) => (
               <div key={i} className="col-lg-3 col-md-6">
                 <div className="info-card h-100" data-aos="zoom-in" data-aos-delay={i * 100}>
                   <div className="info-icon">
-                    <span style={{ fontSize: '1.3rem' }}>{item.icon}</span>
+                    <span style={{ color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.icon}</span>
                   </div>
                   <h3 style={{
                     fontFamily: 'Outfit, sans-serif',
@@ -514,13 +514,13 @@ const marqueeItems = [
                       width: '48px', height: '48px', borderRadius: '50%',
                       background: 'rgba(0,152,69,0.15)',
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
-                      fontSize: '1.4rem', flexShrink: 0,
-                    }}>🧑‍💼</div>
+                      flexShrink: 0,
+                    }}><User size={24} style={{ color: 'var(--primary)' }} /></div>
                     <div className="text-start">
                       <p style={{ fontSize: '0.72rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '1px', margin: 0 }}>Dedicated Contact</p>
                       <p style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)', margin: '0.15rem 0 0' }}>{service.contactPerson}</p>
                       <a href={`tel:${service.contactPhone}`} style={{ fontSize: '0.9rem', color: '#009845', fontWeight: 600, textDecoration: 'none' }}>
-                        📞 {service.contactPhone}
+                        <Phone size={14} style={{ color: '#009845' }} /> {service.contactPhone}
                       </a>
                     </div>
                   </div>
