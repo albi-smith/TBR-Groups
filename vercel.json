@@ -1,3 +1,4 @@
 {
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "buildCommand": "npx --yes @puppeteer/browsers install chrome@stable --path .chrome && PUPPETEER_EXECUTABLE_PATH=$(find .chrome -type f -name chrome | head -n 1) npm run build"
 }

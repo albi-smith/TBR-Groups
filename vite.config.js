@@ -84,6 +84,7 @@ export default defineConfig({
         headless: true,
         inject: true,
         ...(prerenderExecutablePath ? { executablePath: prerenderExecutablePath } : {}),
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
         renderAfterTime: 4000,
         maxConcurrentRoutes: 1,
       }),
