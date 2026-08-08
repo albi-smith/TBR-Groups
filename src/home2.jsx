@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronRight, Star, Users, Award, Briefcase, Globe, CreditCard, Smartphone, ShieldCheck, Zap, Send, MessageSquare, Shield, Trophy, CircleCheck } from 'lucide-react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { servicesA, servicesB, allServices } from './data/servicesData';
 import Navbar from './components/Navbar';
 import Picture from './components/Picture';
@@ -9,7 +10,6 @@ import Picture from './components/Picture';
 const TBRTechnologies = () => {
   // State
   const [activeCategory, setActiveCategory] = useState('all');
-  const navigate = useNavigate();
   const location = useLocation();
   const servicesRef = useRef(null);
 
@@ -147,8 +147,14 @@ const TBRTechnologies = () => {
 
   return (
     <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100vh' }}>
+      <Helmet>
+        <title>TBR Groups | Computer Services, Software & e-Seva in Marthandam</title>
+        <meta name="description" content="Computer sales, repair and hardware services, custom software, website development, e-Seva and business services in Marthandam, Tamil Nadu." />
+        <link rel="canonical" href="https://tbr-groups.vercel.app/" />
+      </Helmet>
       <Navbar />
 
+      <main>
       {/* ═══════════════ HERO ═══════════════ */}
       <section className="animated-gradient-bg hero-section" style={{
         position: 'relative',
@@ -182,7 +188,7 @@ const TBRTechnologies = () => {
           <div className="row align-items-center gy-5">
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div className="section-label">Trusted Service Partner Since Establishment</div>
-              <h2 style={{
+              <h1 style={{
                 fontFamily: 'Outfit, sans-serif',
                 fontSize: 'clamp(2.2rem, 4.5vw, 3.8rem)',
                 fontWeight: 800,
@@ -198,7 +204,7 @@ const TBRTechnologies = () => {
                   WebkitTextFillColor: 'transparent',
                   backgroundClip: 'text',
                 }}>Service Center</span>
-              </h2>
+              </h1>
               <p style={{
                 fontSize: '1.1rem', color: 'var(--text-secondary)',
                 lineHeight: 1.8, marginBottom: '2.5rem', maxWidth: '500px',
@@ -720,9 +726,10 @@ const TBRTechnologies = () => {
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
               >
-                <div
+                <Link
+                  to={`/service/${service.slug}`}
                   className="service-card h-100"
-                  onClick={() => navigate(`/service/${service.slug}`)}
+                  style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
                 >
                   {/* Category Badge */}
                   <span className={`category-badge ${service.category === 'services' ? 'badge-services' : 'badge-retail'}`}>
@@ -763,7 +770,7 @@ const TBRTechnologies = () => {
                       </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -1241,6 +1248,8 @@ const TBRTechnologies = () => {
         </div>
       </section>
 
+      </main>
+
       {/* ═══════════════ FOOTER ═══════════════ */}
       <footer className="footer" style={{ padding: '4rem 0 2rem' }}>
         <div className="container">
@@ -1278,10 +1287,10 @@ const TBRTechnologies = () => {
               </h4>
               <div className="d-flex flex-column gap-2">
                 {servicesA.slice(0, 5).map(s => (
-                  <span key={s.id} className="footer-link" onClick={() => navigate(`/service/${s.slug}`)}
-                    style={{ cursor: 'pointer' }}>
+                  <Link key={s.id} to={`/service/${s.slug}`} className="footer-link"
+                    style={{ cursor: 'pointer', textDecoration: 'none' }}>
                     {s.title}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -1297,10 +1306,10 @@ const TBRTechnologies = () => {
               </h4>
               <div className="d-flex flex-column gap-2">
                 {servicesB.map(s => (
-                  <span key={s.id} className="footer-link" onClick={() => navigate(`/service/${s.slug}`)}
-                    style={{ cursor: 'pointer' }}>
+                  <Link key={s.id} to={`/service/${s.slug}`} className="footer-link"
+                    style={{ cursor: 'pointer', textDecoration: 'none' }}>
                     {s.title}
-                  </span>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -1321,9 +1330,9 @@ const TBRTechnologies = () => {
                 <a href="mailto:tbrinnovativetrades@gmail.com" className="footer-link d-flex align-items-center gap-2">
                   <Mail size={13} /> Email Us
                 </a>
-                <span onClick={() => navigate('/enquiry')} className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer' }}>
+                <button onClick={scrollToEnquiry} className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer', background: 'none', border: 'none', color: 'inherit', textAlign: 'left' }}>
                   <MessageSquare size={13} /> Submit Enquiry Form
-                </span>
+                </button>
                 <a href="https://wa.me/919487635294" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
                   <MessageSquare size={13} /> Direct WhatsApp
                 </a>
@@ -1345,7 +1354,7 @@ const TBRTechnologies = () => {
             gap: '1.5rem',
           }}>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', margin: 0 }}>
-              © 2024 TBR Technologies. All rights reserved.
+              © 2024 TBR Groups. All rights reserved.
             </p>
             <p style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', margin: 0 }}>
               Serving Tamil Nadu with professional services since establishment.

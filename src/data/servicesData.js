@@ -1,6 +1,6 @@
 import { Globe, ShoppingCart, Server, Smartphone, Palette, Cog, Plug, TrendingUp, Monitor, CreditCard, ShieldCheck, IdCard, Book, Vote, ClipboardList, FileText, Award, FilePen, Lock, GraduationCap, Hospital, Car, FileCheck, Building2, BarChart3, Home, Search, Scale, Store, PenLine, Bus, TrainFront, Plane, Clapperboard, Hotel, Shield, HeartPulse, Dumbbell, Wheat, Banknote, Landmark, KeyRound, Send, Notebook, PiggyBank, CircleDollarSign, Mailbox, MailCheck, Receipt, Utensils, Factory, Stamp, ShoppingBag, Package, Briefcase, BookOpen, Printer, DraftingCompass, BadgeCheck, HardDrive, Cpu, CircuitBoard, Keyboard, Mouse, Usb, Cable, Droplet, SprayCan, Cctv, BatteryCharging, Headphones, PlugZap, Link, Paperclip, Folder, Mail, Image, Target, Baby, Newspaper, Milk, Flame, Leaf, Sprout } from 'lucide-react';
 // ============================================
-// TBR Technologies — Centralized Service Data (Optimized Local)
+// TBR Groups — Centralized Service Data (Optimized Local)
 // ============================================
 
 export const servicesA = [
@@ -8,7 +8,7 @@ export const servicesA = [
     "id": 1,
     "slug": "digital-solutions",
     "path": "/digital-solutions",
-    "title": "Software Development & Digital Solutions",
+    "title": "Software Development",
     "desc": "Custom software, website design, domain registration, and e-commerce platform development services.",
     "image": "/assets/images/software-development-digital-solutions.jpeg",
     "heroImage": "/assets/images/software-development-digital-solutions-hero.jpeg",

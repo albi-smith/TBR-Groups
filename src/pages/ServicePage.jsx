@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, Phone, MapPin, Clock, FileText, Timer, IndianRupee, ClipboardList, Search, Trophy, Zap, Lock, MessageSquare, User, Layers } from 'lucide-react';
 import { allServices } from '../data/servicesData';
 import Navbar from '../components/Navbar';
@@ -7,11 +8,16 @@ import Picture from '../components/Picture';
 
 const ServicePage = () => {
   const { serviceSlug } = useParams();
-  const navigate = useNavigate();
   const [loaded, setLoaded] = useState(false);
   const [expandedCard, setExpandedCard] = useState(null)
 
   const service = allServices.find(s => s.slug === serviceSlug);
+
+  const helmetTitle = service ? `${service.title} | TBR Groups, Marthandam` : 'Service Not Found | TBR Groups';
+  const helmetDescription = service
+    ? `Get ${service.title} from TBR Groups in Marthandam. Professional computer, software, website, e-Seva and business support services.`
+    : 'The service you are looking for is not available. Explore computer services, software development, website development, e-Seva and business services from TBR Groups.';
+  const canonicalUrl = `https://tbr-groups.vercel.app/service/${serviceSlug}`;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -33,9 +39,9 @@ const ServicePage = () => {
           Service Not Found
         </h1>
         <p className="text-secondary">The service you're looking for doesn't exist.</p>
-        <button className="btn-primary navbar-back-btn" onClick={() => navigate('/')}>
+        <Link to="/" className="btn-primary navbar-back-btn" style={{ textDecoration: 'none' }}>
           <ArrowLeft className="navbar-back-icon" /> Back to Home
-        </button>
+        </Link>
       </div>
     );
   }
@@ -52,8 +58,14 @@ const marqueeItems = [
 
   return (
     <div style={{ backgroundColor: 'var(--bg-deep)', minHeight: '100vh' }}>
+      <Helmet>
+        <title>{helmetTitle}</title>
+        <meta name="description" content={helmetDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <Navbar title={service.title} breadcrumbs={[service.title]} />
 
+      <main>
       {/* ── Hero Section with Background Image ── */}
       <section className="service-hero" style={{
         opacity: loaded ? 1 : 0,
@@ -71,8 +83,9 @@ const marqueeItems = [
         <div className="service-hero-overlay" />
 
         {/* Back Button inside Hero - Top Left End of Image */}
-        <button
-          onClick={() => navigate('/', { state: { scrollToServices: true } })}
+        <Link
+          to="/"
+          state={{ scrollToServices: true }}
           className="btn d-none d-md-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass navbar-back-btn"
           style={{ 
             position: 'absolute',
@@ -82,19 +95,12 @@ const marqueeItems = [
             color: 'var(--text-secondary)',
             zIndex: 15,
             transition: 'all 0.3s ease',
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.color = 'var(--text-primary)';
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.color = 'var(--text-secondary)';
+            textDecoration: 'none',
           }}
         >
           <ArrowLeft size={16} style={{ color: 'var(--accent-gold)' }} /> 
           <span style={{ fontWeight: 600 }}>Home</span>
-        </button>
+        </Link>
 
         {/* Decorative Gradient Orb */}
         <div style={{
@@ -498,9 +504,9 @@ const marqueeItems = [
                     ? `Call ${service.contactPerson}`
                     : 'Contact Us'}
                 </a>
-                <button className="btn-secondary" onClick={() => navigate('/', { state: { scrollToServices: true } })}>
+                <Link to="/" state={{ scrollToServices: true }} className="btn-secondary" style={{ textDecoration: 'none' }}>
                   <ArrowLeft size={18} /> Explore All Services
-                </button>
+                </Link>
               </div>
 
               {service.contactPerson && (
@@ -543,12 +549,14 @@ const marqueeItems = [
         </div>
       </section>
 
+      </main>
+
       {/* ── Footer ── */}
       <footer className="footer py-4">
         <div className="container">
           <div className="d-flex flex-wrap justify-content-between align-items-center gap-3">
             <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)' }}>
-              © 2024 TBR Technologies. All rights reserved.
+              © 2024 TBR Groups. All rights reserved.
             </div>
             <div className="d-flex align-items-center gap-2">
               <div style={{

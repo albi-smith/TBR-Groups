@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { MapPin, ChevronRight, Menu, X } from 'lucide-react';
 import Picture from './Picture';
 
@@ -8,13 +8,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Home', action: () => {
-      if (window.location.pathname === '/') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        navigate('/');
-      }
-    }},
+    { label: 'Home', to: '/' },
     { label: 'About', targetId: 'about-section' },
     { label: 'Services', targetId: 'services-section' },
     { label: 'Locations', targetId: 'branches-section' },
@@ -48,7 +42,6 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
       link.action();
     }
   };
-
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -105,26 +98,26 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
         <div className="d-flex align-items-center justify-content-between w-100">
           {/* Brand/Logo */}
           <div className="d-flex align-items-center">
-            <div
+            <Link
+              to="/"
               className="d-flex align-items-center"
-              style={{ gap: '0.75rem', cursor: 'pointer' }}
-              onClick={() => navigate('/')}
+              style={{ gap: '0.75rem', textDecoration: 'none', color: 'inherit' }}
             >
               <Picture
                 src="/logo.png"
-                alt="TBR Technologies Logo"
+                alt="TBR Groups Logo"
                 className="navbar-logo"
                 fetchPriority="high"
               />
               <div>
-                <h1 className="navbar-title">
+                <span className="navbar-title">
                   TBR <span className="navbar-title-groups">Groups</span>
-                </h1>
+                </span>
                 <p className="d-none d-sm-block" style={{ fontSize: '0.55rem', color: 'white', margin: 0, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
                   Complete Service Solution
                 </p>
               </div>
-            </div>
+            </Link>
 
             {breadcrumbs.length > 0 && (
               <div className="d-none d-md-flex align-items-center gap-2 ms-3" style={{ color: 'var(--text-tertiary)', fontSize: '0.8rem' }}>
@@ -135,18 +128,29 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
           </div>
 
           {/* Desktop Navigation - Fill Fully */}
-          <div className="d-none d-lg-flex align-items-center justify-content-evenly" style={{ flex: 1, padding: '0 4rem' }}>
+          <nav aria-label="Primary" className="d-none d-lg-flex align-items-center justify-content-evenly" style={{ flex: 1, padding: '0 4rem' }}>
             {navLinks.map((link) => (
-              <button
-                key={link.label}
-                onClick={() => handleNavClick(link)}
-                className="nav-link-custom"
-                style={{ background: 'none', border: 'none', color: 'white', fontSize: '1rem', fontWeight: 500, transition: 'color 0.2s', padding: '0.5rem 1rem' }}
-              >
-                {link.label}
-              </button>
+              link.to ? (
+                <Link
+                  key={link.label}
+                  to={link.to}
+                  className="nav-link-custom"
+                  style={{ color: 'white', fontSize: '1rem', fontWeight: 500, transition: 'color 0.2s', padding: '0.5rem 1rem', textDecoration: 'none' }}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <button
+                  key={link.label}
+                  onClick={() => handleNavClick(link)}
+                  className="nav-link-custom"
+                  style={{ background: 'none', border: 'none', color: 'white', fontSize: '1rem', fontWeight: 500, transition: 'color 0.2s', padding: '0.5rem 1rem' }}
+                >
+                  {link.label}
+                </button>
+              )
             ))}
-          </div>
+          </nav>
 
           {/* Right Section - Minimal weight to allow links to fill */}
           <div className="d-flex align-items-center justify-content-end">
@@ -184,26 +188,48 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
         transition: 'all 0.3s ease-in-out'
       }}>
         {navLinks.map((link) => (
-          <button
-            key={link.label}
-            onClick={() => handleNavClick(link)}
-            style={{
-              background: 'none',
-              border: 'none',
-              color: 'white',
-              fontSize: '1.1rem',
-              fontWeight: 500,
-              textAlign: 'left',
-              padding: '0.75rem 0.5rem',
-              borderRadius: 'var(--radius-md)',
-              transition: 'background 0.2s',
-              borderBottom: '1px solid rgba(255,255,255,0.03)'
-            }}
-            onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
-            onMouseLeave={e => e.currentTarget.style.background = 'none'}
-          >
-            {link.label}
-          </button>
+          link.to ? (
+            <Link
+              key={link.label}
+              to={link.to}
+              onClick={() => setIsMenuOpen(false)}
+              style={{
+                color: 'white',
+                fontSize: '1.1rem',
+                fontWeight: 500,
+                textAlign: 'left',
+                padding: '0.75rem 0.5rem',
+                borderRadius: 'var(--radius-md)',
+                transition: 'background 0.2s',
+                borderBottom: '1px solid rgba(255,255,255,0.03)',
+                textDecoration: 'none',
+              }}
+            >
+              {link.label}
+            </Link>
+          ) : (
+            <button
+              key={link.label}
+              onClick={() => handleNavClick(link)}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: 'white',
+                fontSize: '1.1rem',
+                fontWeight: 500,
+                textAlign: 'left',
+                padding: '0.75rem 0.5rem',
+                borderRadius: 'var(--radius-md)',
+                transition: 'background 0.2s',
+                borderBottom: '1px solid rgba(255,255,255,0.03)',
+                cursor: 'pointer',
+              }}
+              onMouseEnter={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'none'}
+            >
+              {link.label}
+            </button>
+          )
         ))}
         
         <div className="mt-auto pb-4">

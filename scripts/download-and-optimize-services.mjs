@@ -164,7 +164,7 @@ ${credits.join("\n")}
   
   // Generate updated JS data file content
   const newJsContent = `// ============================================
-// TBR Technologies — Centralized Service Data (Optimized Local)
+// TBR Groups — Centralized Service Data (Optimized Local)
 // ============================================
 
 export const servicesA = ${JSON.stringify(data.servicesA, null, 2)};

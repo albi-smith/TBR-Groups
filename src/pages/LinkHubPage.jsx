@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Globe } from 'lucide-react';
 import { linksConfig } from '../data/linksConfig';
 import Picture from '../components/Picture';
@@ -134,18 +134,31 @@ export default function LinkHubPage() {
     return 0;
   });
 
-  // Dynamic Page title updates for SEO friendly headers
-  useEffect(() => {
-    const currentBusiness = linksConfig.businesses[targetKey];
-    if (currentBusiness) {
-      document.title = `${currentBusiness.title} — Links | TBR Groups`;
-    } else {
-      document.title = `${linksConfig.hero.title} — Complete Service Solution`;
-    }
-  }, [targetKey]);
+  // Page-specific SEO meta tags
+  const helmetMeta = {
+    tbreducation: {
+      title: 'TBR Education – Computer & Technology Courses | TBR Groups',
+      description: 'Explore computer, software, programming, AI and technology courses with practical learning and career-focused training from TBR Education.',
+    },
+    tbrtraders: {
+      title: 'TBR Traders – Computer, e-Seva & Trade Services | TBR Groups',
+      description: 'Computer sales and service, e-Seva, business support and supply of dry fruits, honey, edible oils and bottled water from TBR Traders.',
+    },
+  }[targetKey] || {
+    title: 'TBR Groups – Links | Technology, e-Seva & Business Services',
+    description: 'Explore TBR Groups services, including computer hardware, custom software, website development, e-Seva, business support and trade supplies.',
+  };
+  const helmetTitle = helmetMeta.title;
+  const helmetDescription = helmetMeta.description;
+  const canonicalUrl = `https://tbr-groups.vercel.app/links${subPage ? `/${subPage}` : ''}`;
 
   return (
     <main className="link-hub-container">
+      <Helmet>
+        <title>{helmetTitle}</title>
+        <meta name="description" content={helmetDescription} />
+        <link rel="canonical" href={canonicalUrl} />
+      </Helmet>
       <div className="link-hub-content">
         <HeroSection hero={linksConfig.hero} />
         {orderedKeys.map((key) => (

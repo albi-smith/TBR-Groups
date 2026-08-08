@@ -7,8 +7,14 @@ import TBRTechnologies from './home2';
 import ServicePage from './pages/ServicePage';
 import LinkHubPage from './pages/LinkHubPage';
 
+const isPrerendering = typeof window !== 'undefined' && window.__PRERENDER_INJECTED === true;
+
 function App() {
   useEffect(() => {
+    // During prerendering (vite-plugin-prerender) skip browser-only smooth-scroll
+    // and scroll-triggered animation libs so the static HTML is captured fully visible.
+    if (isPrerendering) return;
+
     // Initialize Lenis for smooth scrolling
     const lenis = new Lenis({
       duration: 1.2,
@@ -62,6 +68,7 @@ function AOSRefresh() {
   const { pathname } = useLocation();
 
   useEffect(() => {
+    if (isPrerendering) return;
     AOS.refresh();
     window.scrollTo(0, 0);
   }, [pathname]);
