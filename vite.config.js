@@ -12,20 +12,27 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Resolve a browser for the prerender renderer across environments:
 // - PUPPETEER_EXECUTABLE_PATH env var wins if set
 // - Local Windows dev uses the installed Chrome (only if it exists)
-// - CI (Vercel/Linux) falls back to system Chrome paths or Puppeteer's bundled Chromium
+// - CI (Vercel/Linux) falls back to system Chrome paths, then @sparticuz/chromium
+//   (a Chromium build bundling all shared libraries, runnable on bare Amazon Linux)
 const localChromePath = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 const linuxChromeCandidates = [
   '/usr/bin/google-chrome',
   '/usr/bin/chromium',
   '/usr/bin/chromium-browser',
 ];
-function resolveExecutablePath() {
+async function resolveExecutablePath() {
   if (process.env.PUPPETEER_EXECUTABLE_PATH) return process.env.PUPPETEER_EXECUTABLE_PATH;
   if (process.platform === 'win32' && fs.existsSync(localChromePath)) return localChromePath;
   for (const candidate of linuxChromeCandidates) {
     if (fs.existsSync(candidate)) return candidate;
   }
-  return undefined;
+  try {
+    const mod = await import('@sparticuz/chromium');
+    const chromium = mod.default ?? mod;
+    return await chromium.executablePath();
+  } catch {
+    return undefined;
+  }
 }
 
 // Routes from src/App.jsx — concrete URLs for the dynamic params:
@@ -55,42 +62,43 @@ const prerenderRoutes = [
   ...serviceSlugs.map((slug) => `/service/${slug}`),
 ];
 
-const prerenderExecutablePath = resolveExecutablePath();
-
 // https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [
-    react(),
-    viteImagemin({
-      gifsicle: { optimizationLevel: 7 },
-      mozjpeg: { quality: 80 },
-      pngquant: { quality: [0.7, 0.8], speed: 4 },
-      svgo: {
-        plugins: [
-          { name: 'removeViewBox' },
-          { name: 'removeEmptyAttrs', active: false },
-        ],
-      },
-      webp: { quality: 80 },
-    }),
-    Sitemap({
-      hostname: 'https://tbr-groups.vercel.app/',
-      dynamicRoutes: prerenderRoutes.filter((r) => r !== '/'),
-    }),
-    vitePrerender({
-      staticDir: path.resolve(__dirname, 'dist'),
-      routes: prerenderRoutes,
-      renderer: new vitePrerender.PuppeteerRenderer({
-        headless: true,
-        inject: true,
-        ...(prerenderExecutablePath ? { executablePath: prerenderExecutablePath } : {}),
-        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
-        renderAfterTime: 4000,
-        maxConcurrentRoutes: 1,
+export default defineConfig(async () => {
+  const prerenderExecutablePath = await resolveExecutablePath();
+  return {
+    plugins: [
+      react(),
+      viteImagemin({
+        gifsicle: { optimizationLevel: 7 },
+        mozjpeg: { quality: 80 },
+        pngquant: { quality: [0.7, 0.8], speed: 4 },
+        svgo: {
+          plugins: [
+            { name: 'removeViewBox' },
+            { name: 'removeEmptyAttrs', active: false },
+          ],
+        },
+        webp: { quality: 80 },
       }),
-    }),
-  ],
-  server: {
-    port: 3000,
-  },
+      Sitemap({
+        hostname: 'https://tbr-groups.vercel.app/',
+        dynamicRoutes: prerenderRoutes.filter((r) => r !== '/'),
+      }),
+      vitePrerender({
+        staticDir: path.resolve(__dirname, 'dist'),
+        routes: prerenderRoutes,
+        renderer: new vitePrerender.PuppeteerRenderer({
+          headless: true,
+          inject: true,
+          ...(prerenderExecutablePath ? { executablePath: prerenderExecutablePath } : {}),
+          args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+          renderAfterTime: 4000,
+          maxConcurrentRoutes: 1,
+        }),
+      }),
+    ],
+    server: {
+      port: 3000,
+    },
+  };
 });
