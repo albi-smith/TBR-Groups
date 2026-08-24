@@ -30,6 +30,9 @@
   "overrides": {
     "puppeteer": "npm:puppeteer-core@^25.5.0"
   },
+  "allowScripts": {
+    "sharp": true
+  },
   "scripts": {
     "dev": "next dev",
     "start": "next start",
