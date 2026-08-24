@@ -25,24 +25,24 @@ const images = [
   },
   // 3. LinkHub cards (Displayed at 48px, @2x = 96px)
   {
-    input: rootDir + "/src/link/tbr education logo.png",
-    outputPng: rootDir + "/src/link/tbr education logo.png",
-    outputWebp: rootDir + "/src/link/tbr education logo.webp",
+    input: rootDir + "/src/link/tbr-education-logo.png",
+    outputPng: rootDir + "/src/link/tbr-education-logo.png",
+    outputWebp: rootDir + "/src/link/tbr-education-logo.webp",
     width: 96,
     height: 96
   },
   {
-    input: rootDir + "/src/link/tbr groups logo.png",
-    outputPng: rootDir + "/src/link/tbr groups logo.png",
-    outputWebp: rootDir + "/src/link/tbr groups logo.webp",
+    input: rootDir + "/src/link/tbr-groups-logo.png",
+    outputPng: rootDir + "/src/link/tbr-groups-logo.png",
+    outputWebp: rootDir + "/src/link/tbr-groups-logo.webp",
     width: 96,
     height: 96
   },
   // 4. Large images (Below fold, display width ~400-600px, dimensions are already optimal for @2x, do not resize, just compress)
   {
-    input: rootDir + "/public/go point new .png",
-    outputPng: rootDir + "/public/go point new .png",
-    outputWebp: rootDir + "/public/go point new .webp"
+    input: rootDir + "/public/go-point-new.png",
+    outputPng: rootDir + "/public/go-point-new.png",
+    outputWebp: rootDir + "/public/go-point-new.webp"
   },
   {
     input: rootDir + "/public/Pinelabs.png",
@@ -50,9 +50,9 @@ const images = [
     outputWebp: rootDir + "/public/Pinelabs.webp"
   },
   {
-    input: rootDir + "/public/Authorised certificate.jpeg",
-    outputJpg: rootDir + "/public/Authorised certificate.jpeg",
-    outputWebp: rootDir + "/public/Authorised certificate.webp"
+    input: rootDir + "/public/authorised-certificate.jpeg",
+    outputJpg: rootDir + "/public/authorised-certificate.jpeg",
+    outputWebp: rootDir + "/public/authorised-certificate.webp"
   },
   // 5. PWA manifest logos (Specific requirements, resize to exact manifest dimensions, compress)
   {

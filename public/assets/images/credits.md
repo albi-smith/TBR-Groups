@@ -76,6 +76,7 @@ This project uses stock photos from various sources self-hosted locally under th
 - **business-registration-trade-license**: Original source [Pexels](https://images.pexels.com/photos/7887840/pexels-photo-7887840.jpeg)
 - **business-registration-shop-establishment**: Original source [Pexels](https://images.pexels.com/photos/19868771/pexels-photo-19868771.jpeg)
 - **business-registration-professional-tax**: Original source [Pexels](https://images.pexels.com/photos/259204/pexels-photo-259204.jpeg)
+- **business-registration-import-export-code**: Original source [Pexels](https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg)
 - **project-designing-work**: Original source [Pexels](https://images.pexels.com/photos/8250927/pexels-photo-8250927.jpeg)
 - **project-designing-work-hero**: Original source [Pexels](https://images.pexels.com/photos/8250927/pexels-photo-8250927.jpeg)
 - **project-designing-work-document-binding-services**: Original source [Pexels](https://images.pexels.com/photos/20064056/pexels-photo-20064056.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)

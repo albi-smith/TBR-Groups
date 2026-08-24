@@ -1,9 +1,9 @@
-import tbrEducationLogo from '../link/tbr education logo.png';
-import tbrTradersLogo from '../link/tbr groups logo.png';
-import tbrEducationLogoWebp from '../link/tbr education logo.webp';
-import tbrTradersLogoWebp from '../link/tbr groups logo.webp';
-import tbrEducationLogoAvif from '../link/tbr education logo.avif';
-import tbrTradersLogoAvif from '../link/tbr groups logo.avif';
+import tbrEducationLogo from '../link/tbr-education-logo.png';
+import tbrTradersLogo from '../link/tbr-groups-logo.png';
+import tbrEducationLogoWebp from '../link/tbr-education-logo.webp';
+import tbrTradersLogoWebp from '../link/tbr-groups-logo.webp';
+import tbrEducationLogoAvif from '../link/tbr-education-logo.avif';
+import tbrTradersLogoAvif from '../link/tbr-groups-logo.avif';
 
 export const linksConfig = {
   hero: {
@@ -43,7 +43,7 @@ export const linksConfig = {
         },
         {
           label: "WhatsApp",
-          url: "https://wa.me/9487635294",
+          url: "https://wa.me/919487635294",
           icon: "WhatsApp",
           color: "#16a34a",
         },

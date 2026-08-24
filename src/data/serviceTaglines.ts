@@ -1,0 +1,16 @@
+export const serviceTaglines: Record<string, string> = {
+  'digital-solutions': 'Custom software, websites & e-commerce',
+  'csc': 'Government portals & online services',
+  'document-registration': 'Property & legal document services',
+  'ticket-booking': 'Bus, train & flight bookings',
+  'insurance': 'Life, health & vehicle protection',
+  'banking': 'Loans, transfers & banking help',
+  'postal': 'Savings, speed post & money order',
+  'business-registration': 'GST, company & license filing',
+  'project-binding': 'Binding, printing & project reports',
+  'computer-accessories': 'Peripherals, parts & repair gear',
+  'mobile-accessories': 'Chargers, cases & mobile gadgets',
+  'stationary': 'Office & school stationery supplies',
+  'journals-books': 'Textbooks, journals & reference books',
+  'organic-foods': 'Honey, spices & cold-pressed oils',
+};

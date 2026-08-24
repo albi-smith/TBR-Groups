@@ -7,9 +7,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const publicDir = resolve(__dirname, "../public");
 
 const images = [
-  { input: publicDir + "/go point new .png",           output: publicDir + "/go point new .webp",           quality: 80 },
+  { input: publicDir + "/go-point-new.png",           output: publicDir + "/go-point-new.webp",           quality: 80 },
   { input: publicDir + "/Pinelabs.png",                output: publicDir + "/Pinelabs.webp",                quality: 80 },
-  { input: publicDir + "/Authorised certificate.jpeg", output: publicDir + "/Authorised certificate.webp",  quality: 80 },
+  { input: publicDir + "/authorised-certificate.jpeg", output: publicDir + "/authorised-certificate.webp",  quality: 80 },
   { input: publicDir + "/logo.png",                    output: publicDir + "/logo.webp",                    quality: 85 },
   { input: publicDir + "/tbrlogo.jpeg",                output: publicDir + "/tbrlogo.webp",                 quality: 85 },
 ];

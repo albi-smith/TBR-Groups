@@ -1,0 +1,84 @@
+
+> tbr-innovative-traders@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.5.23
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.37:3000
+   - Environments: .env
+
+ ✓ Starting...
+ ✓ Ready in 4.6s
+ ○ Compiling /service/[serviceSlug] ...
+ ✓ Compiled /service/[serviceSlug] in 2.4s (831 modules)
+ GET /service/insurance 200 in 5039ms
+ GET /service/insurance 200 in 480ms
+ GET /service/insurance 200 in 443ms
+ GET /service/insurance 200 in 409ms
+ GET /service/insurance 200 in 412ms
+ GET /service/insurance 200 in 430ms
+ GET /service/insurance 200 in 436ms
+ GET /service/insurance 200 in 451ms
+ GET /service/insurance 200 in 317ms
+ GET /service/insurance 200 in 193ms
+ GET /service/csc 200 in 1037ms
+ GET /service/digital-solutions 200 in 359ms
+ GET /service/document-registration 200 in 355ms
+ GET /service/mobile-accessories 200 in 419ms
+ GET /service/insurance 200 in 381ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1578ms (867 modules)
+ GET / 200 in 2100ms
+ GET /service/computer-accessories 200 in 243ms
+ ✓ Compiled in 825ms (867 modules)
+ ✓ Compiled in 514ms (867 modules)
+ ✓ Compiled in 491ms (867 modules)
+ ✓ Compiled in 622ms (867 modules)
+ ✓ Compiled in 450ms (867 modules)
+ ✓ Compiled in 483ms (867 modules)
+ GET / 200 in 2712ms
+ GET /service/digital-solutions 200 in 285ms
+ ✓ Compiled in 4s (881 modules)
+ GET /service/business-registration 200 in 530ms
+ GET / 200 in 326ms
+ ✓ Compiled in 888ms (867 modules)
+ GET / 200 in 1439ms
+ GET /service/csc 200 in 318ms
+ GET /service/document-registration 200 in 215ms
+ GET / 200 in 587ms
+ ✓ Compiled in 954ms (867 modules)
+ GET /service/insurance 200 in 507ms
+ ✓ Compiled in 691ms (867 modules)
+ ✓ Compiled in 619ms (867 modules)
+ GET / 200 in 1196ms
+ GET / 200 in 767ms
+ GET /service/csc 200 in 302ms
+ ✓ Compiled in 1104ms (867 modules)
+ GET / 200 in 1156ms
+ ✓ Compiled in 1026ms (867 modules)
+ GET / 200 in 1276ms
+ ✓ Compiled in 548ms (867 modules)
+ GET / 200 in 835ms
+ GET / 200 in 647ms
+ ✓ Compiled in 878ms (867 modules)
+ ✓ Compiled in 903ms (867 modules)
+ ✓ Compiled in 769ms (867 modules)
+ ✓ Compiled in 628ms (867 modules)
+ ✓ Compiled in 570ms (867 modules)
+ ✓ Compiled in 749ms (867 modules)
+ ✓ Compiled in 572ms (867 modules)
+ ✓ Compiled in 545ms (867 modules)
+ GET / 200 in 560ms
+ ✓ Compiled in 585ms (867 modules)
+ ✓ Compiled in 323ms (867 modules)
+ GET / 200 in 476ms
+ GET /service/mobile-accessories 200 in 108ms
+ ✓ Compiled in 761ms (867 modules)
+ ✓ Compiled in 420ms (867 modules)
+ ✓ Compiled in 524ms (881 modules)
+ GET / 200 in 345ms
+ GET / 200 in 380ms
+ GET / 200 in 424ms
+ GET /service/business-registration 200 in 152ms
+ GET /service/csc 200 in 103ms
+ GET /?scroll=services 200 in 104ms

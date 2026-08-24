@@ -1,0 +1,1534 @@
+{
+  "byPath": {
+    "/assets/images/banking-services-account-opening.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-account-opening.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-account-opening.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-aeps-services.avif": {
+      "w": 600,
+      "h": 327
+    },
+    "/assets/images/banking-services-aeps-services.jpeg": {
+      "w": 600,
+      "h": 327
+    },
+    "/assets/images/banking-services-aeps-services.webp": {
+      "w": 600,
+      "h": 327
+    },
+    "/assets/images/banking-services-business-loan.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-business-loan.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-business-loan.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-credit-card-application.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-credit-card-application.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-credit-card-application.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-fixed-recurring-deposits.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-fixed-recurring-deposits.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-fixed-recurring-deposits.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-hero.avif": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/banking-services-hero.jpeg": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/banking-services-hero.webp": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/banking-services-micro-atm-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-micro-atm-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-micro-atm-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-money-transfer.avif": {
+      "w": 600,
+      "h": 452
+    },
+    "/assets/images/banking-services-money-transfer.jpeg": {
+      "w": 600,
+      "h": 452
+    },
+    "/assets/images/banking-services-money-transfer.webp": {
+      "w": 600,
+      "h": 452
+    },
+    "/assets/images/banking-services-personal-loan.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-personal-loan.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services-personal-loan.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/banking-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-company-registration.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/business-registration-company-registration.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/business-registration-company-registration.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/business-registration-fssai-license.avif": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/business-registration-fssai-license.jpeg": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/business-registration-fssai-license.webp": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/business-registration-gst-registration-filing.avif": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration-gst-registration-filing.jpeg": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration-gst-registration-filing.webp": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration-hero.avif": {
+      "w": 1200,
+      "h": 675
+    },
+    "/assets/images/business-registration-hero.jpeg": {
+      "w": 1200,
+      "h": 675
+    },
+    "/assets/images/business-registration-hero.webp": {
+      "w": 1200,
+      "h": 675
+    },
+    "/assets/images/business-registration-import-export-code.avif": {
+      "w": 600,
+      "h": 399
+    },
+    "/assets/images/business-registration-import-export-code.jpeg": {
+      "w": 600,
+      "h": 399
+    },
+    "/assets/images/business-registration-import-export-code.webp": {
+      "w": 600,
+      "h": 399
+    },
+    "/assets/images/business-registration-msme-udyam-registration.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-msme-udyam-registration.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-msme-udyam-registration.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-professional-tax.avif": {
+      "w": 600,
+      "h": 448
+    },
+    "/assets/images/business-registration-professional-tax.jpeg": {
+      "w": 600,
+      "h": 448
+    },
+    "/assets/images/business-registration-professional-tax.webp": {
+      "w": 600,
+      "h": 448
+    },
+    "/assets/images/business-registration-shop-establishment.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-shop-establishment.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-shop-establishment.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/business-registration-trade-license.avif": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration-trade-license.jpeg": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration-trade-license.webp": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/business-registration.avif": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/business-registration.jpeg": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/business-registration.webp": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/computer-accessories-antivirus.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-antivirus.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-antivirus.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cables-adapters.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cables-adapters.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cables-adapters.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cartridge.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cartridge.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cartridge.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-cctv-camera.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-cctv-camera.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-cctv-camera.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-hardisk.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-hardisk.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-hardisk.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-hero.avif": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/computer-accessories-hero.jpeg": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/computer-accessories-hero.webp": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/computer-accessories-keyboard.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-keyboard.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-keyboard.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/computer-accessories-monitor.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-monitor.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-monitor.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-mother-board.avif": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/computer-accessories-mother-board.jpeg": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/computer-accessories-mother-board.webp": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/computer-accessories-mouse.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-mouse.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-mouse.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-processor.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-processor.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-processor.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-toner.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-toner.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-toner.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/computer-accessories-usb-drives-memory-cards.avif": {
+      "w": 600,
+      "h": 219
+    },
+    "/assets/images/computer-accessories-usb-drives-memory-cards.jpeg": {
+      "w": 600,
+      "h": 219
+    },
+    "/assets/images/computer-accessories-usb-drives-memory-cards.webp": {
+      "w": 600,
+      "h": 219
+    },
+    "/assets/images/computer-accessories.avif": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/computer-accessories.jpeg": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/computer-accessories.webp": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-bills-recharge-sim-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-digital-signature-certificate.avif": {
+      "w": 600,
+      "h": 440
+    },
+    "/assets/images/csc-e-seva-online-services-digital-signature-certificate.jpeg": {
+      "w": 600,
+      "h": 440
+    },
+    "/assets/images/csc-e-seva-online-services-digital-signature-certificate.webp": {
+      "w": 600,
+      "h": 440
+    },
+    "/assets/images/csc-e-seva-online-services-driving-license-rc.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-driving-license-rc.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-driving-license-rc.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-e-seva-e-district-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-hero.avif": {
+      "w": 1200,
+      "h": 1483
+    },
+    "/assets/images/csc-e-seva-online-services-hero.jpeg": {
+      "w": 1200,
+      "h": 1483
+    },
+    "/assets/images/csc-e-seva-online-services-hero.webp": {
+      "w": 1200,
+      "h": 1483
+    },
+    "/assets/images/csc-e-seva-online-services-online-exam-job-applications.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-online-exam-job-applications.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-online-exam-job-applications.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-pan-card.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-pan-card.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-pan-card.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-passport-application.avif": {
+      "w": 360,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services-passport-application.jpeg": {
+      "w": 360,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services-passport-application.webp": {
+      "w": 360,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.avif": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/csc-e-seva-online-services-ration-card-services.avif": {
+      "w": 600,
+      "h": 600
+    },
+    "/assets/images/csc-e-seva-online-services-ration-card-services.jpeg": {
+      "w": 600,
+      "h": 600
+    },
+    "/assets/images/csc-e-seva-online-services-ration-card-services.webp": {
+      "w": 600,
+      "h": 600
+    },
+    "/assets/images/csc-e-seva-online-services-scholarship-applications.avif": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/csc-e-seva-online-services-scholarship-applications.jpeg": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/csc-e-seva-online-services-scholarship-applications.webp": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/csc-e-seva-online-services-tn-police-services.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-tn-police-services.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-tn-police-services.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/csc-e-seva-online-services-voter-id-card.avif": {
+      "w": 320,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services-voter-id-card.jpeg": {
+      "w": 320,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services-voter-id-card.webp": {
+      "w": 320,
+      "h": 240
+    },
+    "/assets/images/csc-e-seva-online-services.avif": {
+      "w": 600,
+      "h": 742
+    },
+    "/assets/images/csc-e-seva-online-services.jpeg": {
+      "w": 600,
+      "h": 742
+    },
+    "/assets/images/csc-e-seva-online-services.webp": {
+      "w": 600,
+      "h": 742
+    },
+    "/assets/images/document-registration-chitta-a-register.avif": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/document-registration-chitta-a-register.jpeg": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/document-registration-chitta-a-register.webp": {
+      "w": 600,
+      "h": 397
+    },
+    "/assets/images/document-registration-ec-encumbrance-certificate.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-ec-encumbrance-certificate.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-ec-encumbrance-certificate.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-hero.avif": {
+      "w": 1200,
+      "h": 689
+    },
+    "/assets/images/document-registration-hero.jpeg": {
+      "w": 1200,
+      "h": 689
+    },
+    "/assets/images/document-registration-hero.webp": {
+      "w": 1200,
+      "h": 689
+    },
+    "/assets/images/document-registration-land-registration.avif": {
+      "w": 600,
+      "h": 298
+    },
+    "/assets/images/document-registration-land-registration.jpeg": {
+      "w": 600,
+      "h": 298
+    },
+    "/assets/images/document-registration-land-registration.webp": {
+      "w": 600,
+      "h": 298
+    },
+    "/assets/images/document-registration-patta-transfer.avif": {
+      "w": 500,
+      "h": 281
+    },
+    "/assets/images/document-registration-patta-transfer.jpeg": {
+      "w": 500,
+      "h": 281
+    },
+    "/assets/images/document-registration-patta-transfer.webp": {
+      "w": 500,
+      "h": 281
+    },
+    "/assets/images/document-registration-property-verification.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-property-verification.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-property-verification.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-rental-agreement.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-rental-agreement.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-rental-agreement.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-sale-deed-preparation.avif": {
+      "w": 600,
+      "h": 402
+    },
+    "/assets/images/document-registration-sale-deed-preparation.jpeg": {
+      "w": 600,
+      "h": 402
+    },
+    "/assets/images/document-registration-sale-deed-preparation.webp": {
+      "w": 600,
+      "h": 402
+    },
+    "/assets/images/document-registration-will-registration.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-will-registration.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration-will-registration.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/document-registration.avif": {
+      "w": 600,
+      "h": 344
+    },
+    "/assets/images/document-registration.jpeg": {
+      "w": 600,
+      "h": 344
+    },
+    "/assets/images/document-registration.webp": {
+      "w": 600,
+      "h": 344
+    },
+    "/assets/images/insurance-services-crop-insurance-pmfby.avif": {
+      "w": 500,
+      "h": 367
+    },
+    "/assets/images/insurance-services-crop-insurance-pmfby.jpeg": {
+      "w": 500,
+      "h": 367
+    },
+    "/assets/images/insurance-services-crop-insurance-pmfby.webp": {
+      "w": 500,
+      "h": 367
+    },
+    "/assets/images/insurance-services-health-insurance-plans.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/insurance-services-health-insurance-plans.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/insurance-services-health-insurance-plans.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/insurance-services-hero.avif": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/insurance-services-hero.jpeg": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/insurance-services-hero.webp": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/insurance-services-lic-life-insurance.avif": {
+      "w": 396,
+      "h": 512
+    },
+    "/assets/images/insurance-services-lic-life-insurance.jpeg": {
+      "w": 396,
+      "h": 512
+    },
+    "/assets/images/insurance-services-lic-life-insurance.webp": {
+      "w": 396,
+      "h": 512
+    },
+    "/assets/images/insurance-services-vehicle-insurance.avif": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/insurance-services-vehicle-insurance.jpeg": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/insurance-services-vehicle-insurance.webp": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/insurance-services.avif": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/insurance-services.jpeg": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/insurance-services.webp": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/journals-books-children-s-books.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-children-s-books.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-children-s-books.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-competitive-exam-books.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-competitive-exam-books.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-competitive-exam-books.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/journals-books-hero.avif": {
+      "w": 1200,
+      "h": 1109
+    },
+    "/assets/images/journals-books-hero.jpeg": {
+      "w": 1200,
+      "h": 1109
+    },
+    "/assets/images/journals-books-hero.webp": {
+      "w": 1200,
+      "h": 1109
+    },
+    "/assets/images/journals-books-journals-magazines.avif": {
+      "w": 600,
+      "h": 447
+    },
+    "/assets/images/journals-books-journals-magazines.jpeg": {
+      "w": 600,
+      "h": 447
+    },
+    "/assets/images/journals-books-journals-magazines.webp": {
+      "w": 600,
+      "h": 447
+    },
+    "/assets/images/journals-books.avif": {
+      "w": 600,
+      "h": 555
+    },
+    "/assets/images/journals-books.jpeg": {
+      "w": 600,
+      "h": 555
+    },
+    "/assets/images/journals-books.webp": {
+      "w": 600,
+      "h": 555
+    },
+    "/assets/images/mobile-accessories-earphones-earbuds.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-earphones-earbuds.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-earphones-earbuds.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-hero.avif": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/mobile-accessories-hero.jpeg": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/mobile-accessories-hero.webp": {
+      "w": 1200,
+      "h": 801
+    },
+    "/assets/images/mobile-accessories-mobile-chargers-cables.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-mobile-chargers-cables.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-mobile-chargers-cables.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/mobile-accessories-otg-adapters.avif": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/mobile-accessories-otg-adapters.jpeg": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/mobile-accessories-otg-adapters.webp": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/mobile-accessories-phone-cases-covers.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories-phone-cases-covers.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories-phone-cases-covers.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories-power-banks.avif": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/mobile-accessories-power-banks.jpeg": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/mobile-accessories-power-banks.webp": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/mobile-accessories-screen-protectors.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories-screen-protectors.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories-screen-protectors.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/mobile-accessories.avif": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/mobile-accessories.jpeg": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/mobile-accessories.webp": {
+      "w": 600,
+      "h": 401
+    },
+    "/assets/images/organic-foods-cold-pressed-oils.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-cold-pressed-oils.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-cold-pressed-oils.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-dry-fruits-nuts.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-dry-fruits-nuts.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-dry-fruits-nuts.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-hero.avif": {
+      "w": 1200,
+      "h": 1600
+    },
+    "/assets/images/organic-foods-hero.jpeg": {
+      "w": 1200,
+      "h": 1600
+    },
+    "/assets/images/organic-foods-hero.webp": {
+      "w": 1200,
+      "h": 1600
+    },
+    "/assets/images/organic-foods-organic-spices.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-organic-spices.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-organic-spices.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-pure-honey.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-pure-honey.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods-pure-honey.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/organic-foods.avif": {
+      "w": 600,
+      "h": 800
+    },
+    "/assets/images/organic-foods.jpeg": {
+      "w": 600,
+      "h": 800
+    },
+    "/assets/images/organic-foods.webp": {
+      "w": 600,
+      "h": 800
+    },
+    "/assets/images/postal-services-hero.avif": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/postal-services-hero.jpeg": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/postal-services-hero.webp": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/postal-services-ippb-postal-account-opening.avif": {
+      "w": 500,
+      "h": 208
+    },
+    "/assets/images/postal-services-ippb-postal-account-opening.jpeg": {
+      "w": 500,
+      "h": 208
+    },
+    "/assets/images/postal-services-ippb-postal-account-opening.webp": {
+      "w": 500,
+      "h": 208
+    },
+    "/assets/images/postal-services-money-order-services.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/postal-services-money-order-services.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/postal-services-money-order-services.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/postal-services-postal-life-insurance.avif": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/postal-services-postal-life-insurance.jpeg": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/postal-services-postal-life-insurance.webp": {
+      "w": 500,
+      "h": 333
+    },
+    "/assets/images/postal-services-speed-post-registered-post.avif": {
+      "w": 450,
+      "h": 330
+    },
+    "/assets/images/postal-services-speed-post-registered-post.jpeg": {
+      "w": 450,
+      "h": 330
+    },
+    "/assets/images/postal-services-speed-post-registered-post.webp": {
+      "w": 450,
+      "h": 330
+    },
+    "/assets/images/postal-services.avif": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/postal-services.jpeg": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/postal-services.webp": {
+      "w": 561,
+      "h": 300
+    },
+    "/assets/images/project-designing-work-color-b-w-printing.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-color-b-w-printing.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-color-b-w-printing.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-document-binding-services.avif": {
+      "w": 500,
+      "h": 750
+    },
+    "/assets/images/project-designing-work-document-binding-services.jpeg": {
+      "w": 500,
+      "h": 750
+    },
+    "/assets/images/project-designing-work-document-binding-services.webp": {
+      "w": 500,
+      "h": 750
+    },
+    "/assets/images/project-designing-work-hero.avif": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/project-designing-work-hero.jpeg": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/project-designing-work-hero.webp": {
+      "w": 1200,
+      "h": 800
+    },
+    "/assets/images/project-designing-work-id-card-certificate-printing.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-id-card-certificate-printing.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-id-card-certificate-printing.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-project-report-preparation.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-project-report-preparation.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work-project-report-preparation.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/project-designing-work.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-api-integration.avif": {
+      "w": 600,
+      "h": 343
+    },
+    "/assets/images/software-development-digital-solutions-api-integration.jpeg": {
+      "w": 600,
+      "h": 343
+    },
+    "/assets/images/software-development-digital-solutions-api-integration.webp": {
+      "w": 600,
+      "h": 343
+    },
+    "/assets/images/software-development-digital-solutions-cms-development.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-cms-development.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-cms-development.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-domain-hosting.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-domain-hosting.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-domain-hosting.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-e-commerce-platforms.avif": {
+      "w": 600,
+      "h": 514
+    },
+    "/assets/images/software-development-digital-solutions-e-commerce-platforms.jpeg": {
+      "w": 600,
+      "h": 514
+    },
+    "/assets/images/software-development-digital-solutions-e-commerce-platforms.webp": {
+      "w": 600,
+      "h": 514
+    },
+    "/assets/images/software-development-digital-solutions-hero.avif": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/software-development-digital-solutions-hero.jpeg": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/software-development-digital-solutions-hero.webp": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/software-development-digital-solutions-mobile-app-development.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-mobile-app-development.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-mobile-app-development.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-seo-digital-marketing.avif": {
+      "w": 600,
+      "h": 300
+    },
+    "/assets/images/software-development-digital-solutions-seo-digital-marketing.jpeg": {
+      "w": 600,
+      "h": 300
+    },
+    "/assets/images/software-development-digital-solutions-seo-digital-marketing.webp": {
+      "w": 600,
+      "h": 300
+    },
+    "/assets/images/software-development-digital-solutions-ui-ux-design.avif": {
+      "w": 600,
+      "h": 473
+    },
+    "/assets/images/software-development-digital-solutions-ui-ux-design.jpeg": {
+      "w": 600,
+      "h": 473
+    },
+    "/assets/images/software-development-digital-solutions-ui-ux-design.webp": {
+      "w": 600,
+      "h": 473
+    },
+    "/assets/images/software-development-digital-solutions-website-development.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-website-development.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions-website-development.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/software-development-digital-solutions.avif": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/software-development-digital-solutions.jpeg": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/software-development-digital-solutions.webp": {
+      "w": 600,
+      "h": 338
+    },
+    "/assets/images/stationary-files-folders.avif": {
+      "w": 600,
+      "h": 270
+    },
+    "/assets/images/stationary-files-folders.jpeg": {
+      "w": 600,
+      "h": 270
+    },
+    "/assets/images/stationary-files-folders.webp": {
+      "w": 600,
+      "h": 270
+    },
+    "/assets/images/stationary-hero.avif": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/stationary-hero.jpeg": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/stationary-hero.webp": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/stationary-office-supplies.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-office-supplies.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-office-supplies.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-paper-envelopes.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-paper-envelopes.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-paper-envelopes.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/stationary-photo-paper.avif": {
+      "w": 600,
+      "h": 417
+    },
+    "/assets/images/stationary-photo-paper.jpeg": {
+      "w": 600,
+      "h": 417
+    },
+    "/assets/images/stationary-photo-paper.webp": {
+      "w": 600,
+      "h": 417
+    },
+    "/assets/images/stationary.avif": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/stationary.jpeg": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/stationary.webp": {
+      "w": 600,
+      "h": 384
+    },
+    "/assets/images/ticket-booking-bus-ticket-booking.avif": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/ticket-booking-bus-ticket-booking.jpeg": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/ticket-booking-bus-ticket-booking.webp": {
+      "w": 600,
+      "h": 450
+    },
+    "/assets/images/ticket-booking-flight-booking.avif": {
+      "w": 600,
+      "h": 456
+    },
+    "/assets/images/ticket-booking-flight-booking.jpeg": {
+      "w": 600,
+      "h": 456
+    },
+    "/assets/images/ticket-booking-flight-booking.webp": {
+      "w": 600,
+      "h": 456
+    },
+    "/assets/images/ticket-booking-hero.avif": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/ticket-booking-hero.jpeg": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/ticket-booking-hero.webp": {
+      "w": 1200,
+      "h": 1800
+    },
+    "/assets/images/ticket-booking-hotel-booking.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-hotel-booking.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-hotel-booking.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-movie-tickets.avif": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-movie-tickets.jpeg": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-movie-tickets.webp": {
+      "w": 600,
+      "h": 400
+    },
+    "/assets/images/ticket-booking-train-ticket-irctc.avif": {
+      "w": 600,
+      "h": 750
+    },
+    "/assets/images/ticket-booking-train-ticket-irctc.jpeg": {
+      "w": 600,
+      "h": 750
+    },
+    "/assets/images/ticket-booking-train-ticket-irctc.webp": {
+      "w": 600,
+      "h": 750
+    },
+    "/assets/images/ticket-booking.avif": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/ticket-booking.jpeg": {
+      "w": 600,
+      "h": 900
+    },
+    "/assets/images/ticket-booking.webp": {
+      "w": 600,
+      "h": 900
+    },
+    "/authorised-certificate.avif": {
+      "w": 1072,
+      "h": 1600
+    },
+    "/authorised-certificate.jpeg": {
+      "w": 1072,
+      "h": 1600
+    },
+    "/authorised-certificate.webp": {
+      "w": 1072,
+      "h": 1600
+    },
+    "/go-point-new.avif": {
+      "w": 784,
+      "h": 1116
+    },
+    "/go-point-new.png": {
+      "w": 784,
+      "h": 1116
+    },
+    "/go-point-new.webp": {
+      "w": 784,
+      "h": 1116
+    },
+    "/logo.avif": {
+      "w": 128,
+      "h": 128
+    },
+    "/logo.png": {
+      "w": 128,
+      "h": 128
+    },
+    "/logo.webp": {
+      "w": 128,
+      "h": 128
+    },
+    "/logo192.png": {
+      "w": 192,
+      "h": 192
+    },
+    "/logo512.png": {
+      "w": 512,
+      "h": 512
+    },
+    "/og-image.jpg": {
+      "w": 1731,
+      "h": 909
+    },
+    "/Pinelabs.avif": {
+      "w": 1033,
+      "h": 1522
+    },
+    "/Pinelabs.png": {
+      "w": 1033,
+      "h": 1522
+    },
+    "/Pinelabs.webp": {
+      "w": 1033,
+      "h": 1522
+    },
+    "/tbr-groups-logo.png": {
+      "w": 1254,
+      "h": 1254
+    },
+    "/tbrlogo.avif": {
+      "w": 160,
+      "h": 160
+    },
+    "/tbrlogo.jpeg": {
+      "w": 160,
+      "h": 160
+    },
+    "/tbrlogo.webp": {
+      "w": 160,
+      "h": 160
+    }
+  },
+  "byFile": {
+    "tbr-education-logo.avif": {
+      "w": 96,
+      "h": 96
+    },
+    "tbr-education-logo.png": {
+      "w": 96,
+      "h": 96
+    },
+    "tbr-education-logo.webp": {
+      "w": 96,
+      "h": 96
+    },
+    "tbr-groups-logo.avif": {
+      "w": 96,
+      "h": 96
+    },
+    "tbr-groups-logo.png": {
+      "w": 96,
+      "h": 96
+    },
+    "tbr-groups-logo.webp": {
+      "w": 96,
+      "h": 96
+    }
+  }
+}

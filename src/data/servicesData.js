@@ -12,7 +12,7 @@ export const servicesA = [
     "desc": "Custom software, website design, domain registration, and e-commerce platform development services.",
     "image": "/assets/images/software-development-digital-solutions.jpeg",
     "heroImage": "/assets/images/software-development-digital-solutions-hero.jpeg",
-    "category": "services",
+    "category": "tech",
     "color": "#06b6d4",
     "subServices": [
       {
@@ -530,7 +530,8 @@ export const servicesA = [
         "name": "Import Export Code",
         "desc": "IEC registration for international trade",
         "icon": Package,
-        "image": "https://imgs.search.brave.com/i5ad-hfStso6fqQKqqiiAuQCdf6EMIF_FdHeGet6HrQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbnZl/bnRpb250YXguY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIz/LzA5L0lFQy1Db2Rl/LVJlZ2lzdHJhdGlv/bi1pbi1LdWthdHBh/bGx5LUh5ZGVyYWJh/ZC5qcGc"
+        "image": "/assets/images/business-registration-import-export-code.jpeg",
+        "imageWebp": "/assets/images/business-registration-import-export-code.webp"
       },
       {
         "name": "Professional Tax",
@@ -551,7 +552,7 @@ export const servicesA = [
     "desc": "Professional binding, lamination, printing and project report services.",
     "image": "/assets/images/project-designing-work.jpeg",
     "heroImage": "/assets/images/project-designing-work-hero.jpeg",
-    "category": "services",
+    "category": "retail",
     "color": "#84cc16",
     "subServices": [
       {
@@ -597,7 +598,7 @@ export const servicesB = [
     "desc": "Quality computer peripherals, cables, and tech accessories.",
     "image": "/assets/images/computer-accessories.jpeg",
     "heroImage": "/assets/images/computer-accessories-hero.jpeg",
-    "category": "retail",
+    "category": "tech",
     "color": "#0ea5e9",
     "subServices": [
       {
@@ -696,7 +697,7 @@ export const servicesB = [
     "desc": "Premium chargers, cases, screen protectors and mobile gadgets.",
     "image": "/assets/images/mobile-accessories.jpeg",
     "heroImage": "/assets/images/mobile-accessories-hero.jpeg",
-    "category": "retail",
+    "category": "tech",
     "color": "#ec4899",
     "subServices": [
       {
