@@ -22,20 +22,20 @@ export const servicesA = [
         "image": "/assets/images/software-development-digital-solutions-website-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-website-development.webp"
       },
-      {
-        "name": "E-Commerce Platforms",
-        "desc": "Online stores with payment integration and inventory management",
-        "icon": ShoppingCart,
-        "image": "/assets/images/software-development-digital-solutions-e-commerce-platforms.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-e-commerce-platforms.webp"
-      },
-      {
-        "name": "Domain & Hosting",
-        "desc": "Domain registration, SSL certificates, and web hosting",
-        "icon": Server,
-        "image": "/assets/images/software-development-digital-solutions-domain-hosting.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-domain-hosting.webp"
-      },
+      // {
+      //   "name": "E-Commerce Platforms",
+      //   "desc": "Online stores with payment integration and inventory management",
+      //   "icon": ShoppingCart,
+      //   "image": "/assets/images/software-development-digital-solutions-e-commerce-platforms.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-e-commerce-platforms.webp"
+      // },
+      // {
+      //   "name": "Domain & Hosting",
+      //   "desc": "Domain registration, SSL certificates, and web hosting",
+      //   "icon": Server,
+      //   "image": "/assets/images/software-development-digital-solutions-domain-hosting.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-domain-hosting.webp"
+      // },
       {
         "name": "Mobile App Development",
         "desc": "iOS and Android native and cross-platform applications",
@@ -43,34 +43,34 @@ export const servicesA = [
         "image": "/assets/images/software-development-digital-solutions-mobile-app-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-mobile-app-development.webp"
       },
-      {
-        "name": "UI/UX Design",
-        "desc": "User interface and experience design for digital products",
-        "icon": Palette,
-        "image": "/assets/images/software-development-digital-solutions-ui-ux-design.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-ui-ux-design.webp"
-      },
-      {
-        "name": "CMS Development",
-        "desc": "WordPress, Shopify, and custom content management systems",
-        "icon": Cog,
-        "image": "/assets/images/software-development-digital-solutions-cms-development.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-cms-development.webp"
-      },
-      {
-        "name": "API Integration",
-        "desc": "Third-party API integration and custom backend solutions",
-        "icon": Plug,
-        "image": "/assets/images/software-development-digital-solutions-api-integration.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-api-integration.webp"
-      },
-      {
-        "name": "SEO & Digital Marketing",
-        "desc": "Search engine optimization and online marketing services",
-        "icon": TrendingUp,
-        "image": "/assets/images/software-development-digital-solutions-seo-digital-marketing.jpeg",
-        "imageWebp": "/assets/images/software-development-digital-solutions-seo-digital-marketing.webp"
-      }
+      // {
+      //   "name": "UI/UX Design",
+      //   "desc": "User interface and experience design for digital products",
+      //   "icon": Palette,
+      //   "image": "/assets/images/software-development-digital-solutions-ui-ux-design.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-ui-ux-design.webp"
+      // },
+      // {
+      //   "name": "CMS Development",
+      //   "desc": "WordPress, Shopify, and custom content management systems",
+      //   "icon": Cog,
+      //   "image": "/assets/images/software-development-digital-solutions-cms-development.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-cms-development.webp"
+      // },
+      // {
+      //   "name": "API Integration",
+      //   "desc": "Third-party API integration and custom backend solutions",
+      //   "icon": Plug,
+      //   "image": "/assets/images/software-development-digital-solutions-api-integration.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-api-integration.webp"
+      // },
+      // {
+      //   "name": "SEO & Digital Marketing",
+      //   "desc": "Search engine optimization and online marketing services",
+      //   "icon": TrendingUp,
+      //   "image": "/assets/images/software-development-digital-solutions-seo-digital-marketing.jpeg",
+      //   "imageWebp": "/assets/images/software-development-digital-solutions-seo-digital-marketing.webp"
+      // }
     ],
     "imageWebp": "/assets/images/software-development-digital-solutions.webp",
     "heroImageWebp": "/assets/images/software-development-digital-solutions-hero.webp"

@@ -12,6 +12,8 @@
 /build
 /dist
 /reference
+/.next
+/.next-build
 
 # misc
 .DS_Store

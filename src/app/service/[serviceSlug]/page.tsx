@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {
   ArrowLeft, Phone, MapPin, Clock, FileText, Timer,
   IndianRupee, ClipboardList, Search, Trophy, Zap,
-  Lock, MessageSquare, Layers,
+  Lock, MessageSquare,
 } from 'lucide-react';
 
 import { allServices } from '../../../data/servicesData';
@@ -48,7 +48,7 @@ const ServicePage = async ({ params }: PageProps) => {
     return (
       <div className="d-flex flex-column align-items-center justify-content-center" style={{
         minHeight: '100vh',
-        background: 'var(--bg-deep)',
+        background: 'var(--bg-services)',
         gap: '1.5rem',
       }}>
         <div style={{ fontSize: '4rem', color: 'var(--accent-gold)' }}><Search size={56} /></div>
@@ -63,18 +63,8 @@ const ServicePage = async ({ params }: PageProps) => {
     );
   }
 
-  const categoryLabel = service.category === 'tech' ? 'Tech & Software' : service.category === 'services' ? 'Govt & Finance' : 'Retail & Essentials';
-
-  const marqueeItems = [
-    'Software Development', 'CSC & E-Seva', 'Document Registration',
-    'Ticket Booking', 'Insurance Services', 'Banking Services',
-    'Postal Services', 'Business Registration', 'Project & Designing Work',
-    'Computer Accessories', 'Mobile Accessories',
-    'Journals & Books', 'Organic Foods'
-  ];
-
   return (
-    <div style={{ backgroundColor: 'var(--bg-deep)', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: 'var(--bg-services)', minHeight: '100vh' }}>
       <ServiceScrollToTop />
       <Navbar title={service.title} breadcrumbs={[service.title]} />
 
@@ -129,22 +119,6 @@ const ServicePage = async ({ params }: PageProps) => {
           <div className="container position-relative" style={{ zIndex: 2 }}>
             <div className="row">
               <div className="col-12" data-aos="fade-up">
-                <div className="d-inline-flex align-items-center gap-2 px-3 py-2 rounded-pill mb-4" style={{
-                  background: `${service.color}20`,
-                  border: `1px solid ${service.color}40`,
-                  color: service.color,
-                  fontSize: '0.75rem',
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  letterSpacing: '1px',
-                }}>
-                  <span style={{
-                    width: '6px', height: '6px', borderRadius: '50%',
-                    background: service.color,
-                  }} />
-                  {categoryLabel}
-                </div>
-
                 <h1 className="display-4 fw-bold mb-3" style={{
                   fontFamily: 'Outfit, sans-serif',
                   color: 'var(--text-primary)',
@@ -155,39 +129,10 @@ const ServicePage = async ({ params }: PageProps) => {
                 <p className="lead text-secondary mb-4" style={{ maxWidth: '600px' }}>
                   {service.desc}
                 </p>
-
-                <div className="d-flex flex-wrap gap-3">
-                  <div className="d-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass" style={{
-                    fontSize: '0.85rem', color: 'var(--text-secondary)',
-                  }}>
-                    <span style={{ color: 'var(--accent-gold)', display: 'flex' }}><Layers size={16} /></span> {service.subServices.length} Services Available
-                  </div>
-                  <div className="d-flex align-items-center gap-2 px-3 py-2 border rounded-pill bg-glass" style={{
-                    fontSize: '0.85rem', color: 'var(--text-secondary)',
-                  }}>
-                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#22c55e', display: 'inline-block', flexShrink: 0 }} /> Open Now
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </section>
-
-        <div className="marquee-container" role="region" aria-label="Scrolling list of service categories">
-          <div className="marquee-content">
-            {[...marqueeItems, ...marqueeItems].map((item, i) => (
-              <span
-                key={i}
-                className="marquee-item"
-                tabIndex={i < marqueeItems.length ? 0 : -1}
-                aria-hidden={i >= marqueeItems.length}
-              >
-                <span className="marquee-dot" />
-                {item}
-              </span>
-            ))}
-          </div>
-        </div>
 
         {/* ── Sub-Services Grid ── */}
         <section style={{ padding: '4rem 0' }}>

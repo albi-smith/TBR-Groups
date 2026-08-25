@@ -27,8 +27,8 @@ interface NavLinkItem {
 
 const NAV_LINKS: NavLinkItem[] = [
   { label: 'Home', to: '/' },
+  { label: 'Services', to: '/services' },
   { label: 'About', targetId: 'about-section' },
-  { label: 'Services', targetId: 'services-section' },
   { label: 'Locations', targetId: 'branches-section' },
 ];
 

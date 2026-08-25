@@ -5,17 +5,19 @@ import {
   MapPin, Phone, Mail, Clock, ArrowRight, ArrowUpRight,
   Trophy, ShieldCheck, CircleCheck,
   MessageSquare, Globe,
+  Users, Building2, LayoutGrid, CalendarCheck,
 } from 'lucide-react';
 
 import { servicesA, servicesB, allServices } from '../data/servicesData';
 import { ESTABLISHED_YEAR } from '../data/siteConfig';
 import HeroThemeScope from '../components/HeroThemeScope';
 import Picture from '../components/Picture';
-import ServicesSection from '../components/ServicesSection';
+import ServicesPreview from '../components/ServicesPreview';
 import EnquiryForm from '../components/EnquiryForm';
 import ScrollToSection from '../components/ScrollToSection';
 import SearchParamScroller from '../components/SearchParamScroller';
 import StructuredData from '../components/StructuredData';
+import FaqSection from '../components/FaqSection';
 import { Service } from '../types';
 
 export const metadata: Metadata = {
@@ -162,7 +164,7 @@ export default function Home() {
 
           <div className="container position-relative" style={{ zIndex: 2 }}>
             <div className="row align-items-center gy-5">
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div className="col-lg-6">
                 {/* Badge pill (no avatar cluster — text only) */}
                 <div className="tbr-hero-badge">
                   <ShieldCheck size={14} />
@@ -178,9 +180,9 @@ export default function Home() {
                 </p>
 
                 <div className="tbr-hero-actions">
-                  <ScrollToSection targetId="services-section" className="tbr-hero-btn-primary">
+                  <Link href="/services" className="tbr-hero-btn-primary" style={{ textDecoration: 'none' }}>
                     Explore Services <ArrowRight size={18} />
-                  </ScrollToSection>
+                  </Link>
                   <a href="tel:+919487635294" className="tbr-hero-btn-outline">
                     <Phone size={18} /> Call Now
                   </a>
@@ -188,7 +190,7 @@ export default function Home() {
               </div>
 
               {/* Hero Right — custom SVG graphic + floating stat card */}
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div className="col-lg-6">
                 <div className="tbr-hero-visual">
                   <svg className="tbr-hero-figure" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laptop with service documents illustration">
                     <defs>
@@ -355,12 +357,87 @@ export default function Home() {
         {/* ═══════════════ SERVICES SECTION ═══════════════ */}
         <section id="services-section" style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
           <div className="container">
-            <ServicesSection services={serviceCards} />
+            <ServicesPreview services={serviceCards} />
+          </div>
+        </section>
+
+        {/* ═══════════════ ABOUT SECTION ═══════════════ */}
+        <section id="about-section" style={{ padding: '5rem 0', background: 'var(--bg-deep)' }}>
+          <div className="container">
+            <div className="row align-items-center gy-4">
+              <div className="col-lg-7" data-aos="fade-right">
+                <div className="section-label">About TBR Groups</div>
+                <h2 className="section-title" style={{ fontSize: 'clamp(1.75rem, 3.2vw, 2.4rem)', maxWidth: '22ch' }}>
+                  Rooted in Marthandam. One Roof for Every Service.
+                </h2>
+                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.75, maxWidth: '58ch' }}>
+                  TBR Groups is a family-run network of businesses headquartered in Marthandam,
+                  serving homes and small businesses across Kanyakumari district, Tamil Nadu.
+                </p>
+                <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.75, maxWidth: '58ch', marginTop: '0.75rem' }}>
+                  From custom software and computer sales to government e-Seva, insurance,
+                  ticketing and everyday essentials — we bring services that usually mean
+                  multiple trips into one trusted stop, backed by authorised partners like
+                  Net Protector, Pine Labs and Go Point.
+                </p>
+
+                <div className="tbr-hero-actions d-none d-lg-flex" style={{ marginTop: '1.75rem' }}>
+                  <ScrollToSection targetId="enquiry-section" className="tbr-hero-btn-primary">
+                    Get in Touch <ArrowRight size={16} />
+                  </ScrollToSection>
+                  <a href="tel:+919487635294" className="tbr-hero-btn-outline">
+                    <Phone size={16} /> Call Now
+                  </a>
+                </div>
+              </div>
+
+              <div className="col-lg-5" data-aos="fade-left" data-aos-delay="100">
+                <div className="row g-3">
+                  {[
+                    { icon: Users, value: '2K+', label: 'Happy Customers' },
+                    { icon: Building2, value: `${branches.length}`, label: `Branches in Kanyakumari` },
+                    { icon: LayoutGrid, value: `${(allServices as Service[]).length}`, label: 'Service Categories' },
+                    { icon: CalendarCheck, value: `${ESTABLISHED_YEAR}`, label: 'Year Established' },
+                  ].map(({ icon: Icon, value, label }, i) => (
+                    <div key={i} className="col-6">
+                      <div className="info-card h-100 text-center" style={{ padding: '1.25rem 1rem' }}>
+                        <div style={{
+                          width: '40px', height: '40px', borderRadius: 'var(--radius-md)',
+                          background: 'var(--accent-gold-dim)', display: 'flex',
+                          alignItems: 'center', justifyContent: 'center',
+                          color: 'var(--primary)', margin: '0 auto 0.75rem',
+                        }}>
+                          <Icon size={18} />
+                        </div>
+                        <div style={{
+                          fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700,
+                          color: 'var(--text-primary)', lineHeight: 1.2,
+                        }}>
+                          {value}
+                        </div>
+                        <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
+                          {label}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="tbr-hero-actions d-lg-none" style={{ marginTop: '1.75rem' }}>
+              <ScrollToSection targetId="enquiry-section" className="tbr-hero-btn-primary">
+                Get in Touch <ArrowRight size={16} />
+              </ScrollToSection>
+              <a href="tel:+919487635294" className="tbr-hero-btn-outline">
+                <Phone size={16} /> Call Now
+              </a>
+            </div>
           </div>
         </section>
 
         {/* ═══════════════ BRANCHES SECTION ═══════════════ */}
-        <section id="branches-section" style={{ padding: '5rem 0', background: 'var(--bg-deep)' }}>
+        <section id="branches-section" style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
           <div className="container">
             <div className="text-center mb-5">
               <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Regional Presence</div>
@@ -422,7 +499,7 @@ export default function Home() {
         </section>
 
         {/* ═══════════════ OUR PARTNERS ═══════════════ */}
-        <section id="partners-section" style={{ padding: '5rem 0', background: 'var(--bg-surface)', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
+        <section id="partners-section" style={{ padding: '5rem 0', background: 'var(--bg-services)', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
           <div className="container">
             <div className="text-center mb-5">
               <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Verified Partnerships</div>
@@ -610,6 +687,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* ═══════════════ FAQ SECTION ═══════════════ */}
+        <FaqSection />
 
         {/* ═══════════════ ENQUIRY & CONTACT SECTION ═══════════════ */}
         <section id="enquiry-section" className="enquiry-section" style={{

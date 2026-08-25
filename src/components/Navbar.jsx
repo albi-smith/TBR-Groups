@@ -5,8 +5,8 @@ import Picture from './Picture';
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
-  { label: 'About', targetId: 'about-section' },
   { label: 'Services', targetId: 'services-section' },
+  { label: 'About', targetId: 'about-section' },
   { label: 'Locations', targetId: 'branches-section' },
 ];
 

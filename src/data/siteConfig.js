@@ -7,4 +7,4 @@
 // This value replaces the placeholder "Establishment" text on the
 // homepage hero badge: "Trusted Service Partner Since …".
 // Search for "ESTABLISHED_YEAR" to find every usage.
-export const ESTABLISHED_YEAR = '2024';
+export const ESTABLISHED_YEAR = '2018';

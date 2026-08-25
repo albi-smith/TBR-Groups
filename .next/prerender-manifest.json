@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "f0988e6b7c4b7e11f9513005a2a0f56c",
-    "previewModeSigningKey": "29dd4443812f55b5500cf6c9e5d4a90d91e881e129177b04d0b17a3c1a934c87",
-    "previewModeEncryptionKey": "d0db83c4618e29d1b1cb796342869eb4ac674315b9d7de7297b0c9bfc0b9b890"
-  }
-}
+{"version":4,"routes":{"/service/digital-solutions":{},"/service/csc":{},"/service/document-registration":{},"/service/ticket-booking":{},"/service/insurance":{},"/service/banking":{},"/service/postal":{},"/service/business-registration":{},"/service/project-binding":{},"/service/computer-accessories":{},"/service/mobile-accessories":{},"/service/stationary":{},"/service/journals-books":{},"/service/organic-foods":{}},"dynamicRoutes":{"/service/[serviceSlug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":false,"fallbackRevalidate":false,"fallbackSourceRoute":"/service/[serviceSlug]","routeRegex":"^\\/service\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"f6bfd1016634581af0256261a9f7d4bc","previewModeSigningKey":"4fcfabed736e243deabb570707ed0023c8faf49544bb5aa2500bd5bc77eccbd5","previewModeEncryptionKey":"d7d1c189341684d9a8318293a52c51c857567c5ed54057565f198fde3099816f"}}

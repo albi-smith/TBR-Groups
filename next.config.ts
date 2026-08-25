@@ -2,7 +2,8 @@ import path from 'path';
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  allowedDevOrigins: ['192.168.1.37', 'localhost:3000', 'localhost:3001'],
+  distDir: process.env.NODE_ENV === 'production' ? '.next-build' : '.next',
+  allowedDevOrigins: ['192.168.1.33', '192.168.1.37', 'localhost:3000', 'localhost:3001'],
   outputFileTracingRoot: path.join(__dirname),
   reactStrictMode: true,
   eslint: {
