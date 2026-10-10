@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe } from 'lucide-react';
+import { Globe } from '@phosphor-icons/react/ssr';
 import { linksConfig } from '../data/linksConfig';
 import Picture from './Picture';
 import '../styles/LinkHub.css';

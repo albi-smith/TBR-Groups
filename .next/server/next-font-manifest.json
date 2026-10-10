@@ -1,1 +1,16 @@
-{"pages":{},"app":{},"appUsingSizeAdjust":false,"pagesUsingSizeAdjust":false}
+{
+  "app": {
+    "[project]/src/app/page": [
+      "static/media/geist_Variable-s.p.bb1d9210.woff2"
+    ],
+    "[project]/src/app/service/[serviceSlug]/page": [
+      "static/media/geist_Variable-s.p.bb1d9210.woff2"
+    ],
+    "[project]/src/app/services/page": [
+      "static/media/geist_Variable-s.p.bb1d9210.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pages": {},
+  "pagesUsingSizeAdjust": false
+}

@@ -1,13 +1,31 @@
 'use client';
 
 import React, { useState, useRef, useCallback } from 'react';
-import { Send, Loader2, CheckCircle2 } from 'lucide-react';
+import { PaperPlaneTilt, Spinner, CheckCircle } from '@phosphor-icons/react/ssr';
 
-export default function EnquiryForm() {
+interface EnquiryFormProps {
+  initialSubject?: string;
+  initialCategory?: string;
+}
+
+const PHONE_NUMBER = '919487635294';
+
+const CATEGORY_OPTIONS = [
+  { value: 'tech', label: 'Tech & Software' },
+  { value: 'services', label: 'ESeva & Finance' },
+  { value: 'retail', label: 'Trading & Retail' },
+  { value: 'other', label: 'Other' },
+];
+
+export default function EnquiryForm({ initialSubject = '', initialCategory = '' }: EnquiryFormProps) {
+  const initialCategoryValid = CATEGORY_OPTIONS.some((o) => o.value === initialCategory)
+    ? initialCategory
+    : 'other';
+
   const [formData, setFormData] = useState({
     name: '',
-    subject: '',
-    department: '919487635294',
+    subject: initialSubject,
+    category: initialCategoryValid,
     message: '',
   });
 
@@ -49,19 +67,19 @@ export default function EnquiryForm() {
     e.preventDefault();
     if (!validateForm()) return;
 
-    const deptLabel = formData.department === '919487635294' ? 'General Queries' : 'Service Details';
+    const catLabel = CATEGORY_OPTIONS.find((o) => o.value === formData.category)?.label ?? 'General Queries';
 
     const waMessage = `*New Enquiry from TBR Groups Website*
  --------------------------------
  *Name:* ${formData.name.trim()}
  *Subject:* ${formData.subject.trim()}
- *Department:* ${deptLabel}
+ *Department:* ${catLabel}
 
  *Message:*
  ${formData.message.trim()}`;
 
     const encodedMessage = encodeURIComponent(waMessage);
-    const waUrl = `https://wa.me/${formData.department}?text=${encodedMessage}`;
+    const waUrl = `https://wa.me/${PHONE_NUMBER}?text=${encodedMessage}`;
 
     setWaStatus('opening');
     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -99,15 +117,14 @@ export default function EnquiryForm() {
             </label>
             <select
               id="enquiry-department-home"
-              name="department"
-              value={formData.department}
+              name="category"
+              value={formData.category}
               onChange={handleChange}
               className="enquiry-input enquiry-select"
             >
-              <option value="919487635294">Tech & Software</option>
-              <option value="919487635294">Govt & Finance</option>
-              <option value="919487635294">Trading & Retail</option>
-              <option value="919487635294">Other</option>
+              {CATEGORY_OPTIONS.map((opt) => (
+                <option key={opt.value} value={opt.value}>{opt.label}</option>
+              ))}
             </select>
           </div>
 
@@ -127,7 +144,7 @@ export default function EnquiryForm() {
             {errors.subject && (
               <span className="enquiry-error">{errors.subject}</span>
             )}
-            </div>
+          </div>
 
           <div className="col-12">
             <label htmlFor="enquiry-message-home" className="enquiry-label">
@@ -155,9 +172,9 @@ export default function EnquiryForm() {
               className="enquiry-submit"
               disabled={waStatus !== 'idle'}
             >
-              {waStatus === 'idle' && <>Send via WhatsApp <Send size={16} /></>}
-              {waStatus === 'opening' && <><Loader2 size={16} className="enquiry-spin" /> Opening WhatsApp...</>}
-              {waStatus === 'done' && <><CheckCircle2 size={16} /> Redirected ✓</>}
+              {waStatus === 'idle' && <>Submit via Whatsapp <PaperPlaneTilt size={16} /></>}
+              {waStatus === 'opening' && <><Spinner size={16} className="enquiry-spin" /> Opening WhatsApp...</>}
+              {waStatus === 'done' && <><CheckCircle size={16} /> Redirected ✓</>}
             </button>
           </div>
         </div>

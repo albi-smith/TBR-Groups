@@ -1,19 +1,19 @@
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
-import { Poppins } from 'next/font/google';
+import localFont from 'next/font/local';
 import Providers from './providers';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-poppins',
+const geist = localFont({
+  src: './fonts/geist-Variable.woff2',
+  weight: '100 900',
+  variable: '--font-geist',
   display: 'swap',
 });
 
 export const viewport: Viewport = {
-  themeColor: '#06080d',
+  themeColor: '#1b5c1e',
 };
 
 export const metadata: Metadata = {
@@ -60,12 +60,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" />
-      </head>
-      <body className={poppins.variable}>
+      <body className={geist.variable}>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Providers>{children}</Providers>
       </body>

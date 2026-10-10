@@ -1,10 +1,12 @@
 import React from 'react';
-import type { Metadata } from 'next';
+import type { Icon } from '@phosphor-icons/react';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { CalendarDays, Clock, ArrowLeft, ArrowRight, Phone, Tag, User } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft, ArrowRight, Phone, Tag, User } from '@phosphor-icons/react/ssr';
 
 import Navbar from '../../../components/Navbar';
+import Breadcrumbs from '../../../components/Breadcrumbs';
 import Picture from '../../../components/Picture';
 import StructuredData from '../../../components/StructuredData';
 import { getAllGuides, getGuideBySlug } from '../../../lib/guides';
@@ -119,8 +121,8 @@ export default async function GuideArticlePage({ params }: PageProps) {
   };
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100vh' }}>
-      <Navbar title={guide.title} breadcrumbs={[{ label: 'Guides', path: '/guides' }, guide.title]} />
+    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100dvh' }}>
+      <Navbar title={guide.title} />
       <StructuredData data={articleSchema} />
       <StructuredData data={breadcrumbSchema} />
 
@@ -140,6 +142,9 @@ export default async function GuideArticlePage({ params }: PageProps) {
           }} />
 
           <div className="container position-relative" style={{ zIndex: 2 }}>
+            <div className="mb-4">
+              <Breadcrumbs trail={['Guides', guide.title]} />
+            </div>
             <Link
               href="/guides"
               className="d-inline-flex align-items-center gap-2 mb-4"
@@ -150,15 +155,15 @@ export default async function GuideArticlePage({ params }: PageProps) {
             </Link>
 
             {guide.category && (
-              <div className="section-label d-inline-flex" data-aos="fade-up">{guide.category}</div>
+              <div className="section-label d-inline-flex">{guide.category}</div>
             )}
-            <h1 className="section-title" style={{ maxWidth: '820px' }} data-aos="fade-up" data-aos-delay="100">
+            <h1 className="section-title" style={{ maxWidth: '820px' }}>
               {guide.title}
             </h1>
 
-            <div className="d-flex flex-wrap align-items-center gap-4 mt-1 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }} data-aos="fade-up" data-aos-delay="150">
+            <div className="d-flex flex-wrap align-items-center gap-4 mt-1 mb-4" style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
               <span className="d-inline-flex align-items-center gap-2">
-                <CalendarDays size={15} style={{ color: 'var(--accent-gold)' }} />
+                <Calendar size={15} style={{ color: 'var(--accent-gold)' }} />
                 {formatDate(guide.date)}
               </span>
               <span className="d-inline-flex align-items-center gap-2">
@@ -174,7 +179,7 @@ export default async function GuideArticlePage({ params }: PageProps) {
             </div>
 
             {guide.image && (
-              <div className="guide-cover" data-aos="fade-up" data-aos-delay="200">
+              <div className="guide-cover">
                 <Picture
                   src={guide.image}
                   webp={guide.imageWebp}
@@ -210,7 +215,7 @@ export default async function GuideArticlePage({ params }: PageProps) {
         <section style={{ padding: '0 0 5rem', position: 'relative' }}>
           <div className="container">
             <div className="guide-cta">
-              <h2 className="h4" style={{ fontFamily: 'Outfit, sans-serif', fontWeight: 700 }}>
+              <h2 className="h4" style={{ fontFamily: 'var(--font-geist), Geist, sans-serif', fontWeight: 700 }}>
                 Need help with this?
               </h2>
               <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>
@@ -241,14 +246,12 @@ export default async function GuideArticlePage({ params }: PageProps) {
                       href={`/guides/${item.slug}`}
                       className="guide-card"
                       style={{ textDecoration: 'none', display: 'block' }}
-                      data-aos="fade-up"
-                      data-aos-delay={index * 100}
                     >
                       <div className="guide-card-body">
                         <div className="guide-card-meta">
                           {item.category && <span className="guide-badge">{item.category}</span>}
                           <span className="guide-card-date">
-                            <CalendarDays size={13} /> {formatDate(item.date)}
+                            <Calendar size={13} /> {formatDate(item.date)}
                           </span>
                         </div>
                         <h2 className="guide-card-title" style={{ fontSize: '1.15rem' }}>{item.title}</h2>
@@ -282,11 +285,11 @@ export default async function GuideArticlePage({ params }: PageProps) {
                 width: '28px', height: '28px', borderRadius: 'var(--radius-sm)',
                 background: 'linear-gradient(135deg, var(--primary), var(--accent))',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.8rem',
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontWeight: 800, fontSize: '0.8rem',
                 color: '#ffffff',
               }}>T</div>
               <span className="fw-bold" style={{
-                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                fontFamily: 'var(--font-geist), Geist, sans-serif',
                 fontSize: '1.15rem',
                 lineHeight: 1.05,
                 letterSpacing: '0.05em',

@@ -1,21 +1,18 @@
 import React, { Suspense } from 'react';
-import type { Metadata } from 'next';
+import type { Icon } from '@phosphor-icons/react';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import {
-  MapPin, Phone, Mail, Clock, ArrowRight, ArrowUpRight,
-  Trophy, ShieldCheck, CircleCheck,
-  MessageSquare, Globe,
-  Users, Building2, LayoutGrid, CalendarCheck,
-} from 'lucide-react';
+  Phone, Envelope, Clock, ArrowRight, ArrowUpRight, Trophy, ShieldCheck, Medal, CheckCircle, Crown, ChatCircle, Globe, ClipboardText, Stack, Buildings, SquaresFour, CalendarCheck } from '@phosphor-icons/react/ssr';
 
 import { servicesA, servicesB, allServices } from '../data/servicesData';
 import { ESTABLISHED_YEAR } from '../data/siteConfig';
-import HeroThemeScope from '../components/HeroThemeScope';
+import branches from '../data/branchesData';
+import HeroThemeScope, { HeroThemeBadge } from '../components/HeroThemeScope';
 import Picture from '../components/Picture';
 import ServicesPreview from '../components/ServicesPreview';
-import EnquiryForm from '../components/EnquiryForm';
-import ScrollToSection from '../components/ScrollToSection';
 import SearchParamScroller from '../components/SearchParamScroller';
+import HashSectionScroller from '../components/HashSectionScroller';
 import StructuredData from '../components/StructuredData';
 import FaqSection from '../components/FaqSection';
 import { Service } from '../types';
@@ -28,60 +25,6 @@ export const metadata: Metadata = {
     canonical: 'https://tbr-groups.vercel.app/',
   },
 };
-
-// ─────────────────────────────────────────────────────────────
-// Branch data.
-//
-// Placeholder values (ADDRESS_TBD, PINCODE_TBD, LATITUDE_TBD,
-// LONGITUDE_TBD) are intentionally left for manual completion.
-// Search the codebase for "TODO" to find and fill them in.
-// ─────────────────────────────────────────────────────────────
-const branches = [
-  {
-    name: 'TBR Groups — Marthandam',
-    location: 'Marthandam,',
-    phone: ['+91 83004 26612', '+91 74181 05297'],
-    desc: 'Head Office — All Services',
-    highlight: true,
-    // TODO: Full street address for the Marthandam head office
-    streetAddress: 'ADDRESS_TBD',
-    // TODO: PIN code for Marthandam
-    postalCode: 'PINCODE_TBD',
-    // TODO: Geo latitude for Marthandam (decimal degrees, e.g. "8.3131")
-    latitude: 'LATITUDE_TBD',
-    // TODO: Geo longitude for Marthandam (decimal degrees, e.g. "77.2320")
-    longitude: 'LONGITUDE_TBD',
-    mapsUrl: 'https://maps.app.goo.gl/7PXWkGWX1mC7zNzr9',
-  },
-  {
-    name: 'TBR Innovative Trades',
-    location: 'Panamugam',
-    phone: ['+91 4651 295124', '+91 80723 68438'],
-    desc: 'Trading & Retail Services',
-    // TODO: Full street address for the Panamugam branch
-    streetAddress: 'ADDRESS_TBD',
-    // TODO: PIN code for Panamugam
-    postalCode: 'PINCODE_TBD',
-    // TODO: Geo latitude for Panamugam (decimal degrees, e.g. "8.2931")
-    latitude: 'LATITUDE_TBD',
-    // TODO: Geo longitude for Panamugam (decimal degrees, e.g. "77.2020")
-    longitude: 'LONGITUDE_TBD',
-  },
-  {
-    name: 'TBR Mankad',
-    location: 'Mankad',
-    phone: ['+91 4651 225519'],
-    desc: 'Branch Office',
-    // TODO: Full street address for the Mankad branch
-    streetAddress: 'ADDRESS_TBD',
-    // TODO: PIN code for Mankad
-    postalCode: 'PINCODE_TBD',
-    // TODO: Geo latitude for Mankad (decimal degrees, e.g. "8.2580")
-    latitude: 'LATITUDE_TBD',
-    // TODO: Geo longitude for Mankad (decimal degrees, e.g. "77.1700")
-    longitude: 'LONGITUDE_TBD',
-  },
-];
 
 // LocalBusiness JSON-LD blocks — one per branch (separate schema blocks).
 const branchSchemas = branches.map((branch) => ({
@@ -115,31 +58,32 @@ const branchSchemas = branches.map((branch) => ({
   },
 }));
 
-const marqueeItems = [
- 'Software Development', 'CSC & E-Seva', 'Document Registration',
-    'Ticket Booking', 'Insurance Services', 'Banking Services',
-    'Postal Services', 'Business Registration', 'Project & Designing Work',
-    'Computer Accessories', 'Mobile Accessories',
-    'Journals & Books', 'Organic Foods'
+// Sample clients shown in the "Our Clients" marquee.
+// PPK Hospital is a real client (logo at /ppklogo.png); the rest are
+// placeholders to be replaced with real client logos + names later.
+const clientLogos = [
+  { logo: '/ppklogo.png', name: 'PPK Hospital' },
+  { logo: '/logo.png', name: 'TBR Innovative Trades' },
+  { logo: '/Pinelabs.png', name: 'Pine Labs' },
+  { logo: '/go-point-new.png', name: 'Go Point' },
+  { logo: '/logo.png', name: 'TBR Groups' },
+  { logo: '/TBR-Education-logo.svg', name: 'TBR Education' },
 ];
 
-const serviceCards = (allServices as Service[]).map(({ id, slug, title, desc, color, category, image, imageWebp, subServices }) => ({
-  id,
-  slug,
-  title,
-  desc,
-  color,
-  category,
-  image,
-  imageWebp,
-  subServicesCount: subServices?.length ?? 0,
-}));
+const marqueeItems = [
+  'Software Development', 'CSC & E-Seva', 'Document Registration',
+  'Ticket Booking', 'Insurance Services', 'Banking Services',
+  'Postal Services', 'Business Registration', 'Project & Designing Work',
+  'Computer Accessories', 'Mobile Accessories',
+  'Journals & Books', 'Organic Foods',
+];
 
 export default function Home() {
   return (
-    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100vh' }}>
+    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100dvh' }}>
       <Suspense fallback={null}>
         <SearchParamScroller paramName="scroll" paramValue="services" targetId="services-section" />
+        <HashSectionScroller />
       </Suspense>
 
       {/* LocalBusiness JSON-LD — one block per branch */}
@@ -164,92 +108,40 @@ export default function Home() {
 
           <div className="container position-relative" style={{ zIndex: 2 }}>
             <div className="row align-items-center gy-5">
-              <div className="col-lg-6">
+              <div className="col-lg-6 tbr-hero-copy">
                 {/* Badge pill (no avatar cluster — text only) */}
-                <div className="tbr-hero-badge">
-                  <ShieldCheck size={14} />
-                  Trusted Service Partner Since {ESTABLISHED_YEAR}
-                </div>
+                <HeroThemeBadge />
 
                 <h1 className="tbr-hero-title">
                   Your Local Partner for Software, Systems &amp; Services
                 </h1>
 
-                <p className="tbr-hero-sub">
+                <p className="tbr-hero-sub d-none d-md-block">
                   From the software you need built to the device that needs fixing, the product you're looking for, and the paperwork you'd rather skip — one call, done right
+                </p>
+                <p className="tbr-hero-sub d-md-none">
+                  From software and repairs to paperwork and everyday essentials — one place, done right
                 </p>
 
                 <div className="tbr-hero-actions">
                   <Link href="/services" className="tbr-hero-btn-primary" style={{ textDecoration: 'none' }}>
                     Explore Services <ArrowRight size={18} />
                   </Link>
-                  <a href="tel:+919487635294" className="tbr-hero-btn-outline">
-                    <Phone size={18} /> Call Now
-                  </a>
+                  <Link href="/contact" className="tbr-hero-btn-outline" style={{ textDecoration: 'none' }}>
+                    <Envelope size={18} /> Contact Us
+                  </Link>
                 </div>
               </div>
 
-              {/* Hero Right — custom SVG graphic + floating stat card */}
+              {/* Hero Right — why-choose-us image + floating stat card */}
               <div className="col-lg-6">
                 <div className="tbr-hero-visual">
-                  <svg className="tbr-hero-figure" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Laptop with service documents illustration">
-                    <defs>
-                      <linearGradient id="lapScreen" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0" stopColor="#ffffff" />
-                        <stop offset="1" stopColor="#eef4ef" />
-                      </linearGradient>
-                      <linearGradient id="lapBody" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0" stopColor="#237227" />
-                        <stop offset="1" stopColor="#144a16" />
-                      </linearGradient>
-                    </defs>
-
-                    {/* Subtle circuit pattern */}
-                    <g className="tbr-hero-circuit" strokeWidth="2" strokeLinecap="round">
-                      <path d="M40 120 H110 L150 160 H250" />
-                      <path d="M40 60 H80" />
-                      <path d="M470 360 H440 L410 330 H320" />
-                      <path d="M470 80 H420 L390 110 H330" />
-                      <path d="M70 420 H110" />
-                    </g>
-                    <g className="tbr-hero-circuit-dots">
-                      <circle cx="40" cy="120" r="5" />
-                      <circle cx="250" cy="160" r="4" />
-                      <circle cx="320" cy="330" r="4" />
-                      <circle cx="330" cy="110" r="4" />
-                      <circle cx="70" cy="420" r="5" />
-                    </g>
-
-                    {/* Laptop */}
-                    <g>
-                      <rect x="100" y="80" width="320" height="230" rx="18" fill="url(#lapScreen)" stroke="#dce9df" strokeWidth="1.5" />
-                      {/* screen content: window bars + chart */}
-                      <rect x="120" y="106" width="70" height="10" rx="5" fill="#1b5c1e" />
-                      <rect x="120" y="128" width="46" height="10" rx="5" fill="#cfe2d3" />
-                      <path d="M140 250 L200 210 L245 228 L320 175" stroke="#237227" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                      <circle cx="320" cy="175" r="8" fill="#FFD786" />
-                      <rect x="120" y="160" width="120" height="10" rx="5" fill="#dce9df" />
-                      <rect x="120" y="180" width="100" height="10" rx="5" fill="#e4eee6" />
-                      {/* base */}
-                      <rect x="80" y="310" width="360" height="16" rx="8" fill="url(#lapBody)" />
-                      <rect x="170" y="298" width="180" height="14" rx="7" fill="#1b5c1e" />
-                    </g>
-
-                    {/* Document with stamp/seal */}
-                    <g transform="translate(330 50) rotate(4)">
-                      <rect x="0" y="0" width="130" height="165" rx="12" fill="#ffffff" stroke="#dce9df" strokeWidth="1.5" />
-                      {/* fold */}
-                      <path d="M92 0 H130 V38 L92 0 Z" fill="#eef4ef" />
-                      {/* lines */}
-                      <rect x="18" y="26" width="62" height="9" rx="4.5" fill="#cfe2d3" />
-                      <rect x="18" y="44" width="44" height="9" rx="4.5" fill="#e4eee6" />
-                      {/* stamp seal */}
-                      <circle cx="65" cy="100" r="30" stroke="#237227" strokeWidth="3" />
-                      <circle cx="65" cy="100" r="24" stroke="#237227" strokeWidth="1.5" strokeOpacity="0.4" />
-                      <path d="M54 100 L62 108 L77 91" stroke="#237227" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                      <rect x="18" y="144" width="94" height="9" rx="4.5" fill="#cfe2d3" />
-                    </g>
-                  </svg>
+                  <Picture
+                    src="/hero.png"
+                    alt="TBR Groups — trusted service handshake"
+                    className="tbr-hero-image"
+                    fetchPriority="high"
+                  />
 
                   {/* Floating stat card */}
                   <div className="tbr-hero-stat">
@@ -267,7 +159,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ═══════════════ MARQUEE BANNER ═══════════════ */}
+        {/* ═══════════════ SERVICES MARQUEE ═══════════════ */}
         <div className="marquee-container" role="region" aria-label="Scrolling list of service categories">
           <div className="marquee-content">
             {[...marqueeItems, ...marqueeItems].map((item, i) => (
@@ -284,151 +176,152 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ═══════════════ OUR SERVICE PILLARS ═══════════════ */}
-        <section className="pillars-section">
+        {/* ═══════════════ OUR VALUABLE CLIENTS ═══════════════
+        <div className="clients-cloud">
           <div className="container">
-            <div className="text-center mb-5">
-              <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Service Categories</div>
-              <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Our Service Pillars</h2>
+            <div className="text-center">
+              <div className="section-label d-inline-flex">Trusted by</div>
             </div>
 
-            <div className="row g-4 justify-content-center">
-              {/* Category A — Tech & Software Services */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-right">
-                <div className="pillars-card">
-                  <div className="pillars-card-glow" />
-                  <h3 className="pillars-title">Tech & Software</h3>
-                  <p className="pillars-body">
-                    Custom software development, computer &amp; mobile sales, and expert repair — built and backed by our own team.
-                  </p>
-                  <div className="d-flex flex-column gap-2">
-                    {['3 specialized service areas', 'In-house development team', 'Sales + repair under one roof', 'Certified technicians'].map((item, i) => (
-                      <div key={i} className="pillars-check">
-                        <span className="pillars-check-icon"><CircleCheck size={16} /></span> {item}
-                      </div>
-                    ))}
+            <div className="row g-4 justify-content-center align-items-stretch">
+              {clientLogos.map((c, i) => (
+                <div key={i} className="col-4 col-lg-2">
+                  <div className="clients-cloud-item">
+                    <Picture
+                      src={c.logo}
+                      alt={c.name}
+                      className="clients-cloud-logo"
+                    />
                   </div>
                 </div>
-              </div>
-
-              {/* Category B — Government & Financial Services */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-up">
-                <div className="pillars-card">
-                  <div className="pillars-card-glow" />
-                  <h3 className="pillars-title">Government & Financial</h3>
-                  <p className="pillars-body">
-                    Complete government, banking, insurance, document registration, and travel booking services with authorized processing.
-
-                  </p>
-                  <div className="d-flex flex-column gap-2">
-                    {['7 specialized service areas', 'Certified & authorized partners', '24/7 customer support', 'Fast & transparent processing'].map((item, i) => (
-                      <div key={i} className="pillars-check">
-                        <span className="pillars-check-icon"><CircleCheck size={16} /></span> {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* Category C — Retail & Everyday Essentials */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-left">
-                <div className="pillars-card">
-                  <div className="pillars-card-glow" />
-                  <h3 className="pillars-title">Retail & Everyday Essentials</h3>
-                  <p className="pillars-body">
-                    Everyday essentials for office, school, and home — from organic foods to project support and more
-                  </p>
-                  <div className="d-flex flex-column gap-2">
-                    {['4 product categories', 'Premium quality products', 'Competitive pricing', 'Quick delivery & support'].map((item, i) => (
-                      <div key={i} className="pillars-check">
-                        <span className="pillars-check-icon"><CircleCheck size={16} /></span> {item}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
-      </HeroThemeScope>
+        </div> */}
+
+        </HeroThemeScope>
 
       <main>
 
         {/* ═══════════════ SERVICES SECTION ═══════════════ */}
         <section id="services-section" style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
           <div className="container">
-            <ServicesPreview services={serviceCards} />
+            <ServicesPreview />
+          </div>
+        </section>
+
+        {/* ═══════════════ WHY CHOOSE US ═══════════════ */}
+        <section id="why-choose-us-section" className="why-section">
+          <div className="container">
+            <div className="why-header">
+              <div className="why-header-text">
+                <div className="why-eyebrow">Why Choose Us</div>
+                <h2 className="why-title">The Easier Way to Get Things Done</h2>
+                <p className="why-sub">
+                  Whether it's an application, registration, repair, booking, business setup, or everyday service, most people don't need another website or office to visit. They need someone who knows the process and can help them get it done properly.
+                </p>
+              </div>
+              <Link href="/contact" className="why-btn-top" style={{ textDecoration: 'none' }}>
+                Contact Us <ArrowRight size={16} />
+              </Link>
+            </div>
+
+            <div className="why-grid">
+              <article className="why-card why-card--featured">
+                <div className="why-icon"><ClipboardText size={34} /></div>
+                <h3>We Handle the Process Every Day</h3>
+                <p>Forms, documents, requirements, and procedures can be confusing when you’re doing them for the first time. We handle these processes every day, helping you avoid common mistakes, unnecessary delays, and confusion.</p>
+              </article>
+
+              <article className="why-card why-card--featured">
+                <div className="why-icon"><Stack size={34} /></div>
+                <h3>One Visit Instead of Five</h3>
+                <p>Technology services, registrations, banking support, insurance, travel bookings, printing, and more, all available in one place, so you spend less time running between different offices and service providers.</p>
+              </article>
+
+              <article className="why-card why-card--featured">
+                <div className="why-icon"><ChatCircle size={34} /></div>
+                <h3>We Speak Human, Not Government Language</h3>
+                <p>Confused about requirements, eligibility, documents, or next steps? We'll explain things clearly, answer your questions, and help you understand exactly what needs to be done.</p>
+              </article>
+
+              <article className="why-card why-card--featured">
+                <div className="why-icon"><Phone size={34} /></div>
+                <h3>Real Help When You Need It</h3>
+                <p>When something isn't clear, you can speak with a real person. No automated responses, no endless searching, and no guessing what to do next.</p>
+              </article>
+            </div>
+
+            <div className="why-trust-bar">
+              <span className="why-trust-check"><CheckCircle size={16} /></span>
+              <span>Helping students, families, professionals, business owners, and senior citizens complete important tasks with confidence.</span>
+            </div>
           </div>
         </section>
 
         {/* ═══════════════ ABOUT SECTION ═══════════════ */}
-        <section id="about-section" style={{ padding: '5rem 0', background: 'var(--bg-deep)' }}>
+        <section id="about-section" style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
           <div className="container">
             <div className="row align-items-center gy-4">
-              <div className="col-lg-7" data-aos="fade-right">
+              <div className="col-lg-7">
                 <div className="section-label">About TBR Groups</div>
                 <h2 className="section-title" style={{ fontSize: 'clamp(1.75rem, 3.2vw, 2.4rem)', maxWidth: '22ch' }}>
                   Rooted in Marthandam. One Roof for Every Service.
                 </h2>
                 <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.75, maxWidth: '58ch' }}>
-                  TBR Groups is a family-run network of businesses headquartered in Marthandam,
+                  TBR Groups is a network of businesses headquartered in Marthandam,
                   serving homes and small businesses across Kanyakumari district, Tamil Nadu.
                 </p>
                 <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', lineHeight: 1.75, maxWidth: '58ch', marginTop: '0.75rem' }}>
                   From custom software and computer sales to government e-Seva, insurance,
-                  ticketing and everyday essentials — we bring services that usually mean
+                  ticketing and everyday essentials, we bring services that usually mean
                   multiple trips into one trusted stop, backed by authorised partners like
                   Net Protector, Pine Labs and Go Point.
                 </p>
 
                 <div className="tbr-hero-actions d-none d-lg-flex" style={{ marginTop: '1.75rem' }}>
-                  <ScrollToSection targetId="enquiry-section" className="tbr-hero-btn-primary">
-                    Get in Touch <ArrowRight size={16} />
-                  </ScrollToSection>
+                  <Link href="/contact" className="tbr-hero-btn-primary" style={{ textDecoration: 'none' }}>
+                    Contact Us <ArrowRight size={16} />
+                  </Link>
                   <a href="tel:+919487635294" className="tbr-hero-btn-outline">
                     <Phone size={16} /> Call Now
                   </a>
                 </div>
               </div>
 
-              <div className="col-lg-5" data-aos="fade-left" data-aos-delay="100">
-                <div className="row g-3">
-                  {[
-                    { icon: Users, value: '2K+', label: 'Happy Customers' },
-                    { icon: Building2, value: `${branches.length}`, label: `Branches in Kanyakumari` },
-                    { icon: LayoutGrid, value: `${(allServices as Service[]).length}`, label: 'Service Categories' },
-                    { icon: CalendarCheck, value: `${ESTABLISHED_YEAR}`, label: 'Year Established' },
-                  ].map(({ icon: Icon, value, label }, i) => (
-                    <div key={i} className="col-6">
-                      <div className="info-card h-100 text-center" style={{ padding: '1.25rem 1rem' }}>
-                        <div style={{
-                          width: '40px', height: '40px', borderRadius: 'var(--radius-md)',
-                          background: 'var(--accent-gold-dim)', display: 'flex',
-                          alignItems: 'center', justifyContent: 'center',
-                          color: 'var(--primary)', margin: '0 auto 0.75rem',
-                        }}>
+              <div className="col-lg-5">
+                <div className="about-media">
+                  <div className="about-stat-list">
+                    {[
+                      { icon: Medal, value: '3', label: 'Trusted Partners' },
+                      { icon: Buildings, value: `${branches.length}`, label: 'Branches' },
+                      { icon: SquaresFour, value: `${(allServices as Service[]).length}`, label: 'Service Categories' },
+                      { icon: CalendarCheck, value: `${ESTABLISHED_YEAR}`, label: 'Year Established' },
+                    ].map(({ icon: Icon, value, label }, i) => (
+                      <div key={i} className="about-stat text-center">
+                        <div className="stat-card-icon">
                           <Icon size={18} />
                         </div>
-                        <div style={{
-                          fontFamily: 'Outfit, sans-serif', fontSize: '1.5rem', fontWeight: 700,
-                          color: 'var(--text-primary)', lineHeight: 1.2,
-                        }}>
-                          {value}
-                        </div>
-                        <div style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
-                          {label}
-                        </div>
+                        <div className="stat-card-value">{value}</div>
+                        <div className="stat-card-label">{label}</div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                  <div className="about-image-wrap">
+                    <Picture
+                      src="/aboutsection.png"
+                      alt="About TBR Groups in Marthandam, serving Kanyakumari district"
+                      className="about-image"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="tbr-hero-actions d-lg-none" style={{ marginTop: '1.75rem' }}>
-              <ScrollToSection targetId="enquiry-section" className="tbr-hero-btn-primary">
-                Get in Touch <ArrowRight size={16} />
-              </ScrollToSection>
+              <Link href="/contact" className="tbr-hero-btn-primary" style={{ textDecoration: 'none' }}>
+                Contact Us <ArrowRight size={16} />
+              </Link>
               <a href="tel:+919487635294" className="tbr-hero-btn-outline">
                 <Phone size={16} /> Call Now
               </a>
@@ -439,61 +332,50 @@ export default function Home() {
         {/* ═══════════════ BRANCHES SECTION ═══════════════ */}
         <section id="branches-section" style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
           <div className="container">
-            <div className="text-center mb-5">
-              <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Regional Presence</div>
-              <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Our Branch Network</h2>
-              <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
-                TBR Groups operates 4 branches across strategic locations in Kanyakumari district, Tamil Nadu.
+            <div className="mb-5">
+              <div className="section-label">Our Locations</div>
+              <h2 className="section-title">Find a TBR Branch Near You</h2>
+              <p className="section-subtitle">
+                With three branches across Kanyakumari, there&#39;s always a TBR team nearby.
               </p>
             </div>
 
             <div className="row g-4">
-              {branches.map((branch, i) => (
-                <div key={i} className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay={i * 50}>
-                  <div className="branch-card" style={{
-                    background: branch.highlight ? 'linear-gradient(135deg, #072a0a 0%, #031505 100%)' : 'var(--bg-card)',
-                    border: branch.highlight ? '1px solid rgba(255,193,7,0.3)' : '1px solid var(--border-subtle)',
-                    borderRadius: 'var(--radius-lg)',
-                    padding: '2rem',
-                    height: '100%',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    boxShadow: 'var(--shadow-sm)',
-                  }}>
-                    <div style={{ color: 'var(--accent-gold)', marginBottom: '1.25rem' }}><MapPin size={24} /></div>
-                    <h3 style={{
-                      fontFamily: 'Outfit, sans-serif', fontSize: '1.1rem', fontWeight: 700,
-                      color: branch.highlight ? 'white' : 'var(--text-primary)', marginBottom: '0.5rem',
-                      lineHeight: 1.3,
-                    }}>
-                      {branch.name}
-                    </h3>
-                    <p style={{
-                      fontSize: '0.8rem', color: branch.highlight ? 'rgba(255,255,255,0.6)' : 'var(--text-tertiary)',
-                      marginBottom: '1rem', fontWeight: 500,
-                    }}>
-                      {branch.location}
-                    </p>
-                    <p style={{
-                      fontSize: '0.85rem', color: branch.highlight ? 'rgba(255,255,255,0.8)' : 'var(--text-secondary)',
-                      lineHeight: 1.5, marginBottom: '1.5rem', flexGrow: 1,
-                    }}>
+              {branches.filter(b => b.highlight || b.location === 'Panamugam').map((branch, i) => (
+                <div key={i} className="col-md-6">
+                  <div className="locations-preview-card">
+                    <div className="locations-preview-header">
+                      <div>
+                        <h3 className="locations-preview-name">
+                          {branch.name}
+                        </h3>
+                        <p className="locations-preview-loc">
+                          {branch.location}
+                        </p>
+                      </div>
+                      {branch.highlight && (
+                        <span className="locations-head-office-badge">
+                          <Crown size={11} /> Head Office
+                        </span>
+                      )}
+                    </div>
+                    <p className="locations-preview-desc">
                       {branch.desc}
                     </p>
-                    <div className="d-flex flex-column gap-2">
-                      {branch.phone.map((ph, j) => (
-                        <a key={j} href={`tel:${ph.replace(/\s/g, '')}`} className="d-flex align-items-center gap-2 text-decoration-none" style={{
-                          fontSize: '0.85rem', color: 'var(--accent-gold)',
-                          transition: 'opacity 0.2s',
-                        }}>
-                          <Phone size={13} /> {ph}
-                        </a>
-                      ))}
-
+                    <div className="locations-preview-details">
+                      <span className="locations-detail-row">
+                        <Clock size={13} /> {branch.hours}
+                      </span>
                     </div>
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="text-center mt-4">
+              <Link href="/locations" className="tbr-hero-btn-primary d-inline-flex align-items-center gap-2" style={{ textDecoration: 'none' }}>
+                View All Locations <ArrowRight size={16} />
+              </Link>
             </div>
           </div>
         </section>
@@ -502,136 +384,114 @@ export default function Home() {
         <section id="partners-section" style={{ padding: '5rem 0', background: 'var(--bg-services)', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
           <div className="container">
             <div className="text-center mb-5">
-              <div className="section-label d-inline-flex justify-content-center" data-aos="fade-up">Verified Partnerships</div>
-              <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">Our Partners</h2>
-              <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="200">
+              <div className="section-label d-inline-flex justify-content-center">Verified Partnerships</div>
+              <h2 className="section-title">Our Partners</h2>
+              <p className="section-subtitle mx-auto">
                 Authorised collaborations that power the hardware, software, and digital payment solutions we deliver.
               </p>
             </div>
 
-            <div className="row g-4 justify-content-center">
-              {/* Net Protector */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
-                <div className="info-card h-100 d-flex flex-column" style={{
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.75rem',
-                  height: '100%',
-                }}>
-                  <div className="d-flex align-items-center gap-2 mb-3">
+            {/* Featured partner — horizontal card */}
+            <div className="mb-4">
+              <div className="info-card partner-card partner-card--featured d-flex flex-column flex-md-row align-items-stretch">
+                <div className="partner-card-body d-flex flex-column">
+                  <div className="partner-card-eyebrow">
                     <ShieldCheck size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
-                    <span style={{
-                      fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase',
-                      letterSpacing: '1px', color: 'var(--primary)',
-                    }}>
+                    <span className="partner-card-eyebrow-text">
                       Authorised Channel Partner
                     </span>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                  <h3 className="partner-card-title">
                     Net Protector
                   </h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  <p className="partner-card-desc">
                     State-of-the-art cyber security and enterprise software solutions for businesses across India.
                   </p>
-                  <div className="d-flex flex-column gap-2 mb-4" style={{ flexGrow: 1 }}>
+                  <div className="partner-card-list mb-3">
                     {['Cyber Security & Antivirus', 'Endpoint Security (EPS)', 'Mobile Device Management'].map((item, i) => (
-                      <div key={i} className="d-flex align-items-center gap-2" style={{ fontSize: '0.8rem', color: 'var(--text-primary)' }}>
-                        <CircleCheck size={14} style={{ color: 'var(--accent-teal)', flexShrink: 0 }} /> {item}
+                      <div key={i} className="partner-card-list-item">
+                        <CheckCircle size={14} className="partner-card-checkmark" /> {item}
                       </div>
                     ))}
                   </div>
-                  <div className="pt-3 d-flex align-items-center gap-2 mb-3" style={{ borderTop: '1px solid var(--border-subtle)' }}>
-                    <Trophy size={14} style={{ color: 'var(--accent-gold)' }} />
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                  <div className="partner-card-footer partner-card-footer--meta">
+                    <Trophy size={14} style={{ color: 'var(--accent-gold)', flexShrink: 0 }} />
+                    <span className="partner-card-meta">
                       Bronze Rated Partner · Dealer Code T-903
                     </span>
                   </div>
+                </div>
+                <div className="partner-card-media partner-card-media--side">
                   <Picture
                     src="/authorised-certificate.jpeg"
                     alt="Net Protector Authorised Partner Certificate"
-                    style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-md)', display: 'block' }}
+                    className="partner-card-image"
                   />
                 </div>
               </div>
+            </div>
 
+            {/* Two-column partners */}
+            <div className="row g-4">
               {/* Pine Labs */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="info-card h-100 d-flex flex-column" style={{
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.75rem',
-                  height: '100%',
-                }}>
-                  <div className="d-flex align-items-center gap-2 mb-3">
-                    <CircleCheck size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
-                    <span style={{
-                      fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase',
-                      letterSpacing: '1px', color: 'var(--primary)',
-                    }}>
+              <div className="col-lg-6">
+                <div className="info-card partner-card partner-card--standard d-flex flex-column">
+                  <div className="partner-card-eyebrow">
+                    <CheckCircle size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
+                    <span className="partner-card-eyebrow-text">
                       Official POS Distributor
                     </span>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                  <h3 className="partner-card-title">
                     Pine Labs
                   </h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-                    Authorised POS terminal supplier powering seamless digital transactions for retail businesses.
+                  <p className="partner-card-desc">
+                    Authorised POS terminal supplier powering digital transactions for retail businesses.
                   </p>
-                  <div className="d-flex flex-column gap-2 mb-4" style={{ flexGrow: 1 }}>
+                  <div className="partner-card-list mb-4">
                     {['Plutus Smart POS terminal', 'Cards, UPI, EMIs & Wallets', 'Integrated retail ERP billing'].map((item, i) => (
-                      <div key={i} className="d-flex align-items-center gap-2" style={{ fontSize: '0.8rem', color: 'var(--text-primary)' }}>
-                        <CircleCheck size={14} style={{ color: 'var(--accent-teal)', flexShrink: 0 }} /> {item}
+                      <div key={i} className="partner-card-list-item">
+                        <CheckCircle size={14} className="partner-card-checkmark" /> {item}
                       </div>
                     ))}
                   </div>
-                  <div className="pt-3" style={{ borderTop: '1px solid var(--border-subtle)' }}>
+                  <div className="partner-card-footer partner-card-footer--img pt-3">
                     <Picture
                       src="/Pinelabs.png"
                       alt="Pine Labs POS Smart Terminal"
-                      style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-md)', display: 'block' }}
+                      className="partner-card-image"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Go Point */}
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="info-card h-100 d-flex flex-column" style={{
-                  background: 'var(--bg-card)',
-                  border: '1px solid var(--border-subtle)',
-                  borderRadius: 'var(--radius-lg)',
-                  padding: '1.75rem',
-                  height: '100%',
-                }}>
-                  <div className="d-flex align-items-center gap-2 mb-3">
+              <div className="col-lg-6">
+                <div className="info-card partner-card partner-card--standard d-flex flex-column">
+                  <div className="partner-card-eyebrow">
                     <Globe size={20} style={{ color: 'var(--primary)', flexShrink: 0 }} />
-                    <span style={{
-                      fontSize: '0.7rem', fontWeight: 600, textTransform: 'uppercase',
-                      letterSpacing: '1px', color: 'var(--primary)',
-                    }}>
+                    <span className="partner-card-eyebrow-text">
                       Regional Partner
                     </span>
                   </div>
-                  <h3 style={{ fontFamily: 'Outfit, sans-serif', fontSize: '1.2rem', fontWeight: 700, color: 'var(--text-primary)', marginBottom: '0.5rem' }}>
+                  <h3 className="partner-card-title">
                     Go Point
                   </h3>
-                  <p style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '1.25rem' }}>
+                  <p className="partner-card-desc">
                     Authorised channel dealer for Go Point billing and ticketing devices across retail and micro-billing environments.
                   </p>
-                  <div className="d-flex flex-column gap-2 mb-4" style={{ flexGrow: 1 }}>
+                  <div className="partner-card-list mb-4">
                     {['Handheld POS billing', 'Long battery life hardware', 'Local service & warranty support'].map((item, i) => (
-                      <div key={i} className="d-flex align-items-center gap-2" style={{ fontSize: '0.8rem', color: 'var(--text-primary)' }}>
-                        <CircleCheck size={14} style={{ color: 'var(--accent-teal)', flexShrink: 0 }} /> {item}
+                      <div key={i} className="partner-card-list-item">
+                        <CheckCircle size={14} className="partner-card-checkmark" /> {item}
                       </div>
                     ))}
                   </div>
-                  <div className="pt-3" style={{ borderTop: '1px solid var(--border-subtle)' }}>
+                  <div className="partner-card-footer partner-card-footer--img pt-3">
                     <Picture
                       src="/go-point-new.png"
                       alt="Go Point Handheld Billing Device"
-                      style={{ width: '100%', height: 'auto', borderRadius: 'var(--radius-md)', display: 'block' }}
+                      className="partner-card-image"
                     />
                   </div>
                 </div>
@@ -643,7 +503,7 @@ export default function Home() {
         {/* ═══════════════ OUR OTHER VENTURES ═══════════════ */}
         <section style={{ padding: '3rem 0', background: 'var(--bg-surface)' }}>
           <div className="container">
-            <div data-aos="fade-up" style={{
+            <div style={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
@@ -666,7 +526,7 @@ export default function Home() {
                 />
                 <div>
                   <h3 style={{
-                    fontFamily: 'Outfit, sans-serif', fontSize: '1rem', fontWeight: 600,
+                    fontFamily: 'var(--font-geist), Geist, sans-serif', fontSize: '1rem', fontWeight: 600,
                     color: 'var(--text-primary)', marginBottom: '0.15rem',
                   }}>
                     TBR Innovative Education
@@ -691,60 +551,31 @@ export default function Home() {
         {/* ═══════════════ FAQ SECTION ═══════════════ */}
         <FaqSection />
 
-        {/* ═══════════════ ENQUIRY & CONTACT SECTION ═══════════════ */}
-        <section id="enquiry-section" className="enquiry-section" style={{
-          padding: '3.5rem 0',
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          borderTop: '1px solid var(--border-subtle)',
-          borderBottom: '1px solid var(--border-subtle)',
-        }}>
+        {/* ═══════════════ CONTACT CTA BANNER ═══════════════ */}
+        <section className="contact-banner">
           <div className="container">
-            <div className="row flex-column flex-md-row align-items-start">
-              {/* Left Side: Info + Contact Rows */}
-              <div className="col-lg-6 col-md-6 mb-4 mb-md-0" data-aos="fade-right">
-                <div className="section-label">Get in Touch</div>
-                <h2 className="section-title" style={{ fontSize: 'clamp(1.75rem, 3.2vw, 2.4rem)', marginBottom: '1.25rem', lineHeight: '1.15', maxWidth: '24ch' }}>
-                  Talk to Us — We'll Take Care of It
-                </h2>
-
-                <div className="enquiry-contact-rows">
-                  <div className="enquiry-contact-row">
-                     <div className="enquiry-contact-icon">
-                      <Phone size={18} />
-                    </div>
-                    <div>
-                      <span className="enquiry-contact-label">Direct Line</span>
-                      <a href="tel:+919487635294" className="enquiry-contact-value">+91 94876 35294</a>
-                    </div>
-                  </div>
-
-                  <div className="enquiry-contact-row">
-                    <div className="enquiry-contact-icon">
-                      <Mail size={18} />
-                    </div>
-                    <div>
-                      <span className="enquiry-contact-label">Support Email</span>
-                      <a href="mailto:tbriwt@gmail.com" className="enquiry-contact-value">tbriwt@gmail.com</a>
-                    </div>
-                  </div>
-
-                  <div className="enquiry-contact-row">
-                    <div className="enquiry-contact-icon">
-                      <Clock size={18} />
-                    </div>
-                    <div>
-                      <span className="enquiry-contact-label">Operating Hours</span>
-                      <span className="enquiry-contact-value">Mon – Sat: 9:00 AM – 6:00 PM</span>
-                    </div>
+            <div className="contact-banner-inner" style={{ textAlign: 'left' }}>
+              <div className="row align-items-center gy-3">
+                <div className="col-lg-7">
+                  <div className="section-label">Contact Us</div>
+                  <h2 className="contact-banner-title">
+                    Need Something Done? Let&apos;s Talk.
+                  </h2>
+                  <p className="contact-banner-sub" style={{ marginBottom: 0 }}>
+                    Tell us what you need, and we&apos;ll confirm details, pricing and timing,
+                    usually within the hour.
+                  </p>
+                </div>
+                <div className="col-lg-5">
+                  <div className="contact-banner-actions d-flex flex-wrap align-items-center gap-3">
+                    <Link href="/contact" className="tbr-hero-btn-primary" style={{ textDecoration: 'none' }}>
+                      Contact Us <ArrowRight size={18} />
+                    </Link>
+                    <a href="tel:+919487635294" className="tbr-hero-btn-outline" style={{ textDecoration: 'none' }}>
+                      <Phone size={18} /> Call Now
+                    </a>
                   </div>
                 </div>
-              </div>
-
-              {/* Right Side: Form Card */}
-              <div className="col-lg-6 col-md-6" data-aos="fade-left">
-                <EnquiryForm />
               </div>
             </div>
           </div>
@@ -767,7 +598,7 @@ export default function Home() {
                   }}
                 />
                 <span style={{
-                  fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                  fontFamily: 'var(--font-geist), Geist, sans-serif',
                   fontWeight: 700, fontSize: '1.15rem', lineHeight: 1.05,
                   letterSpacing: '0.05em',
                 }}>
@@ -786,7 +617,7 @@ export default function Home() {
             {/* Tech & Software */}
             <div className="col-lg-2 col-6">
               <h4 style={{
-                fontFamily: 'Outfit, sans-serif', fontSize: '0.85rem', fontWeight: 600,
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontSize: '0.85rem', fontWeight: 600,
                 color: 'var(--text-primary)', marginBottom: '1.5rem',
                 textTransform: 'uppercase', letterSpacing: '1px',
               }}>
@@ -802,14 +633,14 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Government & Financial */}
+            {/* ESeva & Finance */}
             <div className="col-lg-2 col-6">
               <h4 style={{
-                fontFamily: 'Outfit, sans-serif', fontSize: '0.85rem', fontWeight: 600,
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontSize: '0.85rem', fontWeight: 600,
                 color: 'var(--text-primary)', marginBottom: '1.5rem',
                 textTransform: 'uppercase', letterSpacing: '1px',
               }}>
-                Govt &amp; Finance
+                ESeva &amp; Finance
               </h4>
               <div className="d-flex flex-column gap-2">
                 {(allServices as Service[]).filter(s => s.category === 'services').map(s => (
@@ -824,7 +655,7 @@ export default function Home() {
             {/* Retail & Everyday */}
             <div className="col-lg-2 col-6">
               <h4 style={{
-                fontFamily: 'Outfit, sans-serif', fontSize: '0.85rem', fontWeight: 600,
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontSize: '0.85rem', fontWeight: 600,
                 color: 'var(--text-primary)', marginBottom: '1.5rem',
                 textTransform: 'uppercase', letterSpacing: '1px',
               }}>
@@ -843,7 +674,7 @@ export default function Home() {
             {/* Contact */}
             <div className="col-lg-4 col-md-6">
               <h4 style={{
-                fontFamily: 'Outfit, sans-serif', fontSize: '0.85rem', fontWeight: 600,
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontSize: '0.85rem', fontWeight: 600,
                 color: 'var(--text-primary)', marginBottom: '1.5rem',
                 textTransform: 'uppercase', letterSpacing: '1px',
               }}>
@@ -854,13 +685,13 @@ export default function Home() {
                   <Phone size={13} /> +91 94876 35294
                 </a>
                 <a href="mailto:tbrinnovativetrades@gmail.com" className="footer-link d-flex align-items-center gap-2">
-                  <Mail size={13} /> Email Us
+                  <Envelope size={13} /> Email Us
                 </a>
-                <ScrollToSection targetId="enquiry-section" className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer', background: 'none', border: 'none', color: 'inherit', textAlign: 'left' }}>
-                  <MessageSquare size={13} /> Submit Enquiry Form
-                </ScrollToSection>
+                <Link href="/contact" className="footer-link d-flex align-items-center gap-2" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>
+                  <ChatCircle size={13} /> Submit Enquiry Form
+                </Link>
                 <a href="https://wa.me/919487635294" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2">
-                  <MessageSquare size={13} /> Direct WhatsApp
+                  <ChatCircle size={13} /> Direct WhatsApp
                 </a>
                 <a href="https://tbr-education.vercel.app/" target="_blank" rel="noopener noreferrer" className="footer-link d-flex align-items-center gap-2" style={{ color: 'var(--accent-blue-light)', fontWeight: 500 }}>
                   <Picture

@@ -37,7 +37,7 @@ This project uses stock photos from various sources self-hosted locally under th
 - **document-registration-property-verification**: Original source [Unsplash](https://images.unsplash.com/photo-1768611873487-67930d5db1b8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9jdW1lbnQlMjB2ZXJpZmljYXRpb258ZW58MHx8MHx8fDA%3D)
 - **document-registration-will-registration**: Original source [Unsplash](https://plus.unsplash.com/premium_photo-1661371499971-d01cf0a7cf97?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2lsbCUyMHJlZ2lzdHJhdGlvbnxlbnwwfHwwfHx8MA%3D%3D)
 - **document-registration-rental-agreement**: Original source [Unsplash](https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=600&q=80)
-- **document-registration-sale-deed-preparation**: Original source [iStock](https://media.istockphoto.com/id/516103962/photo/house-deed.webp?a=1&b=1&s=612x612&w=0&k=20&c=gAeXXITMjkivbZ5YoKBG779DkvWkf3jo75ey-oJ7Es4=)
+- **document-registration-sale-deed-preparation**: Original source [iStock](https://media.istockphoto.com/id/516103962/photo/Home-deed.webp?a=1&b=1&s=612x612&w=0&k=20&c=gAeXXITMjkivbZ5YoKBG779DkvWkf3jo75ey-oJ7Es4=)
 - **ticket-booking**: Original source [Pexels](https://images.pexels.com/photos/7412001/pexels-photo-7412001.jpeg)
 - **ticket-booking-hero**: Original source [Pexels](https://images.pexels.com/photos/7412001/pexels-photo-7412001.jpeg)
 - **ticket-booking-bus-ticket-booking**: Original source [Unsplash](https://images.unsplash.com/photo-1570118054363-ff4d296962f5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVzJTIwdGlja2V0JTIwYm9va2luZ3xlbnwwfHwwfHx8MA%3D%3D)

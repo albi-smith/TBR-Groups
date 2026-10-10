@@ -97,7 +97,7 @@ const ICONS: Record<string, React.ReactNode> = {
     </svg>
   ),
 
-  /* ── Govt & Finance ── */
+  /* ── ESeva & Finance ── */
   'csc': (
     <svg viewBox="0 0 220 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <defs>

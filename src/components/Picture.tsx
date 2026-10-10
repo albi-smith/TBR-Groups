@@ -124,6 +124,7 @@ export default function Picture({
       className={className}
       style={style}
       loading={imgLoading}
+      priority={isCritical}
       fetchPriority={fetchPriority}
       onError={onError}
       {...rest}

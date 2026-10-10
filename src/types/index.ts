@@ -13,7 +13,7 @@ export interface SubServiceDetails {
 export interface SubService {
   name: string;
   desc: string;
-  icon?: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }>;
+  icon?: React.ComponentType<{ size?: number; strokeWidth?: number; className?: string; style?: React.CSSProperties }>;
   image?: string;
   imageWebp?: string;
   details?: SubServiceDetails;

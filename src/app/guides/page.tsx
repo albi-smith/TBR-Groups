@@ -1,9 +1,11 @@
 import React from 'react';
-import type { Metadata } from 'next';
+import type { Icon } from '@phosphor-icons/react';
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { CalendarDays, Clock, ArrowRight, BookOpen, Phone } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, BookOpen, Phone } from '@phosphor-icons/react/ssr';
 
 import Navbar from '../../components/Navbar';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import StructuredData from '../../components/StructuredData';
 import { getAllGuides } from '../../lib/guides';
 import type { GuideSummary } from '../../types';
@@ -13,7 +15,7 @@ const SITE_URL = 'https://tbr-groups.vercel.app';
 export const metadata: Metadata = {
   title: 'Guides & Articles | TBR Groups',
   description:
-    'Practical local guides and articles from TBR Groups in Marthandam — computer services, software, e-Seva, banking and everyday tips for Kanniyakumari district.',
+    'Practical local guides and articles from TBR Groups in Marthandam covering computer services, software, e-Seva, banking and everyday tips for Kanniyakumari district.',
   keywords: [
     'TBR Groups guides', 'computer services Marthandam', 'e-Seva guide',
     'software tips Kanniyakumari', 'local business guides',
@@ -24,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Guides & Articles | TBR Groups',
     description:
-      'Practical local guides and articles from TBR Groups in Marthandam — computer services, software, e-Seva, banking and everyday tips.',
+      'Practical local guides and articles from TBR Groups in Marthandam covering computer services, software, e-Seva, banking and everyday tips.',
     url: `${SITE_URL}/guides`,
     siteName: 'TBR Groups',
     locale: 'en_IN',
@@ -42,7 +44,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Guides & Articles | TBR Groups',
     description:
-      'Practical local guides and articles from TBR Groups in Marthandam — computer services, software, e-Seva, banking and everyday tips.',
+      'Practical local guides and articles from TBR Groups in Marthandam covering computer services, software, e-Seva, banking and everyday tips.',
     images: [`${SITE_URL}/og-image.jpg`],
   },
 };
@@ -84,8 +86,8 @@ export default function GuidesPage() {
   };
 
   return (
-    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100vh' }}>
-      <Navbar title="Guides" breadcrumbs={['Guides']} />
+    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100dvh' }}>
+      <Navbar title="Guides" />
       <StructuredData data={blogSchema} />
 
       <main>
@@ -104,13 +106,16 @@ export default function GuidesPage() {
           }} />
 
           <div className="container position-relative" style={{ zIndex: 2 }}>
-            <div className="section-label d-inline-flex" data-aos="fade-up">Guides &amp; Insights</div>
-            <h1 className="section-title" data-aos="fade-up" data-aos-delay="100">
+            <div className="mb-3">
+              <Breadcrumbs trail={['Guides']} />
+            </div>
+            <div className="section-label d-inline-flex">Guides &amp; Insights</div>
+            <h1 className="section-title">
               Local Guides from <span style={{ color: 'var(--accent-gold)' }}>TBR Groups</span>
             </h1>
-            <p className="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+            <p className="section-subtitle">
               Practical, easy-to-follow articles about computer services, software,
-              e-Seva, banking and everyday essentials — written for our community in
+              e-Seva, banking and everyday essentials, written for our community in
               Marthandam and across Kanniyakumari district.
             </p>
           </div>
@@ -127,8 +132,6 @@ export default function GuidesPage() {
                       href={`/guides/${guide.slug}`}
                       className="guide-card"
                       style={{ textDecoration: 'none', display: 'block' }}
-                      data-aos="fade-up"
-                      data-aos-delay={(index % 3) * 100}
                     >
                       {guide.image && (
                         <div className="guide-card-cover">
@@ -144,7 +147,7 @@ export default function GuidesPage() {
                         <div className="guide-card-meta">
                           {guide.category && <span className="guide-badge">{guide.category}</span>}
                           <span className="guide-card-date">
-                            <CalendarDays size={13} /> {formatDate(guide.date)}
+                            <Calendar size={13} /> {formatDate(guide.date)}
                           </span>
                         </div>
                         <h2 className="guide-card-title">{guide.title}</h2>
@@ -165,7 +168,7 @@ export default function GuidesPage() {
             ) : (
               <div className="guide-empty">
                 <BookOpen size={40} style={{ color: 'var(--accent-gold)' }} />
-                <h2 className="h4" style={{ fontFamily: 'Outfit, sans-serif' }}>Guides are being written</h2>
+                <h2 className="h4" style={{ fontFamily: 'var(--font-geist), Geist, sans-serif' }}>Guides are being written</h2>
                 <p className="text-secondary">
                   We're preparing practical local guides. In the meantime, reach out
                   and we'll help you directly.
@@ -191,11 +194,11 @@ export default function GuidesPage() {
                 width: '28px', height: '28px', borderRadius: 'var(--radius-sm)',
                 background: 'linear-gradient(135deg, var(--primary), var(--accent))',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                fontFamily: 'Outfit, sans-serif', fontWeight: 800, fontSize: '0.8rem',
+                fontFamily: 'var(--font-geist), Geist, sans-serif', fontWeight: 700, fontSize: '0.8rem',
                 color: '#ffffff',
               }}>T</div>
               <span className="fw-bold" style={{
-                fontFamily: 'var(--font-poppins), Poppins, sans-serif',
+                fontFamily: 'var(--font-geist), Geist, sans-serif',
                 fontSize: '1.15rem',
                 lineHeight: 1.05,
                 letterSpacing: '0.05em',

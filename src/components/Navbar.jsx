@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { ChevronRight, ArrowRight, Menu, X } from 'lucide-react';
+import { CaretRight, ArrowRight, List, X } from '@phosphor-icons/react/ssr';
 import Picture from './Picture';
 
 const NAV_LINKS = [
@@ -117,7 +117,7 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
 
         {breadcrumbs.length > 0 && (
           <div className="tbr-nav-crumbs d-none d-lg-flex align-items-center gap-2">
-            <ChevronRight size={14} />
+            <CaretRight size={14} />
             <span>{title}</span>
           </div>
         )}
@@ -151,12 +151,12 @@ const Navbar = ({ showBack = false, title = "", breadcrumbs = [] }) => {
           className="tbr-nav-hamburger d-lg-none"
           aria-label="Open menu"
         >
-          <Menu size={26} />
+          <List size={26} />
         </button>
       </nav>
       </header>
 
-      {/* Mobile Menu (slide-in overlay) — sibling of header so fixed positioning is viewport-relative */}
+      {/* Mobile List (slide-in overlay) — sibling of header so fixed positioning is viewport-relative */}
       <div
         className={`tbr-mobile-menu d-lg-none ${isMenuOpen ? 'tbr-mobile-menu--open' : ''}`}
         aria-hidden={!isMenuOpen}

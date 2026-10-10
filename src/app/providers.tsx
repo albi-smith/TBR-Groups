@@ -2,8 +2,6 @@
 
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function Providers({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -26,13 +24,6 @@ export default function Providers({ children }: { children: React.ReactNode }) {
     }
 
     requestAnimationFrame(raf);
-
-    // Initialize AOS
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-out-cubic',
-    });
 
     return () => {
       lenis.destroy();

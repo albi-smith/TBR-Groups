@@ -1,16 +1,17 @@
 import React from 'react';
-import type { Metadata } from 'next';
+import type { Icon } from '@phosphor-icons/react';
+import { Metadata } from 'next';
 import Link from 'next/link';
-import { Phone, ArrowRight } from 'lucide-react';
-import Navbar from '../../components/Navbar';
+import { Phone, ArrowRight } from '@phosphor-icons/react/ssr';
 import { allServices } from '../../data/servicesData';
 import { Service } from '../../types';
 import ServicesSection from '../../components/ServicesSection';
+import HashSectionScroller from '../../components/HashSectionScroller';
 
 export const metadata: Metadata = {
   title: 'All Services | TBR Groups',
   description:
-    'Browse all services offered by TBR Groups — software development, government e-Seva, banking, insurance, retail, and more in Marthandam, Tamil Nadu.',
+    'Browse all services offered by TBR Groups: software development, government e-Seva, banking, insurance, retail, and more in Marthandam, Tamil Nadu.',
   alternates: {
     canonical: 'https://tbr-groups.vercel.app/services',
   },
@@ -30,15 +31,19 @@ const serviceCards = (allServices as Service[]).map(
   }),
 );
 
-export default function ServicesPage() {
+export default async function ServicesPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ cat?: string }>;
+}) {
+  const { cat } = await searchParams;
   return (
-    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100vh' }}>
-      <Navbar title="Services" breadcrumbs={['Services']} />
-
-      <main style={{ paddingTop: '1.5rem', background: 'var(--bg-services)' }}>
-        <section style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
+    <div style={{ backgroundColor: 'var(--bg-deep)', color: 'var(--text-primary)', minHeight: '100dvh' }}>
+      <main className="service-page-main">
+        <HashSectionScroller />
+        <section className="service-page-section">
           <div className="container">
-            <ServicesSection services={serviceCards} />
+            <ServicesSection services={serviceCards} navbarProps={{ title: 'Services' }} initialCategory={cat} />
           </div>
         </section>
       </main>
@@ -46,18 +51,24 @@ export default function ServicesPage() {
       {/* ═══════════════ CTA SECTION ═══════════════ */}
       <section style={{ padding: '5rem 0', background: 'var(--bg-services)' }}>
         <div className="container text-center">
-          <h2 className="section-title" data-aos="fade-up" style={{ marginBottom: '1rem' }}>
-            Didn&#39;t find what you need?
+          <h2 className="section-title" style={{ marginBottom: '1rem' }}>
+            Found What You Need? Here&#39;s What Happens Next.
           </h2>
-          <p className="section-subtitle mx-auto" data-aos="fade-up" data-aos-delay="100" style={{ marginBottom: '2.5rem' }}>
-            We&#39;re here to help. Reach out and we&#39;ll find the right service for you.
+          <p className="section-subtitle mx-auto" style={{ marginBottom: '2.5rem' }}>
+            Message us your service, and we&#39;ll confirm details, pricing, and timing, usually within the hour.
           </p>
-          <div className="d-flex justify-content-center gap-3 flex-wrap" data-aos="fade-up" data-aos-delay="200">
-            <Link href="/#enquiry-section" className="tbr-hero-btn-primary d-inline-flex align-items-center gap-2" style={{ textDecoration: 'none' }}>
+          <div className="d-flex align-items-center justify-content-center gap-3 flex-wrap">
+            <Link href="/contact" className="tbr-hero-btn-primary d-inline-flex align-items-center gap-2" style={{ textDecoration: 'none' }}>
               Enquire Now <ArrowRight size={16} />
             </Link>
-            <a href="tel:+919487635294" className="tbr-hero-btn-outline d-inline-flex align-items-center gap-2">
-              <Phone size={16} /> Call Now
+            <Link href="/#about-section" className="tbr-hero-btn-outline d-inline-flex align-items-center gap-2" style={{ textDecoration: 'none' }}>
+              About Us
+            </Link>
+            <a href="tel:+919487635294" style={{
+              fontSize: '0.8rem', color: 'var(--accent-gold)', textDecoration: 'none',
+              display: 'inline-flex', alignItems: 'center', gap: '0.4rem',
+            }}>
+              <Phone size={13} /> Call Now
             </a>
           </div>
         </div>

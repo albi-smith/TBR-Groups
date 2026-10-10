@@ -1,4 +1,4 @@
-import { Globe, ShoppingCart, Server, Smartphone, Palette, Cog, Plug, TrendingUp, Monitor, CreditCard, ShieldCheck, IdCard, Book, Vote, ClipboardList, FileText, Award, FilePen, Lock, GraduationCap, Hospital, Car, FileCheck, Building2, BarChart3, Home, Search, Scale, Store, PenLine, Bus, TrainFront, Plane, Clapperboard, Hotel, Shield, HeartPulse, Dumbbell, Wheat, Banknote, Landmark, KeyRound, Send, Notebook, PiggyBank, CircleDollarSign, Mailbox, MailCheck, Receipt, Utensils, Factory, Stamp, ShoppingBag, Package, Briefcase, BookOpen, Printer, DraftingCompass, BadgeCheck, HardDrive, Cpu, CircuitBoard, Keyboard, Mouse, Usb, Cable, Droplet, SprayCan, Cctv, BatteryCharging, Headphones, PlugZap, Link, Paperclip, Folder, Mail, Image, Target, Baby, Newspaper, Milk, Flame, Leaf, Sprout } from 'lucide-react';
+import { Globe, ShoppingCart, Database, DeviceMobile, Palette, Gear, Plug, TrendUp, Monitor, CreditCard, ShieldCheck, IdentificationCard, Book, CheckSquare, ClipboardText, FileText, Medal, PencilLine, Lock, GraduationCap, Hospital, Car, FileLock, Buildings, ChartBar, House, MagnifyingGlass, Scales, Storefront, Bus, Train, Airplane, FilmSlate, Bed, Shield, Heartbeat, Barbell, Grains, Money, Bank, Key, PaperPlaneTilt, Notebook, PiggyBank, CurrencyCircleDollar, Mailbox, EnvelopeSimple, Receipt, ForkKnife, Factory, Stamp, ShoppingBag, Package, Briefcase, BookOpen, Printer, CompassTool, SealCheck, HardDrive, Cpu, Circuitry, Keyboard, Mouse, Usb, Plugs, Drop, SprayBottle, SecurityCamera, BatteryCharging, Headphones, Lightning, Link, Paperclip, Folder, Envelope, Image, Target, Baby, Newspaper, Coffee, Flame, Leaf, Plant } from '@phosphor-icons/react/ssr';
 // ============================================
 // TBR Groups — Centralized Service Data (Optimized Local)
 // ============================================
@@ -39,7 +39,7 @@ export const servicesA = [
       {
         "name": "Mobile App Development",
         "desc": "iOS and Android native and cross-platform applications",
-        "icon": Smartphone,
+        "icon": DeviceMobile,
         "image": "/assets/images/software-development-digital-solutions-mobile-app-development.jpeg",
         "imageWebp": "/assets/images/software-development-digital-solutions-mobile-app-development.webp"
       },
@@ -110,7 +110,7 @@ export const servicesA = [
       {
         "name": "PAN Card",
         "desc": "New PAN card application, correction & reprint",
-        "icon": IdCard,
+        "icon": IdentificationCard,
         "image": "/assets/images/csc-e-seva-online-services-pan-card.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-pan-card.webp"
       },
@@ -124,14 +124,14 @@ export const servicesA = [
       {
         "name": "Voter ID Card",
         "desc": "New registration, transfer & correction",
-        "icon": Vote,
+        "icon": CheckSquare,
         "image": "/assets/images/csc-e-seva-online-services-voter-id-card.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-voter-id-card.webp"
       },
       {
         "name": "Ration Card Services",
         "desc": "New card, addition & deletion of members",
-        "icon": ClipboardList,
+        "icon": ClipboardText,
         "image": "/assets/images/csc-e-seva-online-services-ration-card-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-ration-card-services.webp"
       },
@@ -145,14 +145,14 @@ export const servicesA = [
       {
         "name": "Ex-Serviceman Online Services",
         "desc": "Children allowance, marriage allowance, PM Scholarship, EHS",
-        "icon": Award,
+        "icon": Medal,
         "image": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-ex-serviceman-online-services.webp"
       },
       {
         "name": "Online Exam & Job Applications",
         "desc": "TNPSC, SSC, NET, ARMY, NAVY, AIRFORCE ",
-        "icon": FilePen,
+        "icon": PencilLine,
         "image": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-online-exam-job-applications.webp"
       },
@@ -202,56 +202,56 @@ export const servicesA = [
       {
         "name": "EC (Encumbrance Certificate)",
         "desc": "Property transaction history verification",
-        "icon": FileCheck,
+        "icon": FileLock,
         "image": "/assets/images/document-registration-ec-encumbrance-certificate.jpeg",
         "imageWebp": "/assets/images/document-registration-ec-encumbrance-certificate.webp"
       },
       {
         "name": "Patta Transfer",
         "desc": "Land ownership transfer & subdivision",
-        "icon": Building2,
+        "icon": Buildings,
         "image": "/assets/images/document-registration-patta-transfer.jpeg",
         "imageWebp": "/assets/images/document-registration-patta-transfer.webp"
       },
       {
         "name": "Chitta & A-Register",
         "desc": "Land classification and revenue records",
-        "icon": BarChart3,
+        "icon": ChartBar,
         "image": "/assets/images/document-registration-chitta-a-register.jpeg",
         "imageWebp": "/assets/images/document-registration-chitta-a-register.webp"
       },
       {
         "name": "Land Registration",
         "desc": "Property deed registration assistance",
-        "icon": Home,
+        "icon": House,
         "image": "/assets/images/document-registration-land-registration.jpeg",
         "imageWebp": "/assets/images/document-registration-land-registration.webp"
       },
       {
         "name": "Property Verification",
         "desc": "Document verification and legal opinion",
-        "icon": Search,
+        "icon": MagnifyingGlass,
         "image": "/assets/images/document-registration-property-verification.jpeg",
         "imageWebp": "/assets/images/document-registration-property-verification.webp"
       },
       {
         "name": "Will Registration",
         "desc": "Legal will creation and registration",
-        "icon": Scale,
+        "icon": Scales,
         "image": "/assets/images/document-registration-will-registration.jpeg",
         "imageWebp": "/assets/images/document-registration-will-registration.webp"
       },
       {
         "name": "Rental Agreement",
         "desc": "Residential & commercial rental agreements",
-        "icon": Store,
+        "icon": Storefront,
         "image": "/assets/images/document-registration-rental-agreement.jpeg",
         "imageWebp": "/assets/images/document-registration-rental-agreement.webp"
       },
       {
         "name": "Sale Deed Preparation",
         "desc": "Sale deed drafting and registration",
-        "icon": PenLine,
+        "icon": PencilLine,
         "image": "/assets/images/document-registration-sale-deed-preparation.jpeg",
         "imageWebp": "/assets/images/document-registration-sale-deed-preparation.webp"
       }
@@ -280,28 +280,28 @@ export const servicesA = [
       {
         "name": "Train Ticket (IRCTC)",
         "desc": "Railway ticket booking & tatkal service",
-        "icon": TrainFront,
+        "icon": Train,
         "image": "/assets/images/ticket-booking-train-ticket-irctc.jpeg",
         "imageWebp": "/assets/images/ticket-booking-train-ticket-irctc.webp"
       },
       {
         "name": "Flight Booking",
         "desc": "Domestic & international flight tickets",
-        "icon": Plane,
+        "icon": Airplane,
         "image": "/assets/images/ticket-booking-flight-booking.jpeg",
         "imageWebp": "/assets/images/ticket-booking-flight-booking.webp"
       },
       {
         "name": "Movie Tickets",
         "desc": "Local cinema & multiplex bookings",
-        "icon": Clapperboard,
+        "icon": FilmSlate,
         "image": "/assets/images/ticket-booking-movie-tickets.jpeg",
         "imageWebp": "/assets/images/ticket-booking-movie-tickets.webp"
       },
       {
-        "name": "Hotel Booking",
+        "name": "Bed Booking",
         "desc": "Budget to premium hotel reservations",
-        "icon": Hotel,
+        "icon": Bed,
         "image": "/assets/images/ticket-booking-hotel-booking.jpeg",
         "imageWebp": "/assets/images/ticket-booking-hotel-booking.webp"
       }
@@ -330,7 +330,7 @@ export const servicesA = [
       {
         "name": "Health Insurance Plans",
         "desc": "Comprehensive health coverage options",
-        "icon": HeartPulse,
+        "icon": Heartbeat,
         "image": "/assets/images/insurance-services-health-insurance-plans.jpeg",
         "imageWebp": "/assets/images/insurance-services-health-insurance-plans.webp"
       },
@@ -344,14 +344,14 @@ export const servicesA = [
       {
         "name": "Term Life Insurance",
         "desc": "Pure protection term insurance plans",
-        "icon": Dumbbell,
+        "icon": Barbell,
         "image": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.jpeg",
         "imageWebp": "/assets/images/csc-e-seva-online-services-pmjay-ayushman-bharat.webp"
       },
       {
         "name": "Crop Insurance (PMFBY)",
         "desc": "Agricultural crop protection scheme",
-        "icon": Wheat,
+        "icon": Grains,
         "image": "/assets/images/insurance-services-crop-insurance-pmfby.jpeg",
         "imageWebp": "/assets/images/insurance-services-crop-insurance-pmfby.webp"
       }
@@ -373,28 +373,28 @@ export const servicesA = [
       {
         "name": "Personal Loan",
         "desc": "Quick personal loan processing & approval",
-        "icon": Banknote,
+        "icon": Money,
         "image": "/assets/images/banking-services-personal-loan.jpeg",
         "imageWebp": "/assets/images/banking-services-personal-loan.webp"
       },
       {
         "name": "Business Loan",
         "desc": "MSME & business loan assistance",
-        "icon": Landmark,
+        "icon": Bank,
         "image": "/assets/images/banking-services-business-loan.jpeg",
         "imageWebp": "/assets/images/banking-services-business-loan.webp"
       },
       {
         "name": "AEPS Services",
         "desc": "Aadhaar-enabled payment & withdrawal",
-        "icon": KeyRound,
+        "icon": Key,
         "image": "/assets/images/banking-services-aeps-services.jpeg",
         "imageWebp": "/assets/images/banking-services-aeps-services.webp"
       },
       {
         "name": "Money Transfer",
         "desc": "NEFT, RTGS, IMPS & UPI transfers",
-        "icon": Send,
+        "icon": PaperPlaneTilt,
         "image": "/assets/images/banking-services-money-transfer.jpeg",
         "imageWebp": "/assets/images/banking-services-money-transfer.webp"
       },
@@ -422,7 +422,7 @@ export const servicesA = [
       {
         "name": "Micro ATM Services",
         "desc": "Cash withdrawal & balance inquiry",
-        "icon": CircleDollarSign,
+        "icon": CurrencyCircleDollar,
         "image": "/assets/images/banking-services-micro-atm-services.jpeg",
         "imageWebp": "/assets/images/banking-services-micro-atm-services.webp"
       }
@@ -444,7 +444,7 @@ export const servicesA = [
       {
         "name": "IPPB Postal Account Opening",
         "desc": "India Post Payments Bank RD plans",
-        "icon": Landmark,
+        "icon": Bank,
         "image": "/assets/images/postal-services-ippb-postal-account-opening.jpeg",
         "imageWebp": "/assets/images/postal-services-ippb-postal-account-opening.webp"
       },
@@ -458,7 +458,7 @@ export const servicesA = [
       {
         "name": "Money Order Services",
         "desc": "Domestic money order transfers",
-        "icon": MailCheck,
+        "icon": EnvelopeSimple,
         "image": "/assets/images/postal-services-money-order-services.jpeg",
         "imageWebp": "/assets/images/postal-services-money-order-services.webp"
       },
@@ -494,14 +494,14 @@ export const servicesA = [
       {
         "name": "Company Registration",
         "desc": "Private limited & LLP incorporation",
-        "icon": Building2,
+        "icon": Buildings,
         "image": "/assets/images/business-registration-company-registration.jpeg",
         "imageWebp": "/assets/images/business-registration-company-registration.webp"
       },
       {
         "name": "FSSAI License",
         "desc": "Food safety license and registration",
-        "icon": Utensils,
+        "icon": ForkKnife,
         "image": "/assets/images/business-registration-fssai-license.jpeg",
         "imageWebp": "/assets/images/business-registration-fssai-license.webp"
       },
@@ -572,20 +572,77 @@ export const servicesA = [
       {
         "name": "Project Report Preparation",
         "desc": "Formatting, indexing & cover design",
-        "icon": DraftingCompass,
+        "icon": CompassTool,
         "image": "/assets/images/project-designing-work-project-report-preparation.jpeg",
         "imageWebp": "/assets/images/project-designing-work-project-report-preparation.webp"
       },
       {
         "name": "ID Card & Certificate Printing",
         "desc": "Custom ID cards and certificates",
-        "icon": BadgeCheck,
+        "icon": SealCheck,
         "image": "/assets/images/project-designing-work-id-card-certificate-printing.jpeg",
         "imageWebp": "/assets/images/project-designing-work-id-card-certificate-printing.webp"
       }
     ],
     "imageWebp": "/assets/images/project-designing-work.webp",
     "heroImageWebp": "/assets/images/project-designing-work-hero.webp"
+  },
+  {
+    "id": 10,
+    "slug": "computer-hardware-repair",
+    "path": "/computer-hardware-repair",
+    "title": "Computer & Hardware Repair Service",
+    "desc": "Repair and servicing for computers, laptops, printers, CCTV and other hardware, diagnosed and fixed by our own technicians.",
+    "image": "/assets/images/computer-hardware-repair.jpeg",
+    "heroImage": "/assets/images/computer-hardware-repair-hero.jpeg",
+    "category": "tech",
+    "color": "#f97316",
+    "subServices": [
+      {
+        "name": "Desktop & Laptop Repair",
+        "desc": "Hardware diagnosis, repair and servicing for desktops and laptops.",
+        "icon": Cpu,
+        "image": "/assets/images/computer-hardware-repair-desktop-laptop-repair.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-desktop-laptop-repair.webp"
+      },
+      {
+        "name": "Printer Repair & Service",
+        "desc": "Cartridge refills, head cleaning and full printing machine servicing.",
+        "icon": Printer,
+        "image": "/assets/images/computer-hardware-repair-printer-repair-service.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-printer-repair-service.webp"
+      },
+      {
+        "name": "Motherboard & Component Repair",
+        "desc": "Chip-level motherboard and component-level hardware repairs.",
+        "icon": Circuitry,
+        "image": "/assets/images/computer-hardware-repair-motherboard-component-repair.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-motherboard-component-repair.webp"
+      },
+      {
+        "name": "Data Recovery & Backup",
+        "desc": "Recover lost files and set up reliable backups for your systems.",
+        "icon": FileText,
+        "image": "/assets/images/computer-hardware-repair-data-recovery-backup.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-data-recovery-backup.webp"
+      },
+      {
+        "name": "CCTV Installation & Repair",
+        "desc": "Supply, installation and repair of CCTV surveillance systems.",
+        "icon": SecurityCamera,
+        "image": "/assets/images/computer-hardware-repair-cctv-installation-repair.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-cctv-installation-repair.webp"
+      },
+      {
+        "name": "Other Hardware Servicing",
+        "desc": "Repair and servicing for other electronic and hardware devices.",
+        "icon": Usb,
+        "image": "/assets/images/computer-hardware-repair-other-hardware-servicing.jpeg",
+        "imageWebp": "/assets/images/computer-hardware-repair-other-hardware-servicing.webp"
+      }
+    ],
+    "imageWebp": "/assets/images/computer-hardware-repair.webp",
+    "heroImageWebp": "/assets/images/computer-hardware-repair-hero.webp"
   }
 ];
 
@@ -625,7 +682,7 @@ export const servicesB = [
       {
         "name": "Mother board",
         "desc": "Durable motherboards supporting latest generation components.",
-        "icon": CircuitBoard,
+        "icon": Circuitry,
         "image": "/assets/images/computer-accessories-mother-board.jpeg",
         "imageWebp": "/assets/images/computer-accessories-mother-board.webp"
       },
@@ -653,28 +710,28 @@ export const servicesB = [
       {
         "name": "Cables & Adapters",
         "desc": "HDMI, USB-C, VGA & all essential connectors.",
-        "icon": Cable,
+        "icon": Plugs,
         "image": "/assets/images/computer-accessories-cables-adapters.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cables-adapters.webp"
       },
       {
         "name": "Toner",
         "desc": "High-quality laser printer toners for sharp & clear prints.",
-        "icon": Droplet,
+        "icon": Drop,
         "image": "/assets/images/computer-accessories-toner.jpeg",
         "imageWebp": "/assets/images/computer-accessories-toner.webp"
       },
       {
         "name": "Cartridge",
         "desc": "Ink cartridges for all major printer brands & models.",
-        "icon": SprayCan,
+        "icon": SprayBottle,
         "image": "/assets/images/computer-accessories-cartridge.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cartridge.webp"
       },
       {
         "name": "CCTV Camera",
         "desc": "Surveillance cameras for home & office security solutions.",
-        "icon": Cctv,
+        "icon": SecurityCamera,
         "image": "/assets/images/computer-accessories-cctv-camera.jpeg",
         "imageWebp": "/assets/images/computer-accessories-cctv-camera.webp"
       },
@@ -710,7 +767,7 @@ export const servicesB = [
       {
         "name": "Phone Cases & Covers",
         "desc": "Stylish protective cases for all brands",
-        "icon": Smartphone,
+        "icon": DeviceMobile,
         "image": "/assets/images/mobile-accessories-phone-cases-covers.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-phone-cases-covers.webp"
       },
@@ -731,7 +788,7 @@ export const servicesB = [
       {
         "name": "Power Banks",
         "desc": "Portable charging solutions",
-        "icon": PlugZap,
+        "icon": Lightning,
         "image": "/assets/images/mobile-accessories-power-banks.jpeg",
         "imageWebp": "/assets/images/mobile-accessories-power-banks.webp"
       },
@@ -774,7 +831,7 @@ export const servicesB = [
       {
         "name": "Paper & Envelopes",
         "desc": "A4 sheets, brown & white envelopes",
-        "icon": Mail,
+        "icon": Envelope,
         "image": "/assets/images/stationary-paper-envelopes.jpeg",
         "imageWebp": "/assets/images/stationary-paper-envelopes.webp"
       },
@@ -839,7 +896,7 @@ export const servicesB = [
       {
         "name": "Pure Honey",
         "desc": "Natural raw & processed honey varieties",
-        "icon": Milk,
+        "icon": Coffee,
         "image": "/assets/images/organic-foods-pure-honey.jpeg",
         "imageWebp": "/assets/images/organic-foods-pure-honey.webp"
       },
@@ -860,7 +917,7 @@ export const servicesB = [
       {
         "name": "Dry Fruits & Nuts",
         "desc": "Cashew, almond, raisins & mixed nuts",
-        "icon": Sprout,
+        "icon": Plant,
         "image": "/assets/images/organic-foods-dry-fruits-nuts.jpeg",
         "imageWebp": "/assets/images/organic-foods-dry-fruits-nuts.webp"
       }
