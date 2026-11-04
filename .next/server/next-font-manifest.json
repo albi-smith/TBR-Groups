@@ -1,5 +1,11 @@
 {
   "app": {
+    "[project]/src/app/contact/page": [
+      "static/media/geist_Variable-s.p.bb1d9210.woff2"
+    ],
+    "[project]/src/app/locations/page": [
+      "static/media/geist_Variable-s.p.bb1d9210.woff2"
+    ],
     "[project]/src/app/page": [
       "static/media/geist_Variable-s.p.bb1d9210.woff2"
     ],
