@@ -31,8 +31,11 @@
     "typescript": "^5.0.0"
   },
   "overrides": {
-    "puppeteer": "npm:puppeteer-core@^25.5.0"
-  },
+  "puppeteer": "npm:puppeteer-core@^25.5.0",
+  "next": {
+    "postcss": "^8.5.23"
+  }
+},
   "allowScripts": {
     "sharp": true
   },
